@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset=utf-8 />
+<link href="/css/web.css" rel="stylesheet" type="text/css">
+<title>发现专辑页</title>
+</head>
+
+<body class="discoverAlbum">
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<a class="logo"></a>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+
+<!--页面内容 start-->
+<div class="bodyBgColor bodyBgColor2">
+    <div class="mainbox" id="mainbox"><div id="discoverAlbum" class="discoverAlbum">
+    <div class="layout_top">
+        <div class="dis_sound_top">
+            <div class="left">
+                <div class="hallo"></div>
+            </div>
+            <div class="right">
+                <ul class="nav_list fr">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dis_nav">
+        <span id="crumb_all"><a>全部</a></span>
+        <span id="crumb_sub" class="hidden" style="display: inline;">&gt;&gt; <a cid="1">新闻</a></span>
+        <span id="crumb_tag" class="hidden" style="display: inline;">&gt;&gt; <span>谈话节目</span></span>
+    </div>
+    <div class="layout_left">
+        <div class="dis_sound_sort">
+            <ul class="sort_list">
+                <li cid="0" class="hover">
+                    <a href="javascript:;">全部</a>
+                </li>
+                <li cid="1" class="on" is-data-all="0">
+                    <a href="javascript:;">新闻</a>
+                </li>
+                <li cid="2" class="">
+                    <a href="javascript:;">音乐</a>
+                </li>
+                <li cid="3" class="">
+                    <a href="javascript:;">有声小说</a>
+                </li>
+                <li cid="12" class="">
+                    <a href="javascript:;">相声评书</a>
+                </li>
+                <li cid="4" class="">
+                    <a href="javascript:;">综艺娱乐</a>
+                </li>
+                <li cid="10" class="">
+                    <a href="javascript:;">情感生活</a>
+                </li>
+                <li cid="9" class="">
+                    <a href="javascript:;">历史人文</a>
+                </li>
+                <li cid="5" class="">
+                    <a href="javascript:;">外语</a>
+                </li>
+                <li cid="13" class="">
+                    <a href="javascript:;">培训讲座</a>
+                </li>
+                <li cid="14" class="">
+                    <a href="javascript:;">百家讲坛</a>
+                </li>
+                <li cid="15" class="">
+                    <a href="javascript:;">广播剧</a>
+                </li>
+                <li cid="16" class="">
+                    <a href="javascript:;">戏曲</a>
+                </li>
+                <li cid="6" class="">
+                    <a href="javascript:;">儿童</a>
+                </li>
+                <li cid="17" class="">
+                    <a href="javascript:;">电台</a>
+                </li>
+                <li cid="8" class="">
+                    <a href="javascript:;">商业财经</a>
+                </li>
+                <li cid="18" class="">
+                    <a href="javascript:;">IT科技</a>
+                </li>
+                <li cid="7" class="">
+                    <a href="javascript:;">健康养生</a>
+                </li>
+                <li cid="11" class="">
+                    <a href="javascript:;">其他</a>
+                </li>
+
+                <div class="tags_panel" style="top: 0px;display:block;">
+                    <div class="tag_wrap">
+                            <div data-cache="0" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="排行榜"><span>排行榜</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="新歌"><span>新歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="老歌"><span>老歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="华语"><span>华语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="流行"><span>流行</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="翻唱"><span>翻唱</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="车载"><span>车载</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="玄幻"><span>玄幻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="穿越"><span>穿越</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="言情"><span>言情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="武侠"><span>武侠</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="鬼故事"><span>鬼故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="广播剧"><span>广播剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="外语"><span>外语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="成功学"><span>成功学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="余世维"><span>余世维</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿童读物"><span>儿童读物</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="睡前故事"><span>睡前故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="胎教音乐"><span>胎教音乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿歌"><span>儿歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="养生"><span>养生</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="性健康"><span>性健康</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="创业"><span>创业</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="理财"><span>理财</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="股票"><span>股票</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="百家讲坛"><span>百家讲坛</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="纪实"><span>纪实</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="人物"><span>人物</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="历史"><span>历史</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="纪录片"><span>纪录片</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电影"><span>电影</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="治愈系"><span>治愈系</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="小清新"><span>小清新</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="文艺控"><span>文艺控</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="声音日记"><span>声音日记</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="京剧"><span>京剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="美女"><span>美女</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="娱乐播报"><span>娱乐播报</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="军事"><span>军事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="新闻节目"><span>新闻节目</span></a>
+                            </div>
+                            <div data-cache="1" style="display: block;">
+                                    <a class="tagBtn" href="javascript:;" tid="时政热点"><span>时政热点</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="社会热点"><span>社会热点</span></a>
+                                    <a class="tagBtn on" href="javascript:;" tid="谈话节目"><span>谈话节目</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="资讯"><span>资讯</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="访谈"><span>访谈</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="脱口秀"><span>脱口秀</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="民生"><span>民生</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="生活"><span>生活</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="军事"><span>军事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="法制节目"><span>法制节目</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="民生热点"><span>民生热点</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="新闻节目"><span>新闻节目</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="飞鱼秀"><span>飞鱼秀</span></a>
+                            </div>
+                            <div data-cache="2" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="排行榜"><span>排行榜</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="新歌"><span>新歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="老歌"><span>老歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="华语"><span>华语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="流行"><span>流行</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="翻唱"><span>翻唱</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="欧美"><span>欧美</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="日韩"><span>日韩</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="古典"><span>古典</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="纯音乐"><span>纯音乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="怀旧"><span>怀旧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="心情"><span>心情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="90后"><span>90后</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="民谣"><span>民谣</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="舞曲"><span>舞曲</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="乡村"><span>乡村</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电影原声"><span>电影原声</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="DJ"><span>DJ</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="独立"><span>独立</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="摇滚"><span>摇滚</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="钢琴"><span>钢琴</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="80后"><span>80后</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="粤语"><span>粤语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="音乐推荐"><span>音乐推荐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="爵士"><span>爵士</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="治愈系"><span>治愈系</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="文艺"><span>文艺</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="车载"><span>车载</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿童歌曲"><span>儿童歌曲</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="吉他"><span>吉他</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电子"><span>电子</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="清唱"><span>清唱</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="动漫"><span>动漫</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="萨克斯"><span>萨克斯</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="佛教"><span>佛教</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="轻音乐"><span>轻音乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="名曲"><span>名曲</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="交响曲"><span>交响曲</span></a>
+                            </div>
+                            <div data-cache="3" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="玄幻"><span>玄幻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="都市"><span>都市</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="言情"><span>言情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="武侠"><span>武侠</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="穿越"><span>穿越</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="推理"><span>推理</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="奇幻"><span>奇幻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="科幻"><span>科幻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="恐怖"><span>恐怖</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="校园"><span>校园</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="网游"><span>网游</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="名著"><span>名著</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="鬼故事"><span>鬼故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="畅销书"><span>畅销书</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="官场商战"><span>官场商战</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="历史军事"><span>历史军事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="婚姻家庭"><span>婚姻家庭</span></a>
+                            </div>
+                            <div data-cache="12" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="郭德纲"><span>郭德纲</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="赵本山"><span>赵本山</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="单田芳"><span>单田芳</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="袁阔成"><span>袁阔成</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="德云社"><span>德云社</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="相声大全"><span>相声大全</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="评书"><span>评书</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="小品"><span>小品</span></a>
+                            </div>
+                            <div data-cache="4" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="笑话"><span>笑话</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="脱口秀"><span>脱口秀</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="综艺节目"><span>综艺节目</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="影视"><span>影视</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="娱乐"><span>娱乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="搞笑"><span>搞笑</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="真人秀"><span>真人秀</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="访谈"><span>访谈</span></a>
+                            </div>
+                            <div data-cache="10" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="小清新"><span>小清新</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="声音日记"><span>声音日记</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="心理"><span>心理</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="星座"><span>星座</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="青春"><span>青春</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="爱情"><span>爱情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="配乐散文"><span>配乐散文</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="温暖"><span>温暖</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="励志"><span>励志</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="情感互动"><span>情感互动</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="治愈系"><span>治愈系</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="故事"><span>故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="生活"><span>生活</span></a>
+                            </div>
+                            <div data-cache="9" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="百家讲坛"><span>百家讲坛</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="红学"><span>红学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="纪实"><span>纪实</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="人物"><span>人物</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="历史"><span>历史</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="世界看中国"><span>世界看中国</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="纪录片"><span>纪录片</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="旅行"><span>旅行</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电影"><span>电影</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="兵法"><span>兵法</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="哲学"><span>哲学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="故事"><span>故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="周易"><span>周易</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="风水玄学"><span>风水玄学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="文学"><span>文学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="探索"><span>探索</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="论语"><span>论语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="于丹"><span>于丹</span></a>
+                            </div>
+                            <div data-cache="5" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="外语"><span>外语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="CNN新闻"><span>CNN新闻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="BBC新闻"><span>BBC新闻</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="VOA"><span>VOA</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="托福"><span>托福</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电影英语"><span>电影英语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="老友记"><span>老友记</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="沪江英语"><span>沪江英语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="零基础英语"><span>零基础英语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="单词"><span>单词</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="MBA"><span>MBA</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="英文名著"><span>英文名著</span></a>
+                            </div>
+                            <div data-cache="13" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="成功学"><span>成功学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="营销技巧"><span>营销技巧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="培训"><span>培训</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="佛法"><span>佛法</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="国学"><span>国学</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="讲座"><span>讲座</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="余世维"><span>余世维</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="公开课"><span>公开课</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="演讲与口才"><span>演讲与口才</span></a>
+                            </div>
+                            <div data-cache="14" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="历史"><span>历史</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="人物"><span>人物</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="文化"><span>文化</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="帝王"><span>帝王</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="清史"><span>清史</span></a>
+                            </div>
+                            <div data-cache="15" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="耽美"><span>耽美</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="广播剧"><span>广播剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="好听的广播剧"><span>好听的广播剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="现代"><span>现代</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="古风"><span>古风</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="言情"><span>言情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="全一期"><span>全一期</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="完结剧"><span>完结剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="耽美广播剧"><span>耽美广播剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="畅销书"><span>畅销书</span></a>
+                            </div>
+                            <div data-cache="16" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="京剧"><span>京剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="越剧"><span>越剧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="黄梅戏"><span>黄梅戏</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="地方戏"><span>地方戏</span></a>
+                            </div>
+                            <div data-cache="6" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="学前教育"><span>学前教育</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿童英语"><span>儿童英语</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿童故事"><span>儿童故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿歌"><span>儿歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="母婴"><span>母婴</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿童读物"><span>儿童读物</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="睡前故事"><span>睡前故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="胎教音乐"><span>胎教音乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="宝宝秀"><span>宝宝秀</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="育儿手册"><span>育儿手册</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="格林童话"><span>格林童话</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="英文儿歌"><span>英文儿歌</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="儿歌串烧"><span>儿歌串烧</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="快乐童谣"><span>快乐童谣</span></a>
+                            </div>
+                            <div data-cache="17" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="流行"><span>流行</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="情感"><span>情感</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="治愈系"><span>治愈系</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="清新"><span>清新</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="温暖"><span>温暖</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="青春"><span>青春</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="爱情"><span>爱情</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="故事"><span>故事</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="生活"><span>生活</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="音乐"><span>音乐</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="电台节目"><span>电台节目</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="心理"><span>心理</span></a>
+                            </div>
+                            <div data-cache="8" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="创业"><span>创业</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="财经"><span>财经</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="企业文化"><span>企业文化</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="理财"><span>理财</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="股票"><span>股票</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="期货"><span>期货</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="企业管理"><span>企业管理</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="商业经济"><span>商业经济</span></a>
+                            </div>
+                            <div data-cache="18" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="产品经理"><span>产品经理</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="极客公园"><span>极客公园</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="移动互联网"><span>移动互联网</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="IT精英"><span>IT精英</span></a>
+                            </div>
+                            <div data-cache="7" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="健康"><span>健康</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="美容"><span>美容</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="两性"><span>两性</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="养生之道"><span>养生之道</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="减肥"><span>减肥</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="女性"><span>女性</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="中医"><span>中医</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="健康养生"><span>健康养生</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="职场女性"><span>职场女性</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="美食"><span>美食</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="瑜伽"><span>瑜伽</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="生活"><span>生活</span></a>
+                            </div>
+                            <div data-cache="11" style="display: none;">
+                                    <a class="tagBtn" href="javascript:;" tid="声音日记"><span>声音日记</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="铃声"><span>铃声</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="随手录"><span>随手录</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="音效"><span>音效</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="动漫"><span>动漫</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="游戏"><span>游戏</span></a>
+                                    <a class="tagBtn" href="javascript:;" tid="广告"><span>广告</span></a>
+                            </div>
+                    </div>
+                    <a class="pin_btn" href="javascript:;"></a>
+                </div>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="layout_right">
+<div class="discoverAlbum_wrapper">
+    <div class="discoverAlbum_item" album_id="3022">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000256/album/3022" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M00/0D/7E/wKgDrVEuvbTheeMqAAMZHh3bA94743_web_large.jpg" alt="锵锵三人行【2013】"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">1153196</span></div>
+        </div>
+
+        <a href="/#/1000256/album/3022" title="锵锵三人行【2013】" class="discoverAlbum_title">锵锵三人行【2013】</a>
+        <div class="miniPlayer3" sound_id="865181">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000256/sound/865181">病人在巴马养生首先改变的是心态</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="191245">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1012757/album/191245" class="albumface"><span><img src="http://fdfs.xmcdn.com/group2/M01/2B/1E/wKgDsFHaUJ_DXcNiAAR2EYg-bRc403_web_large.jpg" alt="声音梦工厂"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">34738</span></div>
+        </div>
+
+        <a href="/#/1012757/album/191245" title="声音梦工厂" class="discoverAlbum_title">声音梦工厂</a>
+        <div class="miniPlayer3" sound_id="704824">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1012757/sound/704824">声音梦工厂主播专访：NJ伊雪</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="17181">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/17181" class="albumface"><span><img src="http://fdfs.xmcdn.com/group2/M02/27/48/wKgDr1HRJDTikjv1AAMpRoVLdZQ688_web_large.jpg" alt="飞鱼秀精选2013 （7月-8月）"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">36541</span></div>
+        </div>
+
+        <a href="/#/1000722/album/17181" title="飞鱼秀精选2013 （7月-8月）" class="discoverAlbum_title">飞鱼秀精选2013 （7月-8月）</a>
+    </div>
+    <div class="discoverAlbum_item" album_id="5971">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1606964/album/5971" class="albumface"><span><img src="http://fdfs.xmcdn.com/group2/M00/0D/5A/wKgDsFGUlt6iXGLNAACZ1oOFK6g625_web_large.jpg" alt="飞说不可"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">16899</span></div>
+        </div>
+
+        <a href="/#/1606964/album/5971" title="飞说不可" class="discoverAlbum_title">飞说不可</a>
+        <div class="miniPlayer3" sound_id="861296">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1606964/sound/861296">官员财产公开的进化论</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="191">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000256/album/191" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M00/0B/51/wKgDrlETW2SASbUoAAMZHh3bA94238_web_large.jpg" alt="锵锵三人行【2012】"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">97632</span></div>
+        </div>
+
+        <a href="/#/1000256/album/191" title="锵锵三人行【2012】" class="discoverAlbum_title">锵锵三人行【2012】</a>
+        <div class="miniPlayer3" sound_id="103273">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000256/sound/103273">20121231 2012年国家大事</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="5309">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/5309" class="albumface"><span><img src="http://fdfs.xmcdn.com/group2/M01/08/03/wKgDsFGCElDw-2d4AAZMOQlug4E345_web_large.jpg" alt="飞鱼秀精选2013 （5月-6月）"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">44063</span></div>
+        </div>
+
+        <a href="/#/1000722/album/5309" title="飞鱼秀精选2013 （5月-6月）" class="discoverAlbum_title">飞鱼秀精选2013 （5月-6月）</a>
+        <div class="miniPlayer3" sound_id="359471">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000722/sound/359471">飞鱼秀130516 吃西瓜</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="201">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000240/album/201" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M01/00/AA/wKgDrlCQwBXxceGTAAEcV8qHpAo635_web_large.jpg" alt="传奇故事2012"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">9846</span></div>
+        </div>
+
+        <a href="/#/1000240/album/201" title="传奇故事2012" class="discoverAlbum_title">传奇故事2012</a>
+        <div class="miniPlayer3" sound_id="287810">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000240/sound/287810">"分身"奇案(下) 120816</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="1946">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/1946" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M01/07/1C/wKgDrlDrqMiB_ZaIAAGPWN1sIc4773_web_large.jpg" alt="飞鱼秀精选2013 （1月）"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">11069</span></div>
+        </div>
+
+        <a href="/#/1000722/album/1946" title="飞鱼秀精选2013 （1月）" class="discoverAlbum_title">飞鱼秀精选2013 （1月）</a>
+        <div class="miniPlayer3" sound_id="173554">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000722/sound/173554">飞鱼秀130131 室内项目(上)</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="2628">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/2628" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M00/0A/C6/wKgDrVELKBjze51aAAMEWFZ3GAw229_web_large.jpg" alt="飞鱼秀精选2013 （2月）"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">22208</span></div>
+        </div>
+
+        <a href="/#/1000722/album/2628" title="飞鱼秀精选2013 （2月）" class="discoverAlbum_title">飞鱼秀精选2013 （2月）</a>
+        <div class="miniPlayer3" sound_id="200619">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000722/sound/200619">飞鱼秀130228 年龄不符的言行（上）</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="1138">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/1138" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M01/03/98/wKgDrVC8McOyIz1kAAGPWN1sIc4091_web_large.jpg" alt="飞鱼秀精选集12月"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">6311</span></div>
+        </div>
+
+        <a href="/#/1000722/album/1138" title="飞鱼秀精选集12月" class="discoverAlbum_title">飞鱼秀精选集12月</a>
+        <div class="miniPlayer3" sound_id="92083">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000722/sound/92083">飞鱼秀121228 压力(上)</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="3053">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1000722/album/3053" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M00/0D/C2/wKgDrVEwT6XyXeuAAAVyc5Od9MU519_web_large.jpg" alt="飞鱼秀精选2013 （3月-4月）"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">58800</span></div>
+        </div>
+
+        <a href="/#/1000722/album/3053" title="飞鱼秀精选2013 （3月-4月）" class="discoverAlbum_title">飞鱼秀精选2013 （3月-4月）</a>
+        <div class="miniPlayer3" sound_id="324038">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1000722/sound/324038">飞鱼秀130430 你和铅笔的故事</a>
+        </div>
+    </div>
+    <div class="discoverAlbum_item" album_id="192759">
+
+        <div class="albumfaceOutter">
+            <a href="/#/1773303/album/192759" class="albumface"><span><img src="http://fdfs.xmcdn.com/group1/M00/18/EE/wKgDrVHn7FGyEefjAADWEcY-iDw421_web_large.jpg" alt="随手录"></span></a>
+            <div class="playcountOutter"><div class="mask"></div><span class="sound_playcount">265</span></div>
+        </div>
+
+        <a href="/#/1773303/album/192759" title="随手录" class="discoverAlbum_title">随手录</a>
+        <div class="miniPlayer3" sound_id="727941">
+            <a class="playBtn"></a>
+            <a class="title" href="/#/1773303/sound/727941">给渣渣的声音</a>
+        </div>
+    </div>
+</div>
+<div class="pagingBar mgT30 mgB30">
+      <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:;">1</a>
+
+
+          <a class="pagingBar_page" data-page="2" href="javascript:;">2</a>
+
+
+    <a class="pagingBar_btn" data-page="2" href="javascript:;" rel="next">下一页</a>
+
+  </div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+  </div>
+<!--页面内容 end-->
+<!--页面底部 start-->
+<div class="footer"></div>
+<!--页面底部 end-->
+</body>
+</html>

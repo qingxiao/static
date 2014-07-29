@@ -1,0 +1,63 @@
+.tagsBoxFn(){
+	line-height: 27px;
+	border-bottom: 1px solid @colorLine2;
+	padding: 10px 0;
+	position: relative;
+	.clearfix;
+	.is-tags-hasMoreBtn;
+	.tagBtnList;	
+	& .addTagBtnBox{
+		height:27px;
+		width:68px;
+		overflow:hidden;
+		.fl;
+		margin: 0 10px 10px 0;
+		& input{
+			height:21px;
+			width:62px;
+			border: solid 1px #DDD;
+			padding-left:4px;
+			&:hover{
+				border: solid 1px @colorLine3;
+				.transitionFn(border-color, 0.2);
+			}
+			&:focus{
+				border: solid 1px @colorLine3;
+				.transitionFn(border-color, 0.2);
+			}
+		}
+	}
+	& .addTagBtn{
+		height:27px;
+		.fl;
+		padding: 0 6px;
+		//.linkTextFn;
+	}
+	& .tagBtn{
+		.linkTextFn;
+		.delFn();
+	}	
+}
+//我的标签右上角的删除按钮
+.del{
+	.bgImgExt("sprite/btn15px.png",0,-882px)!important;
+	width:15px;
+	height:15px;
+	position: absolute;
+	top: -4px;
+	right: -5px;
+	display:none;
+	&:hover{
+		background-position:0 -902px!important;
+	}
+	
+}
+.delFn(){
+	
+	&:hover{
+		.del{
+			display:block;
+			cursor:pointer;
+		}
+	}
+}

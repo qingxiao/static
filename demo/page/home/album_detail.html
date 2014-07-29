@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset=utf-8 />
+<link href="/css/web.css" rel="stylesheet" type="text/css">
+<title>专辑详情页</title>
+</head>
+
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<a class="logo"></a>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<!--页面内容 start-->
+<div class="bodyBgColor">
+<div class="mainbox">
+	<div class="mainbox_wrapper">
+		<div class="mainbox_left">
+			<div class="personal_container">	
+				<div class="personal_header">
+					<div class="picture">
+						<img src="/css/img/person_60.jpg">
+					</div>
+					<div class="nav_wrap">
+						<div class="username">海绵宝宝与派大星</div>
+						<ul class="nav_list">
+							<li class="nav_item"><a href="/#/1000105/">主页</a></li>
+							<li class="nav_item"><a href="/#/1000105/sound/">声音</a></li>
+							<li class="nav_item"><a href="/#/1000105/album/">专辑</a></li>
+							<li class="nav_item"><a href="/#/1000105/favorites/">喜欢</a></li>
+							<li class="nav_item"><a href="/#/1000105/follow/">关注</a></li>
+							<li class="nav_item"><a href="/#/1000105/fans/">粉丝</a></li>
+						  </ul>
+					</div>
+				</div>
+				<div class="personal_body">
+					<div class="detailContent">
+						<a href="javascript:;" class="reportBtn2" title="举报"></a>
+						<div class="left">
+							<a href="#" class="albumface"><span><img src="/css/img/album_180.jpg" alt=""></span></a>							
+						</div>
+						<div class="right">
+							<div class="detailContent_title">《第85届奥斯卡提名最佳影片电影原声》</div>
+							<div class="detailContent_category">类别:&nbsp;<a>【有声小说】</a><span>&nbsp;最后更新:2013-02-25</span></div>
+							<div class="tagBtnList">
+								<a class="tagBtn2" href="#"><span>测试标签1</span></a>
+								<a class="tagBtn2" href="#"><span>测试标签2</span></a>
+								<a class="tagBtn2" href="#"><span>测试标签3</span></a>
+								<a class="tagBtn2" href="#"><span>测试标签4</span></a>
+								<a class="tagBtn2" href="#"><span>小清新</span></a>
+							</div>
+							<div class="detailContent_playcount"><a class="playBtn disabled"></a><div class="detailContent_playcountDetail"><span>20.3万</span>次播放</div></div>							
+							<div class="shareto mgT20">
+							  <span>分享到</span>
+							  <a class="shareto_qzone" title="分享到QQ空间" href="#"></a>
+							  <a class="shareto_tsina" title="分享到新浪微博" href="#"></a>
+							  <a class="shareto_tqq" title="分享到腾讯微博" href="#"></a>
+							  <a class="shareto_renren" title="分享到人人网" href="#"></a>
+							  <span class="shareto_more"></span>
+							</div>
+						</div>
+						<div class="detailContent_intro">
+							<p>简介:此前，郁钧剑指出电视台春晚的草根文化应有度，不能本末倒置。草根文化过于盛行，伤害了国家的文化实力。两会上，郁钧剑发言时再提他的草根文化应有度的观点，在现场也掀起波澜...</p>
+							<a class="on">展开更多</a>
+						</div>
+					</div>
+				
+					<div class="detail_soundBox">
+						<div class="sound">
+							<div class="sound_titlebar">
+								<a class="sound_title" href="#">标题</a>
+								<div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">00:00</span></div>
+							</div>
+							<div class="detail_middlePlayerBox">
+								<div class="middlePlayer">
+									<div class="left">
+										<a class="playBtn"></a>
+									</div>
+									<div class="right">
+										<!-- 进度条 -->
+										<div class="player_progressbar">
+											<div class="player_progressbarBg"></div>
+											<div class="player_seekbar"></div>
+											<div class="player_playbar"></div>
+											<div class="player_wavebox" sound_wave="http://local.ximalaya.com:9098/a.js"></div>
+											<div class="player_progressbarCoverBg"></div>
+											<div class="player_nonius">
+												<div class="player_nonius_cover"></div>
+												<div class="player_nonius_time">00:00</div>
+												<div class="player_nonius_line5"></div>
+												<div class="player_nonius_line3"></div>
+											</div>
+										</div>
+										<!-- 二维评论 -->
+										<div class="player_commentbar">
+										</div>
+										<div class="player_operate">
+											<a href="javascript:;" class="player_commentbarBtn"></a>
+										</div>
+									</div>
+									<div class="pin">
+										<a class="soundface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sound_content">
+								测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职</div>
+							<div class="sound_bottom">
+								<span class="createtime">24小时前</span>
+								<div class="fr">
+									<a class="downloadToMobile link1">下载到手机</a>
+									<a class="likeBtn link1" href="javascript:;">喜欢(1)</a> <a class="commentBtn link1" href="javascript:;">评论(1)</a> <a class="forwordBtn link1" href="javascript:;">转发(1)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="body_top mgT20">
+						<div class="left">
+							<span class="title">专辑里的声音<span class="albumSoundcount">(1332)</span></span>
+						</div>
+						<div class="right">
+							<ul class="sub_nav_list">
+							  <li class="item first">
+								<a href="/#/1000105/album/16620">默认排序</a>
+							  </li>
+							  <li class="item first">
+								<a class="sort_icon up" href="/#/1000105/album/16620?order=created_at asc">发布时间</a>
+							  </li>
+							</ul>
+						  </div>
+					</div>
+					
+					<div class="album_soundlist">
+						<ul>
+							<li>
+								<div class="miniPlayer3">
+									<a class="playBtn"></a>
+									<a class="title" href="#">袁岳华东政法大学演讲：大学生成长和职业发展</a>
+									<div class="album_soundlist_operate">
+										<a>编辑</a>
+										<a>删除</a>
+									</div>
+									<div class="operate">
+										<a class="likeBtn" href="javascript:;" title="喜欢"></a>
+										<a class="shareBtn" href="javascript:;" title="分享"></a>
+										<a class="commentBtn" href="javascript:;" title="评论"></a>
+										<a class="forwardBtn" href="javascript:;" title="转发"></a>
+										<a class="downloadBtn" href="javascript:;" title="下载到手机"></a>
+										<span>2012-1-2</span>
+									</div>
+								</div>
+							</li>
+							<li class="focus">
+								<div class="miniPlayer3">
+									<a class="playBtn"></a>
+									<a class="title" href="#">袁岳华东政法大学演讲：大学生成长和职业发展</a>
+									<div class="album_soundlist_operate">
+										<a>编辑</a>
+										<a>删除</a>
+									</div>
+									<div class="operate">
+										<a class="likeBtn" href="javascript:;" title="喜欢"></a>
+										<a class="shareBtn" href="javascript:;" title="分享"></a>
+										<a class="commentBtn" href="javascript:;" title="评论"></a>
+										<a class="forwardBtn" href="javascript:;" title="转发"></a>
+										<a class="downloadBtn" href="javascript:;" title="下载到手机"></a>
+										<span>2012-1-2</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="miniPlayer3">
+									<a class="playBtn"></a>
+									<a class="title" href="#">袁岳华东政法大学演讲：大学生成长和职业发展</a>
+									<div class="album_soundlist_operate">
+										<a>编辑</a>
+										<a>删除</a>
+									</div>
+									<div class="operate">
+										<a class="likeBtn" href="javascript:;" title="喜欢"></a>
+										<a class="shareBtn" href="javascript:;" title="分享"></a>
+										<a class="commentBtn" href="javascript:;" title="评论"></a>
+										<a class="forwardBtn" href="javascript:;" title="转发"></a>
+										<a class="downloadBtn" href="javascript:;" title="下载到手机"></a>
+										<span>2012-1-2</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="miniPlayer3">
+									<a class="playBtn"></a>
+									<a class="title" href="#">袁岳华东政法大学演讲：大学生成长和职业发展</a>
+									<div class="album_soundlist_operate">
+										<a>编辑</a>
+										<a>删除</a>
+									</div>
+									<div class="operate">
+										<a class="likeBtn" href="javascript:;" title="喜欢"></a>
+										<a class="shareBtn" href="javascript:;" title="分享"></a>
+										<a class="commentBtn" href="javascript:;" title="评论"></a>
+										<a class="forwardBtn" href="javascript:;" title="转发"></a>
+										<a class="downloadBtn" href="javascript:;" title="下载到手机"></a>
+										<span>2012-1-2</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- <div class="more"><a>展开更多</a></div> -->
+					</div>
+					
+				</div>
+			</div>
+		<div class="pagingBar" style="">  <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/feed/index?_=1370744584901&amp;feedType=sound&amp;groupID=0&amp;moreCount=2&amp;page=2&amp;pageSize=10&amp;timeLine=1370672596542" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/feed/index?_=1370744584901&amp;feedType=sound&amp;groupID=0&amp;moreCount=2&amp;page=3&amp;pageSize=10&amp;timeLine=1370672596542" rel="">3</a>
+
+
+          <a class="pagingBar_page" href="/#/feed/index?_=1370744584901&amp;feedType=sound&amp;groupID=0&amp;moreCount=2&amp;page=4&amp;pageSize=10&amp;timeLine=1370672596542" rel="">4</a>
+
+
+          <a class="pagingBar_page" href="/#/feed/index?_=1370744584901&amp;feedType=sound&amp;groupID=0&amp;moreCount=2&amp;page=5&amp;pageSize=10&amp;timeLine=1370672596542" rel="">5</a>
+
+
+          <span>......</span>
+
+    <a class="pagingBar_btn" href="/#/feed/index?_=1370744584901&amp;feedType=sound&amp;groupID=0&amp;moreCount=2&amp;page=2&amp;pageSize=10&amp;timeLine=1370672596542" rel="next">下一页</a>
+
+  </div>
+</div>	
+		</div>
+		<div class="mainbox_right">
+			<div class="ad1"></div>
+			<!-- 他的其他专辑 -->
+			<div class="albumBar">
+				<div class="titleBar">
+					<a href="#" class="more">更多</a>
+					<h2 class="title">他的其他专辑(20)</h2>
+				</div>
+				<ul>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《本周股市“好声音”不断》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《好遮天》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《好遮天》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 相关专辑 -->
+			<div class="albumBar mgT30">
+				<div class="titleBar">
+					<h2 class="title">相关专辑</h2>
+				</div>
+				<ul>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《本周股市“好声音”不断》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《好遮天》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="albumPanelBar2">
+							<div class="left">
+							<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+							</div>
+							<div class="right">
+								<a>《好遮天》</a>
+								<span>10个声音</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+</div>	
+</div>
+<!--页面内容 end-->
+<!--页面底部 start-->
+<div class="footer"></div>
+<!--页面底部 end-->
+</body>
+</html>

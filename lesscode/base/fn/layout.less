@@ -1,0 +1,137 @@
+//布局相关的基本函数
+//三栏式布局
+//@leftWidth {Number} 左栏宽度
+//@middleWidth {Number} 中间栏宽度
+//@rightWidth {Number} 右栏宽度
+//@gap {Number} 左栏与中间栏之间的间隙
+.bar3Fn(@leftWidth,@middleWidth,@rightWidth,@gap:10){
+	.clearfix;
+	& .left{
+		width:@leftWidth*1px;
+		.fl;
+	}
+	& .middle{
+		width:@middleWidth*1px;
+		overflow:hidden;
+		.fl;
+		margin:0 0 0 @gap*1px;
+	}
+	& .right{
+		width:@rightWidth*1px;
+		.fr;
+	}
+}
+//两栏式布局
+//@leftWidth {Number} 左栏宽度
+//@rightWidth {Number} 右栏宽度
+.bar2Fn(@leftWidth,@rightWidth){
+	.clearfix;
+	& .left{
+		width:@leftWidth*1px;
+		.fl;
+	}
+	& .right{
+		width:@rightWidth*1px;
+		.fr;
+	}
+}
+
+//两栏式布局,右侧宽度自适应
+//@leftWidth {Number} 左栏宽度
+.bar2Fn(@leftWidth){
+	position:relative;
+	_zoom:1;
+	& .left{
+		position: absolute;
+		left:0;
+		top:0;
+	}
+	& .right{
+		margin-left:@leftWidth*1px;
+	}
+}
+.setPositionFn(@top:0,@right:0,@bottom:0,@left:0){
+	margin-top:@top*1px;
+	margin-bottom:@bottom*1px;
+	padding-right:@right*1px;
+	padding-left:@left*1px;
+}
+
+//两栏式布局
+.col2Fn(@_,@fixWidth,@offset:0px)
+{
+	position:relative;
+	& .left,& .right
+    {
+    	border:none;
+		float:none;
+    }
+	//width:100%;
+}
+//两栏式布局,右侧宽度自适应
+.col2Fn(left,@fixWidth,@offset:0px)
+{
+	& .left
+    {
+        position:absolute;
+		top:0;
+		left:0;
+		margin-right:0;
+		margin-left:0;
+		width:@fixWidth;
+		float:left;
+		.cl;
+    }    
+	& .right
+    {
+		position:relative;
+		width:auto;
+		_display:none;
+        margin-left: @fixWidth+@offset;
+    }
+}
+//两栏式布局,左侧宽度自适应
+.col2Fn(right,@fixWidth,@offset:0px)
+{
+	& .right
+    {
+        position:absolute;
+		top:0;
+		right:0;
+		margin-right:0;
+		margin-left:0;
+		width:@fixWidth;
+		float:right;
+		.cl;
+    }    
+	& .left
+    {
+		width:auto;
+		position:relative;
+		_display:none;
+        margin-right:@fixWidth+@offset;
+    }
+}
+//三栏式布局,中间宽度自适应
+.col3Fn(@leftWidth,@rightWidth)
+{
+	& .left,& .right
+    {
+		position:absolute;
+		top:0;
+    }
+	& .right
+    {
+		right:0;
+		width:@rightWidth;
+    }    
+	& .left
+    {
+        left:0;
+		width:@leftWidth;
+    }
+	& .center
+    {
+		margin:0 @rightWidth 0 @leftWidth;
+    }
+}

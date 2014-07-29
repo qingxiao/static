@@ -1,0 +1,259 @@
+/*头部*/
+//菜单
+.menu(@height:48){
+	width:480px;
+	& a{
+		outline: none;
+		font-size:14px;
+		height:@height*1px;
+		text-align: center;
+		display:block;
+		line-height:@height*1px;
+		padding: 0 21px;
+		color:#fff;
+		.bgImg("head/head_bg.png");
+		.fl;
+		&:link{}
+		&:visited{}
+		&:hover{background-position: 0px -50px;text-decoration:none;}
+		&:active{background-position: 0px -100px;}
+		& span{
+			.menuDiscoverBtn;
+		}
+		&.on{
+			background-position: 0px -100px;
+			&:hover{background-position: 0px -100px;}
+		}
+	}
+	& .wider{
+		padding: 0 17px;
+	}
+	& .menu_explore{
+		padding-right:13px;
+		.budFn(bud,11,5,37,48,0,-71);
+		& .bud{
+			.hidden;
+		}
+		&.is-open{
+			& span{
+				background: url("@{urlStaticImg}/sprite/btn15px.png") no-repeat right -458px;
+			}
+			& .bud{
+				.show;
+			}
+		}
+	}
+}
+
+
+//上传录制按钮
+.uploadRecordBtn{
+	.bgImg("head/upload_btn.png");
+}
+.uploadRecordBtn{.btnFn(62,26,0,0,-35, -70,21);}
+
+.menuDiscoverBtn(){
+	color:#fff;
+	background: url("@{urlStaticImg}/sprite/btn15px.png") no-repeat right -438px;
+	padding-right: 19px;
+	&:hover{
+		background: url("@{urlStaticImg}/sprite/btn15px.png") no-repeat right -418px;
+	}
+}
+
+.header{
+	position:relative;
+	z-index:20;
+	@height:48;
+	@logoWidth:270;
+	height:48px;
+	.bgImg("head/headbox_bg.png", repeat-x center center);
+	& .header_wrapper{
+		width: @mainboxWidth;
+		margin: 0 auto;
+		.clearfix;
+	}	
+	& .logo{
+		.fl;
+		width:@logoWidth*1px;
+		height:@height*1px;
+		display:block;
+		cursor: pointer;
+		.bgImg("head/logo.png", no-repeat);
+	}
+	& .menu{
+		.fl;
+		.clearfix;
+		margin:0 0 0 20px;
+		.menu(@height);
+		//width:auto;
+	}
+	& .uploadRecordBtn{
+		.fr;
+		color: white;
+		line-height: 26px;
+		font-size: 14px;
+		margin-top: 11px;
+	}
+}
+& .discoverMenu{
+	//height:70px;
+	padding:18px 0 18px;
+	.hidden;
+	position:relative;
+	overflow:hidden;
+	//.bgImg("head/item_bg.jpg", repeat  center);
+	&>img{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		z-index:-1;
+	}
+	& .discoverMenu_wrapper{
+		width: @mainboxWidth;
+		margin: 0 auto;
+		.clearfix;
+	}
+	& li{
+		.fl;
+		//分类占2行时（19个分类）的间距
+		width:90px;
+		margin:0 0 10px 15px;
+		//分类占1行时（11个分类）的间距
+		//width:80px;
+		//margin:0 0 10px	6px;
+		text-align: center;
+		&.is-first{
+			margin:0;
+		}
+	}
+	& a{
+		color:#f6f6f6;
+		font-size:14px;
+		&:hover{
+			color:#fff;
+		}
+	}
+}
+/*
+.discoverMenu1Btn,.discoverMenu2Btn,.discoverMenu3Btn,.discoverMenu4Btn,.discoverMenu5Btn,.discoverMenu6Btn,.discoverMenu7Btn,.discoverMenu8Btn,.discoverMenu9Btn,.discoverMenu10Btn,.discoverMenu11Btn{
+	display: block;
+	height:100%;
+	& i{
+		display: block;
+		margin:5px auto 10px;
+		.bgImg("sprite/icon30px.png",no-repeat);
+	}
+	& span{
+		display: block;
+	}
+	&:hover{
+		text-decoration:none;		
+	}
+}
+.discoverMenu1Btn{
+	//& i{.icon2Fn(80,40,-135);}
+	& i{.btnFn(80,40,16,-640,-134);}
+}
+.discoverMenu2Btn{
+	& i{.btnFn(80,40,16,-691,-185);}
+}
+.discoverMenu3Btn{
+	& i{.btnFn(80,40,18,-743,-237);}
+}
+.discoverMenu4Btn{
+	& i{.btnFn(80,40,18,-794,-288);}
+}
+.discoverMenu5Btn{
+	& i{.btnFn(80,40,16,-838,-332);}
+}
+.discoverMenu6Btn{
+	& i{.btnFn(80,40,20,-886,-380);}
+}
+.discoverMenu7Btn{
+	& i{.btnFn(80,40,20,-932,-426);}
+}
+.discoverMenu8Btn{
+	& i{.btnFn(80,40,18,-980,-474);}
+}
+.discoverMenu9Btn{
+	& i{.btnFn(80,40,16,-1030,-523);}
+}
+.discoverMenu10Btn{
+	& i{.btnFn(80,40,16,-1074,-567);}
+}
+.discoverMenu11Btn{
+	padding-top:20px;
+	& i{.btnFn(80,20,16,-1125,-619);}
+}
+*/
+.cateBtn2_news,.cateBtn2_music,.cateBtn2_book,.cateBtn2_comic,.cateBtn2_entertainment,.cateBtn2_emotion,.cateBtn2_culture,.cateBtn2_train,.cateBtn2_chair,.cateBtn2_baijia,.cateBtn2_radioplay,.cateBtn2_opera,.cateBtn2_kid,.cateBtn2_radio,.cateBtn2_finance,.cateBtn2_it,.cateBtn2_health,.cateBtn2_other{
+	display: block;
+	height:100%;
+	& i{
+		display: block;
+		margin:5px auto 0;
+		.bgImg("sprite/category.png",no-repeat);
+	}
+	& span{
+		display: block;
+	}
+	&:hover{
+		text-decoration:none;		
+	}
+}
+.cateBtn2_news{
+	& i{.btnFn2(80,50,20,5,-56);}
+}
+.cateBtn2_music{
+	& i{.btnFn2(80,50,20,-90,-56);}
+}
+.cateBtn2_book{
+	& i{.btnFn2(80,50,20,-173,-56);}
+}
+.cateBtn2_comic{
+	& i{.btnFn2(80,50,12,-265,-64);}
+}
+
+.cateBtn2_entertainment{
+	& i{.btnFn2(80,50,20,-360,-56);}
+}
+.cateBtn2_emotion{
+	& i{.btnFn2(80,50,24,-456,-52);}
+}
+.cateBtn2_culture{
+	& i{.btnFn2(80,50,20,-560,-56);}
+}
+.cateBtn2_train{
+	& i{.btnFn2(80,50,19,-655,-57);}
+}
+.cateBtn2_chair{
+	& i{.btnFn2(80,50,23,-750,-53);}
+}
+.cateBtn2_baijia{
+	& i{.btnFn2(80,50,20,-845,-56);}
+}
+.cateBtn2_radioplay{
+	& i{.btnFn2(80,50,20,-940,-56);}
+}
+.cateBtn2_opera{
+	& i{.btnFn2(80,50,20,-1036,-56);}
+}
+.cateBtn2_kid{
+	& i{.btnFn2(80,50,26,-1131,-50);}
+}
+.cateBtn2_radio{
+	& i{.btnFn2(80,50,20,-1228,-56);}
+}
+.cateBtn2_finance{
+	& i{.btnFn2(80,50,23,-1323,-53);}
+}
+.cateBtn2_it{
+	& i{.btnFn2(80,50,17,-1415,-59);}
+}
+.cateBtn2_health{
+	& i{.btnFn2(80,50,20,-1510,-56);}
+}
+.cateBtn2_other{
+	& i{.btnFn2(80,50,22,-1605,-54);}
+}

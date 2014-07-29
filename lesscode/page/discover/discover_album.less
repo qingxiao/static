@@ -1,0 +1,78 @@
+.discoverAlbum{
+	& .discoverAlbum_wrapper{
+		.cl;
+	}
+	& .layout_right{
+		overflow-x:visible;
+	}
+	& .borderRow1{
+		border-bottom:1px solid #fff;
+		border-right:1px solid #fff;
+	}
+	& .borderRow1_last{
+		border-bottom:1px solid #fff;
+	}
+	& .borderRow2{
+		border-right:1px solid #fff;
+	}
+    .tags_panel{
+        width:207px;
+        right:-207px;
+    }
+	& .albumface{
+		.albumface140;
+	}
+}
+
+
+.discoverAlbum_item{
+	.fl;
+	width:145px;
+	height:210px;
+	padding:25px 30px;
+	border:1px solid @colorLine2;
+	overflow:hidden;
+	& .albumface140{
+		margin-bottom:10px;
+	}
+	& .discoverAlbum_title{
+		font-weight:bold;
+	}
+	& .miniPlayer3{
+		margin:10px 0 15px 0;
+		.title{
+			width:120px;
+		}
+	}
+	& .sound_playcount{
+		.playCountIcon2;		
+		color:#fff;
+		position:relative;
+		margin:0 10px;
+		line-height:30px;
+	}
+	&:hover{
+		border:1px solid #A5C3E2;
+	}
+	.albumfaceOutter{
+		position:relative;
+		margin-bottom:10px;
+		.playcountOutter{
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:140px;
+			height:30px;
+		}
+		.mask{
+			opacity: 0.7;
+			filter: alpha(opacity=70);
+			background-color: #000;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

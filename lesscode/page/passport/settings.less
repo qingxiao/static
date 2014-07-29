@@ -1,0 +1,621 @@
+//settings设置页面、加v页面
+/*/page/passport/settings_personal.html*/
+.set_header{
+	font-size:16px;
+	font-weight:bold;
+	font-family:microsoft yahei;
+	margin-bottom:25px;
+}
+
+.set_left{
+	.fl;
+	width:120px;
+}
+
+.set_right{
+	.fr;
+	width:800px;
+}
+.set_nav{
+    li{
+        margin:6px 0px;
+        .onFn{
+            border-left: 5px solid #3586bc;
+            text-decoration: none;
+            color:#333333;
+        }
+
+        a{
+            height:28px;
+            line-height: 28px;
+            padding-left:15px;
+            font-size: 14px;
+            color: #999999;
+            border-left:5px solid transparent;
+            *border-left:5px solid #F6F6F6;
+            display: block;
+            &:hover{
+                .onFn();
+            }
+        }
+        &.on a{
+            .onFn();
+        }
+		& .set_nav{
+			display:none;
+			&.sortlist-expand{
+				display:block;
+			}
+			& li{		
+				& a{
+					font-size:12px;
+					border-left-color:transparent;
+					color:#999;
+					&:hover{
+						border-left: 5px solid #A5C3E2;
+						color:#333;
+					}
+				}
+				&.on a{
+					border-left: 5px solid #A5C3E2;
+					color:#333;
+				}
+			}
+		}
+    }
+}
+.set_container{
+	.clearfix;
+	& .set_useravatar{
+		margin-bottom:20px;
+		& .userface{
+			.userface110;
+		}
+	}
+	& .set_title{
+		font-size:14px;
+		font-weight:bold;
+		background-color:#F6F6F6;
+		padding:10px 25px;
+		a{
+			font-size:12px;
+			margin-left:10px;
+		}
+	}
+	& .set_Inner{
+		position:relative;
+		padding:30px 50px;
+		border-bottom:1px solid #EAEAEA;
+		.clearfix;
+	}
+	& .set_operate{
+		padding:30px 50px;
+		& a{
+			margin-right:15px;
+		}
+	}
+	& .set_radio{
+		border:none;
+	}
+	& .set_hint{
+		color:#999;
+	}
+	& .personal_verify{
+		height:63px;
+		.fl;
+		margin:0 45px 0 25px;	
+		padding-top:2px;
+        .already{
+            color:#999999;
+            &:hover{
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+		& .personal_verify_title{
+			font-size:16px;
+			font-weight:bold;
+		}
+		& .personal_verify_status, & .personal_verify_status2{
+			color:#999999;
+			margin: 4px 0 3px 0;
+		}
+		& .personal_verify_status2{
+			.bgImgExt("sprite/icon10px.png",40px,-68px);
+		}
+		& .bd{
+			color:#CCCCCC;
+			margin:0 8px;
+		}
+	}
+	& .unverify_mail{
+		.bgImgExt("sprite/icon_default.png",0,-253px);
+		width:115px;
+		padding-left:65px;		
+	}
+	& .verify_mail{
+		.bgImgExt("sprite/icon_default.png",0,-180px);
+		width:115px;
+		padding-left:65px;
+	}
+	& .unverify_mobile{
+		.bgImgExt("sprite/icon_default.png",0,-393px);
+		width:118px;
+		padding-left:62px;
+	}
+	& .verify_mobile{
+		.bgImgExt("sprite/icon_default.png",0,-323px);
+		width:118px;
+		padding-left:62px;
+	}
+	& .unverify_vip{
+		.bgImgExt("sprite/icon_default.png",0,-540px);
+		width:108px;
+		padding-left:72px;
+	}
+	& .verify_vip{
+		.bgImgExt("sprite/icon_default.png",0,-467px);
+		width:108px;
+		padding-left:72px;
+	}
+	& .verify_sina{
+		.bgImgExt("sprite/icon_default.png",0,-610px);
+		width:113px;
+		padding-left:67px;		
+	}	
+	& .unverify_sina{
+		.bgImgExt("sprite/icon_default.png",0,-670px);
+		width:113px;
+		padding-left:67px;
+	}
+	& .verify_qq{
+		.bgImgExt("sprite/icon_default.png",5px,-730px);
+		width:115px;
+		padding-left:65px;
+	}
+	& .unverify_qq{
+		.bgImgExt("sprite/icon_default.png",5px,-795px);
+		width:115px;
+		padding-left:65px;
+	}
+	//基本信息设置
+	& .set_personal{
+		position:relative;
+		& .set_unverifymail{			
+			background-color:#FFF8DC;
+			padding:5px 15px;
+			margin-top:5px;
+			& .set_unverifymail_title{
+				.bgImgExt("sprite/icon20px.png",0,-518px);
+				display:inline-block;
+				padding-left:20px;
+				line-height:20px;
+			}
+			& a{
+				margin-left:5px;
+			}
+		}
+		& .set_personal_title{
+			position:absolute;
+			right:0;
+			top:30px;
+			color:#999999;
+			& .applyVIcon{
+				.bgImg("sprite/icon30px.png",no-repeat);
+				.icon3Fn(0,-43px,30,0);
+				line-height:30px;
+				&:hover{
+					text-decoration:none;
+					background-position:0 1px;
+				}
+			}
+			& span{
+				display:none;
+			}
+			&.is-vip{
+				& span{
+					display:inline-block;
+				}
+				& a{
+					display:none;
+				}
+			}
+		}
+		& .set_Inner{
+			padding:30px 25px;
+		}
+		& .set_align{
+			line-height:20px;
+		}
+		& .set_dl{
+			.clearfix;
+			width:100%;
+			margin-bottom:15px;
+			&:last-child{
+				margin-bottom:0;
+			}
+			& dt{
+				.fl;
+				text-align:right;
+				width:80px;
+				margin-right:10px;
+			}
+			& dd{
+				.fl;
+				margin-right:10px;				
+			}
+			& textarea{
+				width:370px;
+				height:60px;
+				padding:5px;
+				//color:#999999;
+				border:1px solid #DDDDDD;
+				&:hover, &:focus{
+					border-color:@colorLink;
+				}
+			}
+			& .set_select{
+				width:65px;				
+			}
+			& input{
+				height:20px;
+			}
+			& label{
+				width:24px;
+				display:inline-block;
+				text-align:center;
+			}
+			.errorFn(inline-block);
+
+		}		
+	}
+	//密码设置
+	input[type="password"]{
+		width:160px;
+	}
+	//消息设置
+	& .set_message{
+		position:relative;
+		& ul{
+			& li{
+				margin-top:20px;
+				& label{
+					margin-left:10px;
+				}
+				& input{
+					border:none;
+				}
+			}
+		}
+		& .set_message_pic{
+			.bgImg("settings_message.jpg");
+			width:373px;
+			height:149px;
+			position:absolute;
+			right:100px;
+			top:40px;
+		}
+	}
+	//隐私设置-通用
+	& .set_privacy{
+		& dt{
+			color:#999999;
+			& span{
+				color:#333333;
+				font-weight:bold;
+				font-size:16px;
+				margin-right:10px;
+			}
+		}
+		& dd{
+			margin-top:10px;			
+			& label{
+				margin-left:10px;
+			}
+		}
+	}
+	//隐私设置-黑名单
+	& .set_blacklist{
+		position:relative;
+		& li{
+			padding:10px 20px 11px 25px;
+			.clearfix;
+			border-bottom:1px solid #EAEAEA;
+			&:first-child{
+				padding:3px 20px 4px 25px;
+				& .set_blacklist_date{
+					color:#333;
+				}
+			}
+		}
+		& .set_blacklist_name{
+			.fl;
+			width:450px;
+			margin-right:10px;
+		}
+		& .set_blacklist_date{
+			.fl;
+			width:230px;
+			margin-right:10px;
+			color:#999999;
+		}
+		& .set_blacklist_status{
+			.fl;
+		}
+		& .set_blacklist_none{
+			.bgImgExt("sprite/icon_default.png",0,-865px);
+			width:100px;
+			height:15px;
+			color:#999999;
+			font-size:18px;
+			position:absolute;
+			top:170px;
+			left:346px;
+			padding-top:45px;
+		}
+	}
+	//同步设置
+	& .set_sync{
+		& .personal_verify{
+			margin:5px 30px 0 0;
+
+		}
+		& .set_syncInner{
+			padding:30px 25px;
+			border:1px solid #EAEAEA;
+			margin-top:20px;
+			.clearfix;
+		}
+		& .set_sync_operate{
+			width:240px;
+			.fl;					
+			& dd{
+				.fl;
+				margin:10px 20px 0 0;				
+			}
+			& input{
+				border:none;
+			}
+			& label{
+				margin-left:5px;
+			}
+			&.cannot-operate{
+				color:#CCCCCC;
+			}
+		}
+		& .set_sync_bd{
+			border-left:1px solid #EAEAEA;
+			padding-left:30px;
+		}
+	}
+	//头像设置
+	& .set_avatar{
+		& .set_Inner{
+			border:none;
+		}
+		& .set_avatar_operate{
+			margin:20px 0 0 50px;
+			& div{
+				margin-bottom:20px;
+			}
+			& a{
+				margin-right:15px;
+			}
+		}
+		& .set_avatar_handle{
+			.clearfix;
+			border-bottom:1px solid #EAEAEA;
+			padding-bottom:25px;
+			& .set_avatar_left{
+				.fl;
+				margin-right:20px;
+			}
+			& .set_avatar_right{
+				.fl;
+			}
+			& li{
+				.clearfix;
+				margin-bottom:20px;
+			}
+			& .photo_260{
+				width:260px;
+				height:260px;
+				position: relative;
+				.img-container{
+					position: absolute;
+				}
+				& img{
+				}
+			}
+			& .photo_100{
+                width:100px;
+                height:100px;
+                overflow: hidden;
+				& img{
+				}
+			}
+			& .photo_60{
+                width:60px;
+                height:60px;
+                overflow: hidden;
+				& img{
+				}
+			}
+			& .photo_30{
+                width:30px;
+                height:30px;
+                overflow: hidden;
+				& img{
+				}
+			}
+		}
+		
+		& .set_avatar_takephoto{
+			& .set_avatar_control{
+				margin:40px auto 10px auto;
+				width:260px;
+				height:260px;
+				background-color:#ccc;
+			}
+			& .set_operate{
+				text-align: center;
+				& a{
+					margin:0 7px;
+				}
+			}
+		}
+	}
+}
+//加v页
+.jiaV{
+	margin:40px 0;
+	padding:40px 0;
+	background-color:#fff;
+	.jiaVMain{
+		width:710px;
+		margin:0 auto;
+	}
+	.jiaV_hdbg{
+		background-color:#CCCCCC;
+	}
+	.jiaV_hd{
+		.bar2Fn(60,590);
+		padding:20px;
+		border:1px solid #DDDDDD;
+		position:relative;
+		right:2px;
+		bottom:2px;
+		background-color:#fff;
+		.userface{
+			.userface60;
+		}
+		.vIconWrap{
+			position:absolute;
+			right:20px;
+			top:20px;
+			color:#C29214;
+			p{margin-top:5px;}
+		}
+		.tit{
+			font-size:20px;
+			color:#000;
+		}
+		.intro{
+			width:300px;
+		}
+	}
+	.jiaV_bar{
+		position:relative;
+		height:35px;
+		margin-top:20px;
+		font-size:14px;
+		color:#999;
+		span{
+			display:inline-block;
+			width:250px;
+			height:35px;
+			text-align:center;
+			line-height:35px;
+			.bgImg("sprite/vip_progress_bar.png",no-repeat);
+			position:absolute;
+			top:0;
+			&.already{
+				color:#fff;
+			}
+		}
+		.bar1{
+			background-position:0 2px;
+			left:0;
+			&.already{
+				background-position:0 -38px;
+			}
+		}
+		.bar2{
+			background-position:0 -78px;
+			left:240px;
+			&.already{
+				background-position:0 -118px;
+			}
+		}
+		.bar3{
+			background-position:0 -158px;
+			left:480px;
+			&.already{
+				background-position:0 -198px;
+			}
+		}
+	}
+	.count{
+		.clearfix;
+		div{
+			.fl;
+			.bgImgExt("dotter_1.png",right,0,repeat-y);
+			margin:12px 10px 12px 0;
+			padding-right:10px;
+		}
+		.none-border{
+			background:none;
+		}
+		a{
+			font-weight:bold;
+		}
+	}
+	.infoTit{
+		border-bottom:1px solid #CCCCCC;
+		margin-bottom:25px;
+		.tit{
+			height: 28px;
+			line-height: 28px;
+			font-size:18px;
+			color:#999999;
+			margin: 15px 15px 0 0;
+			display:inline-block;
+		}
+	}
+	.infoContainer{		
+		em{
+			color:#FF0000;
+		}
+		.tit{
+			width:70px;
+			text-align:right;
+			display:inline-block;
+			margin:3px 10px 0 0;
+			font-size:14px;
+			.fl;
+		}
+		&>li{
+			margin-bottom:20px;
+			.clearfix;
+			.errorFn2;		
+		}
+		textarea{
+			width:616px;
+			height:70px;
+			border:1px solid #DDDDDD;
+		}
+		.labelAddr{
+			font-size:16px;
+			margin-left:5px;
+		}
+	}
+	.infoBtm{
+		text-align:center;
+		border-top:1px solid #eee;
+		padding-top:20px;
+		margin-top:30px;
+		a{margin:0 10px;}
+	}
+	.valignTop{
+		margin-top:0!important;
+	}
+}
+input.input1{
+	height:18px;
+	width:208px;
+	font-size:16px;
+	border-radius:5px;
+	padding:5px;
+	&.w118{width:118px;}
+	&.w80{width:80px}
+}

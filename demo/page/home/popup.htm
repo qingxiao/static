@@ -1,0 +1,686 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../../../css/web.css" rel="stylesheet" type="text/css" />
+<title>各类弹出框</title>
+</head>
+<body>
+<button id="alert">alert</button>
+	<!--名片-->
+	<div class="userCard lt">
+		<div class="userCard_info">
+			<div class="left">
+				<a class="userface" href="/726/"> 
+					<img alt="" src="/css/img/person_60.jpg">
+				</a>
+			</div>
+			<div class="right area-unexist">
+				<a class="title">新闻直播间</a>
+				<span class="vipIcon"></span>
+				<p class="area">上海 • 浦东新区</p>
+				<div class="count">
+					<a class="count_fans" title="粉丝">182</a>
+					<a class="count_sound" title="声音">182</a>
+					<a class="count_attention" title="关注">12</a>
+				</div>
+			</div>
+		</div>
+		<p class="userCard_intro">
+			歌手代表作：纪念辛亥革命百年主题歌《同一个太阳 同一个月亮》
+		</p>
+		<div class="userCard_operate">
+			<a class="addBtn"><em>+</em><span>关注</span></a>
+			<a>发私信</a>
+		</div>
+		<span class="arrow_popup"><i></i></span>
+	</div>
+	<!--绑定手机-->
+	<div class="popup bindmobile">
+		<div class="hd">绑定手机</div>
+		<div class="bd">
+			<dl class="mobile is-error">
+				<dt>手机号</dt>
+				<dd><input type="text" class="mobilenum"></input><div class="error">请输入正确的手机号码</div></dd>
+				<dd><a class="verifycodeBtn already">已发送(180)</a></dd>
+			</dl>
+			<dl class="verify is-error">
+				<dt>验证码</dt>
+				<dd><input type="text" class="verifycode"></input><div class="error">验证码错误</div></dd>
+			</dl>
+			<div class="operate"><a class="confirmBtn">立即绑定</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--管理分组-->
+	<div class="popup grouping">
+		<div class="hd">管理分组</div>
+		<div class="bd">
+			<div class="grouping_title">
+				<div class="fl">组名</div>
+				<div class="fr">
+					<a>为什么要设置分组</a>
+					<div class="grouphelp_txt">
+						将关注的账号加入分组，可以帮助你更有效率地浏览关注的声音流和新鲜事。
+						<span class="arrow_group"><i></i></span>
+					</div>
+				</div>				
+			</div>
+			<ul class="grouping_list">
+				<li class="is-edit">
+					<div class="fl"><input type="text"></input></div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+				<li>
+					<div class="fl">我喜欢听的东西</div>
+					<div class="fr"><a class="edit">编辑</a><a class="delete">删除</a><a class="save">保存</a><a class="cancel">取消</a></div>
+				</li>
+			</ul>
+			<div class="grouping_btm is-group-expand">
+				<a class="addgroup">+&nbsp;添加组名</a>
+				<div class="addgroupdtl">
+					<input type="text"></input>
+					<div class="addgroupdtl_r">
+						<a href="javascript:;" class="saveBtn">保存</a>
+						<a href="javascript:;" class="removeBtn">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--发私信-->
+	<div class="popup letter">
+		<div class="hd">发私信</div>
+		<div class="bd">
+			<dl class="popup_dl">
+				<dt>发给</dt>
+				<dd><input type="text"></input></dd>
+			</dl>
+			<dl class="popup_dl">
+				<dt>内容</dt>
+				<dd><textarea></textarea></dd>
+			</dl>
+			<div class="popup_btm">
+				<div class="fr">
+					<span class="charCount">还剩<em>145</em>字</span>
+					<a class="faceBtn" href="javascript:;"></a>
+					<a class="submitBtn" href="javascript:;"><span>发送</span></a>
+				</div>
+			</div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--举报该声音-->
+	<div class="popup report">
+		<div class="hd">举报该声音</div>
+		<div class="bd">
+			<dl class="report_r1">
+				<dt>如果你觉得该声音内容存在问题，欢迎向管理员举报:</dt>
+				<dd><input type="radio"><label>包含反动内容</label></dd>
+				<dd><input type="radio"><label>版权侵权</label></dd>
+				<dd><input type="radio"><label>广告欺诈</label></dd>
+				<dd><input type="radio"><label>包含色情内容</label></dd>
+				<dd><input type="radio"><label>其他</label></dd>
+			</dl>
+			<dl class="popup_dl">
+				<dt>说明</dt>
+				<dd><textarea></textarea></dd>
+			</dl>
+			<div class="report_tort">				
+				<div class="fl">
+					<dl>
+						<dt>联系人（著作本人或代理律师）</dt>
+						<dd><input type="text"></input></dd>
+					</dl>
+					<dl>
+						<dt>邮箱</dt>
+						<dd><input type="text"></input></dd>
+					</dl>
+					<dl>
+						<dt>电话</dt>
+						<dd><input type="text"></input></dd>
+					</dl>
+				</div>
+				<div class="fr">
+					<div class="report_tort_pic">
+						<span>侵权证明材料：<br/>著作权声明及版权拥有声明等(支持jpeg,jpg,bmp,png格式）</span>
+						<img src=""/>
+					</div>
+					<a class="uploadPicBtn">上传图片</a>
+				</div>
+			</div>
+			<div class="operate"><a class="confirmBtn">确认</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--选择您的所在地-->
+	<div class="popup location">
+		<div class="hd">选择您的所在地</div>
+		<div class="bd">
+			<div>
+				<a class="on" href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海上海</a>
+				<a href="javascript:;">上海上</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>				
+			</div>
+			<div class="town content-expand">
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+				<a href="javascript:;">上海</a>
+			</div>
+			
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--message框-->
+	<div class="popup msg msg_sync">
+		<div class="bd">
+			<div class="msg_title">温馨提示：您的评论将会被自动同步到微博、腾讯</div>
+			<div class="operate"><a class="confirmBtn" href="javascript:;">同步</a><a class="cancelBtn" href="javascript:;">不同步</a></div>
+			<div class="msg_noprompt"><input type="checkbox"></input><label>下次不再提示</label></div>
+		</div>
+	</div>
+	<div class="popup msg msg_alert nolayerBg">
+		<div class="bd">
+			<div class="msg_title">举报成功</div>
+			<div class="operate"><a class="confirmBtn" href="javascript:;">确认</a></div>
+		</div>
+	</div>
+	<!--拉黑message框-->
+	<div class="popup msg msg_blacklist" style="top:590px;left:730px;">
+		<div class="bd">
+			<div class="msg_title">确认将捆子123加入到我的黑名单中么？<p>(你和他将自动解除关注关系，并且他不能再关注你，他不能再给你发评论、私信、@通知。)</p></div>
+			<div class="operate"><a class="confirmBtn" href="javascript:;">拉黑</a><a class="cancelBtn" href="javascript:;">取消</a></div>
+		</div>
+	</div>
+	<!--提示框-->
+	<div class="msg2">
+		<span>保存成功</span>
+	</div>	
+	<!--管理分组-->
+	<div style="position:absolute;right:100px;top:10px;">
+		<div class="groupmng"><a href="javascript:;">管理分组</a></div>
+	</div>
+	<!--创建新分组-->
+	<div style="position:absolute;right:100px;top:80px;">
+		<div class="dropdowngroup">
+			<ul>
+				<li><input type="checkbox"></input><label>必听组</label></li>
+				<li><input type="checkbox"></input><label>我喜欢的</label></li>
+			</ul>
+			<div class="groupcreate is-group-create">
+				<a href="javascript:;" class="group_add">+创建新分组</a>
+				<div class="edit"><input type="text"></input><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div>
+			</div>
+		</div>
+	</div>
+	<!--关注成功后-->
+	<div class="popup aftattention">
+		<div class="hd">关注成功</div>
+		<div class="bd">
+			<div class="grouping_title">
+				<div class="fl">为<span>全球好声音精选集全球</span>设置分组</div>
+				<div class="fr">
+					<a>为什么要设置分组</a>
+					<div class="grouphelp_txt">
+						将关注的账号加入分组，可以帮助你更有效率地浏览关注的声音流和新鲜事。
+						<span class="arrow_group"><i></i></span>
+					</div>
+				</div>
+			</div>
+			<ul class="grouping_list">
+				<li>
+					<span>
+						<input type="checkbox" class="checkbox"></input><label>必听组</label>
+						<div class="listenhelp">
+							<a class="grouphelp"></a>
+							<div class="grouphelp_txt">
+								把最想听的加入必听组，可以在手机客户端实时收到更新通知哦！
+								<span class="arrow_grouphelp"><i></i></span>
+							</div>
+						</div>
+					</span>
+					<span><input type="checkbox" class="checkbox"></input><label>我喜欢的我喜欢的</label></span>
+					<span><input type="checkbox" class="checkbox"></input><label>我喜欢的我喜欢的</label></span>
+					<span><input type="checkbox" class="checkbox"></input><label>我喜欢的</label></span>
+					<span>
+						<div class="groupcreate is-group-create">
+							<a href="javascript:;" class="group_add">+创建新分组</a>
+							<div class="edit"><input type="text"><a class="editConfirm">确认</a><a class="cancel">取消</a></div>
+						</div>
+					</span>
+				</li>
+			</ul>
+			<div class="grouping_btm">
+				<div class="addgroupdtl">
+					<div class="addgroupdtl_r">
+						<a href="javascript:;" class="saveBtn">保存</a>
+						<a href="javascript:;" class="removeBtn">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--@下拉框-->
+	<div id="attextbox_panel" style="position: absolute; z-index: 99999; left: 20px; top: 750px;">
+		<div class="dropList"> 
+			<div class="selectItem">
+				<p class="tit">选择需要@的人或直接输入</p>
+				<dl class="clearfix_after">
+					<a class="attextbox_data mailhover" href="javascript:void(0);">
+						<span>aaa</span>
+					</a>
+				</dl>
+				<dl class="clearfix_after">
+					<a class="attextbox_data " href="javascript:void(0);">
+						<span>aaa</span>
+					</a>
+				</dl>
+				<dl class="clearfix_after">
+					<a class="attextbox_data " href="javascript:void(0);">
+						<span>aaa</span>
+					</a>
+				</dl>
+				<dl class="clearfix_after">
+					<a class="attextbox_data " href="javascript:void(0);">
+						<span>aaa</span>
+					</a>
+				</dl>
+				<dl class="clearfix_after">
+					<a class="attextbox_data " href="javascript:void(0);">
+						<span>aaa</span>
+					</a>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<!--转采-->
+	<div class="popup forward is-error">
+		<div class="hd">转采</div>
+		<div class="bd">
+			<textarea>写点转采理由吧</textarea>
+			<div class="popup_btm">
+				<div class="fl">
+					<span>分享到</span>
+					<a class="qqWeiboBtn" href="javascript:;"></a>
+					<a class="sinaWeiboBtn on" href="javascript:;"></a>
+					<a href="#">配置</a>
+				</div>
+				<div class="fr">
+					<span class="charCount">还剩<em>145</em>字</span>
+					<a class="faceBtn" href="javascript:;"></a>
+					<a class="submitBtn" href="javascript:;"><span>发送</span></a>
+				</div>
+			</div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--常用邮箱绑定-->
+	<div class="popup bindemail">
+		<div class="hd">常用邮箱绑定</div>
+		<div class="bd">
+			<div>填写自己常用邮箱地址，方便大家联系你！</div>
+			<dl class="popup_dl is-error">
+				<dt>邮箱地址</dt>
+				<dd><input type="text"></input><div class="error">请输入正确的邮箱</div></dd>
+			</dl>
+			<div class="operate"><a class="confirmBtn">立即绑定</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--添加至专辑-->
+	<div class="popup addtoalbum">
+		<div class="hd">添加至专辑</div>
+		<div class="bd">
+			<div class="popup_dl">
+				<select>
+					<option>请选择专辑</option>
+				</select>
+			</div>
+			<div class="operate"><a class="createBtn" href="javascript:;">创建新专辑</a><a class="confirmBtn">确认</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--创建新专辑-->
+	<div class="popup createalbum">
+		<div class="hd">创建新专辑</div>
+		<div class="bd">
+			<div class="popup_dl">
+				<input type="text" placeholder="专辑名称"></input><a>选择已有专辑</a>
+			</div>
+			<div class="popup_dl">
+				<textarea></textarea>
+			</div>
+			<div class="operate"><a class="confirmBtn">确认</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--小图弹出大图-->
+	<div class="gPopup" style="left:1200px; top: 80px;z-index:99999;">
+		<div class="mask"></div>
+		<div class="con">
+			<img src="/css/img/album_180.jpg" />			
+		</div>
+		<a class="close4Btn"></a>
+	</div>
+	<!--小图弹出大图(多图)-->
+	<div class="gPopupMulti" style="left:10px; top: 2000px;z-index:99999;">
+		<div class="num">2/4</div>		
+		<div class="gCon is-loading">
+			<img src="http://fdfs.xmcdn.com/group3/M04/04/B8/wKgDslIHqjXzbb5cAADla6RJHQk740.jpg"/><span class="imgLoad"></span>
+			<a class="prev disabled" title="上一张"><span></span></a>
+			<a class="next disabled" title="下一张"><span></span></a>
+		</div>
+		<ul class="gCon2">
+			<li class="is-loading on"><a><img src="/css/img/album_180.jpg"/><span class="imgLoad"></span></a></li>
+			<li><a><img src="http://fdfs.xmcdn.com/group2/M02/3C/0E/wKgDsFHnRsnAz1JZAAGHgp1FwLs533.jpg" /><span class="imgLoad"></span></a></li>
+			<li><a><img src="http://fdfs.xmcdn.com/group3/M01/01/D7/wKgDsVIDWVyh9I_gAAG-bT3eTDI265.jpg"/><span class="imgLoad"></span></a></li>
+			<li><a><img src="/css/img/album_180.jpg" /><span class="imgLoad"></span></a></li>
+		</ul>
+		<a class="close6Btn"></a>
+	</div>
+	<!--喜欢+1动态图标-->
+	<div class="likeBtnDynamic liked" style="left:1210px;top:20px;">
+		<span></span>
+	</div>
+	<!--登录框-->
+	<div class="loginPop" style="top:1200px;left:20px;">
+		<div class="loginPopInner">
+			<div class="loginPop_tit"></div>
+			<div class="left">
+				<div class="loginPop_pic"></div>
+			</div>
+			<div class="right">	
+				<div><a class="qqLoginBtn2" href="#"></a><a class="weiboLoginBtn2" href="#"></a></div>
+				<div>没有以上账号？<a class="" href="javascript:;">直接注册</a></div>
+				<div>以前来过这里？<a class="" href="javascript:;">立即登录</a></div>
+			</div>			
+		</div>
+		<a class="close5Btn"></a>
+	</div>
+	<!--登录框:登录或注册-->
+	<div class="loginPop reglogin" style="top:1200px;left:640px;">
+		<a class="thirdParty">
+			<span class="loginSinaIcon"></span><span class="loginQqIcon"></span><span>使用第三方登录</span>
+		</a>
+		<div class="bd">
+				<div class="reg_login_tabs">
+					<a class="login_tab_btn on">登录</a>
+					<a class="register_tab_btn">注册</a>
+				</div>
+				<div class="reg_login_from is-reg">
+					<div class="login_from">
+						<form action="">
+							<div class="formList">
+								<div class="formItem item_in">
+									<span class="sp_name">
+										<label for="userAccount">账号</label>
+									</span>
+									<span class="ph_input">
+										<input type="text" name="userAccount" id="login_userAccount" style="" placeholder="手机号/邮箱">
+									</span>
+								</div>
+								<div class="formItem item_in">
+									<span class="sp_name">
+										<label for="userPwd">密码</label>
+									</span>
+									<span class="ph_input">
+										<input type="password" name="userPwd" id="login_userPwd">
+									</span>
+									<div class="login_error" id="login_error">
+									<!--您的密码或者账号有误-->&nbsp;
+									</div>
+								</div>
+								<div class="formItem loginBtm">
+									<input type="checkbox" name="userRemember" id="login_userRemember" class="userRemember" checked="checked">
+									<label for="">记住登录状态</label>
+									<a class="a_1" href="/passport/user_info/show">找回密码</a>
+									<a class="confirmBtn">登录</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="reg_from">
+						<form method="post" action="/passport/register">
+							<input type="hidden" id="register_province" value="上海">
+							<input type="hidden" id="register_city">
+							<div class="formItem item_in is-error">
+								<span class="sp_name"><label for="nickName">昵称</label></span>
+								<span class="ph_input">									
+									<input type="text" name="nickname" id="register_nickName" placeholder="想一个20个字符以内的昵称">
+								</span>
+								<span class="sp_tip"></span>
+								<div class="error">该用户名已被使用</div>
+							</div>
+							<div class="formItem item_in">
+								<span class="sp_name"><label for="userAccount">邮箱</label></span>
+								<span class="ph_input">
+									<input type="text" name="email" id="register_userAccount" placeholder="选择一个您常用的邮箱">
+								</span>
+								<span class="sp_tip sp_right"></span>
+							</div>
+							<div class="formItem item_in">
+								<span class="sp_name"><label for="userPwd">密码</label></span>
+								<span class="ph_input">
+									<input type="password" name="password" id="register_userPwd" placeholder="请输入6-16位密码">
+								</span>
+								<span class="sp_tip"></span>
+							</div>
+							<div class="formItem regBtm">
+								<div class="fl">
+									<input type="checkbox" name="" id="register_agreeDeal" class="ck_1" checked="checked">
+									<label>我已看过并同意</label><br/>
+									<a class="a_1" id="register_deal_info" href="javascript:;">《喜马拉雅网络服务使用协议》</a>
+									<span id="register_infoErr" class="register_error"></span>
+								</div>
+								<div class="fr">
+									<a class="confirmBtn">注册</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+		</div>
+		<a class="close5Btn"></a>
+	</div>
+	<!--分享给好友-->
+	<div class="popup sharetoFriend" style="left:470px;top:300px;">
+		<div class="hd">分享给好友</div>
+		<div class="bd">
+			<div class="popup_dl"><strong>分享给站外好友：</strong></div>
+			<div class="popup_dl">
+				<span>网页地址</span><input type="text" placeholder="http://www.ximalaya.com"><a class="copylinkBtn already">复制成功</a>
+			</div>
+			<div class="popup_dl"><strong>把声音贴到blog或BBS：</strong></div>
+			<div class="popup_dl">
+				<span>flash地址</span><input type="text" placeholder=""><a class="copylinkBtn">复制链接</a>
+			</div>
+			<div class="popup_dl">
+				<span>html地址</span><input type="text" placeholder=""><a class="copylinkBtn">复制链接</a>
+			</div>
+			<div class="operate"><a class="confirmBtn">确认</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--添加至专辑-->
+	<div class="popup addtoalbum2" style="right:50px;top:1350px;">
+		<div class="hd">添加至专辑</div>
+		<div class="bd">
+			<strong>等待添加</strong>
+			<ul class="addTo">
+				<li><span>海绵宝派大星海绵宝派大星海绵宝派大星海绵宝派大星海绵宝派大星</span><a class="addItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"><a class="delItemBtn"></a></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+				<li><span>海绵宝派大星海绵宝派大星海绵宝派大星海绵宝派大星海绵宝派大星</span><a class="addItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"><a class="delItemBtn"></a></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+			</ul>
+			<strong>已添加</strong>
+			<ul class="delFrom">
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+				<li><span>海绵宝派大星</span><a class="addItemBtn"></a><a class="delItemBtn"></a></li>
+			</ul>
+			<div class="operate"><a class="confirmBtn">确认</a><a class="cancelBtn">取消</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--上传声音-->
+	<div class="popup addSound" style="left:50px;top:1550px;">
+		<div class="hd">上传声音</div>
+		<div class="bd">
+			<strong>声音列表</strong>
+			<ul class="addTo">
+				<li class="on"><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+				<li><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+				<li><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+				<li><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+				<li><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+				<li><span>海绵宝派大星海绵</span><a class="selItemBtn"></a><a class="selItemBtn2"></a></li>
+			</ul>
+			<div class="operate"><a class="confirmBtn">确认</a><a class="cancelBtn">取消</a></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+	<!--扫描下载客户端-->
+	<div class="downloadApp" style="right:10px;top:285px;">
+		<a href="javascript:;" class="closeBtn" title="关闭"></a>
+		<!-- <span class="tit">移动App</span> -->
+		<a><img src="/css/img/code.png">下载手机版</a>
+	</div>
+	<!--下载手机版-->
+	<div class="popup download" style="left:500px;top:1550px;">
+		<div class="hd">下载</div>
+		<div class="bd">
+			<div class="code">
+				<a><img src="/css/img/code.png">下载手机版</a>
+				<div class="logo"></div>
+			</div>
+			<div class="info"></div>
+		</div>
+		<a class="close3Btn"></a>
+	</div>
+</body>
+
+<script type="text/javascript">
+    var current_user = {
+        'uid': 1381,
+        'nickname': 'JI1LHxMtIEsR9TIdV2Cq',
+        'logoPic': 'http://fdfs.test.ximalaya.com/group1/M00/00/31/wKgD3lDvpcWBU2mGAAAZ6ku-ua0754.jpg',
+        'isVerified': false,
+        'province': '',
+        'city': '',
+        'personalSignature': '',
+        'ptitle': '',
+        'guidePlayPanel': true,
+        'guideVoicePanel': false,
+        'guideSharePanel': true
+    };
+    var config = {
+        STATIC_ROOT:"http://static2.test.ximalaya.com",
+        STATIC_PATH:"http://192.168.3.43:9092",
+        FDFS_PATH:"http://fdfs.test.ximalaya.com",
+        LOGIN_PATH:"http://test.ximalaya.com/passport/login",
+        DIRECT_DTRES_ROOT: "http://upload.test.ximalaya.com/dtres",
+        TRANSCODING_ROOT: "http://test.ximalaya.com/dtres/transcoding/process",
+        UPLOAD_ROOT: "http://upload.test.ximalaya.com/dtres",
+        CURRENT_USER: current_user,
+        SUGGEST_URL:"http://test.ximalaya.com/s/search/suggest",
+        WARNING_SEQ: "10",
+        PLAYER_PATH: "http://static2.test.ximalaya.com/js/player_test.swf?v=1365657042",
+        SERVER_TIME: "1367117946372",
+        TOKEN_LABEL: "4&_token",
+        REMEMBERME_LABEL: "4&remember_me",
+        ASSETS_VERSION: "1365657042"
+    };
+    config.TIME_GAP = new Date().getTime() - config.SERVER_TIME;
+</script>
+<script src="http://static2.test.ximalaya.com/js/lib/require.js?v=1365657042"></script>
+<script src="http://static2.test.ximalaya.com/js/main.js?v=1365657042"></script>
+<script>
+    require(['jquery', "plugin/dialog", "module/dialogs/city","module/dialogs/sync", "module/dialogs/bindmobile",'module/dialogs/forward',
+        "module/dialogs/zawan",'module/dialogs/login_box','module/dialogs/share2friend','module/dialogs/download','module/dialogs/imageslider'],
+            function(jquery, dialog, city, sync, bindmobile, forward, zawan, login_box, share2friend, download,imageslider){
+       //dialog.alert(34234234);
+      /* dialog.success(34234234);
+       dialog.editConfirm();
+        city.open();
+        sync.open();
+
+                forward.open(123);
+                zawan.open();*/
+               // login_box.open();
+                //bindmobile.open();
+                //dialog.success(34234234);
+                //share2friend.open();
+                $("#alert").click(function(){
+                    imageslider.open();
+                });
+               // download.open();
+    });
+
+</script>
+</html>

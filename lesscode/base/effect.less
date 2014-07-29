@@ -1,0 +1,121 @@
+//透明度
+.opacity(@val)
+{
+	opacity:@val/100;
+	filter:alpha(opacity=@val);
+}
+
+//特效
+/*base/effect*/
+//旋转
+.rotate(@deg){
+	-webkit-transform: rotate(@deg) translateZ(0);
+	transform: rotate(@deg) translateZ(0);
+}
+//阴影
+.shadow(@x:0,@y:2,@blurRadius:5,@expandRadius:0,@color:#eee) {
+    -moz-box-shadow: @x*1px @y*1px @blurRadius*1px @expandRadius*1px  @color;
+    -webkit-box-shadow: @x*1px @y*1px @blurRadius*1px @expandRadius*1px  @color;
+    box-shadow: @x*1px @y*1px @blurRadius*1px @expandRadius*1px  @color;
+    //ie下用滤镜特别卡
+    ///* For IE 8 */
+    //-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='@color')";
+    // /* For IE 5.5 - 7 */
+    // filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='@color');
+}
+
+//边框渐变效果
+//.effect_borderHover hover效果
+//.effect_borderDefault 默认效果效果
+.borderHoverFn(){
+	position:relative;
+	border:none;
+	padding-top:1px;
+	padding-bottom:1px;
+	z-index: 1;
+	& .effect_borderDefault,& .effect_borderHover{
+		position: absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:-1px;
+		z-index:-1;
+		background: white;
+	}
+	& .effect_borderDefault{
+		border: solid 1px #DDD;
+	}
+	& .effect_borderHover{
+		border: solid 1px @colorLine3;
+	}
+	&:hover .effect_borderDefault{
+		-webkit-animation:opacity 0.2s 0s 1 ease normal forwards ;
+		-moz-animation:opacity 0.2s 0s 1 ease normal forwards ;
+		display:none\9;
+	}
+	&.focus{
+		& .effect_borderDefault{
+			-webkit-animation:none;
+			-moz-animation:none;
+			opacity:0;
+			display:none\9;
+		}
+	}
+}
+@-webkit-keyframes opacity{
+    0%{opacity:1;}
+    100%{opacity:0;}  
+}
+@-moz-keyframes opacity{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+
+.textHoverFn(){
+	-webkit-transition-property:color;
+	-o-transition-property:color;
+	-moz-transition-property:color;
+	-webkit-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+}
+
+.transitionFn(@property,@duration,@timing:ease){
+	-webkit-transition-property: @property;
+	-o-transition-property: @property;
+	-moz-transition-property: @property;
+	-webkit-transition-duration: @duration * 1s;
+	-o-transition-duration: @duration * 1s;
+	-moz-transition-duration: @duration * 1s;
+	-webkit-transition-timing-function: @timing;
+	-o-transition-timing-function: @timing;
+	-moz-transition-timing-function: @timing;
+}
+
+//下载页download_infoB_love容器的摇动上升动画
+@-webkit-keyframes dInfoBLove{
+	0%{-webkit-transform:rotate(0deg);bottom:-80px;}
+	10%{-webkit-transform:rotate(-10deg);bottom:-52px;}
+	20%{-webkit-transform:rotate(0deg);bottom:-24px;}
+	30%{-webkit-transform:rotate(10deg);bottom:4px;}
+	40%{-webkit-transform:rotate(0deg);bottom:32px;}
+	50%{-webkit-transform:rotate(-10deg);bottom:60px;}
+	60%{-webkit-transform:rotate(0deg);bottom:88px;}
+	70%{-webkit-transform:rotate(10deg);bottom:116px;}
+	80%{-webkit-transform:rotate(0deg);bottom:154px;}
+	90%{-webkit-transform:rotate(-10deg);bottom:182px;}
+	100%{-webkit-transform:rotate(0deg);bottom:200px;}
+}
+@-moz-keyframes dInfoBLove{
+	0%{-moz-transform:rotate(0deg);bottom:-80px;}
+	10%{-moz-transform:rotate(-10deg);bottom:-52px;}
+	20%{-moz-transform:rotate(0deg);bottom:-24px;}
+	30%{-moz-transform:rotate(10deg);bottom:4px;}
+	40%{-moz-transform:rotate(0deg);bottom:32px;}
+	50%{-moz-transform:rotate(-10deg);bottom:60px;}
+	60%{-moz-transform:rotate(0deg);bottom:88px;}
+	70%{-moz-transform:rotate(10deg);bottom:116px;}
+	80%{-moz-transform:rotate(0deg);bottom:154px;}
+	90%{-moz-transform:rotate(-10deg);bottom:182px;}
+	100%{-moz-transform:rotate(0deg);bottom:200px;}	
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>私信</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+	<div class="floatHeader_wrapper">
+		<!-- 浮动头部-->
+		<div class="grobalPlayer">
+			<div class="controlPanel">
+				<div class="progressBar">
+					<div class="playBar"></div>
+				</div>
+				<div class="cover"></div>
+				<div class="controls">
+					<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+					<a class="playBtn"><span class="disabled"></span></a>
+					<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+				</div>
+			</div>
+			<a class="forwordBtn" title="转采"></a>
+			<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+		</div>
+		<div class="searchPanel">
+			<!-- 搜索类型-->
+			<div class="type">
+				<a href="javascript:;" class="selected">声音</a>
+				<div class="options">
+					<a data-scope="voice" href="javascript:;" class="on">声音</a>
+					<a data-scope="user" href="javascript:;">人</a>
+					<a data-scope="album" href="javascript:;">专辑</a>
+					<!--<a data-scope="tag" href="javascript:;">标签</a>-->
+				</div>
+			</div>
+			<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+			<!-- focus状态 is-searchBtn-focus -->
+			<a class="searchBtn"></a>
+			<!-- 以下部分由js模块来生成 start -->
+			<!-- 搜索结果-->
+			<ul class="results hidden">
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>好声音</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>达人秀</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title">法制<em>中国</em></a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 以下部分由js模块来生成 end -->
+		  </div>
+		<div class="loginPanelBox">
+			<div class="bgVLineL"></div>
+			<div class="loginPanel">
+				<!-- 登陆状态下  -->
+				<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+				<a class="goHomeBtn" href="#"></a>
+				<!-- 当有消息时使用getNewMsgBtn -->
+				<a class="getNewMsgBtn" href="#"></a>
+				<!-- 登陆未状态下  -->
+				<!-- 
+				<a class="loginBtn" href="#"></a>
+				<a class="registerBtn" href="#">注册</a>
+				 -->
+				 <!-- 账号 -->
+				 <div class="loginPanel_accountPop hidden">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">个人设置</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <div class="loginPanel_MsgPop hidden">
+					<ul>
+						<li><a href="#">系统通知</a></li>
+						<li><a href="#">我的粉丝</a></li>
+						<li><a href="#">@我的</a></li>
+						<li><a href="#">评论</a></li>
+						<li><a href="#">通知</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 第三方账号登录 -->
+				 <div class="loginPanel_thirdLoginPop hidden">
+					<p><a class="qqLoginBtn" href="#"></a></p>
+					<p><a class="weiboLoginBtn" href="#"></a></p>
+					<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 本地账号登录 -->
+				 <div class="loginPanel_loginPop hidden">
+					<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					<a class="submitBtn"></a>
+					<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					<div class="bud"></div>
+				 </div>
+			</div>
+		</div>
+		<div class="volumePanelBox">
+			<div class="bgVLineL"></div>
+			<div class="volumePanel">
+				<a class="volumePanel_muteBtn"></a>
+				<div class="volumePanel_volumebar">
+					<div class="volumePanel_cover"></div>
+					<a class="volumePanel_seekBtn"></a>
+				</div>
+				<div class="volumePanel_mark"></div>
+			</div>
+			<div class="bgVLineR"></div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+<div class="mainbox">
+    <div id="msgLetterDetail" class="mainbox_wrapper">
+        <div class="mainbox_left">
+            <div class="msg_container">
+                <div class="msg_header">
+                    <span class="title">消息中心</span>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="javascript:;">系统通知</a></li>
+                        <li class="nav_item"><a href="javascript:;">@我的</a></li>
+                        <li class="nav_item"><a href="javascript:;">评论</a></li>
+                        <li class="nav_item on"><a href="javascript:;">私信</a></li>
+                        <li class="nav_item"><a href="javascript:;">喜欢通知</a></li>
+                    </ul>
+                </div>
+                <div class="msg_body is-del">
+                    <div class="msg_body_top">
+                        <div class="left">
+                            <span class="title">私信</span>
+                            <span class="count"></span>
+                        </div>
+                    </div>
+                    <div class="msg_list_wrap">
+                        <div class="letter_list_header">
+                            <div class="left"><a href="javascript:;">返回所有私信</a>>共5条私信</div>
+                        </div>
+                        <div class="letter_send">
+                            <div class="content_wrap_left">
+                                <div class="picture">
+                                    <img src="/css/img/person_60.jpg"/>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_letter">
+                                        <div class="others_letter">
+                                            <div class="letter_content">												
+                                                <textarea class="letter_input"></textarea>
+                                                <span class="arrow_left"></span>
+                                            </div>
+                                        </div>
+                                        <div class="detail_bottom">
+                                            <div class="left"><span class="message_icon">发私信给benben</span></div>
+                                            <div class="right">
+                                                <span class="charCount">还剩<em>145</em>字</span>
+                                                <a class="faceBtn" href="javascript:;"></a>
+                                                <a class="submitBtn" href="javascript:;"><span>发送</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="letter_del_all">							
+                            <div class="btn_wrap">
+                                <span class="btn_del">批量删除</span>
+                            </div>
+							<div class="btn_wrap cancel">
+                                取消
+                            </div>
+							<div class="btn_wrap confirm">
+                                <span class="btn_del">确认删除</span>
+                            </div>
+                        </div>
+                        <ul class="letter_detail_list">
+                            <li class="letter_detail_item">
+                                <div class="content_wrap_left">
+                                    <div class="picture">
+                                        <img src="/css/img/person_60.jpg"/>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_letter">
+                                            <div class="others_letter">
+                                                <div class="letter_content">
+													<input type="checkbox"></input>
+                                                    <div>
+                                                        谢谢你哦~！~！~！谢谢你哦~！~！~！谢谢你哦~！~！~！谢谢你哦~！~！~！谢谢你哦~！~！~！谢谢你哦~！~！~！谢谢你哦~！~！~！
+                                                    </div>
+                                                    <div class="pubdate">59分钟前</div>
+                                                    <span class="arrow_left"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="letter_detail_item">
+                                <div class="content_wrap_right">
+                                    <div class="picture">
+                                        <img src="/css/img/person_60.jpg"/>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_letter">
+                                            <div class="others_letter">
+                                                <div class="letter_content">
+													<input type="checkbox"></input>
+                                                    <div>
+                                                        谢谢你哦~！~！~！谢谢你哦~！~！~！谢！
+                                                    </div>
+                                                    <div class="pubdate">59分钟前</div>
+                                                    <span class="arrow_right"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+		<div class="mainbox_right">
+			<div class="msg_poster"></div>
+			<div class="msg_helper">
+				<div class="msg_header_title">私信小帮助</div>
+				<div class="question">不想让陌生人发信骚扰？</div>
+				<div class="answer">去<a href="#">隐私设置</a>进行隐私权限设置</div>
+			</div>
+		</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

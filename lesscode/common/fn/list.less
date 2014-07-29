@@ -1,0 +1,44 @@
+.listFn(@gapTop,@gapBottom,@gapLeft:0,@gapRight:0){
+	padding-top:@gapTop*1px;
+	padding-bottom:@gapBottom*1px;
+	padding-left:@gapLeft*1px;
+	padding-right:@gapRight*1px;
+	border:none;
+	&.is-first{
+		border-top:none;
+		padding-top:0;
+	}
+	&.is-last{
+		border-bottom:none;
+		padding-bottom:0;
+	}
+}
+.listTopFn(@gapTop,@gapBottom,@gapLeft:0,@gapRight:0,@itemName:listItem){
+	& .@{itemName}{
+		.listFn(@gapTop,@gapBottom,@gapLeft,@gapRight);
+		border-top:1px solid @colorLine2;
+	}
+}
+.listBottomFn(@gapTop,@gapBottom,@gapLeft:0,@gapRight:0,@itemName:listItem){
+	& .@{itemName}{
+		.listFn(@gapTop,@gapBottom,@gapLeft,@gapRight);
+		border-bottom:1px solid @colorLine2;
+	}
+}
+
+.flowListFn(@itemName, @gap:@gapContainerOuter){
+	margin: 0 0 -@gap*1px 0;
+	.clearfix;
+	& .@{itemName}{
+		.fl;
+		margin: 0 @gap*1px 10px 0;
+	}
+}
+.radioUserlistFn(@itemName,@gapTop,@gapBottom)
+{
+	width:100%;
+	& .@{itemName}{
+		.listFn(@gapTop,@gapBottom);
+		border-bottom:1px solid @colorLine2;
+	}
+}

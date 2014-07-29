@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ta关注的人</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalFollow" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/1000265/">
+                        <img src="http://fdfs.xmcdn.com/group1/M00/00/2E/wKgDrVCIoM3Sa9SCAAQJstX27gg351_common_medium.jpg">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        单田芳评书
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/1000265/">主页</a></li>
+                        <li class="nav_item"><a href="/#/1000265/sound/">声音</a></li>
+                        <li class="nav_item"><a href="/#/1000265/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/1000265/favorites/">喜欢</a></li>
+                        <li class="nav_item on"><a href="/#/1000265/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/1000265/fans/">粉丝</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">Ta关注的人</span>
+                    </div>
+                    <div class="right">
+                        
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共关注了24人</div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索人">                       
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                <div class="body_list_wrap">
+                    <ul class="body_list follow_list">
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000140/">
+                                        <img card="1000140" src="http://fdfs.xmcdn.com/group2/M02/1E/58/wKgDr1HBJXqDk2wzAAR63mmNBSY331_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000140" href="/#/1000140/">
+                                            中国好声音
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">中国好声音是励志专业音乐评论节目，四位著名歌手作为明星导师言传身教。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000140/sound/">
+                                            <span class="left sound_counter">202</span>
+                                        </a>
+                                        <a href="/#/1000140/fans/">
+                                            <span class="left follower_counter">93638</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;中国好声音&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000140,is_follow:false,be_followed:,nickname:'中国好声音'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000242/">
+                                        <img card="1000242" src="http://fdfs.xmcdn.com/group1/M00/00/88/wKgDrVCPZdfBPvxIAADhBFB7o4o091_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000242" href="/#/1000242/">
+                                            军情解码
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">军情解码，以军情“揭秘”为主打，选题涵盖军旅文化与战争文化，解析中外历史上的著名战争及不为人知的幕后故事。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000242/sound/">
+                                            <span class="left sound_counter">729</span>
+                                        </a>
+                                        <a href="/#/1000242/fans/">
+                                            <span class="left follower_counter">18532</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;军情解码&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:1000242,is_follow:true,be_followed:false,nickname:'军情解码'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000583/">
+                                        <img card="1000583" src="http://fdfs.xmcdn.com/group1/M01/00/27/wKgDrVCHUnLTZUTHAAEHD6ods-I941_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000583" href="/#/1000583/">
+                                            全球好声音精选集
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">《全球好声音精选集》是28个国家精彩版本的同步贡献。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000583/sound/">
+                                            <span class="left sound_counter">61</span>
+                                        </a>
+                                        <a href="/#/1000583/fans/">
+                                            <span class="left follower_counter">7472</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;全球好声音精选集&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000583,is_follow:false,be_followed:,nickname:'全球好声音精选集'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000248/">
+                                        <img card="1000248" src="http://fdfs.xmcdn.com/group1/M01/00/12/wKgDrlCGUsqiUQvxAAG5ELOfXJA367_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000248" href="/#/1000248/">
+                                            海峡新干线
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">海峡新干线栏目立足福建，关注闽台两地，兼顾港、澳，聚焦社会、民生、文化、财经等领域。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000248/sound/">
+                                            <span class="left sound_counter">1364</span>
+                                        </a>
+                                        <a href="/#/1000248/fans/">
+                                            <span class="left follower_counter">1350</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;海峡新干线&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000248,is_follow:false,be_followed:,nickname:'海峡新干线'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000338/">
+                                        <img card="1000338" src="http://fdfs.xmcdn.com/group1/M01/00/17/wKgDrlCGXVKSvujsAAESqq-bZkc361_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000338" href="/#/1000338/">
+                                            凡人修仙传
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">一个普通的山村穷小子，偶然之下跨入到一个江湖小门派，成了一名记名弟子。虽资质平庸但境遇奇妙……</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000338/sound/">
+                                            <span class="left sound_counter">1591</span>
+                                        </a>
+                                        <a href="/#/1000338/fans/">
+                                            <span class="left follower_counter">19733</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;凡人修仙传&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000338,is_follow:false,be_followed:,nickname:'凡人修仙传'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000251/">
+                                        <img card="1000251" src="http://fdfs.xmcdn.com/group1/M00/00/13/wKgDrlCGU1zzbZx8AAGcQ223TLs309_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000251" href="/#/1000251/">
+                                            谁在说
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">谁在说是一档全新的大型日播谈话节目，中国第一档故事体加论辩体的全新品牌节目。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000251/sound/">
+                                            <span class="left sound_counter">68</span>
+                                        </a>
+                                        <a href="/#/1000251/fans/">
+                                            <span class="left follower_counter">746</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;谁在说&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000251,is_follow:false,be_followed:,nickname:'谁在说'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000484/">
+                                        <img card="1000484" src="http://fdfs.xmcdn.com/group1/M00/00/CF/wKgDrlCSG3fAxQA5AAQSGfz70Cg086_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000484" href="/#/1000484/">
+                                            莫言小说
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">莫言，原名管谟业，中国当代著名作家，2012年诺贝尔文学奖获得者。代表作品有《红高粱》、《檀香刑》、《酒国》、《生死疲劳》、《蛙》等。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000484/sound/">
+                                            <span class="left sound_counter">143</span>
+                                        </a>
+                                        <a href="/#/1000484/fans/">
+                                            <span class="left follower_counter">8133</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;莫言小说&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000484,is_follow:false,be_followed:,nickname:'莫言小说'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000483/">
+                                        <img card="1000483" src="http://fdfs.xmcdn.com/group1/M00/00/CE/wKgDrlCSD6ixzkt_AAcHyfcBw5Y834_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000483" href="/#/1000483/">
+                                            甄嬛传
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">流潋紫笔下的后宫中那群如花似玉的女子，为了争夺爱情，争夺荣华富贵，钩心斗角，尔虞我诈，将青春和美好都虚耗在了这场永无止境的斗争中。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000483/sound/">
+                                            <span class="left sound_counter">216</span>
+                                        </a>
+                                        <a href="/#/1000483/fans/">
+                                            <span class="left follower_counter">10713</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;甄嬛传&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000483,is_follow:false,be_followed:,nickname:'甄嬛传'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000223/">
+                                        <img card="1000223" src="http://fdfs.xmcdn.com/group1/M00/00/2D/wKgDrVCHr0iztkyBAALo53DUwR0118_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000223" href="/#/1000223/">
+                                            说天下
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">说天下是一档区别于其他资讯播报的新闻节目，这是一档围绕“说”字做文章的新闻脱口秀。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000223/sound/">
+                                            <span class="left sound_counter">2466</span>
+                                        </a>
+                                        <a href="/#/1000223/fans/">
+                                            <span class="left follower_counter">3606</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;说天下&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000223,is_follow:false,be_followed:,nickname:'说天下'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1000160/">
+                                        <img card="1000160" src="http://fdfs.xmcdn.com/group1/M01/00/23/wKgDrVCGezbzRBU_AAGr-Wp9b-0665_common_medium.jpg">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1000160" href="/#/1000160/">
+                                            全球流行音乐金榜
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">全球流行音乐金榜，全球流行音乐金榜的会员台覆盖之广，它所创造的不再只有亚洲视野的音乐角度，而是呈现更高、更广、更深的全球华人音乐观点。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1000160/sound/">
+                                            <span class="left sound_counter">175</span>
+                                        </a>
+                                        <a href="/#/1000160/fans/">
+                                            <span class="left follower_counter">7375</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="&quot;nickname&quot;:&quot;全球流行音乐金榜&quot;">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2  " data-options="uid:1000160,is_follow:false,be_followed:,nickname:'全球流行音乐金榜'" href="javascript:;">
+                                        <span class="default">关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="pagingBar mgTB20">
+                          <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/1000265/follow?page=2" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/1000265/follow?page=3" rel="">3</a>
+
+
+    <a class="pagingBar_btn" href="/#/1000265/follow?page=2" rel="next">下一页</a>
+
+  </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--他关注的人-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000265/follow/" class="more">更多</a>
+            <h2 class="title">他关注的人(24)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1000140/" title="中国好声音">
+                <img card="1000140" alt="中国好声音" src="http://fdfs.xmcdn.com/group2/M02/1E/58/wKgDr1HBJXqDk2wzAAR63mmNBSY331_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000242/" title="军情解码">
+                <img card="1000242" alt="军情解码" src="http://fdfs.xmcdn.com/group1/M00/00/88/wKgDrVCPZdfBPvxIAADhBFB7o4o091_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000583/" title="全球好声音精选集">
+                <img card="1000583" alt="全球好声音精选集" src="http://fdfs.xmcdn.com/group1/M01/00/27/wKgDrVCHUnLTZUTHAAEHD6ods-I941_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000248/" title="海峡新干线">
+                <img card="1000248" alt="海峡新干线" src="http://fdfs.xmcdn.com/group1/M01/00/12/wKgDrlCGUsqiUQvxAAG5ELOfXJA367_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000338/" title="凡人修仙传">
+                <img card="1000338" alt="凡人修仙传" src="http://fdfs.xmcdn.com/group1/M01/00/17/wKgDrlCGXVKSvujsAAESqq-bZkc361_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000251/" title="谁在说">
+                <img card="1000251" alt="谁在说" src="http://fdfs.xmcdn.com/group1/M00/00/13/wKgDrlCGU1zzbZx8AAGcQ223TLs309_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000484/" title="莫言小说">
+                <img card="1000484" alt="莫言小说" src="http://fdfs.xmcdn.com/group1/M00/00/CF/wKgDrlCSG3fAxQA5AAQSGfz70Cg086_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000483/" title="甄嬛传">
+                <img card="1000483" alt="甄嬛传" src="http://fdfs.xmcdn.com/group1/M00/00/CE/wKgDrlCSD6ixzkt_AAcHyfcBw5Y834_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000223/" title="说天下">
+                <img card="1000223" alt="说天下" src="http://fdfs.xmcdn.com/group1/M00/00/2D/wKgDrVCHr0iztkyBAALo53DUwR0118_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000160/" title="全球流行音乐金榜">
+                <img card="1000160" alt="全球流行音乐金榜" src="http://fdfs.xmcdn.com/group1/M01/00/23/wKgDrVCGezbzRBU_AAGr-Wp9b-0665_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000265/fans/" class="more">更多</a>
+            <h2 class="title">他的粉丝(15010)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/2627941/" title="moop104">
+                <img card="2627941" alt="moop104" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627877/" title="雾语_Ku">
+                <img card="2627877" alt="雾语_Ku" src="http://qzapp.qlogo.cn/qzapp/100261563/1AD52D4B44ECEC134C06FEB7227BCCCF/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627864/" title="面包树gigi">
+                <img card="2627864" alt="面包树gigi" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627734/" title="无聊的小土豆">
+                <img card="2627734" alt="无聊的小土豆" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627708/" title="高高ylzs">
+                <img card="2627708" alt="高高ylzs" src="http://tp3.sinaimg.cn/1238130390/180/5630410797/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627674/" title="mkkp">
+                <img card="2627674" alt="mkkp" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627538/" title="beloved于妍">
+                <img card="2627538" alt="beloved于妍" src="http://tp4.sinaimg.cn/1788259191/180/5666683863/0" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627545/" title="anyna">
+                <img card="2627545" alt="anyna" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627477/" title="HnGxwFEn833fxXu4BBh3">
+                <img card="2627477" alt="HnGxwFEn833fxXu4BBh3" src="http://qzapp.qlogo.cn/qzapp/100261563/BDEDF3570ACC540C0780B355BE26EEE7/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1316306/" title="以_为友">
+                <img card="1316306" alt="以_为友" src="http://tp1.sinaimg.cn/1781097160/180/22833488196/1" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他最新的声音-->
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/1000265/sound/" class="more">更多</a>
+            <h2 class="title">他最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450401">三侠剑 第400集</a>
+                    <span class="times">649次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450400">三侠剑 第399集</a>
+                    <span class="times">275次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450399">三侠剑 第398集</a>
+                    <span class="times">273次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450398">三侠剑 第397集</a>
+                    <span class="times">437次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450391">三侠剑 第390集</a>
+                    <span class="times">115次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450395">三侠剑 第394集</a>
+                    <span class="times">104次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450394">三侠剑 第393集</a>
+                    <span class="times">104次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450390">三侠剑 第389集</a>
+                    <span class="times">126次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450387">三侠剑 第386集</a>
+                    <span class="times">124次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450389">三侠剑 第388集</a>
+                    <span class="times">102次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+</div></div>
+  </div>
+</body>
+</html>

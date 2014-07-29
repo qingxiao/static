@@ -1,0 +1,53 @@
+//弹出框箭头，有4种：lb(靠左底部),rb(靠右底部),lt(靠左顶部),rt(靠右顶部)
+.lb,.rb{
+	.arrow_popup{
+		border-color: #ddd transparent transparent;
+		border-style: solid dashed dashed;
+		border-width: 10px 10px 0 10px;		
+		bottom: -10px;
+		position: absolute;
+		display: block;
+		& i{
+			border-color: #ffffff transparent;
+			left: -10px;
+			bottom: 1px;
+			border-style: solid dashed dashed;
+			border-width: 10px 10px 0 10px;
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+		}
+	}
+}
+.lt,.rt{
+	.arrow_popup{
+		border-color: #ddd transparent;
+		border-style: dashed dashed solid dashed;
+		border-width: 0 10px 10px 10px;		
+		top: -10px;		
+		position: absolute;
+		display: block;
+		& i{
+			border-color:transparent transparent #ffffff transparent;
+			left: -10px;
+			top: 1px;
+			border-style: dashed dashed solid dashed;
+			border-width: 0 10px 10px 10px;	
+			position: absolute;
+			display: block;		
+			width: 0;
+			height: 0;
+		}		
+	}
+}
+.lb, .lt{
+	.arrow_popup{
+		left: 20px;
+	}
+}
+.rb, .rt{
+	.arrow_popup{
+		right: 20px;
+	}
+}

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ta喜欢的</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalLike" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/1012414/">
+                        <img src="http://fdfs.xmcdn.com/group1/M01/07/03/wKgDrVDqjm2zsBGjAAOywbUJQtc691_common_medium.jpg">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        神秘kook
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/1012414/">主页</a></li>
+                        <li class="nav_item"><a href="/#/1012414/sound/">声音</a></li>
+                        <li class="nav_item"><a href="/#/1012414/album/">专辑</a></li>
+                        <li class="nav_item on"><a href="/#/1012414/favorites/">喜欢</a></li>
+                        <li class="nav_item"><a href="/#/1012414/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/1012414/fans/">粉丝</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">神秘kook喜欢的声音</span>
+                    </div>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                            <a href="/#/1012414/favorites/?order=created_at asc" class="sort_icon up">喜欢时间</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共有188个声音</div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索声音">                      
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                <div class="body_list_wrap">
+                    <ul class="body_list j-player-soundIdsWorking" sound_ids="865966,811182,676482,784148,735437,724687,721557,712336,708740,701918">
+                        <li class="item" sound_id="865966">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox" style="display: none;">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/865966" class="sound_title">《河神 鬼水怪谈》 第十二章 河底电台 七【完】</a>
+                                            <span class="sound_playcount" title="63次播放">63</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn" title="播放"></a> <span class="duration">05:04</span>
+                                            <div class="pin" sound_popsrc="865966">
+                                                <a href="/#/1012414/sound/865966" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M01/14/E0/wKgDslINaPjSzRi-AABk2gTG_JI660_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox" style="display: block;">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/865966">《河神 鬼水怪谈》 第十二章 河底电台 七【完】</a>
+                                            <div class="fr"><span class="sound_position">00:01</span>/<span class="sound_duration">05:04</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer" style="opacity: 1;">
+                                                <div class="left">
+                                                    <a class="playBtn" title="播放"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar is-drawed" title="点击播放">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar" style="width: 75.1456496954178%;"></div>
+                                                        <div class="player_playbar" style="width: 0.4569610287363863%;"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M01/14/E1/wKgDslINaSux2LbbAAAJ6IkEaOw7649.js" sound_uploadid="u_900451" style=""><canvas width="551" height="28"></canvas></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar"><div class="chunk" chunkindex="0" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="1" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="2" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="3" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="4" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="5" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="6" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="7" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="8" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="9" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="10" hidefocus="true" style="width:19px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="11" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="12" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="13" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="14" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="15" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="16" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="17" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="18" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="19" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="20" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="21" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="22" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="23" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="24" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="25" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="26" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="27" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="28" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="29" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div></div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="865966">
+                                                    <a href="/#/1012414/sound/865966" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M01/14/E0/wKgDslINaPjSzRi-AABk2gTG_JI660_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="811182">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/811182" class="sound_title">《河神 鬼水怪谈》 第十二章 河底电台 五+六</a>
+                                            <span class="sound_playcount" title="196次播放">196</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">09:18</span>
+                                            <div class="pin" sound_popsrc="811182">
+                                                <a href="/#/1012414/sound/811182" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M04/0E/A2/wKgDsVIKywCDsCf4AABk2gTG_JI982_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/811182">《河神 鬼水怪谈》 第十二章 河底电台 五+六</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">09:18</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M04/0E/51/wKgDslIKy33AOoSgAAAKQoSbTf45013.js" sound_uploadid="u_839564"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="811182">
+                                                    <a href="/#/1012414/sound/811182" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M04/0E/A2/wKgDsVIKywCDsCf4AABk2gTG_JI982_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="676482">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1591179/sound/676482" class="sound_title">国风版《鬼吹灯·巫峡棺山》（66-01）</a>
+                                            <span class="sound_playcount" title="249次播放">249</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">26:16</span>
+                                            <div class="pin" sound_popsrc="676482">
+                                                <a href="/#/1591179/sound/676482" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group2/M01/4A/2E/wKgDr1H57jGjMTuwAADgApWh4BY060_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1591179/sound/676482">国风版《鬼吹灯·巫峡棺山》（66-01）</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">26:16</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M02/4A/0D/wKgDsFH570jydGnMAAAKYi9kH683741.js" sound_uploadid="u_670157"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="676482">
+                                                    <a href="/#/1591179/sound/676482" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group2/M01/4A/2E/wKgDr1H57jGjMTuwAADgApWh4BY060_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="784148">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/784148" class="sound_title">《河神 鬼水怪谈》 第十二章 河底电台 三+四</a>
+                                            <span class="sound_playcount" title="237次播放">237</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">09:54</span>
+                                            <div class="pin" sound_popsrc="784148">
+                                                <a href="/#/1012414/sound/784148" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M00/0B/21/wKgDslIJgxbil8_vAABk2gTG_JI637_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/784148">《河神 鬼水怪谈》 第十二章 河底电台 三+四</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">09:54</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M00/0B/24/wKgDslIJg7ODlIvcAAAKVUXcz504430.js" sound_uploadid="u_810301"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="784148">
+                                                    <a href="/#/1012414/sound/784148" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M00/0B/21/wKgDslIJgxbil8_vAABk2gTG_JI637_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="735437">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/735437" class="sound_title">《河神 鬼水怪谈》 第十二章 河底电台 一+二</a>
+                                            <span class="sound_playcount" title="290次播放">290</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">10:32</span>
+                                            <div class="pin" sound_popsrc="735437">
+                                                <a href="/#/1012414/sound/735437" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M02/05/56/wKgDslIIIO-w4QyqAABk2gTG_JI876_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/735437">《河神 鬼水怪谈》 第十二章 河底电台 一+二</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">10:32</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M01/05/58/wKgDslIIIZnCwzGSAAAKWRclheA6066.js" sound_uploadid="u_755894"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="735437">
+                                                    <a href="/#/1012414/sound/735437" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M02/05/56/wKgDslIIIO-w4QyqAABk2gTG_JI876_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="724687">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/724687" class="sound_title">《河神 鬼水怪谈》 第十一章 枪毙连化青 五+六【完】</a>
+                                            <span class="sound_playcount" title="248次播放">248</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">11:34</span>
+                                            <div class="pin" sound_popsrc="724687">
+                                                <a href="/#/1012414/sound/724687" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M01/03/BD/wKgDslIG0-fwvGDXAABk2gTG_JI576_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/724687">《河神 鬼水怪谈》 第十一章 枪毙连化青 五+六【完】</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">11:34</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/04/0A/wKgDsVIG1HShQGZvAAAKXeur2ko5475.js" sound_uploadid="u_742753"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="724687">
+                                                    <a href="/#/1012414/sound/724687" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M01/03/BD/wKgDslIG0-fwvGDXAABk2gTG_JI576_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="721557">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/721557" class="sound_title">《河神 鬼水怪谈》 第十一章 枪毙连化青 三+四</a>
+                                            <span class="sound_playcount" title="306次播放">306</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">10:00</span>
+                                            <div class="pin" sound_popsrc="721557">
+                                                <a href="/#/1012414/sound/721557" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M02/02/FB/wKgDslIFhFywWtbSAABk2gTG_JI665_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/721557">《河神 鬼水怪谈》 第十一章 枪毙连化青 三+四</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">10:00</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/03/4C/wKgDsVIFgf7APVIfAAAKPvhWRNk8383.js" sound_uploadid="u_736252"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="721557">
+                                                    <a href="/#/1012414/sound/721557" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M02/02/FB/wKgDslIFhFywWtbSAABk2gTG_JI665_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="712336">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/712336" class="sound_title">《河神 鬼水怪谈》 第十一章 枪毙连化青 一+二</a>
+                                            <span class="sound_playcount" title="327次播放">327</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">10:00</span>
+                                            <div class="pin" sound_popsrc="712336">
+                                                <a href="/#/1012414/sound/712336" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M04/01/74/wKgDsVIC21uQp_vgAABk2gTG_JI819_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/712336">《河神 鬼水怪谈》 第十一章 枪毙连化青 一+二</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">10:00</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/01/74/wKgDsVIC2-6xl0qsAAAKTsh5IlE5856.js" sound_uploadid="u_722799"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="712336">
+                                                    <a href="/#/1012414/sound/712336" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M04/01/74/wKgDsVIC21uQp_vgAABk2gTG_JI819_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="708740">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/708740" class="sound_title">《河神 鬼水怪谈》 第十章 恶狗村捉妖 七+八【完】]</a>
+                                            <span class="sound_playcount" title="318次播放">318</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">14:15</span>
+                                            <div class="pin" sound_popsrc="708740">
+                                                <a href="/#/1012414/sound/708740" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group3/M00/00/3A/wKgDslIBjdzB1JIfAABk2gTG_JI263_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/708740">《河神 鬼水怪谈》 第十章 恶狗村捉妖 七+八【完】]</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">14:15</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M01/00/95/wKgDsVIBjvvyBgpSAAAKiMOVwhY7463.js" sound_uploadid="u_716063"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="708740">
+                                                    <a href="/#/1012414/sound/708740" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group3/M00/00/3A/wKgDslIBjdzB1JIfAABk2gTG_JI263_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="item" sound_id="701918">
+                            <div class="content_wrap">
+                                <div class="sound">
+
+                                    <div class="sound_unexpandBox">
+                                        <div class="sound_titlebar">
+                                            <a href="/#/1012414/sound/701918" class="sound_title">《河神 鬼水怪谈》 第十章 恶狗村捉妖 五+六</a>
+                                            <span class="sound_playcount" title="354次播放">354</span>
+                                        </div>
+                                        <div class="smallPlayer">
+                                            <a href="javascript:;" class="playBtn"></a> <span class="duration">08:56</span>
+                                            <div class="pin" sound_popsrc="701918">
+                                                <a href="/#/1012414/sound/701918" class="soundface">
+                                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M00/28/03/wKgDrlIALxDgSDYQAABk2gTG_JI256_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sound_expandBox">
+                                        <div class="sound_titlebar">
+                                            <a class="sound_title" href="/#/1012414/sound/701918">《河神 鬼水怪谈》 第十章 恶狗村捉妖 五+六</a>
+                                            <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">08:56</span></div>
+                                        </div>
+                                        <div class="feed_middlePlayerBox">
+                                            <div class="middlePlayer">
+                                                <div class="left">
+                                                    <a class="playBtn"></a>
+                                                </div>
+                                                <div class="right">
+                                                    <!-- 进度条 -->
+                                                    <div class="player_progressbar">
+                                                        <div class="player_progressbarBg"></div>
+                                                        <div class="player_seekbar"></div>
+                                                        <div class="player_playbar"></div>
+                                                            <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group1/M00/28/04/wKgDrlIAL6HR01USAAAKSLBKYnc5349.js" sound_uploadid="u_706652"></div>
+                                                         <div class="player_progressbarCoverBg"></div>
+                                                        <div class="player_nonius">
+                                                            <div class="player_nonius_cover"></div>
+                                                            <div class="player_nonius_time">00:00</div>
+                                                            <div class="player_nonius_line5"></div>
+                                                            <div class="player_nonius_line3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 二维评论 -->
+                                                    <div class="player_commentbar">
+                                                    </div>
+                                                    <div class="player_operate">
+                                                        <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pin" sound_popsrc="701918">
+                                                    <a href="/#/1012414/sound/701918" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M00/28/03/wKgDrlIALxDgSDYQAABk2gTG_JI256_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="pagingBar mgTB20">
+                          <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/1012414/favorites?page=2" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/1012414/favorites?page=3" rel="">3</a>
+
+
+          <a class="pagingBar_page" href="/#/1012414/favorites?page=4" rel="">4</a>
+
+
+          <a class="pagingBar_page" href="/#/1012414/favorites?page=5" rel="">5</a>
+
+
+          <span>......</span>
+
+          <a class="pagingBar_page" href="/#/1012414/favorites?page=19" rel="">19</a>
+
+
+    <a class="pagingBar_btn" href="/#/1012414/favorites?page=2" rel="next">下一页</a>
+
+  </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--他关注的人-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1012414/follow/" class="more">更多</a>
+            <h2 class="title">他关注的人(62)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1266964/" title="有声的紫襟">
+                <img card="1266964" alt="有声的紫襟" src="http://fdfs.xmcdn.com/group2/M00/27/8B/wKgDsFHRwaCCPyPWAACT_j5CqTA902_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1333953/" title="叶清voasia">
+                <img card="1333953" alt="叶清voasia" src="http://fdfs.xmcdn.com/group2/M01/13/73/wKgDsFGiDNeDfKSeAAE_QdXE790403_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1339603/" title="GYN小云">
+                <img card="1339603" alt="GYN小云" src="http://tp2.sinaimg.cn/1856290017/180/5651490545/0" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1015645/" title="糖果声音工作室">
+                <img card="1015645" alt="糖果声音工作室" src="http://tp1.sinaimg.cn/2085535484/180/5648517131/0" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1374220/" title="安娜妈咪早教公益播读">
+                <img card="1374220" alt="安娜妈咪早教公益播读" src="http://fdfs.xmcdn.com/group2/M02/1D/E7/wKgDr1G_3wKiyw_RAADjGwBXasI100_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1587644/" title="李满超">
+                <img card="1587644" alt="李满超" src="http://fdfs.xmcdn.com/group1/M00/21/43/wKgDrlHvThvywdMQAADnHMLc8_U589_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1521708/" title="珍壶轩怪谈">
+                <img card="1521708" alt="珍壶轩怪谈" src="http://tp4.sinaimg.cn/1292110231/180/5605944113/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1681999/" title="青春小说集">
+                <img card="1681999" alt="青春小说集" src="http://fdfs.xmcdn.com/group2/M00/16/17/wKgDsFGoXUrwTTJFAAGd0XamDL0296_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1662220/" title="毕加索">
+                <img card="1662220" alt="毕加索" src="http://fdfs.xmcdn.com/group2/M00/12/0B/wKgDsFGgCDDgf9kmAAB28OQjzlw463_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1591179/" title="1028国风">
+                <img card="1591179" alt="1028国风" src="http://fdfs.xmcdn.com/group2/M02/4B/F6/wKgDsFH_EHLDECevAAEV9Qx3SA8971_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1012414/fans/" class="more">更多</a>
+            <h2 class="title">他的粉丝(25761)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/2618356/" title="阿翘">
+                <img card="2618356" alt="阿翘" src="http://qzapp.qlogo.cn/qzapp/100261563/E4C29553D825AA1D3FDA6623D3F6C896/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627162/" title="天蓝不起早丶">
+                <img card="2627162" alt="天蓝不起早丶" src="http://tp4.sinaimg.cn/3124899431/180/5671498686/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2626866/" title="丶Remember丶李先生">
+                <img card="2626866" alt="丶Remember丶李先生" src="http://qzapp.qlogo.cn/qzapp/100261563/AA4A6FA7381183CF2A05E018E04460E4/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2626115/" title="泥娃">
+                <img card="2626115" alt="泥娃" src="http://qzapp.qlogo.cn/qzapp/100261563/6C5E179CDFC42EAABC2911AC6AB96063/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2602585/" title="星星火炬报">
+                <img card="2602585" alt="星星火炬报" src="http://tp2.sinaimg.cn/1655312025/180/5666135225/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2625223/" title="林宝石">
+                <img card="2625223" alt="林宝石" src="http://qzapp.qlogo.cn/qzapp/100261563/08D1DCB92F1218E7AD20347835A54453/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2625293/" title="说来听听">
+                <img card="2625293" alt="说来听听" src="http://qzapp.qlogo.cn/qzapp/100261563/9F14F33769F1317BDBE91CFDDBA1C4A3/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2625368/" title="darkmoon13">
+                <img card="2625368" alt="darkmoon13" src="http://tp3.sinaimg.cn/1701416634/180/5621688795/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2624637/" title="歌広場淳">
+                <img card="2624637" alt="歌広場淳" src="http://fdfs.xmcdn.com/group3/M03/15/16/wKgDslINrYGz149AAADJaVoGBr8011_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2617722/" title="TIFFADER">
+                <img card="2617722" alt="TIFFADER" src="http://qzapp.qlogo.cn/qzapp/100261563/CE8B7B1DB5769F38BFF87E2DF30446D3/100" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他最新的声音-->
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/1012414/sound/" class="more">更多</a>
+            <h2 class="title">他最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/865966">《河神 鬼水怪谈》 第十二章 河底电台 七【完】</a>
+                    <span class="times">63次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/811182">《河神 鬼水怪谈》 第十二章 河底电台 五+六</a>
+                    <span class="times">196次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/784148">《河神 鬼水怪谈》 第十二章 河底电台 三+四</a>
+                    <span class="times">237次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/735437">《河神 鬼水怪谈》 第十二章 河底电台 一+二</a>
+                    <span class="times">290次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/724687">《河神 鬼水怪谈》 第十一章 枪毙连化青 五+六【完】</a>
+                    <span class="times">248次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/721557">《河神 鬼水怪谈》 第十一章 枪毙连化青 三+四</a>
+                    <span class="times">306次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/712336">《河神 鬼水怪谈》 第十一章 枪毙连化青 一+二</a>
+                    <span class="times">327次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/708740">《河神 鬼水怪谈》 第十章 恶狗村捉妖 七+八【完】]</a>
+                    <span class="times">318次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/701918">《河神 鬼水怪谈》 第十章 恶狗村捉妖 五+六</a>
+                    <span class="times">354次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1012414/sound/695389">《河神 鬼水怪谈》 第十章 恶狗村捉妖 三+四</a>
+                    <span class="times">347次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+    <script type="text/template" id="tpl_comment_box">
+    <div class="commentBox mgT10 hidden">
+        <div class="commentBox_top">
+            <a href="javascript:;" class="closeBtn" title="关闭"></a>
+            <span><%= title %></span>
+        </div>
+        <div class="commentBox_middle">
+            <div class="left">
+                <a class="userface" href="javascript:;">
+                    <img src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="commentBox_inputBox">
+                    <div class="effect_borderHover"></div>
+                    <div class="effect_borderDefault"></div>
+                    <input value="" type="text" placeholder="写点什么吧...">
+                    <textarea rows="" cols=""></textarea>
+                </div>
+                <div class="cl">
+                    <div class="fr">
+                        <span class="charCount count-tip">
+                            还剩 <em>145</em>
+                            字
+                        </span>
+                        <a href="javascript:;" class="faceBtn"></a>
+                        <a href="javascript:;" class="submitBtn">
+                            <span><%= btnText %></span>
+                        </a>
+                    </div>
+                    <span>点亮分享</span>
+                    <a href="javascript:;" class="qqWeiboBtn" title="腾讯微博" data-type="<%= shareType %>" data-name="tQQ"></a>
+                    <a href="javascript:;" class="qZoneBtn" title="QQ空间" data-type="<%= shareType %>" data-name="qzone"></a>
+                    <a href="javascript:;" class="sinaWeiboBtn" title="新浪微博" data-type="<%= shareType %>" data-name="tSina" ></a>
+                    <a href="http://www.ximalaya.com/passport/profile">配置</a>
+                </div>
+            </div>
+        </div>
+        <ul class="commentBox_commentList">
+
+        </ul>
+    </div>
+</script>
+
+
+
+    
+</div></div>
+  </div>
+</body>
+</html>

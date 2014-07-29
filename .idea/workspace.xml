@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="d126e770-cf8f-44ab-b62a-349a54179dcd" name="Default" comment="" />
+    <ignored path="static2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/dis_sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375165230667" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/post/ydstt.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366014536548" ignored="false" />
+    <file path="/ydstt.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366009589789" ignored="false" />
+    <file path="/a.dummy" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376619804089" ignored="false" />
+    <file path="/list.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371697964437" ignored="false" />
+    <file path="/header_search.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374045082502" ignored="false" />
+    <file path="/timeline.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370339934378" ignored="false" />
+    <file path="/soundwall.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367047098106" ignored="false" />
+    <file path="/all.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366342360882" ignored="false" />
+    <file path="/soundwall.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367046763010" ignored="false" />
+    <file path="/timeline.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370332211390" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/plugin/wall_of_sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366096754994" ignored="false" />
+    <file path="/wall_of_sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366096741135" ignored="false" />
+    <file path="/jquery.selecter.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372041964254" ignored="false" />
+    <file path="/timeline.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371707196403" ignored="false" />
+    <file path="/selecter.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366254331272" ignored="false" />
+    <file path="/select.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371622924169" ignored="false" />
+    <file path="/dis_sound.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369124923398" ignored="false" />
+    <file path="/feed_event.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366255464901" ignored="false" />
+    <file path="/search.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371711240879" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/lib/record/handlers.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369631630912" ignored="false" />
+    <file path="/handlers.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370660258401" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/page_base.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366686821889" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/record/record_main.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369806516907" ignored="false" />
+    <file path="/comment_box.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376460547809" ignored="false" />
+    <file path="/face.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367826973942" ignored="false" />
+    <file path="/comment.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376467991664" ignored="false" />
+    <file path="/share.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375767644384" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/post/tandun_homepage.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366773789080" ignored="false" />
+    <file path="/tandun_homepage.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366773788424" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/poster/tandun_homepage.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366687347515" ignored="false" />
+    <file path="/tandun_homepage.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366364389436" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/post/tandun_vote.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367570175448" ignored="false" />
+    <file path="/tandun_vote.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367570174339" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/poster/tandun_vote.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366687347515" ignored="false" />
+    <file path="/tandun_vote.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366365354390" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/poster/css/poster.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369895539711" ignored="false" />
+    <file path="/discover.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375411513415" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/final/final_voice.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369993618723" ignored="false" />
+    <file path="/final_voice.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369964984183" ignored="false" />
+    <file path="/dis_album.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375682957716" ignored="false" />
+    <file path="/passport.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375671851619" ignored="false" />
+    <file path="/view.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375856887937" ignored="false" />
+    <file path="/discover.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366785613093" ignored="false" />
+    <file path="/wave.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366770237615" ignored="false" />
+    <file path="/discoversound.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373358511374" ignored="false" />
+    <file path="/Dummy.txt" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366705878091" ignored="false" />
+    <file path="/commentbox.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1366946774044" ignored="false" />
+    <file path="/dis_index.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369985742808" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/css/common.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369964729210" ignored="false" />
+    <file path="/btn.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374095145784" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/common.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372731411689" ignored="false" />
+    <file path="/radio.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375413386840" ignored="false" />
+    <file path="/forward.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370660990642" ignored="false" />
+    <file path="/dis_user.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375945831407" ignored="false" />
+    <file path="/follow.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367044962003" ignored="false" />
+    <file path="/search_input.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368512161669" ignored="false" />
+    <file path="/common.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376382411193" ignored="false" />
+    <file path="/message.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368524948908" ignored="false" />
+    <file path="/passport_setting.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368089473137" ignored="false" />
+    <file path="/privacy.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368523731278" ignored="false" />
+    <file path="/backlist.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368602381729" ignored="false" />
+    <file path="/personal.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374051377742" ignored="false" />
+    <file path="/settings_privacy.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367057312235" ignored="false" />
+    <file path="/settings_message.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367115363939" ignored="false" />
+    <file path="/poster.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369895533804" ignored="false" />
+    <file path="/settings_personal.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370226437607" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/plugin/player/player.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367129304245" ignored="false" />
+    <file path="/player.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367129300995" ignored="false" />
+    <file path="/avatar.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370337882393" ignored="false" />
+    <file path="/settings_avatar.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367819170890" ignored="false" />
+    <file path="/settings.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371095397057" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/lib/jquery.jcrop.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367473653853" ignored="false" />
+    <file path="/jquery.jcrop.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369908290935" ignored="false" />
+    <file path="/helper.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371439677076" ignored="false" />
+    <file path="/sync.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369288594077" ignored="false" />
+    <file path="/settings_sync.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367478717221" ignored="false" />
+    <file path="/blacklist.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368602727122" ignored="false" />
+    <file path="/dialog.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376378685843" ignored="false" />
+    <file path="/header.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372229414432" ignored="false" />
+    <file path="/floatheader.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369205915933" ignored="false" />
+    <file path="/popup.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374743175637" ignored="false" />
+    <file path="/popup.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369823781316" ignored="false" />
+    <file path="/album_sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376555521833" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/passport/set_personal.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367832009201" ignored="false" />
+    <file path="/set_personal.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367832009201" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/passport/passport.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368781101556" ignored="false" />
+    <file path="/discover_album.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367835469917" ignored="false" />
+    <file path="/city.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367908359534" ignored="false" />
+    <file path="/sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372748981283" ignored="false" />
+    <file path="/final_sound.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374633026547" ignored="false" />
+    <file path="/bindmobile.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373249525224" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/y/js/jquery.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367978979163" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/y/welcome.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367996922631" ignored="false" />
+    <file path="/sound_detail.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1367998036932" ignored="false" />
+    <file path="/jquery.easydrag.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374657440742" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/plugin/login_box.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368065873062" ignored="false" />
+    <file path="/account.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368440529798" ignored="false" />
+    <file path="/count_char.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368083728342" ignored="false" />
+    <file path="/player.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368684706316" ignored="false" />
+    <file path="/bindemail.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368088973140" ignored="false" />
+    <file path="/final_tag.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372734428110" ignored="false" />
+    <file path="/mytracks.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368154837769" ignored="false" />
+    <file path="/final_album.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372734456174" ignored="false" />
+    <file path="/album_detail.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372227857612" ignored="false" />
+    <file path="/jquery.parser.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368178785229" ignored="false" />
+    <file path="$PROJECT_DIR$/demo/page/mycenter/mycenter.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368181175033" ignored="false" />
+    <file path="/thirdpart.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374645519451" ignored="false" />
+    <file path="/login.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368439596105" ignored="false" />
+    <file path="/album.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374637351053" ignored="false" />
+    <file path="/destory.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368502168992" ignored="false" />
+    <file path="/destroy.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368510847577" ignored="false" />
+    <file path="/nav.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368589534289" ignored="false" />
+    <file path="/personalcenter.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368610484475" ignored="false" />
+    <file path="/setting.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370330314683" ignored="false" />
+    <file path="/*.regexp" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368608905818" ignored="false" />
+    <file path="/personpanel.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1368675020925" ignored="false" />
+    <file path="/right.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369291713531" ignored="false" />
+    <file path="/soundwallbg.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374563887618" ignored="false" />
+    <file path="/uploadimg.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376364705097" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/record/add_voice.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369806509079" ignored="false" />
+    <file path="/record_main.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369806483971" ignored="false" />
+    <file path="/foot.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369042357731" ignored="false" />
+    <file path="/zawan.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369043664241" ignored="false" />
+    <file path="/welcome.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369041784859" ignored="false" />
+    <file path="/upload.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376274752483" ignored="false" />
+    <file path="/like.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369106140394" ignored="false" />
+    <file path="/notice.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369106146456" ignored="false" />
+    <file path="/referme.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369901586137" ignored="false" />
+    <file path="/jrecorder.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372924769742" ignored="false" />
+    <file path="/upload.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370576389045" ignored="false" />
+    <file path="/record.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372924839291" ignored="false" />
+    <file path="/upload_index.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375864066331" ignored="false" />
+    <file path="/jquery.menu-aim.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369723936495" ignored="false" />
+    <file path="/information.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376617940192" ignored="false" />
+    <file path="/login_box.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374646037266" ignored="false" />
+    <file path="/add_voice.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373872480431" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/post/tandun_result.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369635513726" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/record/information.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373878917550" ignored="false" />
+    <file path="/passport.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374089961919" ignored="false" />
+    <file path="/copyright.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369809504644" ignored="false" />
+    <file path="/router.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369905556401" ignored="false" />
+    <file path="/common.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1369964724257" ignored="false" />
+    <file path="/fileprogress.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374659829806" ignored="false" />
+    <file path="$PROJECT_DIR$/../tpl/profile/modify_info.vm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370228171572" ignored="false" />
+    <file path="/modify_info.vm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370226753766" ignored="false" />
+    <file path="/page_base.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374824024170" ignored="false" />
+    <file path="/icon.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370506302255" ignored="false" />
+    <file path="/share2friend.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370686933261" ignored="false" />
+    <file path="$PROJECT_DIR$/../static/js/app/event/forward.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370327089947" ignored="false" />
+    <file path="/settings_password.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370412179002" ignored="false" />
+    <file path="/password.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374214292647" ignored="false" />
+    <file path="/simple.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373355998652" ignored="false" />
+    <file path="/edit_album.htm" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370584181700" ignored="false" />
+    <file path="/edit_album.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374720224887" ignored="false" />
+    <file path="/edit_track.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1370586171169" ignored="false" />
+    <file path="/sound2album.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1373265179853" ignored="false" />
+    <file path="/download.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374743898221" ignored="false" />
+    <file path="/download.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371112274877" ignored="false" />
+    <file path="/favorites.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371176162427" ignored="false" />
+    <file path="/sound_liker.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1371438627278" ignored="false" />
+    <file path="/sound2public.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372829614752" ignored="false" />
+    <file path="/comment.less" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372829972607" ignored="false" />
+    <file path="/kindeditor.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1372919155352" ignored="false" />
+    <file path="/iletter.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1374094844914" ignored="false" />
+    <file path="/dialog.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376377034192" ignored="false" />
+    <file path="/base.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1375774262007" ignored="false" />
+    <file path="/imageslider.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376644892039" ignored="false" />
+    <file path="/sound_images.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1376380757519" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/js/page/dis_search.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377237574713" ignored="false" />
+    <file path="/dis_search.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377228354438" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/js/lib/helper.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377055116653" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/demo/page/discover.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377163044870" ignored="false" />
+    <file path="/discover.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377163044042" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/js/page/discover.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377159775669" ignored="false" />
+    <file path="/discover.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377056893409" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/css/wap.v2.css" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377161662305" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/demo/page/hotSound.html" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377226657195" ignored="false" />
+    <file path="$PROJECT_DIR$/../wap_static/js/page/search_result.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377237978671" ignored="false" />
+    <file path="/search_result.js" changelist="d126e770-cf8f-44ab-b62a-349a54179dcd" time="1377237976874" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="D:\xq\Apache2.2\htdocs\static2" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="static2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="imageslider.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/module/dialogs/imageslider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="37" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thirdpart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/model/thirdpart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="26" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="63" selection-start="2258" selection-end="2262" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/module/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="25" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/module/player/extend/share.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="37" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lib/helper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="9" selection-start="1692" selection-end="2993" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-1.9.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lib/jquery-1.9.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5878" column="100" selection-start="164109" selection-end="164123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dis_sound.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/page/discovery/dis_sound.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album_sound.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/page/discovery/album_sound.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="29" selection-start="4798" selection-end="4808" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.menu-aim.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/plugin/jquery.menu-aim.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="178" column="39" selection-start="6096" selection-end="6111" vertical-scroll-proportion="0.022673031">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="&quot;C:\Program Files\nodejs\node.exe&quot; C:\Documents and Settings\xiaoqing\Application Data\npm\node_modules\less\bin\lessc state.less state.css " />
+      <command text="&quot;C:\Program Files\nodejs\node.exe&quot; lessc state.less state.css " />
+      <command text=" C:\Documents and Settings\xiaoqing\Application Data\npm\node_modules\less\bin\lessc state.less state.css " />
+      <command text=" lessc state.less state.css " />
+      <command text="node  C:\Documents and Settings\xiaoqing\Application Data\npm\node_modules\less\bin\lessc state.less state.css " />
+      <command text="cd c" />
+      <command text="cd c:" />
+      <command text="cd .." />
+      <command text="ls" />
+      <command text="cd -" />
+      <command text="lessc state.less state.css" />
+      <command text="lessc" />
+      <command text="node lessc" />
+      <command text="npm " />
+      <command text="lessc" />
+    </commandsHistory>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/demo/dialog.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/js/page/discovery/dis_index.js" />
+        <option value="$PROJECT_DIR$/demo/page/home/upload.htm" />
+        <option value="$PROJECT_DIR$/js/module/uploadimg.js" />
+        <option value="$PROJECT_DIR$/js/module/dialogs/imageSlider.js" />
+        <option value="$PROJECT_DIR$/demo/dialog.html" />
+        <option value="$PROJECT_DIR$/demo/page/home/popup.htm" />
+        <option value="$PROJECT_DIR$/js/plugin/dialog.js" />
+        <option value="$PROJECT_DIR$/js/module/common.js" />
+        <option value="$PROJECT_DIR$/js/module/comment_box.js" />
+        <option value="$PROJECT_DIR$/js/module/player/extend/comment.js" />
+        <option value="$PROJECT_DIR$/js/model/sound_images.js" />
+        <option value="$PROJECT_DIR$/js/module/waterfall/view.js" />
+        <option value="$PROJECT_DIR$/js/page/upload/information.js" />
+        <option value="$PROJECT_DIR$/js/module/dialogs/imageslider.js" />
+        <option value="$PROJECT_DIR$/js/page/discovery/album_sound.js" />
+        <option value="$PROJECT_DIR$/js/plugin/jquery.menu-aim.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1918" />
+    <option name="height" value="1020" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TextLabelInSwitchStatementJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesscode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="discovery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo_js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo_js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="273" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="264" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="285" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="240" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="228" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wap_static" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="237" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="912" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="237" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="957" />
+    <property name="options.splitter.details.proportions" value="0.4090909" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\module\player\extend" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\module\dialogs" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\swf" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\page\upload" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\page\passport" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\page\final" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\page\setting" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\module\my" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\plugin" />
+      <recent name="D:\xq\Apache2.2\htdocs\static2\js\module\dialogs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Documents and Settings\xiaoqing\Application Data\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\xq\Apache2.2\htdocs\static2" />
+          <option name="myCopyRoot" value="D:\xq\Apache2.2\htdocs\static2" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\xq\Apache2.2\htdocs\static2" />
+          <option name="myCopyRoot" value="D:\xq\Apache2.2\htdocs\static2" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d126e770-cf8f-44ab-b62a-349a54179dcd" name="Default" comment="" />
+      <created>1361259666339</created>
+      <updated>1361259666339</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1366703426204</created>
+      <updated>1366703426204</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1366705882107</created>
+      <updated>1366705882107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1918" height="1020" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26338103" sideWeight="0.25549132" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21144675" sideWeight="0.7017341" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635838" sideWeight="0.49814716" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.49814716" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="96" y="96" width="1728" height="828" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2982659" sideWeight="0.4997353" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07568807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="static2" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="static2" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/page/404.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="58" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesscode/base/fn/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="1" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesscode/page/discover/discover.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="7" selection-start="3880" selection-end="3880" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesscode/content/fn/personpanel.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="505" column="47" selection-start="8157" selection-end="8163" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesscode/page/discover/radio.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="13" selection-start="953" selection-end="953" vertical-scroll-proportion="2.0528302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/upload/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="698" column="0" selection-start="26044" selection-end="26044" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/module/dialogs/imageslider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="37" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/model/thirdpart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="26" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="63" selection-start="2258" selection-end="2262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/module/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="25" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/module/player/extend/share.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="9" selection-start="1692" selection-end="2993" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery-1.9.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5878" column="100" selection-start="164109" selection-end="164123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/discovery/dis_sound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/discovery/album_sound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="29" selection-start="4798" selection-end="4808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugin/jquery.menu-aim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="39" selection-start="6096" selection-end="6111" vertical-scroll-proportion="0.022673031">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

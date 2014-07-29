@@ -1,0 +1,110 @@
+.soundFn(){
+	& .sound_titlebar{
+		//height:@lineHeightBig;
+		color:@colorText4;
+		.clearfix;
+		& .sound_title{
+			font-size:@fontSizeBig;
+			.fl;
+			max-width:85%;
+			word-wrap: break-word;
+		}
+		& .sound_playcount{
+			.playCountIcon;
+			.fr;
+			color:@colorText4;
+		}
+		& .sound_download{
+			.bgImgExt("sprite/icon_default.png",0,0);
+			width:82px;
+			height:26px;
+			display:block;
+			position:absolute;
+			&:hover{
+				.bgImgExt("sprite/icon_default.png",0,-36px);
+			}
+		}
+		.trans{vertical-align:top;}
+		.privacyIcon{margin-left:5px;vertical-align:bottom;}
+	}
+	& .smallPlayer{
+		margin:5px 0 0 0;
+	}
+	& .middlePlayer{
+		margin:7px 0 0 0;
+	}
+	& .sound_content{
+		line-height:@lineHeight;
+		margin:10px 0 0 0;
+		color: @colorText3;
+		word-wrap:break-word;
+	}
+	& .sound_createtime{
+		.fl;
+		color:@colorText5;
+		font-size:@fontSizeMin;
+	}
+	& .sound_bottom{
+		.clearfix;
+		margin:10px 0 0 0;
+		height:20px;
+		& .createtime{
+			.fl;
+			color:@colorText5;
+			font-size:@fontSizeMin;
+		}
+		& a{
+			margin:0 0 0 10px;
+			.link2;
+		}
+		& a.link1{
+			.link1;
+		}
+		& .likeBtn{
+			padding-left:16px;
+			.bgImg("sprite/btn10px.png", no-repeat);
+			background-position:0 -26px;
+			&:hover{
+				background-position:0 -41px;
+			}
+			&.is-sound-liked{
+				.bgImg("sprite/btn10px.png", no-repeat);
+				background-position:0 -41px;
+				&:hover{
+					background-position:0 -41px;
+				}
+			}
+		}		
+		& .commentBtn{
+		}
+		& .forwordBtn{
+		}
+		& .downloadToMobile{
+			.bgImgExt("sprite/icon15px.png",0,-276px);
+			padding-left:15px;
+			display:inline-block;
+		}
+	}
+	& .sound_expandBox{
+		display:none;
+	}
+	//百度分享样式
+	#bdshare{
+		float:right;
+		color:#3586bc;
+		margin-left:10px;
+		.bds_more{
+			background:none!important;
+			padding:0;
+			line-height:20px;
+		}
+	}
+}
+.feed:hover{
+	.sound_content{
+		color:@colorText2;	
+	}
+	.link2,.sound_bottom a{
+		.link1;
+	}
+}

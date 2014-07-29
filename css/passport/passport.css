@@ -1,0 +1,654 @@
+@charset "utf-8";
+.clear{ clear:both; }
+.pd_lf23{ padding-left:23px; }
+.pdlf88{ padding-left:88px; }
+.pd40{ padding-bottom:40px; }
+.red{ color:red; font-family:Arial, Helvetica, sans-serif; }
+.lineHeight20{ line-height:20px; }
+#home_containter{margin:30px 0 50px;}
+#pass_main{ width:956px; clear:both; margin:0 auto; }
+.cloud{ background:url(../img/passport/cloud.jpg) no-repeat left top; }
+#pass_main .title{ width:820px; clear:both; margin:auto; color:#6f7072; font-size:16px; font-weight:bold; padding:88px 0 0 0; text-indent:10px; }
+#pass_main .title span{ display:block; padding-bottom:15px; }
+#pass_main .title ul.pass_process{ width:500px; float:left; list-style:none; margin-left:15px; display:inline; padding-bottom:15px; }
+#pass_main .title ul.pass_process a{ display:block; width:90px; height:20px; }
+#pass_main .title ul.pass_process li{ margin-right:20px; }
+#pass_main .title ul.pass_process li.step_01{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat left top; }
+#pass_main .title ul.pass_process li.step_01:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat left -40px; }
+#pass_main .title ul.pass_process li.step_02{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -87px top; }
+#pass_main .title ul.pass_process li.step_02:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -87px -40px; }
+#pass_main .title ul.pass_process li.step_03{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -174px top; }
+#pass_main .title ul.pass_process li.step_03:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -174px -40px; }
+#pass_main .title ul.pass_process li.step_04{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -261px top; }
+#pass_main .title ul.pass_process li.step_04:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -261px -40px; }
+#pass_main .title ul.pass_process li.cur_01{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat left -20px; }
+#pass_main .title ul.pass_process li.cur_01:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat left -20px; }
+#pass_main .title ul.pass_process li.cur_02{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -87px -20px; }
+#pass_main .title ul.pass_process li.cur_02:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -87px -20px; }
+#pass_main .title ul.pass_process li.cur_03{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -174px -20px; }
+#pass_main .title ul.pass_process li.cur_03:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -174px -20px; }
+#pass_main .title ul.pass_process li.cur_04{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -261px -20px; }
+#pass_main .title ul.pass_process li.cur_04:hover{ width:87px; height:20px; float:left; background:url(../img/passport/pass_process.png) no-repeat -261px -20px; }
+#pass_main .title .third_party{ float:right; font-size:12px; font-weight:normal; color:#919191; padding-right:8px; padding-top:4px; +padding-top:8px; _padding-top:8px; }
+#pass_main .title .third_party a{ color:#006A92; }
+/*登录*/
+#login_box{ width:956px; clear:both; margin:0 auto; background:url(../img/passport/login_bg.jpg) no-repeat center top; overflow:hidden; }
+.account_log{ width:480px; margin:121px 0 0 86px; float:left; display:inline; }
+.account_log .title{ clear:both; color:#6E6F71; font-weight:bold; font-size:14px; }
+ul.log_mode{ clear:both; list-style:none; margin-top:56px; }
+ul.log_mode li{ width:224px; height:49px; float:left; background: url(../img/passport/btn_bg.png) no-repeat; font-size:14px; margin:0 auto 34px auto; }
+ul.log_mode li a.sina{ color:#000002; background:url(../img/passport/icon.png) no-repeat 14px -35px; display:block; height:24px; line-height:24px; margin-top:8px; padding-left:50px; }
+ul.log_mode li a.qq{ color:#000002; background:url(../img/passport/icon.png) no-repeat 14px -64px; display:block; height:24px; line-height:24px; margin-top:8px; padding-left:50px; }
+ul.log_mode li a.douban{ color:#000002; background:url(../img/passport/icon.png) no-repeat 14px -96px; display:block; height:24px; line-height:18px; margin-top:12px; padding-left:50px; }
+ul.log_mode li a.renren{ color:#000002; background:url(../img/passport/icon.png) no-repeat 14px -120px; display:block; height:24px; line-height:18px; margin-top:12px; padding-left:50px; }
+#login_box .login{ width:270px; float:left; margin:70px auto 94px 60px; display:inline; }
+#login_box .login .cont{ clear:both; padding:120px 35px 45px 30px; }
+#login_box .login ul{ width:205px; float:left; list-style:none; }
+#login_box .login ul li{ height:40px; clear:both; }
+#login_box .login ul li label{ float:left; color:#383838; font-size:14px; line-height:31px; padding-right:10px; }
+#login_box .login ul li input{ width:157px; height:24px; line-height:24px; padding:0 5px; vertical-align:middle; background:url(../img/passport/input_bg1.gif) no-repeat; border:0; float:left; font-size:12px; }
+#login_box .login input.status_inputs{ width:13px; height:13px; background:none; float:left; margin-top:2px; }
+#login_box .login span.status{ float:left; color:#323335; padding-left:5px; display:inline; }
+#login_box .login span.findcode{ float:right; color:#757575; }
+#login_box .login span.findcode a{ color:#757575; }
+#login_box .login span.findcode a:hover{ color:#757575; text-decoration:underline; }
+#login_box .login .btn_box{ clear:both; padding:4px 0 0 55px; }
+#login_box .login a.log_btn{ display:block; width:99px; height:27px; background:url(../img/passport/but_login.gif) no-repeat; }
+/*其他方式登录*/
+.w510{ width:510px; }
+#direct_log{ width:956px; margin:0 auto; clear:both; background:url(../img/passport/direct_log_bg.jpg) no-repeat center top; overflow:hidden; }
+.dir_log_item{ margin:133px auto auto 159px; }
+.log_list{ margin-left:30px; }
+.direct_reg{ clear:both; text-align:center; color:#6F7170; font-weight:bold; font-size:14px; padding-bottom:100px; padding-top:5px; +padding-top:5px; _padding-top:4px; }
+.direct_reg a{ color:#4494AB!important; }
+/*直接注册*/
+.reg{ clear:both; overflow:hidden; }
+ul.agreement{ clear:both; list-style:none; padding:6px 0 0 30px; +padding:2px 0 0 30px; _padding:0 0 0 30px; }
+ul.agreement li{ clear:both; height:25px; }
+ul.agreement li input{ float:left; }
+ul.agreement li label{ color:#91918F; float:left; padding:0 0 0 14px; +padding:4px 0 0 14px; _padding:4px 0 0 14px; display:inline; }
+ul.agreement li label a{ color:#4795A9!important; }
+a.getinto{ display:block; width:126px; height:27px; background:url(../img/passport/but_enter.png) no-repeat; margin:20px 0 0 120px; }
+/*完善信息*/
+.perfect_info{ width:820px; height:332px; margin:0 auto 40px auto; background:url(../img/passport/perinfo_bg.gif) no-repeat left top; clear:both; }
+.perfect_info .cont{ padding:45px 42px 0 42px; clear:both; overflow:hidden; }
+.perfect_info p{ color:#919191; padding-bottom:33px; }
+.perfect_info .photo{ width:126px; height:126px; float:left; margin-right:30px; }
+.perfect_info ul.info{ width:580px; float:left; list-style:none; }
+.perfect_info ul.info li{ height:47px; clear:both; }
+.perfect_info ul.info li label{ float:left; color:#383838; font-size:14px; line-height:31px; padding-right:10px; }
+.perfect_info ul.info li input{ width:176px; height:31px; line-height:31px; padding:0 5px; background:url(../img/passport/input_bg.gif) no-repeat; border:0; float:left; }
+.perfect_info ul.info li span.tips{ float:left; color:#919191; line-height:31px; padding-left:10px; display:inline; }
+.perfect_info ul.info li a{ width:107px; height:27px; line-height:27px; text-align:center; background:url(../img/passport/icon.png) no-repeat left top; display:block; color:white; text-decoration:none; margin-top:20px; }
+/*推荐用户*/
+.recommend{ width:820px; clear:both; margin:0 auto; }
+.recommend .top{ height:14px; clear:both; background:url(../img/passport/pass_tbg.gif) no-repeat; }
+.recommend .mid{ width:820px; clear:both; background:url(../img/passport/pass_mbg.gif) repeat-y; }
+.recommend .mid .cont{ padding:16px 29px 28px 38px; clear:both; }
+.recommend .rec_lf{ float:left; padding-bottom:31px; }
+.recommend .rec_lf p{ color:#919191; line-height:25px; padding-left:20px; padding-bottom:30px; }
+.recommend .rec_lf span{ display:block; padding-bottom:21px; color:#909291; font-size:14px; font-weight:bold; }
+.recommend .rec_lf span.rec_tit{ padding-bottom:15px; }
+.recommend .rec_lf a{ width:73px; height:23px; display:block; background:url(../img/passport/but-attentionB.png) no-repeat; margin-left:7px; }
+.recommend .next_step{ float:right; }
+.recommend .next_step a{ width:57px; height:23px; display:block; background:url(../img/passport/but_nextstep.png) no-repeat; }
+.recommend ul.user_list{ width:730px; list-style:none; clear:both; margin-left:7px; padding-bottom:12px; overflow:hidden; }
+.recommend ul.user_list li{ width:243px; float:left; margin-bottom:12px; }
+.recommend ul.user_list li img{ width:60px; height:60px; float:left; }
+.recommend ul.user_list li .intro{ width:175px; float:right; }
+.recommend ul.user_list li h2.caption{ font-weight:normal; font-size:12px; padding-bottom:6px; }
+.recommend ul.user_list li h2.caption a{ display:block; height:19px; line-height:19px; color:#006a92; background:url(img/player-x.png) no-repeat left top; padding-left:21px; }
+.recommend ul.user_list li ul.user_info{ width:175px; list-style:none; }
+.recommend ul.user_list li ul.user_info li{ width:175px; padding-bottom:6px; clear:both; margin-bottom:0; }
+.recommend ul.user_list li ul.user_info li span.listen{ float:left; background:url(../img/passport/icn3.gif) no-repeat left center; padding-left:19px; padding-right:12px; display:inline; }
+.recommend ul.user_list li ul.user_info li span.num{ float:left; background:url(../img/passport/icn8.gif) no-repeat left center; padding-left:15px; }
+.recommend ul.user_list li ul.user_info li span.introduce{ float:left; padding-right:22px; line-height:17px; }
+.recommend ul.user_list li ul.user_info li a.attention_btn{ width:40px; height:17px; float:left; background:url(img/but-attentionA.png) no-repeat; }
+.recommend  a.start{ display:block; width:136px; height:27px; margin:0 auto; background:url(../img/passport/but_start.png) no-repeat; clear:both; }
+.recommend .bottom{ height:14px; clear:both; background:url(../img/passport/pass_bbg.gif) no-repeat; }
+/*推荐领域*/
+.recommend .mid .cont1{ width:802px; margin:0 auto; padding:0 0 28px 0; clear:both; }
+.recommend .topB{ height:14px; clear:both; background:url(../img/passport/pass_tbgB.gif) no-repeat; }
+.recommend .midB{ width:820px; clear:both; background:url(../img/passport/pass_mbgB.gif) repeat-y; overflow:hidden; }
+.recommend .midB .cont{ /*padding:16px 0 28px 38px; */width:802px; margin:0 auto; border-bottom:1px dashed #d3d5d7; overflow:hidden; clear:both; }
+.recommend .classfic_lf{ float:left; padding-bottom:19px; margin-left:28px; margin-top:14px; display:inline; color:#909291; font-size:14px; font-weight:bold; }
+.recommend .next_step1{ float:right; margin:16px 22px auto auto; }
+.recommend .next_step1 a{ width:57px; height:23px; display:block; background:url(../img/passport/but_nextstep.png) no-repeat; }
+.recommend ul.classific{ width:746px; list-style:none; clear:both; margin-left:38px; }
+.recommend ul.classific li{ width:102px; float:left; text-align:center; margin-right:4px; margin-bottom:15px; }
+.recommend ul.classific li img{ width:102px; height:70px; }
+.recommend ul.classific li span{ color:#919191; font-size:14px; display:block; padding-top:6px; }
+.recommend .classfic_trans{ width:52px; height:10px; margin:10px auto 20px auto; +margin:20px auto 20px auto; _margin:10px auto 20px auto; clear:both; overflow:hidden; }
+.recommend .classfic_trans a{ width:9px; height:10px; margin:0 4px; float:left; background:url(../img/passport/sel_circle.gif) no-repeat left top; }
+.recommend .classfic_trans a.cur{ width:9px; height:10px; float:left; background:url(../img/passport/sel_circle.gif) no-repeat left -10px; } 
+.recommend .classfic_unit{ width:802px; margin:0 auto; clear:both; border-bottom:1px dashed #d4d8db; padding-bottom:16px; }
+.recommend .classfic_unit .sub_cont{ padding:24px 30px 0 30px; clear:both; }
+.recommend .classfic_unit .bt{ float:left; color:#919191; font-weight:bold; font-size:14px; }
+.recommend .classfic_unit .sel_all{ float:right; }
+.recommend .classfic_unit .sel_all input{ float:left; }
+.recommend .classfic_unit .sel_all label{ float:left; margin-left:8px; padding-top:0; +padding-top:4px; _padding-top:4px; display:inline; }
+.recommend .classfic_unit ul.classfic_list{ list-style:none; clear:both; padding-top:20px; +padding-top:10px; _padding-top:15px; margin-left:8px; }
+.recommend .classfic_unit ul.classfic_list li{ width:104px; height:28px; line-height:26px; color:#919191; font-size:14px; text-align:center; background:url(../img/passport/classfic_bg.jpg) no-repeat center center; float:left; margin-bottom:20px; +margin-bottom:0px; _margin-bottom:0; }
+.recommend .classfic_unit ul.classfic_list li label{ float:left; margin-left:19px; display:inline; }
+.recommend .classfic_unit ul.classfic_list li .tick{ width:12px; height:13px; position:absolute; right:4px; top:16px; background:url(../img/passport/but_tick.png) no-repeat; }
+.recommend .classfic_unit ul.classfic_list li input{ margin-top:12px; float:left; margin-left:8px; margin-top:16px; }
+.recommend .classfic_unit .open{ width:42px; height:13px; margin:0 auto; clear:both; padding:2px 0 0 0; +padding:15px 0 0 0; _padding:15px 0 0 0; }
+.recommend .classfic_unit .open a{ width:42px; height:13px; display:block; background:url(../img/passport/pack-down.gif) no-repeat left 4px; +background:url(../img/passport/pack-down.gif) no-repeat left top; _background:url(../img/passport/pack-down.gif) no-repeat left top; padding-left:16px; }
+.recommend .btn_boxB{ width:200px; margin:0 auto; clear:both; padding:20px 0 15px 0; overflow:hidden; }
+.recommend .btn_boxB a.skip{ float:left; color:#4694a9; line-height:27px; padding-right:34px; }
+.recommend .btn_boxB a.nextstep{ width:107px; height:27px; margin:0 auto; background:url(../img/passport/but_nextstepB.png) no-repeat; float:left; }
+/*推荐好友*/
+.invitation{ width:750px; clear:both; border-top:1px dashed #d6d9dc; padding-top:24px; }
+.invitation .bt{ color:#919191; font-weight:bold; font-size:14px; padding-bottom:24px; }
+.invitation .bt a{ display:block; width:73px; height:23px; background:url(../img/passport/but_invitationA.jpg) no-repeat; margin-top:26px; margin-left:20px; }
+.invitation ul.inv_user_list{ width:730px; list-style:none; clear:both; margin-left:20px; }
+.invitation ul.inv_user_list li{ width:160px; float:left; margin-bottom:10px; margin-right:15px; }
+.invitation ul.inv_user_list li .photo{ width:60px; height:60px; float:left; }
+.recommend ul.inv_user_list li .intro{ width:96px; float:right; }
+.recommend ul.inv_user_list li h2.caption{ font-weight:normal; font-size:12px; padding-bottom:9px; padding-top:6px; }
+.recommend ul.inv_user_list li h2.caption a{ color:#006a92; }
+.recommend ul.inv_user_list li .intro a.invitation{ width:40px; height:17px; background:url(../img/passport/but_invitationB.jpg) no-repeat; display:block; }
+.invitation ul.inv_user_list li .photo .tick{ width:12px; height:13px; position:absolute; right:0; top:48px; background:url(../img/passport/but_tick.png) no-repeat; }
+.invitation ul.inv_user_list li .photo .tick input{ width:12px; height:12px; }
+/*new 2012-7-4 by yuqi*/
+.diyBody{ background:#f2fafb url(../img/passport/login_bg2.jpg) no-repeat; }
+.diyBody1{ background:#f2fafb none repeat; padding-top: 10px;}
+.diyBody1 input[type=text]{padding:0;}
+.diyBody1 input[type=text]:focus,.diyBody1 input[type=password]:focus{background-color:#fff;}
+.diyBody .selectReg span,.diyBody1 .selectReg span{background-color:#f6f6f6;}
+/*登陆*/
+.loginMain{ background:url(../img/passport/loginMain_bg.png) left bottom no-repeat; width:900px; height:400px; overflow: hidden; position: relative; padding-top: 170px; margin:0 auto 80px; }
+.loginMain .formItem .h28{ line-height: 28px; }
+.loginMain .warp{ width:87%; margin:0 auto; overflow:hidden; padding-top: 110px; }
+.loginMain .fl{ width:54%; }
+.loginMain .fl a{ display:block; width:230px; height:80px; overflow:hidden; background:url(../img/passport/group_btn.png) no-repeat; margin:0 auto; }
+.loginMain .fl a:hover{ background-position:0 -168px; }
+.loginMain .fl .a_1{ background-position:0 -88px; }
+.loginMain .fl .a_1:hover{ background-position:0 -248px; }
+.loginMain .fr{ width:44%; }
+.loginMain .formList,.userInfo .formList{ overflow:hidden; }
+.forgotPwd .formItem,.register .formItem,.userInfo .formItem,.loginMain .formItem{ padding-left:80px; padding-bottom:10px; position:relative; clear: both; overflow: hidden; }
+.forgotPwd .item_in .sp_name,.register .item_in .sp_name,.userInfo .item_in .sp_name,.loginMain .item_in .sp_name{ display: inline; float: left; height: 42px; line-height: 42px; margin-left: -80px; text-align: right; width: 80px; font-weight:bold; font-size:14px; }
+.forgotPwd .item_in .ph_input,.register .item_in .ph_input,.userInfo .item_in .ph_input,.loginMain .item_in .ph_input{ display:block; float: left; line-height:42px; height:42px; background:url(../img/passport/login_input.png) 5px -51px no-repeat; width:200px; border:none; padding:0 18px; font-size:14px; }
+.forgotPwd .item_in .ph_input_2{ background-position: 5px -246px; width: 263px; }
+.forgotPwd .item_in .ph_phone,.register .item_in .ph_phone{ background-position: 5px -148px; width: 94px; }
+.forgotPwd .item_in .ph_phone.input_1,.register .item_in .ph_phone.input_1{ background-position: 5px -97px; }
+.forgotPwd .item_in .sp_tip.phone{ left:315px; }
+.forgotPwd .formItem .error{ color: #FF0000; padding-top:5px; position: absolute; left:200px; white-space: nowrap; font-size: 13px; }
+.sp_phone{ height: 42px; line-height: 42px; }
+.sp_phone a{ text-decoration: underline; color: #4694A9; }
+.forgotPwd .item_in input,.register .item_in input,.userInfo .item_in input,.loginMain .item_in input{ border:0 none; height:22px; line-height:22px; width:100%; _margin-top:8px;padding:0;}
+/*.forgotPwd .item_in input,*/
+.loginMain .item_in input,.userInfo .item_in input{ margin-top: 10px; padding:0;}
+.loginMain .item_in input,.userInfo .item_in input:focus{background-color:#fff;}
+/*验证提示*/
+.forgotPwd .item_in .sp_tip,.register .item_in .sp_tip,.userInfo .item_in .sp_tip{ position:absolute; top:12px; left:290px; white-space: nowrap; }
+.forgotPwd .item_in .sp_right,.register .item_in .sp_right,.userInfo .item_in .sp_right{ background:url(../img/passport/sp_right.jpg) no-repeat; width:16px; height:16px; }
+.forgotPwd .item_in .sp_error,.register .item_in .sp_error,.userInfo .item_in .sp_error{ color:#FF0000; font-size:12px; }				
+/*当输入框选中时*/
+.forgotPwd .item_in .input_1,.register .item_in .input_1,.userInfo .item_in .input_1,.loginMain .item_in .input_1{ background-position:6px 0; }
+.forgotPwd .formItem .ph_label,.register .formItem .ph_label,.userInfo .formItem .ph_label,.loginMain .formItem .ph_label{ /*-moz-transition: all 0.2s ease-out 0s; */color: #cccccc; height: 42px; line-height: 42px; opacity: 1; position: absolute; z-index:1; display:none; }
+.loginMain .formItem .error{ color:#ff4c00; text-indent:8px; line-height:22px; float: left; width:200px; }
+.userInfo .formItem .a_1:link,.loginMain .formItem .a_1:link,.userInfo .formItem .a_1:visited,.loginMain .formItem .a_1:visited{ color:#4694A9; margin-left:10px; }
+.userInfo .formItem .a_1:hover,.loginMain .formItem .a_1:hover{ color: #0cf; }
+.loginMain .formItem .a_2{ color:#4694A9; margin-left:10px; line-height: 30px; }
+.loginMain .formItem #userRemember{ float: left; margin:0 8px; }
+.forgotPwd .formItem .login_btn,.register .formItem .login_btn,.recFriend .formItem .login_btn,.userInfo .formItem .login_btn,.loginMain .formItem .login_btn{ float: left; background:url(../img/passport/sprites-ico-4.gif) no-repeat 0 -320px; width:110px; height:28px; border:none; text-align:center; line-height:28px; color:#FFF; margin-left:8px; cursor: pointer; }
+.forgotPwd .formItem .login_btn:hover,.register .formItem .login_btn:hover,.recFriend .formItem .login_btn:hover,.userInfo .formItem .login_btn:hover,.loginMain .formItem .login_btn:hover{ background-position: 0 -360px; }
+/*完善信息*/
+.userInfo{ background:url(../img/passport/loginInfo_bg.png) left 55px no-repeat; width:870px; height:500px; padding-top: 60px; margin:0 auto; position:relative; }
+.userInfo .warp{ width:90%; overflow:hidden; margin-left: 35px; position:relative; top:117px; }
+.recFriend .infoTit,.userInfo .infoTit{ text-indent:25px; margin-bottom:60px; }
+.recFriend .infoTit h3,.userInfo .infoTit h3{ line-height:42px; font-size:16px; color:#333333; background:url(../img/passport/spt_over.png) -180px -115px no-repeat; }
+.userInfo .infoTit p{ font-weight:bold; }
+.userInfo .fl{ padding-left:175px; }
+.userInfo .fr{ width:61%; }
+.userInfo .formItem{ padding-left:50px; }
+.userInfo .item_in .sp_name{ margin-left: -50px; width: 50px; }
+.userInfo .a_bind{ position:absolute; left:-24px; _left:-78px; top:10px; color:#007c99; }
+.userInfo .a_back{ position:absolute; left:180px; top:5px; color:#007c99; }
+/*绑定已有账号*/				
+.userBind{ background:url(../img/passport/loginInfo_bg_add.png) no-repeat; width:870px; height:250px; position:absolute; bottom:0; display:none; }
+.userBind .min-warp{ width:90%; margin:0 auto; border-top:1px dashed #ccc; }
+.userBind .formList{ margin:20px 0 0 266px; }
+.userBind .formItem{ padding-left:80px; }
+.userBind .item_in .sp_name{ margin-left: -80px; width: 80px; }
+.userBind .item_in .sp_tip{ left: 322px; }
+.userInfo.addBind{ height:685px; }
+.userInfo.addBind .userBind{ display:block; }
+
+.found .figureItem li.tag,.found .sortList li.tag,.recFriend .friendList li.tag{ width:100%; height:0; font-size:0; overflow:hidden; }
+/*推荐好友*/
+.recFriend{ background:url(../img/passport/friends_bg.png) left bottom no-repeat; width:870px; height:770px; padding-top: 60px; margin:0 auto; position:relative; }
+.recFriend .warp{ width:92%; overflow:hidden; margin-left: 35px; position:relative; top:117px; }
+.recFriend .infoTit,.recFriend .msg{ margin-bottom:30px; }
+.recFriend .msg{ width:90%; background-color:#f8f8f8; text-align:left; margin:0 auto; line-height: 1.5; padding:15px; overflow:hidden; font-family:'微软雅黑'; }
+.recFriend .msg strong{ font-size:23px; font-weight:normal; word-wrap: break-word; word-break: normal;}
+.recFriend .msg p{ font-size:14px; }
+.recFriend .msg span{ color:#00c6ff; padding:0 3px; }
+.recFriend .friendList{ width:94%; height:auto; margin:0 auto; background:url(../img/passport/tip.jpg) 0 20px no-repeat; padding-top:80px; position:relative;overflow: hidden; }
+.recFriend .friendList .attention{ height:24px; line-height:24px; border:1px solid #96c5e1; background-color:#d1f3ff; text-align:right; position:absolute; top:30px; right:0; padding: 0 5px;width: 70px;cursor: pointer;}
+.recFriend .friendList .attention span{ display: none; position:absolute; width:18px; height:18px; overflow:hidden; left: 2px; top: 3px; }
+.recFriend .friendList .attention .tag-default{display: block;}
+.recFriend .friendList .attention .tag-select u{display: block; width:18px; height:18px; background:url(../img/passport/spt_over.png) no-repeat -186px -7px;}
+.recFriend .friendList .attention .tag-default u{ display: block; width:18px; height:18px; background:url(../img/passport/spt_over.png) no-repeat -186px -36px; }
+/*选中关注全部*/
+.recFriend .friendList .attention_on .tag-select{display: block;}
+.recFriend .friendList .ul_list{ width:100%; overflow:hidden; padding-top:8px; }
+.recFriend .friendList li{ display:block; text-align: center; vertical-align: top; width:57px; height:120px; float:left; margin-right:29px; }
+.recFriend .friendList .end{ margin-right:0; }
+.recFriend .fd_head span{ display:none; position:absolute; right:-4px; bottom:-4px; width:18px; height:18px; overflow:hidden; }
+/*选择*/
+.recFriend .fd_head .tag-default u{ display: block; width: 18px; height: 18px; background:url(../img/passport/spt_over.png) no-repeat -186px -36px;;}
+.recFriend .ul_list .hover .tag-default{display: block;}
+/*选中*/
+.recFriend .ul_list .on .tag-select{display: block;}
+.recFriend .fd_head .tag-select u{ display: block; width: 18px; height: 18px; background:url(../img/passport/spt_over.png) no-repeat -186px -7px;}
+.recFriend .fd_head{ width:57px; height:57px; margin-bottom:10px; position:relative; }
+.recFriend .fd_head img{width: 50px; height: 50px;cursor: pointer;}
+/*等级*/
+.recFriend .fd_head .rank{ background-position:-187px -68px; top:-4px; }
+.recFriend .fd_name{ width:57px; font-family:'微软雅黑'; color:#00589c; line-height:20px; overflow:hidden; word-wrap: break-word; height:40px; }
+.recFriend .paging{ width:94%; margin:0 auto; color:#00589c; text-align:right; margin-bottom:30px; }
+.recFriend .paging a{ padding:0 5px; color:#0066CC; }
+/*xq*/
+.recFriend .paging a.page.current{ background-color: #add8e6; }
+.recFriend .formItem{ text-align:center; }
+/*注册*/
+.register{ background:url(../img/passport/register_bg.png) left bottom no-repeat; width:870px; height:590px; padding-top: 60px; margin:0 auto; position:relative; }
+.register .register-email,.register .register-phone{ display: none; }
+.register .register-tab{ width: 422px; height: 54px; overflow: hidden; background: url(../img/passport/register-tab.jpg) no-repeat; margin:0 0 10px 1px;}
+.register .register-tab span{ display: block; width: 330px; height: 54px; margin: 0 auto; }
+.register .register-tab a{ width: 160px; height: 48px; }
+.register .warp{ width:92%; overflow:hidden; margin-left: 35px; position:relative; top:136px; }
+.register .dv_info{ position:absolute; top:125px; left:320px; height:30px; line-height:30px; font-size:18px; }
+.register .dv_info a{ font-size:14px; margin-left:10px; color:#4694a9; }
+.register .infoTit{ text-indent:25px; }
+.found .infoTit{ text-indent:25px; margin-bottom:30px; }
+.found .infoTit h3,.register .infoTit h3{ line-height:42px; font-size:16px; color:#333333; background:url(../img/passport/spt_over.png) -180px -115px no-repeat; }
+.register .infoTit p{ font-weight:bold; }
+.register .item_in .sp_tip{ left:315px; }
+/*当输入框选中时*/
+.register .formItem .a_1{ color:#4694A9; }
+.register .formItem .ck_1{ margin:4px 8px 0; float: left; *margin-top: 0; }
+/*用户协议没填*/
+.register .formItem .error{ color:#ff0000; float: left; margin: 8px; }
+/*注册页 去登录*/
+.register .formItem .go_login{ float: left; padding: 8px; }
+.register .formItem .go_login a{ color:#00ccff; }
+.register .formItem .go_login a:hover{ color:#00ccff; text-decoration:underline; }
+.register .item_in .sp_btn{ float: left; width: 105px; height: 22px; line-height: 22px; }
+.register .item_in .sp_btn button{ margin-top: 10px; height: 22px; line-height: 20px; vertical-align: middle; width: 105px; cursor: pointer; }
+.register.email .register-email{ display: block; }
+.register.phone .register-phone{ display: block; }
+.register.phone .register-tab{ background-position: left bottom; }
+/*城市 弹窗*/
+.city{ width:450px; height:auto; left:20%; }
+.city .mask{ width:450px; }
+.city .for .tabTit{ overflow:hidden; height: 30px; }
+.city .for .tabTit li{ float:left; margin-right:10px; text-align:center; }
+.city .for .tabTit li a{ float:left; font-size:14px; padding:2px 5px; }
+.city .for li.select{ background-color:#34c9ea; border-radius: 3px 3px 3px 3px; color: #FFFFFF; }
+.city .for li.select a{ color: #FFFFFF; }
+.city .for .panel{ clear:both; width:100%; padding:8px 0; white-space: nowrap; }
+.city .for .panel ul{ word-break: break-all; white-space: nowrap;}
+.city .for .panel li{ float:left; margin-right: 15px; width: auto; height:22px; line-height:18px; text-align:center; white-space: nowrap; }
+.city .for .panel a{ float:left; font-size:14px; padding:2px; white-space: nowrap; }
+.city .for a:hover{ background-color:#000099; color:#FFFFFF; }
+/*注册引导*/
+.guide{ width:100%; margin:0 auto; background: url(../img/passport/register-guide-bg.jpg) repeat-x; }
+.guide .warp{ width:596px; height: 466px; margin:0 auto; overflow:hidden; background: url(../img/passport/register-guide.gif) no-repeat 0 40%; position:relative;}
+.guide .actBtn{ text-align:center; width: 230px; position: absolute; right: 0; top: 120px;}
+.guide .actBtn .a_1{ display:block; width:230px; height:80px; overflow:hidden; background:url(../img/passport/group_btn.png) no-repeat; margin:0 auto; }
+.guide .actBtn .a_1:hover{ background-position:0 -168px; }
+.guide .actBtn .a_2{ background-position:0 -88px; }
+.guide .actBtn .a_2:hover{ background-position:0 -248px; }
+.guide .actBtn .a_3{ color:#06C; }
+.guide .actBtn p{}
+/*发现*/
+.found{ background:url(../img/passport/found_bg_01.png) left top no-repeat; width:870px; margin:0 auto; color:#666666; position:relative; padding-top: 183px; }
+.foundMid{ background:url(../img/passport/found_bg_02.png) left top repeat-y; }
+.foundBot{ background:url(../img/passport/found_bg_03.png) left bottom no-repeat; height:100px; }
+.found-cover{ width: 795px; text-align: center;border:1px solid #fff; margin-left: 1px;}
+.found-cover .mask{display: none; background-color: #fff; height: 100%; width: 100%; position: absolute; left: 0; top:0; z-index: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; opacity: .8; filter:alpha(opacity=80);}
+.found-cover .btn{background: url(img/sprites-ico-4.gif) no-repeat 0 -320px; height: 28px; line-height: 28px; color: #fff; font-size: 13px; width: 110px; cursor: pointer; border: 0 none; position: absolute; left: 50%; top: 50%; margin: -14px 0 0 -55px;}
+.found-cover .btn2{border:none; background:url(../img/passport/btn_found.gif) no-repeat; width:226px; height:56px; line-height:56px; font-size:24px; font-family:'微软雅黑'; color:#FFF; cursor: pointer; position: relative; z-index: 2; margin-top: 25px; /*position: absolute; left: 50%; top: 50%; margin: -28px 0 0 -113px;*/}
+.found-cover .share_weibo{position: relative; z-index: 2;}
+.found-cover .share_weibo label{ position: relative; top: -2px;}
+
+.fixed-cover{height: 100px; position: fixed; _position:absolute; left: 50%; bottom: 0; margin-left: -399px; border:1px solid #f1f1f1;}
+.fixed-cover .mask{display: block;}
+
+.userInfo .dv_info,.recFriend .dv_info,.found .dv_info{ position:absolute; top:106px; left:320px; background:url(../img/passport/spt_over.png) no-repeat; padding-left:35px; height:30px; line-height:30px; font-size:14px; font-family:'微软雅黑'; }
+.found .dv_info{ top: 60px; }
+.userInfo .qzone,.recFriend .qzone,.found .qzone{ background-position:0 -150px; }
+.userInfo .tSina,.recFriend .tSina,.found .tSina{ background-position:0 -120px; }
+.found .warp{ width:92%; overflow:hidden; margin-left: 35px; position:relative; }
+.found .infoTit{ width:92%; margin:-45px auto 0; }
+.found .sort{ width:90%; margin:0 auto 10px; overflow:hidden; }
+.found .sortList{ width:675px; overflow:hidden; margin:0 auto; }
+.found .sortList ul{ width:107%; height:auto; }
+.found .sortList li{ word-break: break-all;float:left; margin:0 14px 15px 0; cursor:pointer; display:block; text-align:center; vertical-align:top; width:100px; height:28px; line-height:28px; background-color:#f9f9f9; font-size:15px; position:relative; }
+.found .sortList li span{display: none; width:26px; height:26px; position:absolute; right:-3px; bottom:-3px;z-index: 1; }
+.found .sortList li.hover .tag-default{display: block;}
+.found .sortList li.on .tag-select{display: block;}
+.found .sortList li span u{ display: block; background:url(../img/passport/spt_over.png) no-repeat; width:26px; height:26px;}
+.found .sortList li.hover .tag-default u{ background-position: -180px -28px ;}
+.found .sortList li.on .tag-select u{background-position: -180px 0;}
+.found .sortList li.on{ background:url(../img/passport/sort_item_bg.gif) no-repeat; }
+.found .sortList li.on .txt { color: #333; }
+.found .sortList li img{ display:none; position:absolute; top:0; left:0; width:100px; height:100px; }
+.found .sortList li .txt{ overflow:hidden;position:absolute; top:0; left:0; display:block; width: 100%; height: 100%; text-align: center; font-weight: bold; color: #b6b6b6; }
+.found .tit{ width:90%; height:50px; margin:0 auto; overflow:hidden; line-height:50px; }
+.found .tit strong{ font-size:14px; color:#666; }
+.found .tit .fr{ margin-right: 24px; display:inline; }
+.found .tit .attention{ width: 70px; font-weight:bold; margin-top: 13px; margin-left: 5px; cursor: pointer; position:relative; background-color: #D1F3FF; border: 1px solid #96C5E1; height: 22px; line-height: 22px; text-align: right; padding: 0 5px; margin-right: 10px; }
+.found .tit .attention span{ display: none; position:absolute; width:18px; height:18px; overflow:hidden; left: 2px; top: 3px; }
+.found .tit .attention .tag-default{display: block;}
+.found .tit .attention .tag-select u{display: block; width:18px; height:18px; background:url(../img/passport/spt_over.png) no-repeat -186px -7px;}
+.found .tit .attention .tag-default u{ display: block; width:18px; height:18px; background:url(../img/passport/spt_over.png) no-repeat -186px -36px; }
+/*选中关注全部*/
+.found .tit .attention_on .tag-select{display: block;}
+.found .tit .cur{ cursor:pointer; }
+.found .figure{ width:85%; overflow:hidden; margin:0 auto; padding-bottom: 30px; }
+.found .figureItem{ border-bottom:1px dashed #CCCCCC; margin-top:20px; width:100%; overflow:hidden; }
+.found .figureItem .sortName{ width:30px; min-height:100px; text-align:center; float:left; word-break: break-all; height: auto;}
+.found .figureItem .c0{ background-color:#ffdfdf; }
+.found .figureItem .c1{ background-color:#d9f1f1; }
+.found .figureItem .c2{ background-color:#e1cceb; }
+.found .figureItem .c3{ background-color:#ebcccc; }
+.found .figureItem .c4{ background-color:#ebdbcc; }
+.found .figureItem .c5{ background-color:#dbebcc; }
+.found .figureItem .c6{ background-color:#dedede; }
+.found .figureItem .c7{ background-color:#dfd8d5; }
+.found .figureItem .c8{ background-color:#ffecb9; }
+.found .figureItem .c9{ background-color:#f8b7b7; }
+.found .figureItem .c10{ background-color:#e4ebcc; }
+.found .figureItem .c11{ background-color:#ffdbdb; }
+.found .figureItem .c12{ background-color:#cfebf4; }
+.found .figureItem .c13{ background-color:#cfebf4; }
+.found .figureItem .c14{ background-color:#cfebf4; }
+.found .figureItem .c15{ background-color:#cfebf4; }
+.found .figureItem .c16{ background-color:#cfebf4; }
+.found .figureItem .c17{ background-color:#cfebf4; }
+.found .sortName h3{ width:50%; display:inline-block; margin-top:20px; font-size:14px; }
+.found .figureItem .sortWarp{ float:left; width:95%; height:100%; overflow:hidden; }
+.found .figureItem ul{ width:108%; height:135px; overflow:hidden; padding-left:20px; }
+.found .figureItem li{ text-align:center; vertical-align:top; width:57px; height:130px; float:left; margin: 5px 20px 0 0; padding-right:3px; }
+.found .figureItem .hd{ position:relative; height:57px; width:57px;cursor: pointer; }
+.found .figureItem .hd img{ height:57px; width:57px; }
+.found .figureItem .hd .tag-select{ display:none; position:absolute; right:-4px; bottom: 0; width:18px; height:18px; overflow:hidden; }
+.found .figureItem .hd .tag-select u{ display:block; background:url(../img/passport/spt_over.png) no-repeat -186px -7px; width:18px; height:18px;}
+.found .figureItem .hd .tag-default{ display:none; position:absolute; right:-4px; bottom: 0; width:18px; height:18px; overflow:hidden; }
+.found .figureItem .hd .tag-default u{ display:block; background:url(../img/passport/spt_over.png) no-repeat -186px -36px; width:18px; height:18px;}
+.found .figureItem .on .tag-select{display: block;}
+.found .figureItem .hover .tag-default{display: block;}
+.found .figureItem .bd{ height:32px; line-height:16px; color:#006a92; font-weight:bold;width:100%; overflow:hidden; margin-top: 8px; word-wrap: break-word; }
+.found .figureItem .bd u{ float:left; display:block; background:url(../img/passport/spt_over.png) -187px -67px no-repeat; width:16px; height:16px; overflow:hidden; }
+.found .foundBtn{ text-align:center; margin-top: 30px;height:100px; position: relative;}
+/*找回密码*/
+.forgotPwd{ background:url(../img/passport/security-center-bg.png) left bottom no-repeat; width:870px; height:540px; padding-top: 60px; margin:0 auto; position:relative; }
+.forgotPwd .warp{ width:92%; overflow:hidden; margin-left: 35px; position:relative; top:176px; }
+.forgotPwd .infoTit{ text-indent:25px; margin-bottom:40px; }
+.forgotPwd .infoTit h3{ line-height:42px; font-size:16px; color:#333333; background:url(../img/passport/spt_over.png) -180px -115px no-repeat; }
+.forgotPwd .infoTit p{ font-weight:bold; }
+.forgotPwd .formList{ width: 63%; margin: 0 auto; }
+.forgotPwd .formList strong{ font-size: 14px; padding-left: 5px; color: #333; }
+.forgotPwd .item_in .sp_tip{ left:352px; }
+.forgotPwd .item_in .sp_tip.password{ left:315px; }
+/*当输入框选中时*/
+.forgotPwd .formItem .a_1{ color:#00a2ff; }
+.forgotPwd .formItem .ck_1{ margin:4px 8px 0; float: left; *margin-top: 0; }
+/*确认密码*/
+.forgotPwd.custom .formList{margin: 0 auto; }
+.forgotPwd.custom .formItem{ margin-bottom: 15px; padding-left:120px; }
+.forgotPwd.custom .formItem .login_btn{ margin-left: 70px; }
+/*邮箱找回*/
+.forgotPwd.custom_2 .formList{ width: 47%; margin: 0 auto; }
+/*找回密码完成*/
+.forgotPwd.custom_5 .formList{ padding-top: 30px; }
+.forgotPwd.custom_5 .action-panel{ text-align: center; }
+
+.forgotPwd .p_info{ font-size: 14px; font-weight: bold; margin-bottom: 15px; color: #333; text-align: center; }
+.forgotPwd .a_receiving:link,.forgotPwd .a_receiving:visited{ display: block; text-decoration: underline; font: bold 21px/2 "微软雅黑"; color: #333; }
+.forgotPwd .a_receiving:hover{ color: #0cf; }
+.forgotPwd .p_con{ font: bold 15px/2 "微软雅黑"; color: #333; }
+.forgotPwd .p_email{ color: #004b97; font: bold 15px/2 "微软雅黑"; }
+.forgotPwd .btn{ background:url(../img/passport/login_btn.gif) no-repeat; width:101px; height:29px; border:none; text-align:center; line-height:29px; color:#FFF; margin:0 auto; cursor: pointer; display:inline-block; }
+.forgotPwd .btn:hover{ background-position: 0 -29px; }
+
+/*个人设置*/
+.personalSet{ width: 824px; overflow: hidden; margin: 0 auto; border-radius: 5px; border:1px solid #ccc; background-color: #fafafa; }
+.personalSet-main{ width: 590px; padding: 0 4px; float: right; background-color: #ffffff; border-left: 1px solid #ccc; height:auto!important; height: 824px; min-height: 824px; }
+.personalSet-main-tit{ height: 60px; overflow: hidden; border-bottom: 1px dashed #ccc; padding: 0 60px; }
+.personalSet-main-tit strong{ display: block; padding-left: 40px; height: 28px; line-height: 28px; margin: 16px 0; background: url(../img/passport/personalSet-tit.gif) no-repeat; font-size: 14px; }
+.personalSet-main-con{ padding:0 30px; }
+.personalSet-main-con .formList{ margin: 20px auto 0; width: 92%; }
+.personalSet-main-con .formItem{ padding-left:80px; margin-bottom:10px; position:relative; clear: both; overflow: hidden; }
+.personalSet-main-con .item_in .sp_name{ display: inline; float: left; height: 42px; line-height: 42px; margin-left: -80px; text-align: right; width: 80px; font-size:14px; }
+.personalSet-main-con.personalSet-main-con .item_in .ph_input{ display:block; float: left; line-height:42px; height:42px; background:url(../img/passport/login_input.png) 5px -51px no-repeat; width:200px; border:none; padding:0 18px; font-size:14px; }
+.personalSet-main-con.personalSet-main-con .item_in .input_1{ background-position: 5px 0; }
+.personalSet-main-con.personalSet-main-con .item_in input{ border:0 none; height:22px; line-height:22px; width:100%; margin-top: 10px; }
+/*验证提示*/
+.personalSet-main-con .item_in .sp_tip{ position:absolute; top:12px; left:315px; white-space: nowrap; width:200px; }
+.personalSet-main-con .item_in .sp_right{ background:url(../img/passport/sp_right.jpg) no-repeat; width:16px; height:16px; }
+.personalSet-main-con .item_in .sp_error{ color:#FF0000; font-size:14px; }				
+/*当输入框选中时*/
+.personalSet-main-con .item_in .input_1{ background-position:6px 0; }
+.personalSet-main-con .formItem .ph_label{color: #cccccc; height: 42px; line-height: 42px; opacity: 1; position: absolute; z-index:1; }
+.personalSet-main-con .formItem .error{ color:#ff4c00; text-indent:8px;float: left; width:200px; }
+.personalSet-main-con .formItem .a_1{ color:#00a2ff; margin-left:10px; }
+.personalSet-main-con .formItem #userRemember{ margin-left:8px; }
+.personalSet-main-con .formItem .login_btn{ float: left; background:url(img/sprites-ico-4.gif) no-repeat 0 -480px; width:81px; height:30px; border:none; text-align:center; line-height:30px; margin-left:8px; cursor: pointer; }
+.personalSet-main-con .formItem .login_btn:hover{ background-position: 0 -520px; }
+.personalSet-main-con .formItem .input_1{ background-position: 0 -400px; color: #ffffff; }
+.personalSet-main-con .formItem .input_1:hover{}
+.personalSet-side{ width: 200px; height: 100%; float: left; background-color: #fafafa; text-align: center; }
+.personalSet-side-tit{ height: 60px; border-bottom: 1px solid #ccc; line-height: 60px; }
+.personalSet-side-tit strong{ font-size: 14px; }
+.personalSet-side-con{ }
+.personalSet-side-list{ height: 460px; background: url(../img/passport/personalSet-side-bg.jpg) left bottom no-repeat; }
+/* .personalSet-side-list li{ height: 36px; line-height: 36px; overflow: hidden; }  */
+.personalSet-side-list li a{ display: block; height:18px; line-height: 18px; margin: 9px auto; width: 30%; background: url(../img/passport/personalSet-side-list.gif) no-repeat; padding-left: 25px; font-size: 14px; }
+.personalSet-side-list li .ico_1{ background-position: 0 0; }
+.personalSet-side-list li .ico_2{ background-position: 0 -50px; }
+.personalSet-side-list li .ico_3{ background-position: 0 -100px; }
+.personalSet-side-list li .ico_4{ background-position: 0 -150px; }
+.personalSet-side-list li .ico_5{ background-position: 0 -200px; }
+.personalSet-side-list li .ico_6{ background-position: 0 -250px; }
+.personalSet-side-list li .ico_7{ background-position: 0 -300px; }
+.personalSet-side-list li .ico_8{ background-position: 0 -350px; }
+.personalSet-side-list li .ico_1:hover,.personalSet-side-list li.selectAbout .ico_1{ background-position: 0 -25px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_2:hover,.personalSet-side-list li.selectAbout .ico_2{ background-position: 0 -75px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_3:hover,.personalSet-side-list li.selectAbout .ico_3{ background-position: 0 -125px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_4:hover,.personalSet-side-list li.selectAbout .ico_4{ background-position: 0 -175px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_5:hover,.personalSet-side-list li.selectAbout .ico_5{ background-position: 0 -225px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_6:hover,.personalSet-side-list li.selectAbout .ico_6{ background-position: 0 -275px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_7:hover,.personalSet-side-list li.selectAbout .ico_7{ background-position: 0 -325px; font-weight: bold; color: #4694A9; }
+.personalSet-side-list li .ico_8:hover,.personalSet-side-list li.selectAbout .ico_8{ background-position: 0 -375px; font-weight: bold; color: #4694A9; }
+.personalSet-apply { display: block; width: 133px; height: 31px; background: url(../img/passport/personalSet-side-apply.jpg) no-repeat; margin: 0 auto; }
+.personalSet-apply:hover{ background-position: 0 -31px; }
+/*账号设置*/
+.personalSet-account{ height: 824px; }
+.personalSet-account .p_info{ font-size: 14px; text-indent: 2em; margin-top: 20px; }
+.personalSet-main-insert{ background: #fffbb8 url(../img/passport/personalSet-main-insert.jpg) 10px 50% no-repeat; padding: 5px 0 5px 30px; color: #333; }
+.personalSet-main-insert a.a_1{ text-decoration: underline; color: #4694A9; }
+.personalSet-main-insert input{ margin-left: 10px; height: 24px; line-height: 22px; cursor: pointer; }
+.personalSet-main-con .dl-item{ padding-left: 70px; overflow: hidden; clear: both; margin-bottom: 15px; line-height: 22px; *zoom:1; }
+.personalSet-main-con .dl-item dt{ float: left; display: inline; width: 60px; margin-left: -70px; text-align: right; }
+.personalSet-main-con .dl-item dd{ float: left; margin-right: 15px; position:relative; }
+.personalSet-main-con .dl-item .item-select,.personalSet-main-con .dl-item .item-lab{float: left;}
+.personalSet-main-con .dl-item .item-select{ width: 60px;}
+.personalSet-main-con .dl-item .item-lab{ width: 20px; text-align: center;}
+.personalSet-main-con .dl-item-txt dd{ width: 180px; }
+.personalSet-main-con .dl-item a:link,.personalSet-main-con .dl-item a:visited{ color: #4694A9; }
+.personalSet-main-con .dl-item a:hover{ color: #0cf; }
+.personalSet-main-con .dl-item .input-txt{ width: 180px; height: 22px; line-height: 22px; border: 1px solid #ccc; }
+.personalSet-main-con .dl-item textarea{ height: 60px;width: 180px; font-size:12px; border: 1px solid #ccc; }
+.personalSet-main-con .dl-item textarea.focus{ border: 1px solid #00CCFF; }
+.personalSet-main-con .dl-item input.focus{ border: 1px solid #00CCFF; }
+.personalSet-main-con .dl-item .sp_tip{ position: absolute; white-space: nowrap; margin-left:10px; left:185px; top:0; color:#00ccff; }
+.personalSet-main-con .dl-item .sp_right{ background: url(../img/passport/sp_right.jpg) no-repeat scroll 0 0 transparent; height: 16px; width: 16px; top: 5px; }
+.personalSet-main-con .dl-item .error_tip{ color:red; }
+.personalSet-main-con .dl-item .sumbit_btn{ background: url(img/sprites-ico-4.gif) no-repeat 0 -400px; border: medium none; color: #FFFFFF; cursor: pointer; height:29px; width:82px; }
+.personalSet-main-con .dl-item .sumbit_btn:hover{ background-position: 0 -440px; }
+.personalSet-main-con .dl-item .bindSet{ overflow: hidden; }
+.personalSet-main-con .dl-item .bindSet .setting-tip{margin-bottom: 10px;}
+.personalSet-main-con .dl-item .btnPanel{ *width: 380px;}
+.personalSet-main-con .dl-item .btnPanel input{ margin-right: 5px;}
+.personalSet-main-con .dl-item .bindSet li{ margin-bottom: 10px; overflow: hidden; clear: both; }
+.personalSet-main-con .dl-item .bindSet span{ float: left; display: block; width: 100px; margin-right: 20px; word-wrap:break-word; }
+.personalSet-main-con .dl-item .bindSet .em_tip{white-space: nowrap;}
+.personalSet-main-con .dl-item .bindSet .share{ margin-top: 3px; }
+.personalSet-main-con .dl-item .bindSet span.sp_txt{ width: 125px; margin: 0; }
+.personalSet-main-con .dl-item .bindSet .btnPanel{ text-align:center; }
+.personalSet-main-con .dl-item .bindSet .btnPanel .a_btn{ display:inline-block; border:1px solid #34c8ea; border-radius:5px; overflow:hidden; height:30px; width:80px; font: bold 14px/2 '微软雅黑'; color:#FFFFFF; background-color:#34c8ea; }
+.personalSet-main-con .dl-item .bindSet .a_share a{ display:inline-block; background:url(img/share-ico.jpg) no-repeat; height:16px; overflow:hidden; margin-top:3px; padding-left:20px; line-height: 16px; color: #9a9a9a; cursor: default;}
+.personalSet-main-con .dl-item .bindSet .qqweibo a{ background-position: 0 -18px; }
+.personalSet-main-con .dl-item .bindSet .sina a{ background-position: 0 -52px;}
+.personalSet-main-con .dl-item .bindSet .qqweibo .on{ background-position: 0 -1px; color: #4694a9;}
+.personalSet-main-con .dl-item .bindSet .sina .on{ background-position: 0 -36px; color: #4694a9;}
+/*修改密码*/
+.personalSet-updatePwd{ height: 580px; }
+.personalSet-updatePwd .p_info{ margin-top: 20px; overflow: hidden; }
+.personalSet-updatePwd .p_info em{ font-size: 14px; }
+.personalSet-updatePwd .p_info a{ padding-left: 30px; display: block; color: #C60D0D; float: left; margin-left: 15px; height: 20px; line-height: 20px; background: url(../img/passport/p_info_a.gif) no-repeat; }
+/*个人头像*/
+.personalSet-header{ height: 580px; }
+.personalSet-header .personalSet-main-tit strong{ background-position: 0 -150px; }
+.personalSet-header .personalSet-main-con{ padding: 0 60px; overflow: hidden; }
+.personalSet-header .p_info{ margin-bottom: 20px; height: 35px; line-height: 35px; font-size: 14px; }
+.personalSet-header .header-top{ margin-bottom: 20px; overflow: hidden; }
+.personalSet-header .header-top a{ background: url(../img/passport/header-photo.gif) no-repeat; display: block; width: 110px; height: 29px; line-height: 29px; float: left; margin-right: 15px; }
+.personalSet-header .header-top .local-photo{ background-position: 0 0; }
+.personalSet-header .header-top .local-photo:hover{ background-position: 0 -29px; }
+.personalSet-header .header-top .photo-upload{ background-position: 0 -58px; }
+.personalSet-header .header-top .photo-upload:hover{ background-position: 0 -87px; }
+.personalSet-header .photo-warp{ overflow: hidden; height:315px; }
+.personalSet-header .header-mid{ clear: both; overflow: hidden; margin-bottom: 20px; }
+.personalSet-header .header-mid .fr{ width: 185px; }
+.personalSet-header .header-mid .fr li{ clear: both; overflow: hidden; margin-bottom: 15px; }
+.personalSet-header .header-mid .fl{ width: 260px; height: 260px; border:1px solid #ccc; background-color: #f2f2f2; text-align: center; position:relative; }
+.personalSet-header .header-mid .photo-frame{ width: 260px; height: 260px; line-height: 260px; background: url(../img/passport/photo-frame-bg.jpg) no-repeat; }
+.personalSet-header .header-mid .snapshot-warp{ width: 260px; height: 260px; background: url(../img/passport/photo-frame-bg.jpg) no-repeat; margin-left: 100px; }
+.personalSet-header .header-mid .fl .img-warp{ position: absolute; left: 0; top:0; display: none; width: 260px; height: 260px; }
+.personalSet-header .header-mid .fl .img_container{ position: absolute; }
+.personalSet-header .header-mid .photo_30,.personalSet-header .header-mid .photo_60,.personalSet-header .header-mid .photo_100{ float: left; display: block; margin-right: 10px; overflow: hidden; }
+.personalSet-header .header-mid .img-warp{ overflow: hidden; }
+.personalSet-header .header-mid .photo_30 .img-warp,.personalSet-header .header-mid .photo_30 img{ width: 30px; height: 30px; }
+.personalSet-header .header-mid .photo_60 .img-warp,.personalSet-header .header-mid .photo_60 img{ width: 60px; height: 60px; }
+.personalSet-header .header-mid .photo_100 .img-warp,.personalSet-header .header-mid .photo_100 img{ width: 100px; height: 100px; }
+.personalSet-header .header-bot{ clear: both; text-align: center; }
+.personalSet-header .header-bot .aBtn{ display:inline-block; border:0 none; cursor: pointer; width: 81px; height: 29px; background: url(img/sprites-ico-4.gif) no-repeat 0 -480px; line-height: 29px; text-align: center; margin-right: 20px; }
+.personalSet-header .header-bot .aBtn:hover{ background-position: 0 -520px; }
+.personalSet-header .header-bot .a_2{ background-position: 0 -400px; color: #ffffff; }
+.personalSet-header .header-bot .a_2:hover{ background-position: 0 -440px; }
+/*消息设置*/
+.personalSet-message{ height: 580px; }
+.personalSet-message .personalSet-main-tit strong{ background-position: 0 -50px; }
+.personalSet-message .personalSet-main-con{ padding: 0 60px; }
+.personalSet-message .p_info{ margin-bottom: 20px; height: 35px; line-height: 35px; font-size: 14px; }
+.personalSet-message .message-set{ overflow: hidden; width: 85%; height: 100px; margin-left: 80px; }
+.personalSet-message .message-set li{ float: left; width: 23%; margin:0 20px 20px 0; }
+.personalSet-message .message-set input{ margin-right: 10px; }
+.personalSet-message .message-bot{ clear: both; text-align: center; }
+.personalSet-message .message-bot .aBtn{ display:inline-block; width: 82px; height: 29px; background: url(img/sprites-ico-4.gif) no-repeat 0 -400px; line-height: 29px; text-align: center; margin-right: 20px; }
+.personalSet-message .message-bot .a_2{ color: #ffffff; border:none; cursor: pointer; }
+.personalSet-message .message-bot .a_2:hover{ background-position: 0 -440px; }
+/*隐私设置*/
+.personalSet-privacy{ height: 700px; }
+.personalSet-privacy .personalSet-main-tit strong{ background-position: 0 -100px; }
+.personalSet-privacy .personalSet-main-con{ padding: 0 60px; }
+.personalSet-privacy .privacy-mid { margin-top: 20px; }
+.personalSet-privacy .privacy-mid dl{ line-height: 24px; margin-bottom: 30px; }
+.personalSet-privacy .privacy-mid dt{ height: 24px; margin-bottom: 10px; }
+.personalSet-privacy .privacy-mid dd{ height: 24px; margin-bottom: 10px; }
+.personalSet-privacy .privacy-mid strong{ margin-right: 10px; font-size: 14px; }
+.personalSet-privacy .privacy-mid input{ margin-right: 10px; }
+
+.personalSet-privacy .privacy-bot{ clear: both; text-align: center; }
+.personalSet-privacy .privacy-bot .aBtn{ display:inline-block; width: 81px; height: 29px; background: url(img/sprites-ico-4.gif) no-repeat 0 -400px; line-height: 29px; text-align: center; margin-right: 20px; }
+.personalSet-privacy .privacy-bot .a_2{ background-position: 0 -440px; color: #ffffff; }
+.personalSet-privacy .privacy-bot .a_2:hover{ background-position: 0 -440px; }
+/*黑名单设置*/
+.personalSet-side-list .personalSet-side-privicy a{font-size:12px;background:url(../img/passport/personalSet-side-list.gif) no-repeat 0 -445px;padding-left:5px;margin-left:85px;cursor:pointer;}
+.personalSet-side-list .personalSet-side-privicy a:hover{background:url(../img/passport/personalSet-side-list.gif) no-repeat 0 -428px;}
+.personalSet-side-list .personalSet-side-privicy .select{color: #4694A9;background:url(../img/passport/personalSet-side-list.gif) no-repeat 0 -428px;}
+.privacy-blacklist{margin-bottom:30px; font-size:14px;}
+.privacy-blacklist li{height:40px;line-height:40px}
+.privacy-blacklist .privacy-blacklist-name{width:295px;display:inline-block;}
+.privacy-blacklist .privacy-blacklist-date{width:90px;display:inline-block;}
+.personalSet-privacy .personalSet-privacy-blacklist .personalSet-main-tit strong{color: #4694A9;background:url(../img/passport/personalSet-side-list.gif) no-repeat 0 -400px;padding-left:20px;}
+.personalSet-privacy-blacklist .aBtn{ display:inline-block; border:0 none; cursor: pointer; width: 70px; height: 30px; background: url(img/sprites-ico-4.gif) no-repeat 0 -1017px; line-height: 30px; text-align: center; }
+.personalSet-privacy-blacklist .aBtn:hover{ background-position: 0 -1057px; }
+/*关于我们*/
+.aboutUs{ color: #333; }
+.aboutUs .personalSet-main-tit{ padding: 0 15px; }
+.aboutUs p{ font-size: 14px; line-height: 28px; }
+.aboutUs .aboutUs-panel{ padding: 15px; }
+.aboutUs .personalSet-side-list li a{ width: 45%; }
+/*关于喜马拉雅*/
+.aboutUs-ximalaya .personalSet-main-tit strong{ background-position: 0 -200px; }
+.aboutUs p.p_con{ text-indent: 1em; }
+/*联系我们*/
+.aboutUs-contact .personalSet-main-tit strong{ background-position: 0 -250px; }
+.aboutUs .p_img{ margin-bottom: 15px; }
+.aboutUs .p_img img{ width: 100%; height: 250px; }
+.aboutUs-contact .contact-panel .email{ background: url(img/content/email-list.gif) 30px 0 no-repeat; }
+.aboutUs-contact .contact-panel .pos_01{ background-position: 30px 0px; }
+.aboutUs-contact .contact-panel .pos_02{ background-position: 30px -28px; }
+.aboutUs-contact .contact-panel .pos_03{ background-position: 30px -56px; }
+.aboutUs-contact .contact-panel .pos_04{ background-position: 30px -84px; }
+.aboutUs-contact .contact-panel .pos_05{ background-position: 30px -112px; }
+.aboutUs-contact .contact-panel .pos_06{ background-position: 30px -140px; }
+.pos_07{ background-position: 30px -168px; }
+.aboutUs .contact-panel dl{ line-height: 28px; font-size: 14px; margin: 20px 0; }
+.aboutUs .contact-panel dt{ font-weight: bold; }
+.aboutUs .contact-panel .a_blank:link,.aboutUs .contact-panel .a_blank:visited{color: #4694a9;}
+.aboutUs .contact-panel .a_blank:hover{color: #0cf;}
+/*公司新闻*/
+.aboutUs-news .personalSet-main-tit strong{ background-position: 0 -300px; }
+.aboutUs .news-panel li{ padding: 15px 0; overflow: hidden; clear: both; border-bottom: 1px dashed #ccc; }
+.aboutUs .news-panel span{ padding: 0 5px; }
+.aboutUs .page-bar{ padding: 15px 0; text-align: right; }
+.aboutUs .page-bar a{ text-align: center; padding: 3px 7px; border: 1px solid #ccc; color: #ccc; }
+.aboutUs .page-bar a:hover{ color: #333; border-color: #333; }
+/*官方博客*/
+
+/*绑定 弹框*/
+.bind_dialog{ width:330px; }
+.bind_dialog .item{ margin-top:15px; position:relative; height:23px; }
+.bind_dialog .item .input{ margin-right:5px; }
+.bind_dialog .item .email_input{ width:220px; }
+.bind_dialog .item .error_tip{ color:red; position: absolute; left:50px; bottom: -14px; }
+.bind_dialog .btnPanel .a_btn{ font-size:12px; height:auto; width:60px; }
+
+/*加V认证*/
+.jia_v{ width:805px; padding-bottom:15px; overflow:hidden; clear:both; margin:0 auto 60px;padding-top:20px; position:relative; }
+.jia_v_tit{ text-align: center; }
+.jia_v_tit strong{ font: bold 30px/2.5 "微软雅黑"; color: #333; }
+.jia_v .conInfo{ width:800px; padding-top:15px; }
+.jia_v .conInfo .conWrap{  width:800px;border:1px solid #ddd;  border-radius:5px;background-color:#fff;padding:20px 0;}
+.jia_v .conInfo .conMain{ width:780px; margin:0 auto; padding-top:1px; }
+.jia_v .infoTit{ height:28px; margin-top:15px; color:#666;}
+.jia_v .h_info{ margin-right: 5px; color:#333;}
+.jia_v .tbInfo{ width:93%; border-collapse:separate; margin:0 auto; }
+.jia_v .tbInfo td{ white-space:nowrap; }
+.jia_v .botPanel{ text-align: center; overflow: hidden; }
+.jia_v .botPanel .infoBtn{ display: inline-block; width: 75px; height: 25px; text-align: center; line-height: 25px; margin: 25px 0; }
+.jia_v .botPanel .btn2{ background:url(../img/passport/sprites-ico-4.gif) no-repeat 0 -680px; color: #ffffff; }
+.jia_v .botPanel .btn2:hover{ background-position: 0 -720px;text-decoration:none; }
+.jia_v .botPanel .authentication{ background: url(../img/passport/authentication.jpg) no-repeat; display: block; width:148px; height: 42px; overflow: hidden; margin: 30px auto; }
+.jia_v_process{ text-align: center; }
+
+.jia_v p{ padding: 20px 5px; width: 85%; margin: 0 auto; line-height: 22px; }
+.jia_v h3.tit{ width: 90%; margin: 0 auto; color: #666; }
+
+.jia_v input[type="text"]{line-height:22px;}
+.jia_v .confirmBtn{margin-right:10px;}
+
+.tbInfo .sound-btn{margin-left:20px;}
+.tbInfo .sound-btn:hover{border-color:#ddd;}
+.jiaVtxtarea{border:1px solid #ddd;}
+
+

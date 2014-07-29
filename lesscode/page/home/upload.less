@@ -1,0 +1,953 @@
+//upload上传声音页
+/*page/home/upload*/
+.mgR0{
+	margin-right:0!important;
+}
+#record_box {
+	.bgImgExt("upload_banner.jpg",right,top,no-repeat);
+	background-color: #fff;
+	border:1px solid #EAEAEA;
+	//overflow: hidden;
+	height: 498px;
+	clear: both;
+	position: relative;
+	margin-top:50px;
+	.recordBtn3,.uploadBtn3,.renzhengBtn,.readyBtn,.stopBtn,.startBtn{
+		.bgImg("sprite/upload_btn.png",no-repeat);
+	}
+	.recordBtn3{.btnFn(102,112,0,-167,-280);margin:0 100px 0 10px;}//录制按钮
+	.uploadBtn3{.btnFn(183,82,0,-494,-402);overflow:visible;}//上传按钮
+	.renzhengBtn{.btnFn(180,50,0,-586,-645);}//申请加v按钮
+	.readyBtn{.btnFn(84,82,-82,0,-83);}//开始录制按钮
+	.stopBtn{.btnFn(84,82,-165,0,-83);}//暂停录制按钮
+	.startBtn{.btnFn(84,82,1,0,-83);}//播放录制按钮
+	.recordIcon{.bgImg("record_icon.gif",no-repeat);.btnFn(10,13,0,0,0);cursor:default;}
+	.conLeft {
+		width: 688px;
+		display: inline;
+		.fl;
+	}
+	.conTit {
+		margin: 30px 0 50px 30px;
+		h3{
+			font-size:22px;
+			font-weight:normal;
+		}
+	}
+	.conAct {
+		margin: 0 auto 40px;
+		width: 420px;
+		position: relative;
+		.sp_info {
+			position: absolute;
+			top: 120px;
+			left: 25px;
+			font-size:18px;
+			color:#999999;
+		}
+		.sp_1 {
+			left: 270px;
+		}
+	}
+	.actBtn {
+		vertical-align: middle;
+		height: 100px;
+		position: relative;
+		margin-bottom: 75px;
+		.uploadBtn3{			
+			.hint_txt{margin:83px 0 0 40px;color:#ccc;display:none;}
+			&.hover{
+				.hint_txt{display:inline-block;}
+			}
+		}
+	}
+	.actProgress {
+		margin-bottom: 20px;
+		width: 420px;
+		height: 9px;
+		position: relative;
+		overflow: hidden;
+		span {
+			display: inline-block;
+		}
+		.progBar {
+			position:relative;
+			z-index:10;
+			background-color:#48B3D6;
+			border-radius:5px;
+			height: 100%;
+			width: 0px;
+			//overflow: hidden;
+			display: block;
+		}
+		.mask {
+			background-color:#EEEEEE;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius:5px;
+		}
+	}
+	.actOther {
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+		position: relative;		
+		a{
+			margin:0 5px;
+		}
+		&.backIndex{
+			top:-12px;
+		}
+	}
+	.actTxt {
+		display: block;
+		width: 115px;
+		height: 28px;
+		line-height: 26px;
+		float: left;
+		color:#999999;
+		position: absolute;
+		left: 95px;
+		em{
+			color:#333333;
+			font-size:16px;
+			font-weight:bold;
+		}
+	}
+	.getMoreHelp{
+		.clearfix;
+		position: absolute;
+		left: 50%;
+		.getMore {
+			float: left;
+			position: relative;
+		}
+		.help-info {
+			position: absolute;
+			top: -3px;
+			left: 100px;
+			display:none;
+			color:@colorText1;
+			background-color:@colorBG1;
+			opacity:0.9;
+			filter:alpha(opacity=90);
+			width:205px;
+			.arrowFn(left2,arrow,#FFF8DC,6px,#fff8dc);
+			.arrow{			
+				top:10px;
+				left:-6px;
+			}
+		}
+		&:hover{
+			.help-info {
+				display:block;
+			}
+		}
+	}
+	.conPlay {
+		position: relative;
+		top:30px;
+	}
+	.playPanel {
+		background-color:#FAFAFA;
+		border-radius:8px;
+		border:1px solid #EEEEEE;
+		width: 378px;
+		height: 78px;
+		margin: 0 auto 30px;
+		padding:15px 20px;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		.record_operate{
+			border-right:1px solid #EAEAEA;
+			padding-right:20px;
+			.fl;			
+		}
+		.ul_info {
+			text-align: left;
+			margin-left: 105px;
+			line-height: 2;
+			position: relative;			
+			padding:14px 0 0 30px;
+			height:80px;
+			color:#999999;
+		}
+		.playTime {
+			color:#666;
+			text-align: right;
+			line-height: 2;
+			position: relative;
+			margin-bottom: 15px;
+			top:-10px;
+		}
+		.actProgress {
+			position: relative;
+			left: 20px;
+			width: 250px;
+			height:11px;
+			overflow: hidden;
+			.progBar{
+				.bgImgExt("upload_playerprogress.png",right,1px,no-repeat);
+				background-color: transparent;
+				&:hover{
+					background-position:right -10px;
+					cursor:pointer;
+				}
+			}
+			.mask{
+				background-color: #DDD;
+				height:3px;
+				top:3px;
+			}
+		}
+	}
+	.conInfo {
+		color:#666666;
+		text-align: left;
+		line-height:21px;
+		border-top:1px solid #EEEEEE;
+		width:630px;
+		padding:25px 0 0 0;
+		margin-left:30px;
+		position: absolute;
+		bottom: 25px;		
+	}
+	.conRight{
+		.fr;
+		width: 259px;
+		height:100%;
+		position:relative;
+		border-left: 1px solid #EAEAEA;
+		.renzhengBg{
+			position: absolute;
+			bottom: 30px;
+			left: 40px;
+		}
+	}
+	#wave_warp {
+		width: 230px;
+		height: 40px;
+		overflow: hidden;
+		position: absolute;
+		left: 145px;
+		top: 35px;
+	}
+    .wave div{ border-right:solid 1px blue; float:left; font-size: 0px; }
+    .wave div.t0{ margin:0 0; height:40px; }
+    .wave div.t1{ margin:1px 0; height:38px; }
+    .wave div.t2{ margin:2px 0; height:36px; }
+    .wave div.t3{ margin:3px 0; height:34px; }
+    .wave div.t4{ margin:4px 0; height:32px; }
+    .wave div.t5{ margin:5px 0; height:30px; }
+    .wave div.t6{ margin:6px 0; height:28px; }
+    .wave div.t7{ margin:7px 0; height:26px; }
+    .wave div.t8{ margin:8px 0; height:24px; }
+    .wave div.t9{ margin:9px 0; height:22px; }
+    .wave div.t10{ margin:10px 0; height:20px; }
+    .wave div.t11{ margin:11px 0; height:18px; }
+    .wave div.t12{ margin:12px 0; height:16px; }
+    .wave div.t13{ margin:13px 0; height:14px; }
+    .wave div.t14{ margin:14px 0; height:12px; }
+    .wave div.t15{ margin:15px 0; height:10px; }
+    .wave div.t16{ margin:16px 0; height:8px; }
+    .wave div.t17{ margin:17px 0; height:6px; }
+    .wave div.t18{ margin:18px 0; height:4px; }
+    .wave div.t19{ margin:19px 0; height:2px; }
+}
+
+#record_info{
+	position: relative;
+	background-color:#fff;
+	.conInfo{ 
+		.conMain_add_img {
+			position: relative;
+		}
+		.conMain {
+			width: 710px;
+			margin: 0 auto;
+			padding:20px 0;
+			.p_tip {
+				text-align: center;
+				font-size: 22px;
+				font-weight:bold;
+				color: #13B2D7;
+				em{
+					font-size: 26px;
+					color: #FF5516;
+				}
+			}
+			.lineHeight30 {
+				background-color:#F6F6F6;
+				.bgImgExt("sprite/upload_defaulticon.png",0,0);
+				height:30px;
+				padding:10px 0 0 45px;
+				margin-top:10px;
+				em{
+					color:#FF0000;
+				}
+			}
+		}
+	}
+	.progressBarContainer{
+		margin:20px 0 0 0;
+        position: relative;
+	}
+	.progressBar {
+		width: 710px;
+		height: 20px;
+		overflow: hidden;
+		position: relative;
+		.bgImg("uploadPrograssBar_bg.png");
+		.progress {
+			width:710px;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+		}
+		.warp {
+			position: relative;
+			width: 354px;
+			height: 20px;
+			overflow: hidden;
+			float: left;
+			&:first-child{
+				border-right:2px solid #fff;
+			}
+			span {
+				display: block;
+				height: 100%;
+			}
+			.uploading {
+				.bgImg("uploadPrograssBar_blue.png");
+			}
+			.converting {
+				.bgImg("uploadPrograssBar_red.png");
+			}
+		}
+		.info {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #fff;
+			width: 349px;
+			padding-left:5px;
+			line-height:20px;
+		}
+	}
+	.infoTit h3{
+		height: 28px;
+		line-height: 28px;
+		font-size:18px;
+		color:#999999;
+		margin-top: 15px;
+		border-bottom:1px solid #CCCCCC;
+	}
+	.info-table-show {
+		text-align: center;
+		padding-top: 10px;
+		cursor: pointer;
+		display: none;
+		.expand{
+			//background: url("img/sprite/btn15px.png") no-repeat 2px -475px;
+			background: url("img/sprite/btn15px.png") no-repeat right 2px;
+			margin: 2px 0 0 3px;
+			height: 14px;
+			width: 15px;
+			text-indent: 100px;
+			overflow: hidden;
+			position:absolute;
+		}
+	}
+	#info_table_warp{
+		position:relative;
+	}
+	.dv-phone {
+		position: absolute;
+		z-index:1;
+		right: -80px;
+		top: 6px;
+		width: 217px;
+		height: 230px;
+		.bgImg("upload_phone.jpg",no-repeat);
+		img {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 12px;
+			bottom: 0;
+		}
+	}
+	.tbInfo {
+		border-collapse: separate;
+		font-size:14px;
+		position:relative;
+		em{
+			color:#FF0000;
+		}
+		td{	
+			position:relative;
+			&:first-child{				
+				text-align:right;
+				white-space:nowrap;
+			}
+			&.vAlign_top{
+				vertical-align:top;
+			}
+
+		}
+        .is-error{
+            .c01{
+                color:#FF0000;
+            }
+        }
+		#appendToAlbum{
+			td:first-child{				
+				text-align:left;
+			}
+		}
+		.c01 {
+			color: #999999;
+			font-size:12px;
+			margin-top:10px;
+			display:inline-block;
+		}
+		&.btd{
+			border-top:1px solid #EEEEEE;
+			width:100%;
+			padding:20px 0;
+		}
+		textarea{
+			width:603px;
+			height:95px;
+			padding:5px;
+			border:1px solid #ddd;
+			&:hover,&:focus{border-color:#3586bc;}
+		}
+		#public_tr{
+			.c01{
+				margin:0 0 0 5px;
+			}
+		}
+		.inputArea {
+			overflow: hidden;
+			border: 1px solid #ddd;
+			width: 613px;
+			&.changeMode {
+				height: auto;
+				.inputArea-tag {
+					display: block;
+					width: 100%;
+					overflow: hidden;
+					padding:0 5px;
+				}
+			}
+			.tagsBox{
+				padding:0;
+				margin:10px 0 -7px 0;
+			}
+			.dvTag {
+				overflow: hidden;
+				display: inline-block;
+				margin: 5px 8px;
+				background-color: #F1F1F1;
+				padding: 0 10px;
+				text-align: center;
+				font: 12px/22px Tahoma,"微软雅黑";
+				height: 22px;
+				span {
+					float: left;
+				}
+				a {
+					float: left;
+					height: 13px;
+					width: 13px;
+					cursor: pointer;
+					margin: 5px 0 0 5px;
+					text-align: center;
+					visibility: visible;
+				}
+			}
+			.inputArea-txt{
+				input{
+					width:628px;
+					border:none;
+					background-color:#fff;
+				}
+			}
+			&.focus{
+				border-color:#3586bc;
+			}
+		}		
+		.mr5 {
+			margin-right: 5px;
+		}
+		.ml5 {
+			margin-left: 5px;
+		}
+		.cancelBtn{
+			margin:0 10px;
+		}
+		.tagBtnList{
+			font-size:12px;
+			background-color:#FAFAFA;
+			padding:10px 0 0 10px;
+		}
+		.uploadPicBtn{
+			margin-top:5px;
+		}
+		.infoErr{
+			position: absolute;
+			right: 10px;
+			top: -20px;
+			color: #ff0000;
+			width:200%;
+		}
+		input[type="text"]{
+			height:18px;
+			width:108px;
+			font-size:16px;
+			border-radius:5px;
+			padding:5px;
+			&.inputW1{
+				width:338px;
+			}
+		}
+		#imageWrap{
+			height:102px;position: relative;
+			.imgLoading{
+                display: none;                
+                width: 32px;
+                position: absolute;
+                top: 50%;
+				left: 50%;
+				margin-top: -16px;
+                margin-left: -16px;
+            }
+			img{
+                width:100%;
+                height:100%;
+            }
+			.imgItem{
+				width:90px;
+				height:90px;
+				padding: 5px;
+				border: 1px solid #d3d3d3;
+				background-color: #fafafa;	
+				position:relative;
+			}
+			.is-loading{
+				.imgLoading{display:block!important;}
+			}
+		}
+		.imgBox{
+			position:relative;
+			z-index:9;
+			.fl;
+			margin-right:15px;
+			.del{
+				display:block;
+				top:-7px;
+				right:-8px;
+				z-index:2;
+			}						
+			.isfenmian{
+				width: 16px;
+				height: 25px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 2;
+				.bgImgExt("sprite/icon20px.png",0,-600px);
+				.hidden;
+			}
+			.setfenmian{
+				background-color:#000;
+				.opacity(80);
+				color:#fff;
+				width: 100%;
+				height: 24px;
+				line-height:24px;
+				text-align:center;
+				position: absolute;
+				top: 45px;
+				left: 0px;
+				z-index: 2;
+				display: none;
+				cursor: pointer;
+			}	
+			&:hover{
+				.setfenmian{.show;}
+			}
+			&.is-fenmian{
+				.isfenmian{.show;}
+				.setfenmian{.hidden;}
+			}			
+		}
+	}
+	.select{
+		.bgImgExt("sprite/upload_defaulticon.png",0,-234px);
+		width:20px;
+		height:20px;
+		position:absolute;
+		top:-1px;
+		right:-18px;
+		display:none;
+	}
+	.socialVerify{
+		.bgImgExt("sprite/upload_defaulticon.png",18px,-86px);
+		padding:6px 16px 6px 62px;
+		margin-right:10px;
+		width:60px;		
+		position:relative;
+		.fl;
+		.socialVerify_tit{
+			font-weight:bold;
+		}
+		.socialVerify_status{
+			color:#999999;
+			font-size:12px;
+            display: none;
+		}	
+
+		&.already{
+			background-position:18px -42px;
+			border:1px solid #ccc;
+            cursor:pointer;
+			&.selected{
+				border-color:#99CC33;
+				cursor:pointer;
+				.select{
+					display:block;
+				}
+			}
+			&:hover{
+				border-color:#99CC33;
+			}
+            .socialVerify_operate{
+                display: none;
+            }
+            .socialVerify_status{
+                display: block;
+            }
+		}
+		&.shareqq{
+			background-position:18px -182px;
+			&.already{
+				background-position:18px -134px;
+			}
+		}
+		&.shareqzone{
+			background-position:18px -460px;
+			&.already{
+				background-position:18px -410px;
+			}
+		}
+		&.shareqqwb{
+			background-position:18px -553px;
+			&.already{
+				background-position:18px -508px;
+			}
+		}
+	}
+    .searchTagsPanel{
+        position: relative;
+        & .results{
+            width: 189px;
+            position: absolute;
+            top: 100%;
+            border: solid 1px #DDD;
+            background-color: white;
+            z-index: 10;
+            left: 0;
+            &.is-results-needGap{
+                padding:5px 0;
+            }
+            & li{
+                margin:0;
+                overflow:hidden;
+                &:hover, &.on{
+                    background:#DEF7FC;
+                    .operateBtn{
+                        display:block;
+                    }
+                    .transitionFn(background-color, 0.2);
+
+                }
+            }
+            & .title{
+                .linkTextFn();
+            }
+            & .searchPanel_sound{
+                line-height:14px;
+                position: relative;
+                height:30px;
+                & .title{
+                    cursor: pointer;
+                    position: absolute;
+                    display:block;
+                    height:30px;
+                    line-height:30px;
+                    text-indent: 10px;
+                    width:90%;
+                }
+            }
+            & em{
+                color:#f00;
+            }
+
+        }
+    }
+	/*创建专辑*/
+	.albumList{
+        .progressBar{
+            width:688px;
+            .progressBar{
+                width:688px;
+                .warp{
+                    width:344px;
+                }
+            }
+        }
+		ul{
+			//border:1px solid #EAEAEA;
+			li{
+				&:first-child{
+					//border-top:none;
+				}
+                width:708px;
+				border-top:1px solid #EAEAEA;
+				border-right:1px solid #EAEAEA;
+				border-left:1px solid #EAEAEA;
+			}
+		}
+		.albumList_r1{            
+            background-color: #ffffff;
+			.clearfix;
+			position:relative;
+			//height:38px;
+			overflow:hidden;	
+			.fr{
+				.clearfix;
+				width:125px;
+				padding:11px;
+                cursor: default;
+			}
+			&.is-error{
+				.number{
+					height:57px;
+					line-height:57px;
+				}
+				.tit{
+					color: #FF0000;
+				}
+				.c01{
+					.show;
+				}
+			}
+			.c01{
+				color: #FF0000;
+				display:none;
+			}
+		}
+        .albumItem-holder{
+            background-color:#FFF;
+            position: relative;
+        }
+		.number{			
+			width:30px;
+			height:39px;
+			text-align:center;
+			line-height:39px;
+			//padding:0 10px;
+            cursor: default;
+			background-color:#EEEEEE;
+			.fl;
+		}
+		.albumList_sound{
+			.fl;
+            cursor: default;
+			padding:8px 10px 10px 10px;
+		}
+		.soundInfo{
+			height:22px;
+			.tit{
+				font-size:14px;
+				margin-right:5px;
+				cursor:default;
+				vertical-align:middle;
+			}
+			& .edit{
+				display:none;
+				& input{
+					height:19px;
+					width:250px;	
+					margin-right:6px;					
+				}
+				.editConfirm{
+					margin-right:6px;
+				}
+			}
+			&.is-edit{
+				& .edit{
+					display:inline-block;
+				}
+				& .unedit{
+					display:none;
+				}
+			}
+		}
+		.albumList_status{
+			.fl;
+			//position:absolute;
+			//left:575px;
+			//top:10px;			
+			.areUploading{}
+			.waitUpload{}
+			.successIcon{}
+			.failIcon{}
+			.reupload{}
+		}
+		.del{
+			.fr;
+			position:static;
+			//right:8px;
+			//top:12px;
+			display:inline-block;
+		}
+		.uploadStatus{
+			background-color:#FAFAFC;
+			border-top:1px solid #EAEAEA;
+			padding:10px;
+			position:relative;
+			.arrowFn(top2,albumList_arrow,#EAEAEA,8px,#FAFAFC);
+			.albumList_arrow{
+				top:-8px;
+				left:50px;
+			}
+            display: none;
+		}
+	}
+	/*创建专辑或添加到已有专辑菜单*/
+	.upload_albumMenu{
+		margin:30px;
+		text-align:center;		
+	}
+	.albumBtn{
+		width:223px;
+		height:82px;
+		display:inline-block;
+		text-align:center;
+		line-height:84px;
+		border:1px solid #DDDDDD;
+		border-radius:5px;
+		background-color:#fff;
+		color:#BABABA;
+		font-size:20px;
+		margin:0 5px;
+		position:relative;
+		.arrowFn(bottom2,albumBtn_arrow,#3485BB,10px,#FAFAFC);
+		.albumBtn_arrow{
+			display:none;
+			bottom:-10px;
+			left:100px;
+		}
+		&:hover,&.on{
+			border-color:#3485BB;
+			color:#333333;
+			text-decoration:none;
+			background-color:#FAFAFC;
+			.albumBtn_arrow{
+				display:inline-block;
+			}
+		}
+		&.forbid{
+			&:hover{
+				color: #BABABA;
+				border: 1px solid #DDDDDD;
+				background-color:#fff;
+				cursor:default;
+				.albumBtn_arrow{
+					display:none;
+				}
+			}
+		}
+	}//创建专辑或添加到已有专辑按钮
+	//添加到已有专辑：专辑列表
+	.chooseAlbum{
+         display: none;
+		.album_tile_list{
+            padding:20px 0 10px 0;
+            padding-left:0;
+			.item{
+				border:1px solid #DDDDDD;
+				margin:0 10px 10px 0;
+				&:hover,&.selected{
+					cursor:pointer;
+					border-color:#3485BB;
+					.picture{
+						opacity:1;
+					}
+					.title{
+						color:#666;
+					}
+					.select{
+						display:block;
+					}
+				}				
+			}
+		}
+		.content_wrap{
+			width:108px;
+			height:150px;
+			padding:30px;
+			position:relative;
+		}
+		.picture{
+			padding:0;
+			opacity:0.5;
+		}
+		.title{
+			color:#CCCCCC;
+		}
+		.select{
+			top:0;
+			right:-17px;
+		}
+	}
+    .uploadContinueWrap{
+        position:relative;
+        .swfuploadWrap2{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+    }
+}
+//编辑专辑edit_album
+.editAlbum{
+	background-color:#fafafa;
+	border:1px solid #EAEAEA;
+	padding:20px;
+	text-align:center;
+	a{
+		margin:0 5px;
+        position: relative;
+        .swfuploadWrap2{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+	}
+}
+.editAlbum_none{
+	background-color:#fff;
+	border:1px solid #EAEAEA;
+	color:#999;
+	font-size:20px;
+	text-align:center;
+	padding:60px 0;
+}

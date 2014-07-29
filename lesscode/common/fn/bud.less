@@ -1,0 +1,31 @@
+.budFn(@name,@width,@height,@pLeft,@pTop,@left,@top){
+	.budFn(@name,@width,@height,@pLeft,@pTop);
+	& .@{name}{
+		background-position:@left*1px @top*1px;
+	}
+}
+.budFn(@name,@width,@height,@pLeft,@pTop){
+	.budFn(@name,@width,@height);
+	& .@{name}{
+		top: @pTop*1px;
+		left: @pLeft*1px;
+	}
+}
+.budFn(@name,@width,@height){
+	position:relative;
+	& .@{name}{
+		position: absolute;
+		width:@width*1px;
+		height:@height*1px;
+		_height:(@height+1)*1px;
+		overflow:hidden;
+	}
+}
+
+.budFn(right,@name,@width,@height,@pRight,@pTop){
+	.budFn(@name,@width,@height);
+	& .@{name}{
+		top: @pTop*1px;
+		right: @pRight*1px;
+	}
+}

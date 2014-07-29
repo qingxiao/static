@@ -1,0 +1,550 @@
+//home顶部,个人信息
+.personPanelFn(){
+	.clearfix();
+	padding:10px 10px 10px 85px;
+	position:relative;
+	height:40px;
+	background-color:@colorBG3;
+	& .userfaceWrapper{
+		position:absolute;
+		top:-10px;
+		left:10px;
+		& .userface{
+			.userface60;		
+		}
+	}
+	& .count{
+		color:@colorText3;
+		line-height: @lineHeightBig;
+		& a{
+			font-weight:bold;
+			margin:0 4px;
+		}
+		& span{
+			margin:0 6px;
+			padding-left: 1px;
+			background: url("@{urlStaticImg}/base/dotted.png");
+		}
+	}
+	& .recordBtn{
+		margin-right:20px;
+		.fr;
+	}
+	& .uploadBtn{
+		.fr;
+	}
+}
+
+//最热个人电台
+.personPanelBar3Fn (){
+	.bar3Fn(40,100,50);
+	& .title,& .info{
+		line-height:@lineHeight;
+		height:@lineHeight;
+		overflow:hidden;
+	}
+	& .userface{
+		.userface40;
+	}
+	& .infoDetail{
+		.borderAndBackground;
+		margin:10px 0 0;
+		padding:5px;
+        display: none;
+	}
+    &.is-open .infoDetail{
+        display: block;
+    }
+	& .right{
+		.budFn(operate,40,9,10,-11);
+	}
+	& .operate{
+		.clearfix;
+		.hidden;
+		& .closeBtn{
+			.fr;
+		}
+	}
+	&:hover{
+		& .selectBtn{
+			color:@colorLink;
+		}
+		& .operate{
+			.show;
+		}
+	}
+}
+
+.personPanelBar2Fn(){
+	width:190px;
+	.bar2Fn(80);
+	.userface{
+		.userface70;
+		margin:0;
+	}
+	.title{
+		width: 110px;
+		height: @lineHeight;
+		line-height: @lineHeight;
+		display:block;
+		overflow:hidden;
+	}
+	.soundCount{
+		.linkTextFn;
+		.bgImgExt("sprite/icon15px.png",0,-199px);
+        padding-left: 15px;
+		cursor:default;
+	}
+	.followerCount{
+		.linkTextFn;
+		.bgImgExt("sprite/icon15px.png",0,-177px);
+        padding-left: 15px;
+		cursor:default;
+	}
+	.addBtn,.addBtn2{
+		margin-top:7px;
+	}
+}
+//搜索个人
+.rankUserPanelFn()
+{
+	.col2Fn(left,60px,10px);
+	& .userface{
+		.userface60;
+	}
+	& .rankUserInfo
+    {
+		position:relative;
+		& .title
+		{
+			display:block;
+			height: 18px;
+			overflow: hidden;
+		}
+		& .title1
+        {
+        	color:#999999;
+			font-size:12px;
+			display:block;
+			height: 18px;
+			overflow: hidden;
+        }
+		& a
+		{
+			display:block;
+			overflow:auto;
+			color:#666;
+		}
+    }
+}
+.popUserPanelFn1(@width)
+{
+	//.col2Fn(left,50px,5px);
+	//position:relative;
+	height: 34px;
+	& .intro
+    {
+		display:block;
+		color:#eee;
+		padding:0 0 5px 0;
+		white-space: nowrap;
+		&.title
+        {
+			color:#fff;
+			//padding-right:15px;
+        }
+    }
+	& .info
+    {
+		padding:0 0 6px 0;
+		& a
+        {
+            display:block;
+        }
+    }
+	& .userfacebase{
+		.faceBaseFn(@width, 0, 0);
+		.userface501(@width);
+		overflow:hidden;
+	}
+}
+.popUserPanelFn(@width)
+{
+	& .bud-4
+	{
+		width:auto;
+		-webkit-box-shadow: #333 0px 0px 15px;
+		-moz-box-shadow: #333 0px 0px 15px;
+		box-shadow: #333 0px 0px 15px;
+		margin-top:-2px;
+		margin-left:-2px;
+		& .leftShow
+		{
+			.col2Fn(left,0px);
+			& .left
+			{
+				z-index:100;
+			}
+		}
+	}
+	.budFn(bud-4,160,@width,0,0,0px,0px);
+	& .bud-4
+	{
+		width:auto;
+		background:#FF4800;
+		z-index:10;
+		padding:2px;
+	}
+	/*
+	& .BVIcon{
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+	*/
+	& .popUserPanel
+	{
+		.popUserPanelFn1(@width);
+	}
+}
+.radioUserPanelFn()
+{
+	position:relative;
+	.col2Fn(left,110px,25px);
+	& .title
+    {
+        font-size:@fontSizeBig;//14px
+		display:block;
+		line-height: 24px;
+		margin:0 0 5px 0;
+    }
+	& .signature
+    {
+		font-size:@fontSize;//12px
+		color:#999;
+		margin:0 0 5px 0;
+		height:18px;
+		overflow:hidden;
+    }
+	& .info
+    {
+		.col2Fn(right,50px,10px);
+		margin:0 0 15px 0;
+		font-size:11px;
+		color:#666;
+    }
+	& .opt
+    {
+		//.col2Fn(left,50px,10px);
+		.clearfix;
+		
+		a{
+			.fl;
+			margin:0 5px 0 0;
+		}
+    }
+	&:hover
+    {
+    	& .hidden1
+        {
+        	.show1;
+        }
+    }
+}
+//时间轴用户信息
+.timelinepersonPanelFn(@name)
+{
+	.@{name}{
+		.clearfix();
+		position:relative;
+		left:0;
+		background-color:transparent;
+		.col2Fn(left,180px,10px);
+		.editBtn{
+			position: absolute;
+			top: 2px;
+			right: 2px;
+			display:none;
+		}		
+		& .timelinefaceWrapper
+        {
+			& .userface{
+				.userface180;
+			}
+        	position:absolute;
+			top:-50px;
+			left:10px;
+			& .count{
+				width:180px;
+				background-color:#F6F6F6;
+				overflow: hidden;
+				height:60px;
+				& div
+				{
+            		.fl;
+					width:59px;
+					margin:12px 0;
+					text-align:center;
+					.bgImgExt("dotter_1.png",right,0,repeat-y);
+				}
+				& a{
+					margin:0 4px;
+					color:#000;
+					font-size:22px;
+					display:block;
+					&:hover{
+						text-decoration: none;
+						color: #3586bc;
+						span{color: #3586bc;}
+					}
+				}
+				& span{
+					//margin:0 4px;
+					//padding: 1px;
+					color:#666666;
+					font-size:12px;
+					display:block;
+				}
+				&.small
+                {
+                	& a
+                    {
+                    	font-size:18px;
+                    }
+                }
+				&.tiny
+                {
+                	& a
+                    {
+                    	font-size:12px;
+                    }
+                }
+				& .none-border
+				{
+            		background:none;
+				}
+			}
+			.useravatar:hover{
+				.editBtn{
+					.show;
+				}
+			}
+        }
+		& .userInfo
+        {
+			height:190px;
+			overflow:hidden;
+			.col2Fn(right,150px,0px);
+			width:auto;
+			& .user_info_left
+            {
+				padding:33px 30px 23px 20px;
+				height:34px;
+				& .user_name
+                {
+                	display:block;
+					font-size:28px;
+					font-weight:200;
+					font-family: "microsoft yahei";
+					h1{
+						display:inline;
+						font-size:28px;
+						font-weight:200;
+					}
+                }
+            }
+			& .user_info_right
+            {
+				text-align:right;
+				padding:30px 0;
+				margin-top:10px;
+				& .setGroups
+                {
+                	position: relative;
+					right: -40px;
+					z-index: 30;
+                }
+            }
+			& .userDetail
+			{	
+				.col2Fn(left,320px,10px);
+				bottom:0;
+				width: 100%;
+				height: 100px;
+				left:0;
+				position:absolute;
+				& .user_detail_left
+                {
+					background-color:#F6F6F6;
+					padding: 5px;
+					margin-left:10px;
+					height:90px;
+					& .text
+					{
+						//line-height:1.75em;
+					}
+					& .area
+					{
+						color:#999;
+					}
+					& .padding
+					{
+						height:10px;
+					}
+					& .marker
+					{
+						//.fl;
+						margin: 0 0 0 10px;
+						width:15px;
+						height:18px;
+						.bgImgExt("sprite/icon15px.png",0,-238px);
+						vertical-align:top;
+						display:inline-block;
+					}
+					.fl,.fr{
+						position:absolute;
+						bottom:5px;
+					}
+					.fr{
+						right:5px;
+					}
+					&.is-intro-edit{
+						.userIntro,.padding{
+							display:none;
+						}
+						.userIntroEdit{
+							display:inline-block;
+						}
+					}
+					.userIntro{word-wrap:break-word;}
+					.userIntroEdit{
+						position:relative;
+						z-index:2;
+						display:none;
+						textarea{
+							width:235px;
+							height:45px;
+						}
+
+					}
+                }
+				& .user_detail_right
+                {
+					overflow:hidden;
+					& .sound,& .album,& .like
+                    {
+                    	.fr;
+						width:130px;
+						height:100px;
+						margin-left:10px;
+						position:relative;
+						cursor:pointer;						
+						& img
+                        {
+							width:100%;
+							background-color:#fff;
+                        }
+						&:hover img,&.on img
+                        {
+							.opacity(80);
+                        }
+						& .title,& .bg
+                        {
+                        	position:absolute;
+							bottom:0;
+							width:100%;
+							height:26px;
+							line-height:26px;
+							left:0;
+							text-align:left;
+							margin-left:7px;
+							color:#fff;
+							z-index:2;
+                        }
+						& .title
+                        {
+                        	height:24px;
+                        }
+						& .bg
+                        {
+							margin-left:0;
+							.opacity(70);
+							background-color:#000;
+							z-index:1;
+                        }
+                    }
+					& .album
+					{
+						width:100px;
+					}
+                }
+			}
+		}
+	}
+}
+
+
+.userPanel1Fn()
+{
+	.col2Fn(left,180px,15px);
+	overflow: visible;
+	& .title
+    {
+    	font-size:16px;
+		color:#333;
+		font-weight:bold;
+		font-family: "microsoft yahei";
+    }
+	& .content
+    {
+    	font-size:12px;
+		color:#999;
+		display:block;
+		word-break:break-all;
+    }
+}
+.titlePanelFn(@borderColor,@height,@name:filter,@filterWidth:20px)
+{
+	border:1px solid @borderColor;
+	background-color:#fff;
+	& .titleCon
+    {
+		height:@height*1px;
+		border-bottom:1px solid @borderColor;
+		&.none-border
+		{
+			border-bottom:none;
+		}
+		& .@{name}
+        {
+			height:@height*1px;
+			line-height:@height*1px;
+        	text-align:right;
+			& a
+			{
+        		display:inline-block;
+				line-height:16px;
+				height:16px;
+				text-align:center;
+				padding:0 @filterWidth/2*1px;
+				//margin:0 @filterWidth/2*1px;
+				//width:@filterWidth*1px;
+				border-right:1px solid #ccc;
+				&.none-border
+				{
+					border-right:none;
+				}
+			}
+			& .title
+			{
+            	display: inline-block;
+				float: left;
+				//margin-top: 13px;
+				//margin-left:30px;
+				font-size:16px;
+				font-family:microsoft yahei;
+				color:#333;
+			}
+        }
+    }
+}

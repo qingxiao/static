@@ -1,0 +1,665 @@
+//小播放器
+.smallPlayerFn(@name){
+	width:180px;
+	height:30px;
+	position: relative;
+	.smallPlayerBtn;
+	.btnHasContentHack;
+	& .pin{
+		position: absolute;
+		right: -18px;
+	}
+	& .playBtn,& .pauseBtn,& .player-loading{
+		.bgImg("sprite/btn20px.png");
+		position: absolute;	
+		top:5px;
+		left:15px;
+	}
+	& .playBtn{
+		.smallPlayBtn;
+	}
+	& .pauseBtn,& .player-loading{
+		.smallPauseBtn;
+	}
+	& .duration{
+		position: absolute;
+		left:116px;
+		top:6px;
+		font-size:11px;
+	}
+	&.disabled{
+		background:url("img/sprite/feedbtn_default.png") 0 0 no-repeat !important;
+		cursor:default;
+		a.disabled,.duration,.pin{
+			display:none;
+		}
+		& div.disabled{
+			line-height: 30px;
+			padding-left: 40px;
+		}
+	}
+	&.player-loading{
+		.bgImg("common/player_loading3.gif",no-repeat);		
+	}
+}
+//中播放器
+.middlePlayerFn(@name){
+	@leftWidth:49;
+	height:48px;
+	position: relative;
+	.clearfix;
+	.bar2Fn(@leftWidth);
+	border:solid 1px #EAEAEA;
+	& .left{
+		height:100%;
+		.bgImg("base/playerbtn_bg.png",no-repeat);
+	}
+	&.is-player-hideCommentBar{
+		& .player_commentbar{
+			.hidden;
+		}
+		& .player_progressbar{
+			height:48px;
+		}
+	}
+	& .right{
+		height:48px;
+	}
+	& .pin{
+		position: absolute;
+		right: -18px;
+		top:0;
+	}
+	& .playBtn,& .pauseBtn,& .player-loading{
+		.bgImg("sprite/btn25px.png");
+		margin:10px;
+	}
+	& .playBtn{
+		.middlePlayBtn;
+	}
+	& .pauseBtn,& .player-loading{
+		.middlePauseBtn;
+	}
+	& .duration{
+
+	}
+	& .player_progressbar{
+		height:30px;
+		position:relative;
+		cursor: pointer;
+		background-color:#fff;
+		&.is-drawed{
+			& .player_seekbar, & .player_playbar, & .player_wavebox, & .player_progressbarBg{
+				.show;
+			}
+		}
+	}
+	& .player_seekbar, & .player_playbar, & .player_wavebox, & .player_progressbarBg, & .player_progressbarCoverBg{
+		position: absolute;
+		left:0;
+	}
+	& .player_progressbarBg{
+		height:28px;
+		width:100%;
+		bottom:0;
+		background-color:#CCC;
+		.hidden;
+	}
+	& .player_playbar{
+		height:28px;
+		background-color:#FF6600;
+		bottom:0;
+		.hidden;
+	}
+	& .player_seekbar{
+		height:28px;
+		.hidden;
+		bottom:0;
+		background-color:#BBB;
+	}
+	& .player_wavebox{
+		width:100%;
+		height:28px;
+		.hidden;
+		bottom:0;
+		& .player_seekbar,& .player_playbar{
+			overflow:hidden;
+			background:none;
+			width:0;
+		}
+	}
+	& .player_progressbarCoverBg{
+		height:100%;
+		width:100%;
+		top:0;
+		.bgImg("base/playerprograssbar_bg.png");
+	}
+	& .player_commentbar{
+		height:18px;
+		position:relative;
+		cursor: pointer;
+		.bgImg("base/playercomment_bg.png");
+		z-index:11;
+		& .chunk{
+			top:0;
+			height:18px;
+			position:relative;
+			.fl;
+			.clearfix;
+			z-index:1;
+			& .userface{
+				.userface16;
+			}
+		}
+		& .chunkWrapper{
+			overflow:hidden;
+			height:18px;
+		}
+		& .chunk_userface{
+			& .userface{
+				.userface16;
+			}
+			display:inline-block;
+			position:relative;
+			height:16px;
+			width:16px;
+			padding:2px 2px 0 0;
+			&.myface{
+				height:16px;
+				width:16px;
+				top:2px;
+				position:absolute;
+				opacity:30;
+				padding:0;
+				z-index:10;
+				& img{
+					width:16px;
+					height:16px;
+					vertical-align:top;
+				}
+			}
+		}
+	}
+	& .right{
+		.budFn(right, player_operate,14,18, -14,31);
+	}
+	& .player_operate{
+		.clearfix;
+		.hidden;
+		& .closeBtn{
+			.fr;
+		}
+	}
+	& .player_commentbarBtn{
+		.bgImg("sprite/btn20px.png");
+		.btnFn(14,18,0,-250,-275);
+		vertical-align: top;
+	}
+	&:hover{
+		& .player_operate{
+			.show;
+		}
+	}
+	& .player_nonius{
+		position: absolute;
+		top:0;
+		background: #FF6600;
+		width:1px;
+		height:100%;
+		display:none;
+		& .player_nonius_line5{
+			background: #FF6600;
+			position: absolute;
+			width:5px;
+			height:1px;
+			left:-2px;
+			top:15px;
+		}
+		& .player_nonius_line3{
+			background: #FF6600;
+			position: absolute;
+			width:3px;
+			height:1px;
+			left:-1px;
+			top:16px;
+		}
+		& .player_nonius_time{
+			background: #FF6600;
+			position: absolute;
+			padding: 0px 5px;
+			font-size: 11px;
+			top: 0;
+			line-height: 15px;
+			left: -19px;
+			color: #fff;
+			display: inline-block;
+			user-select:none;
+			-webkit-user-select:none;
+		}
+		& .player_nonius_cover{
+			height:100%;
+			position: absolute;
+			.bgImg("base/player_nonius_cover.png");
+		}
+		&.is-long{
+			& .player_nonius_time{
+				left:-24px;
+			}
+		}
+	}
+	&.disabled{
+		.bgImgExt("sprite/feedbtn_default.png",8px,-92px);
+		.left a.disabled{
+			display:none!important;
+		}
+		.player_wavebox{
+			display:none!important;
+		}
+		.player_seekbar{
+			display:none!important;
+		}
+		.player_playbar{
+			display:none!important;
+		}
+		.player_progressbarBg{
+			display:none!important;
+		}
+		.player_nonius{
+			display:none!important;
+		}
+		.player_operate{
+			display:none!important;
+		}
+		.player_commentbar{
+			display:none!important;
+		}
+	}
+}
+.is-player-commentbarHidden{
+	& .player_commentbar{
+		.hidden;
+	}
+	& .player_progressbarBg,& .player_seekbar,& .player_playbar,& .player_wavebox{
+		height:38px!important;
+	}
+	& .player_progressbar{
+		height:49px!important;
+	}
+	& .player_commentbarBtn{
+		.btnFn(14,18,0,-325,-350);
+		vertical-align: top;
+	}
+}
+.player_hideCommentbarBtn{
+	.bgImg("sprite/btn20px.png");
+	.btnFn(14,18,0,-251,-276);
+	vertical-align: top;
+}
+
+//迷你播放器
+.miniPlayerFn(){
+	.clearfix;
+	//height:@lineHeight;
+	line-height:@lineHeight;
+	& .playBtn{
+		.miniPlayBtn;
+		.fl;
+		&.disabled{
+			background-position:0 -125px;
+		}
+	}
+	& .pauseBtn,& .player-loading{
+		.miniPauseBtn;
+		.fl;
+		&.disabled{
+			background-position:0 -125px;
+		}
+	}
+	& .title{
+		margin:0 0 0 10px;
+		.fl;
+		word-wrap:break-word;
+		max-width:70%;
+	}
+	& .author{
+		.link22;
+	}
+	& .fr{
+		color:@colorText4;
+	}
+}
+
+//迷你播放器，播放按钮小
+.miniPlayerFn3(){
+	.clearfix;
+	height:@lineHeightMin;
+	line-height:@lineHeightMin;
+	overflow:hidden;
+	& .playBtn{
+		.miniPlayBtn2;
+		.fl;
+		&.disabled{
+			background-position:0 -519px;
+		}
+	}
+	& .pauseBtn,& .player-loading{
+		.miniPauseBtn2;
+		.fl;
+	}
+	& .title{
+		margin:0 0 0 10px;
+		.fl;
+		word-wrap:break-word;
+		max-width:58%;
+	}
+	& .author{
+		.link22;
+	}
+	& .fr{
+		color:@colorText4;
+	}
+}
+
+//迷你播放器
+.miniPlayer2Fn(){
+	.player_titleBar{
+		.bar2Fn(21);
+		height:18px;
+		overflow: hidden;
+		color:#ccc;
+	}
+	& .playBtn{
+		.miniPlay2Btn;
+		margin-top:1px;
+		vertical-align: top;
+		&.disabled{
+			background-position:0 -520px;
+		}
+	}
+	& .pauseBtn,& .player-loading{
+		.miniPause2Btn;
+		margin-top:1px;
+		vertical-align: top;
+		&.disabled{
+			background-position:0 -520px;
+		}
+	}
+	& .player_progressbar{
+		height:20px;
+		position:relative;
+		margin-top:2px;
+		cursor: pointer;
+		&.is-drawed{
+			& .player_seekbar, & .player_playbar, & .player_wavebox, & .player_progressbarBg{
+				.show;
+			}
+		}
+	}
+	& .player_seekbar, & .player_playbar, & .player_wavebox, & .player_progressbarBg, & .player_progressbarCoverBg{
+		position: absolute;
+		left:0;
+	}
+	& .player_progressbarBg{
+		height:20px;
+		width:100%;
+		bottom:0;
+		background-color:#CCC;
+		.hidden;
+	}
+	& .player_playbar{
+		height:20px;
+		background-color:#FF6600;
+		bottom:0;
+		.hidden;
+	}
+	& .player_seekbar{
+		height:20px;
+		.hidden;
+		bottom:0;
+		background-color:#BBB;
+	}
+	& .player_wavebox{
+		width:100%;
+		height:20px;
+		.hidden;
+		bottom:0;
+        & .player_seekbar,& .player_playbar{
+            overflow:hidden;
+            background:none;
+            width:0;
+        }
+	}
+}
+.miniPlayer4Fn()
+{
+	.miniPlayer2Fn();
+	& .playBtn{
+		.middlePlayBtn2;
+		.fl;
+		&.disabled{
+			background-position:0 -125px;
+		}
+	}
+	& .pauseBtn,& .player-loading{
+		.middlePauseBtn2;
+		.fl;
+	}
+	& .player_titleBar
+    {
+    	height:38px;
+		margin-top:10px;
+		padding-bottom:10px;
+    }
+    & .player_wavebox{
+        width:100%;
+        height:20px;
+        .hidden;
+        bottom:-1px;
+        .player_seekbar, .player_playbar{
+            overflow:hidden;
+            background:none;
+            width:0;
+        }
+        .player_progressbarBg {
+            background:none;
+        }
+    }
+}
+//全局播放器
+.grobalPlayerFn(){
+	.clearfix;
+	padding-top: 9px;
+	.hidden;
+	& .controlPanel{
+		width: 80px;
+		height: 19px;
+		overflow: hidden;
+		float: left;
+		position: relative;
+		z-index: 2;
+		.bgImg("head/play_bg.png");
+	}
+	& .forwordBtn{
+		margin-left:10px;
+		margin-top: 2px;
+		.bgImg("sprite/btn15px.png");
+		.btnFn(15,15,0,-40,-60);
+		.fl;
+        text-indent:100px;
+	}
+	& .orderplayBtn,& .randomplayBtn,& .loopplayBtn{
+		margin-left:10px;
+		.bgImg("sprite/btn20px.png");
+		.fl;
+        text-indent:100px;
+	}
+	& .orderplayBtn{
+		.btnFn(20,20,0,-407,-426);
+	}
+	& .randomplayBtn{
+		.btnFn(20,20,0,-445,-464);
+	}
+	& .loopplayBtn{
+		.btnFn(20,20,0,-483,-502);
+	}
+	& .cover, & .controls{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	& .progressBar{
+		position: absolute;
+		width:78px;
+		top: 1px;
+		left: 1px;
+		height:17px;
+		overflow: hidden;
+		border-right: 6px;
+		& .playBar{
+			width:0;
+			height:100%;
+			.bgImg("head/progress_bar.png");
+		}
+	}
+	& .cover{
+		.bgImg("head/player_mask.png",no-repeat);
+	}
+	& .playBtn{
+		.grobalPlayBtn;
+		.fl;
+		margin:3px 13px 0;
+		//.disabledFn(0, -120);
+	}
+	& .pauseBtn,& .player-loading{
+		.grobalPauseBtn;
+		.fl;
+		margin:4px 13px 0;
+	}
+	& .prevBtn{
+		.grobalPrevBtn;
+		.fl;
+		margin:4px 0 0 8px;
+		//.disabledFn(0, -240);
+	}
+	& .nextBtn{
+		.grobalNextBtn;
+		.fl;
+		margin:4px 0 0 0;
+		//.disabledFn(0, -180);
+	}
+	& .title{
+		.fl;
+		margin-left:5px;
+		color: #333;
+	}
+}
+
+.commentPopBox{
+	position: absolute;
+	left: 7px;
+	top: 0;
+	z-index: 10;
+	& .commentPopBox_wrapper{
+		position: absolute;
+		bottom: 0;
+		width: 300px;
+		left: -45px;
+		padding-bottom: 6px;
+	}
+	&.is-budAtRight{
+		& .commentPopBox_wrapper{
+			left:-255px;
+		}
+		& .commentPop{
+			.bud{
+				left:auto;
+				right:40px;
+			}
+		}
+	}
+}
+.commentPop{
+	border: solid 1px #ddd;
+	border-radius: 4px;
+	background: #fff;
+	padding-bottom: 5px;
+	& .commentPop_titleBar{
+		background:#FF6600;
+		color:#fff;
+		line-height:21px;
+		height:21px;
+		.clearfix;
+		border-radius: 4px 4px 0 0;
+		margin: 0px;
+		margin-bottom: 0;
+		padding:0 9px;
+	}
+	& .commentPop_content{
+		padding:0 8px 0 10px;
+		margin:7px 2px 5px 0;
+		max-height: 63px;
+	}
+	& .commentPop_title{
+		color:#FFF;
+		.fl;
+	}
+	& .commentPop_closeBtn{
+		.fr;
+		margin-top: 4px;
+	}
+	& .commentBox_inputBox{
+		padding: 0px 4px 0 6px;
+		margin: 0 0 5px;
+		.borderHoverFn();
+		& input{
+			width: 100%;
+			padding: 1px 0 0px;
+			height:16px;
+			border: none;
+			line-height: 16px;
+		}
+		& textarea{
+			width: 100%;
+			padding: 1px 0 0px;
+			border: none;
+			resize: none;
+			height: 72px;
+			line-height: 18px;
+			.hidden;
+		}
+	}
+	& .commentPop_bottom{
+		& .cl{
+			line-height:21px;
+			height:21px;
+			.btnAlignBrother;
+		}
+		& .commentPop_bottom_top{
+			margin:0 11px;
+		}
+		& .commentPop_bottom_bottom{
+			margin:0 10px 5px;
+			.fr{
+				a{
+					margin-left:8px;
+				}
+			}
+		}
+	}
+	& .commentInPopList{
+		& li{
+			margin-bottom:5px;
+		}
+	}
+	.budFn(bud,10,6,40,100,0,-105);
+	.bud{
+		.bgImg("sprite/arrow.png",no-repeat);
+		top:100%;
+		background-position: 0 -107px;
+	}
+}
+
+
+

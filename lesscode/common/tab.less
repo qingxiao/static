@@ -1,0 +1,38 @@
+@import "fn/tab.less";
+/*common/tab*/
+.feedTab{
+	.tabFn();
+	&>.fl{width:60%;}
+}
+.tagTab{
+	.tabFn(26px,0);
+}
+.searchTab{
+	.multiTabFn();
+}
+.tabFn1(rankTab,26px,30px,0);
+.soundTab{
+	.clearfix;
+	border-bottom:1px solid @colorLine1;
+	padding-bottom:10px;
+	& .tab_sort{
+		border-left:1px solid @colorLine1;
+		padding:0 10px 0 10px;
+		margin-left:5px;
+	}
+	& .select{
+		margin-left:15px;
+	}
+	.tab_title{
+		.fl;
+		margin-right:10px;
+	}
+}
+.sortOn{
+	color:#333;
+	cursor:default;
+	&:hover{
+		text-decoration:none;
+		color:#333;
+	}
+}

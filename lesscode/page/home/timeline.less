@@ -1,0 +1,311 @@
+﻿@noneSelect:#ccc;
+@select:#3586BC;
+
+.timelineContent(@height:30px,@color:@noneSelect,@fontSize:14px)
+{
+	color:@color;
+	font-size:@fontSize;
+	padding-right: 10px;
+	display:block;
+	height:@height;
+	line-height:@height;
+	text-decoration:none;
+}
+@point_arrow_margin:40px;
+
+
+&  .timelinePanel
+	{
+		width:100%;
+		position:relative;
+		&.no-height
+        {
+        	height:0;
+        }
+		.cl();
+		& .timeline_time_info
+		{
+    		width:170px;
+			display:block;
+			font-size:20px;
+			color:#999;
+			padding:15px 10px;
+		}
+		& .timeline_feed
+		{
+			padding:0 0 0 170px+@point_arrow_margin;
+		}
+		//内容
+		& .timeline_content
+		{
+			&.paging
+            {
+            	border:none;
+				padding: 0 10px;
+				margin: -10px 0 20px 0;
+            }
+			margin:15px 0;
+			position:relative;
+			padding:10px;
+			border:1px solid #ddd;
+			display: inline-block;
+			float:left;
+			_display:block;
+			width:600px;
+			.setLivelyMoreBtnFn2(moreBtn, 10, 10, 10);
+			//&:hover,&.on
+			//{
+        		//background:#fafafa;
+				//& .arrow
+				//{
+            		//background-position:0 -10px;
+				//}
+			//}
+			// 标记的样式
+			&.timeline_marker
+			{
+				padding:10px 0;
+				height:21px;
+				border:none;
+				width:180px;
+				font-size:14px;
+				margin-left:-8px;
+				_display:inline;
+				text-align:center;
+				.bgImgExt("sprite/btn50px.png",0,-371px);
+				& a
+				{
+            		font-weight: bold;
+					text-decoration: none;
+				}
+				&:hover,&.on
+				{
+					cursor:pointer;
+					.bgImgExt("sprite/btn50px.png",0,-427px);
+					& a
+					{
+						color:#fff;
+					}
+				}
+			}
+			//头部样式
+			&.timeline_head
+			{
+				padding:0;
+				width:310px;
+				border:none;
+				margin-top:25px;
+				&:hover,&.on
+				{
+					background:#fff;
+				}
+				& .fans_title
+				{
+            		height:20px;
+					margin-bottom: 5px;
+					.fl();
+				}
+				& .fans_content
+				{
+					width: 300px;
+					.fl();
+				}
+				& img
+				{
+        			width:40px;
+					height:40px;
+					margin:0 1px 1px 0;
+					padding:0;
+					cursor:pointer;
+					float: left;
+					&:hover,&.on 
+					{
+						.opacity(80);
+					}
+				}
+			}
+			//尾部样式
+			&.timeline_footer
+			{
+				padding:10px;
+				width:321px;
+			}
+			//个人微博信息
+			&.sns{
+				width:365px;
+				margin-top:35px;
+				background-color:#FAFAFA;
+				.arrow{background-color:#FAFAFA;}
+				.timeline_sns{line-height:2;color:#666;}
+			}
+		}
+		&.timelineMgb{
+			margin-bottom:80px;
+		}
+	}
+
+
+#timelinePage
+{
+	//时间轴样式
+	&  .timelineLine{
+		width:70px;
+		text-align:right;
+		position:absolute;
+		right:5px;
+		z-index: 10;
+		top:25px;
+		//年份显示样式
+		& .timelineYear
+		{
+			position:relative;
+			border-color:transparent;
+			margin:0 -1px 2px 0;
+			.bgImgExt("element.png",right,0);
+			.timelineContent(30px,#999,@fontSizeHuge);
+			&:hover
+			{
+				.bgImgExt("element.png",right,-30px);
+				color:@select;
+				border-right-color:@select;
+				//font-weight:bold;
+			}
+		}
+		//月份显示样式
+		& .timelineMonth
+		{
+			border-right:3px solid @noneSelect;
+			margin:0 0 2px 0;
+			.timelineContent(30px,@noneSelect,@fontSizeBig);
+			&:hover
+			{
+				color:@select;
+				border-right-color:@select;
+			}
+		}
+		//当前选中年份
+		& .current 
+		{
+			//样式
+			& .timelineYear
+			{
+				.bgImgExt("element.png",right,-30px);
+				color:@select;
+				border-right-color:@select;
+				font-weight:bold;
+			}
+			//选中年份下的月份样式
+			& .timelineMonthCon
+			{
+				display:block;
+			}
+			//选中的月份样式
+			& .current .timelineMonth
+			{
+				color:@select;
+				border-right-color:@select;
+			}
+		}
+		//月份选中框
+		& .timelineMonthCon 
+		{
+			display:none;
+		}
+	}
+	
+	& .picWall
+	{
+		height:250px;
+		width:100%;
+		background:@colorText5;
+        position: relative;
+        overflow: hidden;
+        .next-page{
+            position: absolute;
+            right:0;
+            bottom:0;
+            padding:10px;
+            cursor:pointer;
+        }
+		.uploadCoverBtn{
+			position:absolute;
+			right:10px;
+			bottom:10px;
+		}
+		.confirmBtn2{
+			position:absolute;
+			right:80px;
+			bottom:10px;
+			display:none;
+		}
+		.cancelBtn2{
+			position:absolute;
+			right:10px;
+			bottom:10px;
+			display:none;
+		}
+		&.is-save{
+			.confirmBtn2,.cancelBtn2{
+				display:inline-block;
+			}
+			.uploadCoverBtn{
+				//visibility:hidden;
+                right:-100px;
+			}
+		}
+        .wall-background{
+            position: relative;
+            .cover-image{
+                width:950px;
+                height:250px;
+                overflow: hidden;
+                position: relative;
+                z-index:0;
+                margin:0;
+                img{
+                    position: absolute;
+                    left:0px;
+                    top:0px;
+                    width:100%;
+                }
+            }
+            .operate{
+                position: absolute;
+                right:0;
+                bottom:0;
+            }
+        }
+	}
+	& .timelineUserInfo
+	{
+		height:190px;
+		overflow:visible;
+	}
+	& .timeline
+	{
+		position:relative;
+		width:100%;
+		.clearfix;
+		& .timeline_right
+		{
+			width: 100%;
+			position:relative;
+			height:auto;
+			overflow:hidden;
+			& .timeline_left
+			{
+    			width:170px;
+				position:absolute;
+				height:100%;
+				height:200000px;
+				top:0;
+				left:0;
+				border-right:1px solid #ddd;
+			}
+		}
+	}
+}
+
+
+
+

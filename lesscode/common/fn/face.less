@@ -1,0 +1,52 @@
+//头像
+//size {Number}头像尺寸
+//left {Number}默认图片在背景图上的横向偏移
+//top  {Number}默认图片在背景图上的纵向偏移
+.faceBaseFn (@size,@left,@top){
+	width:@size*1px;
+	height:@size*1px;
+	display:block;
+	cursor: pointer;
+	background-position:@left*1px @top*1px;
+	& img{
+		width:@size*1px;
+		height:@size*1px;
+		vertical-align: top;
+	}
+}
+//头像
+//size {Number}头像尺寸
+//left {Number}默认图片在背景图上的横向偏移
+//top  {Number}默认图片在背景图上的纵向偏移
+.faceFn (@size,@left,@top){
+	.faceBaseFn(@size,@left,@top);
+	& img{
+		background-color:#fff;
+		&:hover{
+			opacity: 0.8;
+			filter: alpha(opacity=80);
+		}
+	}
+}
+.faceWrapperFn(@size:@size){
+	width:@size+10px;
+	height:@size;
+}
+//有容器的头像，比如专辑
+//size {Number}头像尺寸
+//left {Number}默认图片在背景图上的横向偏移
+//top  {Number}默认图片在背景图上的纵向偏移
+//@width {Number} 容器宽度
+//@heigth {Number} 容器高度
+.faceFn(@size,@left,@top,@width,@height){
+	@gapTop: @height - @size;
+	@gapRight: @width - @size;
+	width:@size*1px;
+	height:@size*1px;
+	display:block;
+	background: url("@{urlStaticImg}/base/bg-album-w100.jpg") no-repeat right;
+	padding:@gapTop*1px @gapRight*1px 0 0;
+	& span{
+		.faceFn(@size,@left,@top);
+	}
+}

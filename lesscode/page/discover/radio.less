@@ -1,0 +1,170 @@
+#discoverRadioPage
+{
+	margin-bottom:50px;
+	& .personalMain
+	{
+		.bar2Fn(710px,200px);
+		& .left
+        {
+			padding-right: 20px;
+        }
+		& .right
+        {
+			& .advertisement
+			{
+    			width:200px;
+				height:auto;
+				background:#ccc;
+				img{
+					width:200px;
+				}
+			}
+			& .advertisement1
+			{
+    			width:200px;
+				height:auto;
+				background:#ccc;
+				img{
+					width:200px;
+				}
+			}
+        }
+	}
+	.radioUserPanel
+	{	
+		height:109px;
+		.radioUserPanelFn();
+		& .info{
+			& span{
+				margin-right:8px;
+			}
+		}
+		.title{
+			height:24px;
+			overflow:hidden;
+		}
+	}
+	.rankUserPanel
+	{
+		.rankUserPanelFn();
+		padding:0;
+	}
+	& .bar2
+    {
+		.col2Fn(left,30px,-5px);
+    }
+	& .personWall
+	{
+		width:100%;
+		height:200px;
+		background:#fff;
+		.popUserPanelFn(50);
+		& .picCon
+		{
+			position:relative;
+    		float:left;
+			display:block;
+			width:49px;
+			height:49px;
+			cursor:pointer;
+			//background:#fff url("img/person_60.jpg");
+			margin: 0 1px 1px 0;
+		}
+		& .bud-1,& .bud-2,& .bud-3
+		{
+			.popUserPanelFn(150);
+        	background:#fff;
+			z-index:10;
+			position:absolute;
+		}
+		.BVIcon{
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+		}
+	}
+	& .personalMain
+	{
+		margin-top:30px;
+        .nav_list{
+			height:auto;
+            .nav_item{
+				height:25px;
+                margin:0 5px 0 0;
+            	& a:hover{
+	                .transitionFn(background-color,0.3);
+            	}
+            }
+        }
+		& .category,& .circle
+		{
+			overflow: visible;
+			& .title
+			{
+				width:40px;
+        		font-size:14px;
+				line-height: 24px;
+				font-weight:bold;
+				display:inline-block;
+				float:left;
+				.cl;
+			}
+		}
+		& .circle
+		{
+			margin-top:15px;
+			& a:hover,&a.on
+			{
+        		background:#3586BC;
+				color:#fff;
+			}
+		}
+		& .titlePanel
+        {
+        	.titlePanelFn(#eaeaea,45);
+            .titleCon {
+				.nav_list{
+					display:inline-block;
+					height:45px;
+					line-height: 45px;
+				}
+				.filter a{
+					height:18px;
+					line-height:18px;
+					border-right:none;
+				}
+			}
+        }
+		& .radioUserListItem
+		{
+			& .userface{
+				.userface110;
+			}
+			float:left;
+			width:292px;
+			padding:20px 30px;
+			border:1px solid #eaeaea;
+			&.border-left
+			{
+				border-right:1px solid #eaeaea;
+				border-bottom-color:#fff;
+				border-left-color:#fff;
+				border-top-color:#fff;
+			}
+			&.border-right
+			{
+				border-color:#fff;
+				width:292px;
+			}
+			&:hover
+			{
+				border:1px solid #A5C3E2;
+				cursor:pointer;
+				& .hidden1
+				{
+					.show1;
+				}
+			}
+		}
+	}
+}

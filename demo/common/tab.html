@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<title>tab</title>
+<style>
+.demo_title {
+	text-align: center;
+	padding: 20px;
+}
+
+.demo {
+	width: 1200px;
+	margin: 0 auto 60px;
+}
+
+.demo td {
+	padding: 10px;
+	border: solid 1px whiteSmoke;
+}
+
+tr>td:first-child {
+	width: 800px;
+}
+
+tr>td:last-child {
+	width: 60px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="demo_title">common/tab.less</div>
+	<table class="demo">
+		<tr>
+			<td>
+				<div class="feedTab">
+					<div class="fl">
+						<strong class="tab_title">新鲜事</strong>
+						<a href="javascript:;" class="select">全部</a>
+					</div>
+					<div class="fr">
+						<a href="#" class="tab_item on"><span>声音</span></a>
+						<a href="#" class="tab_item"><span>新鲜事</span></a>
+					</div>
+				</div>
+			</td>
+			<td>单线条tab</td>
+			<td>feedTab</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+				<!-- 模块开始 -->
+				<div class="tagTab">
+					<a href="#" class="tab_item"><span>热门话题</span></a>
+					<a href="#" class="tab_item on"><span>我的标签</span></a>
+				</div>
+			</td>
+			<td>单线条tab(右侧)</td>
+			<td>tagTab</td>
+			<td>peter</td>
+		</tr>
+	</table>
+</body>
+</html>

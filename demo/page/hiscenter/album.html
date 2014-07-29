@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ta的专辑</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalAlbum" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/1000105/">
+                        <img src="http://fdfs.xmcdn.com/group1/M00/02/B4/wKgDrVCtvMKCdH86AAQOlwbohZA103_common_medium.jpg">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        袁腾飞讲历史
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/1000105/">主页</a></li>
+                        <li class="nav_item"><a href="/#/1000105/sound/">声音</a></li>
+                        <li class="nav_item on"><a href="/#/1000105/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/1000105/favorites/">喜欢</a></li>
+                        <li class="nav_item"><a href="/#/1000105/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/1000105/fans/">粉丝</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">袁腾飞讲历史的专辑</span>
+                    </div>
+                    <span class="album_layout">
+                        <a class="albumLayoutIcon list on" href="/#/1000105/album/"></a>
+                        <a class="albumLayoutIcon tile " href="/#/1000105/album/?style=tile"></a>
+                    </span>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共有5张专辑</div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索专辑">                      
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                    <div class="body_list_wrap">
+                        <ul class="body_list album_list">
+                            <li class="item" album_id="16690">
+                                <div class="content_wrap">
+                                    <div class="album">
+                                        <div class="left">
+                                            <a class="albumface100" href="/#/1000105/album/16690"><span><img alt="" src="http://fdfs.xmcdn.com/group2/M01/22/20/wKgDsFHI_zLy3xZhAASF99yHfJk983_web_meduim.jpg" data-options="defaultImg:album_100"></span></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title"><a href="/#/1000105/album/16690">《腾飞五千年之塞北三朝之辽》</a></div>
+                                            <div class="content">
+                                                在中国塞北草原上，曾经扶摇而起一个搏击长空的鹰之族，契丹。这个民族建立的大辽国，雄跨长城内外，疆域是宋王朝的两倍；契丹王朝创造性地运用了“一国两制”的国策，促进了中国北方经济文化的融合发展，使塞北成为东亚政治经济文化交流的中心。在相当长一段时间内，“契丹”就是中国的代名词，甚至有少数国家沿用这个称呼直到今天。然而...
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="info">14个声音</span>
+                                                <span class="last_info miniPlayer3" sound_id="617097">
+                                                    <span class="tip">[最后更新]</span>
+                                                    <a href="javascript:;" class="playBtn"></a>
+                                                    <a href="/#/1000105/sound/617097" class="text">
+                                                        宋金攻辽 16
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="time2">1月前</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="16620">
+                                <div class="content_wrap">
+                                    <div class="album">
+                                        <div class="left">
+                                            <a class="albumface100" href="/#/1000105/album/16620"><span><img alt="" src="http://fdfs.xmcdn.com/group2/M01/21/BC/wKgDr1HH0wyh0uK8AASRhnw1o_0110_web_meduim.jpg" data-options="defaultImg:album_100"></span></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title"><a href="/#/1000105/album/16620">《腾飞五千年之塞北三朝之西夏》</a></div>
+                                            <div class="content">
+                                                在中国的大西北，曾经有一个和辽、金同时代存在的神秘王朝，这就是党项族建立的西夏。党项政权统治长达三百多年，全盛时期疆域两万多里，但在《二十四史》中，却没有把西夏当作一个正统王朝来记载，这是为什么呢？党项族，究竟是一个什么样的民族？他们又是如何建立起称霸西北的西夏王朝的呢？
+　　历史高级教师袁腾飞，为您带来大型历...
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="info">15个声音</span>
+                                                <span class="last_info miniPlayer3" sound_id="692173">
+                                                    <span class="tip">[最后更新]</span>
+                                                    <a href="javascript:;" class="playBtn"></a>
+                                                    <a href="/#/1000105/sound/692173" class="text">
+                                                        西夏灭亡 15
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="time2">1月前</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="1546">
+                                <div class="content_wrap">
+                                    <div class="album">
+                                        <div class="left">
+                                            <a class="albumface100" href="/#/1000105/album/1546"><span><img alt="" src="http://fdfs.xmcdn.com/group1/M01/05/79/wKgDrVDaYnGgv_maAAQSmoNSc98824_web_meduim.jpg" data-options="defaultImg:album_100"></span></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title"><a href="/#/1000105/album/1546">《袁腾飞讲历史精选集》</a></div>
+                                            <div class="content">
+                                                袁腾飞，男，1972年2月生于北京。1994年毕业于首都师范大学历史系，曾在首都师范大学附属中学任教13年，现就职于北京市海淀区教师进修学校，北京市高级教师、历史教研员。 其授课视频08年被学校上传至网上，并迅速走红，一月内点击下载量即超过1000万次，因其幽默风趣、活泼生动的讲课风格，被网友戏称为：“史上最牛的...
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="info">37个声音</span>
+                                                <span class="last_info miniPlayer3" sound_id="187739">
+                                                    <span class="tip">[最后更新]</span>
+                                                    <a href="javascript:;" class="playBtn"></a>
+                                                    <a href="/#/1000105/sound/187739" class="text">
+                                                        中国古代史12明清（一）
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="time2">7月前</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="763">
+                                <div class="content_wrap">
+                                    <div class="album">
+                                        <div class="left">
+                                            <a class="albumface100" href="/#/1000105/album/763"><span><img alt="" src="http://fdfs.xmcdn.com/group1/M00/02/93/wKgDrVCsOqXQH32JAAVHetRx4-8186_web_meduim.jpg" data-options="defaultImg:album_100"></span></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title"><a href="/#/1000105/album/763">《袁腾飞塞北三朝之辽》</a></div>
+                                            <div class="content">
+                                                袁腾飞，男，1972年2月生于北京。1994年毕业于首都师范大学历史系，曾在首都师范大学附属中学任教13年，现就职于北京市海淀区教师进修学校，北京市高级教师、历史教研员。 其授课视频08年被学校上传至网上，并迅速走红，一月内点击下载量即超过1000万次，因其幽默风趣、活泼生动的讲课风格，被网友戏称为：“史上最牛的...
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="info">23个声音</span>
+                                                <span class="last_info miniPlayer3" sound_id="88451">
+                                                    <span class="tip">[最后更新]</span>
+                                                    <a href="javascript:;" class="playBtn"></a>
+                                                    <a href="/#/1000105/sound/88451" class="text">
+                                                        塞北三朝01_辽01：白马青牛
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="time2">8月前</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="307">
+                                <div class="content_wrap">
+                                    <div class="album">
+                                        <div class="left">
+                                            <a class="albumface100" href="/#/1000105/album/307"><span><img alt="" src="http://fdfs.xmcdn.com/group1/M00/00/F4/wKgDrVCTbC7zDUKVAATC7Ap6eos687_web_meduim.jpg" data-options="defaultImg:album_100"></span></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title"><a href="/#/1000105/album/307">《袁腾飞两宋风云》</a></div>
+                                            <div class="content">
+                                                袁腾飞，男，1972年2月生于北京。1994年毕业于首都师范大学历史系，曾在首都师范大学附属中学任教13年，现就职于北京市海淀区教师进修学校，北京市高级教师、历史教研员。 其授课视频08年被学校上传至网上，并迅速走红，一月内点击下载量即超过1000万次，因其幽默风趣、活泼生动的讲课风格，被网友戏称为：“史上最牛的...
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="info">30个声音</span>
+                                                <span class="last_info miniPlayer3" sound_id="30785">
+                                                    <span class="tip">[最后更新]</span>
+                                                    <a href="javascript:;" class="playBtn"></a>
+                                                    <a href="/#/1000105/sound/30785" class="text">
+                                                        两宋风云30_高宗禅位
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="time2">9月前</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="pagingBar mgTB20">
+                            
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--他关注的人-->
+
+    <!--他的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000105/fans/" class="more">更多</a>
+            <h2 class="title">他的粉丝(37727)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/2627708/" title="高高ylzs">
+                <img card="2627708" alt="高高ylzs" src="http://tp3.sinaimg.cn/1238130390/180/5630410797/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627622/" title="ABC_iS">
+                <img card="2627622" alt="ABC_iS" src="http://qzapp.qlogo.cn/qzapp/100261563/3A355AB458AFEE55C7DB8ACCBC9047BA/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627674/" title="mkkp">
+                <img card="2627674" alt="mkkp" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2398018/" title="penny_FK">
+                <img card="2398018" alt="penny_FK" src="http://qzapp.qlogo.cn/qzapp/100261563/6986C3CD8E70A9CEF3C1E7EFDDC627C6/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627581/" title="Le_8G">
+                <img card="2627581" alt="Le_8G" src="http://qzapp.qlogo.cn/qzapp/100261563/93FCBF8D83BCA3F2BD327F8C8EE22AF6/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627561/" title="止如墨凡">
+                <img card="2627561" alt="止如墨凡" src="http://fdfs.xmcdn.com/group3/M03/15/96/wKgDsVIN19Dj508SAACmq6hotJw391_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627566/" title="hellopasserby">
+                <img card="2627566" alt="hellopasserby" src="http://tp1.sinaimg.cn/1946294860/180/5659592094/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627562/" title="人丑嘴不甜长得_vG">
+                <img card="2627562" alt="人丑嘴不甜长得_vG" src="http://qzapp.qlogo.cn/qzapp/100261563/0BB6E5C5FA1CC0057D71884CCCB5C8CC/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2035217/" title="承风习习">
+                <img card="2035217" alt="承风习习" src="http://tp3.sinaimg.cn/2837162830/180/5634885420/0" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1316306/" title="以_为友">
+                <img card="1316306" alt="以_为友" src="http://tp1.sinaimg.cn/1781097160/180/22833488196/1" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他最新的声音-->
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/1000105/sound/" class="more">更多</a>
+            <h2 class="title">他最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/692173">西夏灭亡 15</a>
+                    <span class="times">2396次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/687286">得敬分国 14</a>
+                    <span class="times">2205次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/670344">左右逢源 13</a>
+                    <span class="times">2262次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/669653">大小梁后 12</a>
+                    <span class="times">2081次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/622801">五路破宋 11</a>
+                    <span class="times">3358次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/617975">英武毅宗 10</a>
+                    <span class="times">3011次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/617097">宋金攻辽 16</a>
+                    <span class="times">1156次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/608315">辽衰金兴 15</a>
+                    <span class="times">1273次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/603136">后妃之争 12</a>
+                    <span class="times">1531次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000105/sound/598682">元昊南侵 07</a>
+                    <span class="times">2799次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div></div>
+  </div>
+</body>
+</html>

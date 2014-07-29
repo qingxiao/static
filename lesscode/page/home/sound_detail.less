@@ -1,0 +1,110 @@
+//sound声音详情页面
+/*page/home/sound_detail*/
+.recommendSound{
+	& .recommendSound_head{
+		& .recommendSound_head_title{
+			font-size:14px;
+			font-weight:bold;
+			color:#333333;
+			.fl;
+		}
+		& .recommendSound_head_border{
+			border-bottom:1px solid @colorLine1;
+			display:inline-block;
+			.fl;
+			width:554px;
+			height:1px;
+			margin:9px 5px 0 0;
+		}
+		& a{
+			.bgImgExt("sprite/icon10px.png",0,-285px);
+			padding-left:15px;
+		}
+	}
+	
+	//div布局，有ie8兼容性问题
+	.middleImgBoxFn(@width:120,@height:120){
+		display:table;
+		text-align:center;
+		table-layout:fixed;
+		& .imgWrapper{
+			display:table-cell;
+			vertical-align:middle;
+			width:@width*1px;
+			height:@height*1px;		
+			&:hover{
+				opacity:0.9;
+			}
+		}
+		& img{
+			max-width:@width*1px;
+			max-height:@height*1px;
+			margin:0 auto;
+		}
+	}
+	& .recommendSound_body{
+		padding:20px 0 10px 10px;
+		.clearfix;
+	}
+	& .recommendSoundPanel{
+		width: 120px;
+		float: left;
+		margin-right: 20px;
+		word-wrap:break-word;
+		& .soundface{	
+			.middleImgBoxFn(120,120);
+			margin-bottom:15px;
+		}
+	}
+}
+
+.commentSection{
+	& .tab_item:first-child{
+		margin-left:10px;
+	}
+	& .commentSend{
+		border-bottom:1px dotted #CCCCCC;
+		padding-bottom:15px;
+		& .commentBox{
+			.bar2Fn(60);
+			background-color:#FAFAFA;
+			border:none;
+			padding-top:20px;
+		}
+		& .arrow_left{
+			.arrowFn(-1, -41);
+			left:-10px;			
+		}
+		& .comment_input{
+			height:60px;			
+		}
+		& .commentBox_inputBox{
+			padding:5px;
+			& textarea{
+				display:block;
+				height:100%;
+				padding:0;
+			}
+			&:hover, &.focus{
+				& .arrow_left{
+					.bgImgExt("sprite/bg10px.png",0,-80px);
+					width: 10px;
+					height:10px;
+					display: block;
+				}
+			}
+		}
+	}
+	& .commentList{
+		& .listItem{
+			padding:10px;
+			border-bottom:1px dotted #CCCCCC;
+		}
+	}
+	.reportBtn{
+		position: absolute;
+		top: 0;
+		right: 0;
+		display:none;
+	}
+}

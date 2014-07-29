@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/css/web.css" rel="Stylesheet" rev="Stylesheet" />
+</head>
+<body>
+	<!--页面头部 start-->
+	<div class="header">
+        <div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover on" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+    </div>
+	<!--页面头部 end-->
+    <div class="discoverMenu">
+		<div class="discoverMenu_wrapper">
+			<ul>
+				<li class="is-first">
+					<a class="discoverMenu1Btn" href="#"><i></i><span>最新资讯</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu2Btn" href="#"><i></i><span>音乐</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu3Btn" href="#"><i></i><span>有声小说</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu4Btn" href="#"><i></i><span>综艺娱乐</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu5Btn" href="#"><i></i><span>情感生活</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu6Btn" href="#"><i></i><span>社会人文</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu7Btn" href="#"><i></i><span>健康养生</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu8Btn" href="#"><i></i><span>外语/讲座</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu9Btn" href="#"><i></i><span>商业经济</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu10Btn" href="#"><i></i><span>儿童</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu11Btn" href="#"><i></i><span>其它</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--全局播放器 start-->
+	<div class="floatHeader">
+        <div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+	            <ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+		      	<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+    </div>
+	<!--全局播放器 end-->
+	<!--页面内容 start-->
+	<div class="mainbox">
+        <div id="timelinePage">
+		    <div class="picWall">
+                <div class="sound-wall"></div>
+                <div class="next-page">换一组</div>
+		    </div>
+            <div class="timelineUserInfo">
+                <!--用户头像及基本信息 start-->
+                <div class="timelinepersonPanel">
+                    <div class="timelinefaceWrapper left">
+                        <a class="userface180" href="#">
+                            <img src="../../../css/img/person_60.jpg" alt="" />
+                        </a>
+                        <div class="count">
+                            <div>
+                                <a href="#">182</a>
+                                <span>声音</span>
+                            </div>
+                            <div>
+                                <a href="#">182</a>
+                                <span>关注</span>
+                            </div>
+                            <div class="none-border">
+                                <a href="#">182</a>
+                                <span>粉丝</span>
+                            </div>
+			            </div>
+                    </div>
+                    <div class="userInfo right">
+                        <div class="user_info_left left">
+                            <span class="user_name">
+                                海绵宝宝么
+                                <a class="followBtn"><span>关注</span></a>
+                                <a class="letterBtn"><span>发私信</span></a>
+                            </span>
+                        </div>
+                        <div class="user_info_right right">
+                            <a href="#">设置分组</a>
+                            <a href="#">更多<span class="timeline-MoreArrow"></span></a>
+                        </div>
+                        <div class="userDetail">
+                            <div class="user_detail_left left">
+                                <span class="text">我是一个音乐人，一个纯粹的音乐人，一个牛逼的音乐人，欢迎喜欢摇滚的人来跟我交流，欢迎光...</span>
+                                <p class="padding">&nbsp;</p>
+                                <p class="fl area">
+                                    <span>双子座</span>
+                                    <span><a>上海</a> • 浦东新区</span>
+                                </p>
+                                <p class="marker"></p>
+                                <a class="fr">查看更多</a>
+                            </div>
+                            <div class="user_detail_right right">
+                                <div class="like">
+                                    <img src="../../../css/img/person_60.jpg" alt="" />
+                                    <span class="bg"></span>
+                                    <a class="on" href="#">
+                                        <span class="myLikeIcon">喜欢(313)</span>
+                                    </a>
+                                </div>
+                                <div class="album">
+                                    <img src="../../../css/img/person_60.jpg" alt="" />
+                                    <span class="bg"></span>
+                                    <a class="on" href="#">
+                                        <span class="myAlbumIcon">专辑(313)</span>
+                                    </a>
+                                </div>
+                                <div class="sound">
+                                    <img src="../../../css/img/person_60.jpg" alt="" />
+                                    <span class="bg"></span>
+                                    <a class="on" href="#">
+                                        <span class="mySoundIcon">声音(21)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--用户头像及基本信息 end-->
+            <div class="timeline" data-options="currentYear: 2013,scrollBottom:200,currentMonth:1">
+                <div class="timeline_right fl">
+                    <div class="timelineLine" data-rel="timeLineBar">
+                        <ul data-rel="timeLineBarList" class="timelineLineList">
+                            <li class="current">
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2013">现在</a>
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li></ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2012">2012</a>
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="11">11月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="10">10月</a></li><li class="current"><a href="javascript:void(0);" class="timelineMonth" data-time="5">5月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="4">4月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="3">3月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="2">2月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="1">1月</a></li></ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2011">2011</a> 
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="11">11月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="10">10月</a></li><li class="current"><a href="javascript:void(0);" class="timelineMonth" data-time="5">5月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="4">4月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="3">3月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="2">2月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="1">1月</a></li></ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2010">2010</a> 
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="11">11月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="10">10月</a></li><li class="current"><a href="javascript:void(0);" class="timelineMonth" data-time="5">5月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="4">4月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="3">3月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="2">2月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="1">1月</a></li></ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2009">2009</a> 
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="11">11月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="10">10月</a></li><li class="current"><a href="javascript:void(0);" class="timelineMonth" data-time="5">5月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="4">4月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="3">3月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="2">2月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="1">1月</a></li></ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="timelineYear" data-time="2008">2008</a> 
+                                <ol class="timelineMonthCon"><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="12">12月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="11">11月</a></li><li class=""><a href="javascript:void(0);" class="timelineMonth" data-time="10">10月</a></li><li class="current"><a href="javascript:void(0);" class="timelineMonth" data-time="5">5月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="4">4月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="3">3月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="2">2月</a></li><li><a href="javascript:void(0);" class="timelineMonth" data-time="1">1月</a></li></ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timeline_left">&nbsp;</div>
+                    <div class="timelinePanel">
+                        <div class="timeline_feed">
+                            <div class="timeline_content timeline_head">
+                                <div class="fans_title">
+                                    <span class="headPoint"></span>
+                                    <b class="text">他的粉丝</b><a href="#">(331)</a>
+                                </div>
+                                <div class="fans_content">
+                                    <img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" /><img src="../../../css/img/person_60.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cl" data-rel="timeLineContainer">
+
+                    </div>
+                    <div class="timelinePanel">
+                        <div class="timeline_feed">
+                            <div class="timeline_content timeline_footer">
+                                <span class="footerPoint"></span>
+                                <span class="arrow1"></span>
+                                <span class="feet"></span>
+                                我来到了喜马拉雅
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+            
+            </div>
+        </div>
+	</div>
+	<!--页面内容 end-->
+	<!--页面底部 start-->
+	<div class="footer" style="margin-top:500px;"></div>
+	<!--页面底部 end-->
+
+    <script type="text/template" id="combinemarker">
+
+        <div class="timelinePanel" data-time="<%= year %>">
+            <div class="timeline_feed">
+                <div class="timeline_content timeline_marker">
+                    <span class="point1"></span>
+                    <a href="javascript:;">
+                        <% if(isMonth){ %>
+                        <% if(end){ %>
+                        <%= year %>年<%= start %>月-<%= end %>月
+                        <% }else{ %>
+                        <%= year %>年<%= start %>月
+                        <% } %>
+                        <!--<%= year %>年<%= end?end:start %>月- -->
+                        <% }else{ %>
+                        <% if(end){ %>
+                        <%= start %>年-<%= end %>年
+                        <% }else{ %>
+                        <%= start %>年
+                        <% } %>
+                        <% } %>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="loading">
+
+        <div class="timelinePanel">
+            <div class="timeline_feed">
+                <div class="timeline_content">
+                    <span class="point"></span>
+                    <span class="arrow"></span>
+                    loading<%=year%>-<%=month%>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="marker">
+
+        <div class="timelinePanel no-height" id="marker<%= year %><%= month %>" data-time="<%= year %>-<%= month %>">
+        </div>
+
+    </script>
+</body>
+</html>
+<script type="text/template" id="combinemarker">
+        <div class="timelinePanel" data-time="<%= year %>">
+            <div class="timeline_feed">
+                <div class="timeline_content timeline_marker">
+                    <span class="point1"></span>
+                    <a href="javascript:;">
+                        <% if(isMonth){ %>
+                            <% if(end){ %>
+                                <%= year %>年<%= start %>月-<%= end %>月
+                            <% }else{ %>
+                                <%= year %>年<%= start %>月
+                            <% } %>
+                            <!--<%= year %>年<%= end?end:start %>月- -->
+                        <% }else{ %>
+                            <% if(end){ %>
+                                <%= start %>年-<%= end %>年
+                            <% }else{ %>
+                                <%= start %>年
+                            <% } %>
+                        <% } %>
+                    </a>
+                </div>
+            </div>
+        </div>
+</script>
+
+<script type="text/template" id="loading">
+        <div class="timelinePanel">
+            <div class="timeline_feed">
+                <div class="timeline_content">
+                    <span class="point"></span>
+                    <span class="arrow"></span>
+                    loading<%=year%>-<%=month%>
+              </div>
+            </div>
+        </div>
+</script>
+
+<script type="text/template" id="marker">
+        <div class="timelinePanel no-height" id="marker<%= year %><%= month %>" data-time="<%= year %>-<%= month %>">       
+        </div>
+</script>
+<script src="/js/lib/require.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: '/js/lib',
+        shim: {
+            'json2': {
+                exports: 'JSON'
+            },
+            'underscore': {
+                exports: '_'
+            },
+            'jquery': {
+                exports: 'jQuery'
+            },
+            'backbone': {
+                deps: ['json2', 'underscore', 'jquery'],
+                exports: 'Backbone'
+            }
+        },
+        paths: {
+            model: '../model',
+            module: '../module',
+            template: '../template',
+            collection: '../collection',
+            page: '../page',
+            plugin: '../plugin'
+        }
+    });
+    require(['module/home/timeline'], function (timeline) {
+        timeline.init();
+    });
+
+</script>

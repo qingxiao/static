@@ -1,0 +1,484 @@
+.btnColorFn(@color) when (iscolor(@color)){
+    color:@color;
+}
+.btnHoverFn(@left, @top) when (isnumber(@top)){
+	&:hover, &.hover{
+		background-position:@left*1px @top*1px;
+		text-decoration:none;
+	}
+}
+.btnActiveFn(@left, @top) when (isnumber(@top)){
+	&:active{
+		background-position:@left*1px @top*1px;
+	}
+}
+
+.disabledFn(@left,@top){
+	& .disabled{
+		display: none;
+		cursor: default;
+		background-position:@left*1px @top*1px;
+		width:100%;
+		height:100%;
+	}
+	&.is-btn-disabled{
+		cursor: default;
+		& .disabled{
+			display: block;
+		}
+	}
+}
+
+//图片按钮
+//@width {Number} 按钮的宽度
+//@height {Number} 按钮的高度
+//@left {Number} 按钮默认状态在背景图上的横向偏移
+//@top {Number} 按钮默认状态在背景图上的纵向偏移
+//@topHover {Number} 按钮hover状态在背景图上的纵向偏移
+.btnFn(@width,@height,@left,@top){
+	width:@width*1px;
+	height:@height*1px;
+	cursor: pointer;
+	display:inline-block;
+	overflow:hidden;
+	background-position:@left*1px @top*1px;
+	vertical-align: middle;
+	user-select:none;
+	-webkit-user-select:none;
+	white-space: nowrap;
+}
+//图片按钮
+//@width {Number} 按钮的宽度
+//@height {Number} 按钮的高度
+//@left {Number} 按钮默认状态在背景图上的横向偏移
+//@top {Number} 按钮默认状态在背景图上的纵向偏移
+//@topHover {Number} 按钮hover状态在背景图上的纵向偏移
+.btnFn(@width,@height,@left,@top,@topHover){
+	.btnFn(@width,@height,@left,@top);
+	.btnHoverFn(@left,@topHover);
+}
+.btnFn2(@width,@height,@left,@top,@leftHover){
+	.btnFn(@width,@height,@left,@top);
+	.btnHoverFn(@leftHover,@top);
+}//当sprite图片的hover图是左右放置（而非上下放置）时用
+//图片按钮
+//@width {Number} 按钮的宽度
+//@height {Number} 按钮的高度
+//@left {Number} 按钮默认状态在背景图上的横向偏移
+//@top {Number} 按钮默认状态在背景图上的纵向偏移
+//@topHover {Number} 按钮hover状态在背景图上的纵向偏移
+//@topActive {Number} 按钮active状态在背景图上的纵向偏移
+.btnFn(@width,@height,@left,@top,@topHover,@topActive){
+	.btnFn(@width,@height,@left,@top,@topHover);
+	.btnActiveFn(@left,@topActive);
+}
+//图片按钮
+//@width {Number} 按钮的宽度
+//@height {Number} 按钮的高度
+//@left {Number} 按钮默认状态在背景图上的横向偏移
+//@top {Number} 按钮默认状态在背景图上的纵向偏移
+//@topHover {Number} 按钮hover状态在背景图上的纵向偏移
+//@topActive {Number} 按钮active状态在背景图上的纵向偏移
+.btnFn(@width,@height,@left,@top,@topHover,@topActive,@paddingLeft){
+	.btnFn(@width,@height,@left,@top,@topHover,@topActive);
+	padding-left:@paddingLeft*1px;
+}
+
+//当button有内容的时候
+.btnHasContentHack{
+	overflow:visible;
+	display:block;
+	text-indent: 0;
+}
+//和兄弟节点对齐
+.btnAlignBrother{
+	& a,& span{
+		vertical-align: middle;
+	}
+}
+
+
+
+//自适应按钮
+//@height {Number} 按钮的高度
+//@top {Number} 按钮默认状态在背景图上的偏移
+//@topHover {Number} 按钮hover状态在背景图上的偏移
+//@topActive {Number} 按钮active状态在背景图上的偏移
+//@color {Color} 按钮文本颜色
+//@paddingLeft {Number} 按钮文本的左间隙
+//@paddingRight {Number} 按钮文本的右间隙
+.autoBtnFn(@height,@top,@topHover,@topActive,@color:@colorText3,@colorHover:@colorText2,@paddingLeft:18,@paddingRight:18){
+	height:@height*1px;
+	line-height: @height*1px;
+	cursor: pointer;
+	display:inline-block;
+	padding-left:@paddingLeft*1px;
+	background-position:0 @top*1px;
+	user-select:none;
+	-webkit-user-select:none;
+	& span{
+		padding-right:@paddingRight*1px;
+		display:inline-block;
+		background-position: right @top*1px;
+		vertical-align:top!important;
+		color:@color!important;
+		white-space: nowrap;
+	}
+	.autobtnHoverFn(0,@topHover, @colorHover);
+	.autobtnActiveFn(0,@topActive);
+}
+.autobtnHoverFn(@left, @top, @colorHover) when (isnumber(@top)){
+	&:hover{
+		background-position:@left*1px @top*1px;
+		& span{
+			background-position: right @top*1px;
+            color: @colorHover!important;
+		}
+	}
+	&.on{
+		background-position: 0 -1053px;
+		& span{
+			background-position:right  -1053px;
+            color: #fff!important;
+		}
+	}
+}
+.autobtnActiveFn(@left, @top) when (isnumber(@top)){
+	&:active{
+		background-position:@left*1px @top*1px;
+		& span{
+			background-position: right @top*1px;
+		}
+	}
+}
+
+//单线条"展开更多"按钮
+//width {Number} 按钮宽度
+.moreBtnFn(@width:79){
+	@_left:floor(@width / 2);
+	@_width:floor(@width - 3 - 10 - 1 - 1);
+	position: absolute;
+	top:100%;
+	left:50%;
+	width: 0;
+	height: 0;
+	line-height: 21px;
+	& span{
+		height:7px;
+		border: 1px solid @colorLine2;
+		border-top: 2px solid #fff;
+		display: block;
+		padding: 0px 3px 0 10px;
+		width: @_width * 1px;
+		position:absolute;
+		left:-@_left * 1px;
+		& a{
+			background: url("@{urlStaticImg}/sprite/btn10px.png") no-repeat right -128px;
+			position: absolute;
+			top: -13px;
+			padding-right: 13px;
+			.linkTextFn();
+		}
+	}
+}
+//如果某个容器有 单线条"展开更多"按钮 需要设置一下
+//name {String} 按钮类名
+//moreBtnWidth {Number} 按钮宽度
+.setMoreBtnFn(@name:moreBtn, @moreBtnWidth:79){
+	position:relative;
+	.@{name}{
+		.moreBtnFn(@moreBtnWidth);
+	}
+}
+
+//发私信 按钮
+.sendLetterBtn(@height, @imgUrl:"sprite/icon15px.png", @pl:0,@pt:-317px){
+  .icon{
+    .bgImgExt(@imgUrl,@pl,@pt);
+    padding-left: 15px;
+    height:@height;
+    line-height: @height;
+  }
+  font-size:13px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding:0 7px;
+  height:@height;
+  color:#646464;
+  background-color: #ffffff;
+  cursor:pointer;
+  &:hover{
+      background-color: #11B0EE;
+      border: 1px solid #3586BC;
+      color: #FFFFFF;
+      text-decoration: none;
+  }
+}
+
+
+
+
+@-webkit-keyframes livelyMoreBtnHover{
+    0%{opacity:1;}
+    100%{opacity:0;}  
+}
+@-moz-keyframes livelyMoreBtnHover{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+
+
+//更多按钮，带动画效果
+.livelyMoreBtnFn(@name:moreBtn, @gapBottom:20, @gapLeft:0, @gapRight:0 ){
+	margin-top:@gapBottom - 8px;
+	margin-bottom:-@gapBottom - 12px;
+	padding-left:@gapLeft * 1px;
+	padding-right:@gapRight * 1px;
+	width:100%;
+	left:-@gapLeft * 1px;
+	.bgImg("sprite/feed_more.png", no-repeat);
+	text-align: center;
+	height:20px;
+	position: relative;
+    line-height: 16px;
+    background-position: center -26px;
+	&.unexpand
+    {
+		&:hover .bg{
+			-webkit-animation:livelyMoreBtnHover 0.3s 0s 1 ease normal forwards ;
+			-moz-animation:livelyMoreBtnHover 0.3s 0s 1 ease normal forwards ;
+			display:none\9;
+		}
+		
+		& .unexpandtext
+        {
+        	.hidden;
+        }
+		& .expandtext
+        {
+        	display:auto;
+        }
+	}
+	& a{
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+	    .linkTextFn();
+	}	
+	& .bg{
+		.bgImg("sprite/feed_more.png");
+		background-position: center 0;
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+	    transition: opacity 0.3s ease 0s;
+	    -webkit-transition: opacity 0.3s ease 0s;
+	}
+	&.expand{
+		.bg{
+			background-position: center -45px;
+		}
+		&:hover{
+			.bg{
+				background-position: center -71px;
+			}
+		}
+		& .unexpandtext
+        {
+        	display:auto;
+        }
+		& .expandtext
+        {
+        	.hidden;
+        }
+	}
+}
+.setLivelyMoreBtnFn(@name:moreBtn, @gapBottom:20, @gapLeft:0, @gapRight:0 ){
+	.@{name}{
+		.livelyMoreBtnFn(@name, @gapBottom, @gapLeft, @gapRight);
+	}
+}
+//更多按钮，用在个人中心页
+.livelyMoreBtnFn2(@name:moreBtn, @gapBottom:20, @gapLeft:0, @gapRight:0 ){
+	margin-top:@gapBottom * 1px;
+	margin-bottom:-@gapBottom - 12px;
+	padding-left:@gapLeft * 1px;
+	padding-right:@gapRight * 1px;
+	width:100%;
+	left:-@gapLeft * 1px;
+	.bgImg("sprite/personal_more.png", no-repeat);
+	text-align: center;
+	height:20px;
+	position: relative;
+    line-height: 16px;
+    background-position: center -26px;
+	&.unexpand{
+		&:hover .bg{
+			-webkit-animation:livelyMoreBtnHover 0.3s 0s 1 ease normal forwards ;
+			-moz-animation:livelyMoreBtnHover 0.3s 0s 1 ease normal forwards ;
+			display:none\9;
+		}
+		& .unexpandtext
+        {
+        	.hidden;
+        }
+		& .expandtext
+        {
+        	display:auto;
+        }
+	}
+	& a{
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+	    .linkTextFn();
+	}	
+	& .bg{
+		.bgImg("sprite/personal_more.png");
+		background-position: center 0;
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+	    transition: opacity 0.3s ease 0s;
+	    -webkit-transition: opacity 0.3s ease 0s;
+	}
+	&.expand{
+		.bg{
+			background-position: center -45px;
+		}
+		&:hover{
+			.bg{
+				background-position: center -71px;
+			}
+		}
+		& .unexpandtext
+        {
+        	display:auto;
+        }
+		& .expandtext
+        {
+        	.hidden;
+        }
+	}
+}
+.setLivelyMoreBtnFn2(@name:moreBtn, @gapBottom:20, @gapLeft:0, @gapRight:0 ){
+	.@{name}{
+		.livelyMoreBtnFn2(@name, @gapBottom, @gapLeft, @gapRight);
+	}
+}
+/*xiaoqing   图片按钮*/
+.imgBtnFn(@defTop:-185px, @hoverTop:-220px, @activeTop:-255px,@height:28px){
+    @borderImg:"sprite/auto2.png";
+    .bgPosition(@top){
+        background-position: 0 @top;
+        .border_right{
+            background-position: right @top;
+        }
+    }
+    .bgImg(@borderImg);
+    display:inline-block;
+    position:relative;
+    height:@height;
+    cursor:pointer;
+    margin-right:1px;
+    .border_right{
+        .bgImgExt( @borderImg, right, @defTop);
+        position: absolute;
+        right:-1px;
+        top:0;
+        height:100%;
+        width:5px;
+    }
+    .bgPosition(@defTop);
+    &.on, &:hover{
+        .bgPosition(@hoverTop);
+        text-decoration: none;
+    }
+    &.active ,&:active {
+        .bgPosition(@activeTop);
+    }
+}
+
+/* xiaoqing  转发  喜欢状态按钮*/
+.imgForwardBtnFn(@iconImg:'sprite/icon20px.png'){
+    .imgBtnFn();
+    .content{
+        .cl;
+        display: inline-block;
+        padding:5px;
+    }
+    .icon{
+        .fl;
+        width:18px;
+        height:18px;
+        .bgImg(@iconImg);
+        background-position:2px -289px;
+        background-repeat: no-repeat;
+    }
+    &.forwarded .icon{
+        background-position:2px -309px;
+    }
+    .info{
+        .fl;
+        margin-left: 5px;
+        padding-left: 5px;
+        border-left: 1px solid #dadada;
+        color:#666666;
+		&:hover{
+			color:#333;
+		}
+    }
+}
+.imgLikeBtnFn(){
+    .imgForwardBtnFn();
+    .icon{
+        background-position: 2px -328px;
+    }
+    &.liked .icon{
+        background-position: 2px -348px;
+    }
+}
+.imgForwardBtn{
+    .imgForwardBtnFn();
+}
+.imgLikeBtn{
+    .imgLikeBtnFn();
+}
+.imgDelAllBtn{
+    .imgForwardBtnFn("sprite/icon10px.png");
+    .icon{
+        background-position: 4px -161px;
+    }
+    .info{
+        .fl;
+        margin-left:0;
+        padding-left:0;
+        border-left: 0;
+        color:#666666;
+        font-family: "simsun";
+    }
+}
+.imgBlueBtn{
+    font-family: "simsun";
+    .imgBtnFn(-760px, -796px, -832px, 26px);
+}
+
+.imgSendLetterBtn{
+  .imgBlueBtn;
+    .text{
+        margin: 0 15px;
+        display: inline-block;
+        color: #FFFFFF;
+        height:26px;
+        line-height: 26px;
+    }
+}

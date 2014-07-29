@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>头像设置</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/plugin/jquery.Jcrop.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+	<div class="floatHeader_wrapper">
+		<!-- 浮动头部-->
+		<div class="grobalPlayer">
+			<div class="controlPanel">
+				<div class="progressBar">
+					<div class="playBar"></div>
+				</div>
+				<div class="cover"></div>
+				<div class="controls">
+					<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+					<a class="playBtn"><span class="disabled"></span></a>
+					<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+				</div>
+			</div>
+			<a class="forwordBtn" title="转采"></a>
+			<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+		</div>
+		<div class="searchPanel">
+			<!-- 搜索类型-->
+			<div class="type">
+				<a href="javascript:;" class="selected">声音</a>
+				<div class="options">
+					<a data-scope="voice" href="javascript:;" class="on">声音</a>
+					<a data-scope="user" href="javascript:;">人</a>
+					<a data-scope="album" href="javascript:;">专辑</a>
+					<!--<a data-scope="tag" href="javascript:;">标签</a>-->
+				</div>
+			</div>
+			<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+			<!-- focus状态 is-searchBtn-focus -->
+			<a class="searchBtn"></a>
+			<!-- 以下部分由js模块来生成 start -->
+			<!-- 搜索结果-->
+			<ul class="results hidden">
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>好声音</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>达人秀</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title">法制<em>中国</em></a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 以下部分由js模块来生成 end -->
+		  </div>
+		<div class="loginPanelBox">
+			<div class="bgVLineL"></div>
+			<div class="loginPanel">
+				<!-- 登陆状态下  -->
+				<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+				<a class="goHomeBtn" href="#"></a>
+				<!-- 当有消息时使用getNewMsgBtn -->
+				<a class="getNewMsgBtn" href="#"></a>
+				<!-- 登陆未状态下  -->
+				<!-- 
+				<a class="loginBtn" href="#"></a>
+				<a class="registerBtn" href="#">注册</a>
+				 -->
+				 <!-- 账号 -->
+				 <div class="loginPanel_accountPop hidden">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">个人设置</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <div class="loginPanel_MsgPop hidden">
+					<ul>
+						<li><a href="#">系统通知</a></li>
+						<li><a href="#">我的粉丝</a></li>
+						<li><a href="#">@我的</a></li>
+						<li><a href="#">评论</a></li>
+						<li><a href="#">通知</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 第三方账号登录 -->
+				 <div class="loginPanel_thirdLoginPop hidden">
+					<p><a class="qqLoginBtn" href="#"></a></p>
+					<p><a class="weiboLoginBtn" href="#"></a></p>
+					<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 本地账号登录 -->
+				 <div class="loginPanel_loginPop hidden">
+					<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					<a class="submitBtn"></a>
+					<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					<div class="bud"></div>
+				 </div>
+			</div>
+		</div>
+		<div class="volumePanelBox">
+			<div class="bgVLineL"></div>
+			<div class="volumePanel">
+				<a class="volumePanel_muteBtn"></a>
+				<div class="volumePanel_volumebar">
+					<div class="volumePanel_cover"></div>
+					<a class="volumePanel_seekBtn"></a>
+				</div>
+				<div class="volumePanel_mark"></div>
+			</div>
+			<div class="bgVLineR"></div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+<div class="mainbox">
+	<div class="mainbox_wrapper">
+		<div class="set_container">
+			<div class="set_header">账号设置</div>
+			<div class="set_left">
+				<div class="set_useravatar">
+					<a class="userface" href="#"><img alt="" src="/css/img/person_60.jpg"></a>
+				</div>
+				<ul class="set_nav">
+					<li><a href="javascript:;">个人设置</a></li>
+					<li><a href="javascript:;">消息设置</a></li>
+					<li>
+						<a href="javascript:;">隐私设置</a>
+						<ul class="set_nav">
+							<li><a href="javascript:;">通用</a></li>
+							<li><a href="javascript:;">黑名单</a></li>
+						</ul>
+					</li>					
+					<li class="on"><a href="javascript:;">头像设置</a></li>
+					<li><a href="javascript:;">同步设置</a></li>
+				</ul>
+
+			</div>
+			<div class="set_right">
+				<div class="set_title">头像设置</div>
+				<div class="set_avatar">
+					<div class="set_avatar_operate">
+						<div>建议上传640*640像素，5M以下的图片</div>
+						<a class="localphotoBtn" id="local_photo"></a>
+						<a class="uploadphotoBtn" id="photo_upload"></a>
+					</div>
+					<div id="photo_handle" class="set_Inner ">
+						<div class="set_avatar_handle">							
+							<div class="set_avatar_left">
+                                <div class="photo_260">
+                                    <div class="img-container" id="img_photo_container">
+                                        <img id="img_photo" alt="" src="/css/img/person_60.jpg">
+                                    </div>
+                                </div>
+                            </div>
+							<ul class="set_avatar_right">
+								<li>你的头像会自动生成4种尺寸</li>
+								<li>
+									<div class="set_avatar_left"><div class="photo_100"><img id="preview_100" alt="" src="/css/img/person_60.jpg"></div><p>100px*100px</p></div>
+									<div class="set_avatar_right"><div class="photo_60"><img id="preview_60" alt="" src="/css/img/person_60.jpg"></div><p>60px*60px</p></div>
+								</li>
+								<li><div class="photo_30"><img id="preview_30" alt="" src="/css/img/person_60.jpg"></div><p>30px*30px</p></li>
+							</ul>
+						</div>
+						<div class="set_operate">
+							<form method="post" action="http://test.ximalaya.com/passport/saveHeader">
+								<input type="hidden" name="uploadTrackId" value="" id="trackUploadId">
+								<input type="hidden" name="w" id="upload_w">
+								<input type="hidden" name="h" id="upload_h">
+								<input type="hidden" name="x" id="upload_x">
+								<input type="hidden" name="y" id="upload_y">
+								<input type="hidden" name="ow" id="upload_ow">
+								<input type="hidden" name="oh" id="upload_oh">
+
+								<a class="confirmBtn" href="javascript:;" id="submit_btn">保存设置</a>
+								<a class="cancelBtn" href="/passport/header">取消</a>
+							</form>
+						</div>
+					</div>
+					
+					<div id="photo_shoot" class="set_avatar_takephoto hidden">
+						<div class="set_avatar_control" id="snapshot_warp">
+						</div>
+						<div class="set_operate">
+                            <a class="confirmBtn" id="take_snapshot" href="javascript:;">拍照</a>
+						    <a class="cancelBtn" href="/passport/header">取消</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    var current_user = {
+        'uid': 1381,
+        'nickname': 'JI1LHxMtIEsR9TIdV2Cq',
+        'logoPic': 'http://fdfs.test.ximalaya.com/group1/M00/00/31/wKgD3lDvpcWBU2mGAAAZ6ku-ua0754.jpg',
+        'isVerified': false,
+        'province': '',
+        'city': '',
+        'personalSignature': '',
+        'ptitle': '',
+        'guidePlayPanel': true,
+        'guideVoicePanel': false,
+        'guideSharePanel': true
+    };
+    var config = {
+        STATIC_ROOT:"http://static2.test.ximalaya.com",
+        STATIC_PATH:"http://192.168.3.43:9092",
+        FDFS_PATH:"http://fdfs.test.ximalaya.com",
+        LOGIN_PATH:"http://test.ximalaya.com/passport/login",
+        DIRECT_DTRES_ROOT: "http://upload.test.ximalaya.com/dtres",
+        TRANSCODING_ROOT: "http://test.ximalaya.com/dtres/transcoding/process",
+        UPLOAD_ROOT: "http://upload.test.ximalaya.com/dtres",
+        CURRENT_USER: current_user,
+        SUGGEST_URL:"http://test.ximalaya.com/s/search/suggest",
+        WARNING_SEQ: "10",
+        PLAYER_PATH: "http://static2.test.ximalaya.com/js/player_test.swf?v=1365657042",
+        SERVER_TIME: "1367117946372",
+        TOKEN_LABEL: "4&_token",
+        REMEMBERME_LABEL: "4&remember_me",
+        ASSETS_VERSION: "1365657042"
+    };
+    config.TIME_GAP = new Date().getTime() - config.SERVER_TIME;
+</script>
+<script src="http://static2.test.ximalaya.com/js/lib/require.js?v=1365657042"></script>
+<script src="http://static2.test.ximalaya.com/js/main.js?v=1365657042"></script>
+<script>
+    require(["page/setting/avatar"], function(page){
+        page.init();
+    });
+ </script>
+</body>
+</html>

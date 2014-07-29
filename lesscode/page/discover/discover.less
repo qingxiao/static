@@ -1,0 +1,410 @@
+.bodyBgColor{
+    background-color: #fff;
+}
+.bodyBgColor2{
+    background-color: #FAFAFC;
+}
+
+#discoverPage
+{
+	margin-bottom:50px;
+	& .bg-fff
+    {
+    	background-color:#fff;
+    }
+	& .bar2
+	{
+		//.col2Fn(right,210px,30px);
+		.bar2Fn(710,210);
+		margin-top:20px;
+		.right.bd{
+			width: 208px;
+			border: 1px solid #eaeaea;
+		}
+	}
+	.popUserPanelFn(60);
+	& .picWrapper
+    {
+        height:300px;
+		border:1px solid #eaeaea;
+		.col2Fn(right,100px,1px);
+		.left{width:100%;}
+		& .picShow
+        {
+            position:absolute;
+            top:0;
+            left:0;
+            display: none;
+            background-color:#fff;
+			height:300px;
+			width:100%;
+			& img
+            {
+                height:298px;
+				width:607px;
+				position:relative;
+				top:1px;
+            }
+			& .bg,& .pictitle
+            {
+                position:absolute;
+				bottom:1px;
+				left:0;
+				width: 100%;
+				font-size:20px;
+				color:#fff;
+            }
+			& .title
+            {
+				font-size:20px;
+				color:#fff;
+            }
+			& .pictitle
+            {
+				& .miniPlayer4
+				{
+            		.col2Fn(left,21px,20px);
+					.right{
+						margin-top:10px;
+						&.mgL0{margin-left:0;}
+					}
+				}
+            }
+			& .wave
+            {
+                padding:20px 0px 20px 20px;
+            }
+			& .bg
+            {
+				height:57px;
+				background:#000;
+                .opacity(60);
+            }
+        }
+        & .nav
+        {
+            height:50px;
+			text-align:right;
+			position:relative;
+            display: block;
+			img,.img-cover
+            {
+                width:100px;
+				height:48px;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+            }
+             .img-cover{
+                 background-color: rgb(0, 0, 0);
+                 opacity: 0.2;
+                 filter: alpha(opacity=20);
+                 position: absolute;
+                 left:0;
+                 top:0;
+             }
+            &.on, &:hover{
+                .img-cover{
+                    display: none;
+                }
+            }
+
+        }
+        .border-wrap{
+            width:103px;
+            position: absolute;
+            left:0;
+            top:0;
+            height:52px;
+            margin-top:-1px;
+            margin-left:-2px;
+            display: block;
+            .border{
+                border:3px solid #fff;
+                height:46px;
+            }
+        }
+        .arrowFn(left,discover-leftArrow,#fff,15px,#fff);
+        .discover-leftArrow
+        {
+            top: 17px;
+            border-width: 8px 7px 8px 0;
+            left: -6px;
+        }
+    }
+	& .rankInfo
+    {
+		.coverOutter{
+			display:inline-block;
+			width:190px;
+			height:170px;
+		}
+		& .cover
+        {
+        	width:190px;
+			height:170px;
+        }		
+    }
+	.seditMain{
+		position:relative;		
+		.seditMain_info{
+			width:190px;
+			//height:30px;
+			position:absolute;
+			bottom:0;	
+			left:0;
+			.mask{
+				opacity:0.5;
+				filter:alpha(opacity=50);
+				background-color:#000;
+				position:absolute;
+				bottom:0;
+				left:0;
+				height:100%;
+				width:100%;
+			}
+			a {
+				color:#fff;
+				position:relative;
+				margin:0 5px;
+				display:block;
+				line-height:20px;
+			}
+		}
+	}
+	.seditList{
+		.clearfix;
+		padding:10px;
+		.fl{
+			width:140px;
+		}
+		.fr{
+			width:40px;
+			img{
+				width:40px;
+				height:40px;
+			}
+		}
+		.userface{
+			.userface40;
+		}
+	} 
+	& .line
+    {
+    	border-top:1px solid #eaeaea;
+    }
+	& .rankUserPanel1
+    {
+        .rankUserPanelFn();
+		.col2Fn(left,40px,5px);
+		& a
+        {
+        	float:left;
+			margin-rignt:5px;
+        }
+		& .userface{
+			.userface40;
+		}
+    }
+	& .rankUserPanel2
+    {
+        .rankUserPanelFn();
+		.col2Fn(left,60px,10px);
+		& a
+        {
+        	float:left;
+			margin-right:5px;
+        }
+		& .title
+        {
+        	font-size:14px;
+        }
+    }
+	//��������
+	& .filter
+    {
+		.col3Fn(65px,210px);
+		position:relative;
+    	padding:10px 0;
+		font-weight:bold;
+		height:38px;
+		border:1px solid #eaeaea;
+		& .left .title
+        {
+			border-right:1px solid #eaeaea;
+        	font-size:20px;
+			text-align:center;
+			line-height:40px;
+			height:40px;
+			display:block;
+        }
+		& .content
+        {
+			& a
+            {
+            	display:block;
+				float:left;
+				margin:-2px 12px 8px 12px;
+				color:#999;
+				&:hover
+                {
+                	text-decoration: none;
+					color:#1941A5;
+                }
+            }
+        }
+		& .player
+        {
+			border-left:1px solid #eaeaea;
+			height:40px;
+			display:block;
+			padding:0 10px 0 15px;
+			& .pin
+            {
+            	right: 5px;
+				top: -10px;
+				position:absolute;
+            }
+        }
+    }
+	//�Ƽ���
+	& .recommend
+    {
+		padding:20px;
+		border:1px solid #eaeaea;
+		& .main
+        {
+        	.col2Fn(right,310px,50px);
+			height:180px;
+			& .userPanel1
+			{
+				.userPanel1Fn();
+				height:180px;
+				overflow:hidden;
+				& .soundface{
+					.soundface180;
+				}
+			}
+			//��������
+			& .newSounds
+            {
+            	& .title
+                {
+                	font-size:20px;
+					font-family:microsoft yahei;
+					font-weight:200;
+					color:#333;
+					display:block;
+					float:left;					
+                }
+            }
+			& .disSoundPanel
+			{
+				width:330px;
+				.col2Fn(left,40px,10px);
+				.miniPlayer2
+                {
+					.col2Fn(left,15px,5px);
+                }
+				& .userface{
+					.userface40;
+				}
+				.right{
+					width:260px;
+				}
+			}
+        }
+		& .newtitle
+        {
+			display:block;
+			font-family:microsoft yahei;
+			font-weight:200;
+        	font-size:18px;
+			line-height:50px;
+        }
+    }
+	//������Ѷ
+	& .titlePanel,& .titlePanel1
+    {
+		.titlePanelFn(#eaeaea,50,filter_new);
+		& .titleCon
+        {
+        	padding-right: 20px;
+			& .filter_new a{
+				padding:0 0 0 10px;
+			}
+        }
+
+    }
+	& .titlePanel{
+		.titleCon .filter_new .title{
+			font-size:20px;
+			font-family:microsoft yahei;
+		}
+	}
+	& .disRankUserPanel
+    {
+    	width:234px;
+		height:138px;
+		float:left;
+		border:1px solid #fff;
+		border-right-color:#eaeaea;
+		&.none-border
+        {
+			border-right-color:#fff;
+        }
+		&:hover
+        {
+        	border-color:#A5C3E2;
+			cursor:pointer;
+        }
+		& .userface{
+			.userface60;
+		}
+    }
+	& .titlePanel1
+    {
+		padding:0 10px;
+    }
+	//�Ҳ���
+	& .advertisement
+    {
+        height:auto;
+		background:#ddd;
+		text-align:center;
+		position:relative;
+		img{
+			width:100%;
+			max-height:334px;
+		}
+    }
+	& .rankSoundPanel
+    {
+    	position:relative;
+		.col2Fn(left,24px,14px);
+		& .left{
+			top:-3px;
+		}
+		& .rank
+        {
+			height:24px;
+			width:24px;
+			background:#3385BD;
+			display:block;
+			color:#fff;
+			text-align:center;
+			line-height:24px;
+			font-size:16px;
+			&.grew
+            {
+            	color:#999;
+				background:none;
+            }
+        }
+    }
+	.miniPlayer2
+    {
+		.col2Fn(left,15px,5px);
+    }
+	//���ͷ1
+
+}

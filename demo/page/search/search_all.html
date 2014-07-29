@@ -1,0 +1,1296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset=utf-8 />
+<link href="/css/web.css" rel="stylesheet" type="text/css">
+<title>搜索全部</title>
+</head>
+
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+	            <ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+		      	<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+<!-- 浮动头部 end -->
+<!--页面内容 start-->
+<div class="bodyBgColor">
+<div class="mainbox">
+	<div class="mainbox_wrapper" id="searchSoundPage">
+		<div class="mainbox_left">
+			<div class="searchContent">
+				<div class="searchTabBox">
+					<div class="left">
+						<div class="searchPage_logo"></div>					
+					</div>
+					<div class="right">
+						<div class="searchTab">
+							<a class="tab_item on">全部</a>						
+							<a class="tab_item">声音</a>
+							<a class="tab_item">用户</a>
+							<a class="tab_item">专辑</a>
+						</div>			
+					</div>
+				</div>
+				<div class="searchField">
+					<div class="searchBar focus is-searchBar-searching">
+						<input class="searchBar_input" type="text" value="" name="" autocomplete="off" placeholder="搜索">
+						<div class="searchBar_submit"><span class="searchBar_searchingBox">搜索中...</span></div>
+						<!-- 以下部分由js模块来生成 start -->
+						<ul class="resultsAll">
+							<li>
+								<div class="resultsAll_tit">声音</div>
+								<ul class="results">
+									<li>
+										<div class="searchPanel_sound">
+											<a href="#" class="title"><em>中国</em>好声音</a>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_sound">
+											<a href="#" class="title"><em>中国</em>达人秀</a>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_sound">
+											<a href="#" class="title">法制<em>中国</em></a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="resultsAll_tit">人</div>
+								<ul class="results">
+									<li>
+										<div class="searchPanel_user">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a><span class="VIcon">&nbsp;</span>
+													<a class="vBtn"></a> 
+												</p>
+												<p>
+													<span class="sign">中国好声音学员...</span>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_user">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a><span class="VIcon">&nbsp;</span>
+													<a class="vBtn"></a> 
+												</p>
+												<p>
+													<span class="sign">中国好声音学员...</span>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_user">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a>
+													<a class="vBtn"></a> 
+												</p>
+												<p>
+													<span class="sign">中国好声音学员...</span>
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="resultsAll_tit">专辑</div>
+								<ul class="results">
+									<li>
+										<div class="searchPanel_album">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a>
+												</p>
+												<p>
+													<span class="soundCount">12个声音</span>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_album">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a>
+												</p>
+												<p>
+													<span class="soundCount">12个声音</span>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="searchPanel_album">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<p>
+													<a href="#" class="title"><em>中国</em>好声音</a>
+												</p>
+												<p>
+													<span class="soundCount">12个声音</span>
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- 以下部分由js模块来生成 end -->
+					</div>
+					<button type="submit"></button>
+				</div>
+				
+				<div class="searchHint">
+					<div class="searchHintLeft">
+						<a href="javascript:;">全部</a>
+						<a href="javascript:;">热门</a>
+						<a href="javascript:;">最新咨询</a>
+						<a href="javascript:;">音乐</a>
+						<a class="more" href="javascript:;">更多<span class="arrow_right"></span></a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="report">
+				<div class="report_sound mgT30">
+					<div class="report_head">
+						<a class="searchAllCount">共找到2667个有关<em>好</em>的声音</a>
+						<span class="report_head_cate">声音</span>
+					</div>
+					<div class="report_listView">
+						<div class="row soundReport">
+							<div class="row_wrapper">
+								<div class="col soundReport_title">
+									<div>
+										<a class="soundReport_soundname"><em>好好</em>学习</a>
+										<span class="originSound"></span>
+									</div>
+									<div class="soundReport_unexpand">
+										<p>爸爸说要<em>好好</em>学习天天向上习天天向上习天天...</p>
+										<div>
+											标签:<a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a>
+										</div>
+									</div>
+								</div>
+								<div class="col soundReport_author">
+									<a href="#">海绵宝宝</a>
+								</div>
+								<div class="col soundReport_album">
+									<a href="#">《好好学习》</a>
+								</div>
+								<div class="col soundReport_playCount">
+									<span class="sound_playcount">28938次</span>
+								</div>
+								<div class="col soundReport_operate">
+									<a class="miniPlayBtn3"></a>
+								</div>
+							</div>
+						</div>
+						<div class="row soundReport is-soundReport-expand">
+							<div class="row_wrapper">
+								<div class="col soundReport_title">
+									<div>
+										<a class="soundReport_soundname">好好学习</a>
+									</div>
+									<div class="soundReport_unexpand">
+										<p>爸爸说要好好学习天天向上习天天向上习天天...</p>
+										<div>
+											标签:<a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a>
+										</div>
+									</div>
+								</div>
+								<div class="col soundReport_author">
+									<a href="#">海绵宝宝</a>
+								</div>
+								<div class="col soundReport_album">
+									<a href="#">《好好学习》</a>
+								</div>
+								<div class="col soundReport_playCount">
+									<span class="sound_playTime">-1:04:30</span>
+								</div>
+								<div class="col soundReport_operate">
+									<a class="miniPlayBtn3"></a>
+								</div>
+							</div>
+							<div class="row_wrapper bg1">
+								<div class="col">
+									<div class="soundReport_expand">
+										<div class="sound">
+											<div class="middlePlayer">
+												<div class="left">
+													<a class="playBtn"></a>
+												</div>
+												<div class="right">
+													<!-- 进度条 -->
+													<div class="player_progressbar">
+														<div class="player_seekbar"></div>
+														<div class="player_playbar"></div>
+														<div class="player_wavebox"></div>
+													</div>
+													<!-- 二维评论 -->
+													<div class="player_commentbar">
+														<div class="chunk" style="width:180px;left:0px">
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+														</div>
+														<div class="chunk" style="width:180px;left:180px">
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+														</div>
+														<div class="chunk" style="width:180px;left:360px">
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+														</div>
+													</div>
+													<div class="player_operate">
+														<a href="javascript:;" class="player_hideCommentbarBtn"></a>
+													</div>
+												</div>
+												<div class="pin">
+													<a class="soundface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+												</div>
+											</div>
+											<div class="sound_content">
+												测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职测试文职</div>
+											<div class="sound_bottom">
+												<span class="createtime">24小时前</span>
+												<div class="fr">
+													<a class="downloadToMobile link1">下载到手机</a>
+													<a class="likeBtn is-sound-liked" href="javascript:;">喜欢(1)</a> <a class="commentBtn" href="javascript:;">评论(1)</a> <a class="forwordBtn" href="javascript:;">转发(1)</a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="row soundReport">
+							<div class="row_wrapper">
+								<div class="col soundReport_title">
+									<div>
+										<a class="soundReport_soundname">好好学习</a>
+										<span class="originSound"></span>
+									</div>
+									<div class="soundReport_unexpand">
+										<p>爸爸说要好好学习天天向上习天天向上习天天...</p>
+										<div>
+											标签:<a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a>
+										</div>
+									</div>
+								</div>
+								<div class="col soundReport_author">
+									<a href="#">海绵宝宝</a>
+								</div>
+								<div class="col soundReport_album">
+									<a href="#">《好好学习》</a>
+								</div>
+								<div class="col soundReport_playCount">
+									<span class="sound_playcount">28938次</span>
+								</div>
+								<div class="col soundReport_operate">
+									<a class="miniPlayBtn3"></a>
+								</div>
+							</div>
+						</div>
+						<div class="row soundReport">
+							<div class="row_wrapper">
+								<div class="col soundReport_title">
+									<div>
+										<a class="soundReport_soundname">好好学习</a>
+										<span class="originSound"></span>
+									</div>
+									<div class="soundReport_unexpand">
+										<p>爸爸说要好好学习天天向上习天天向上习天天...</p>
+										<div>
+											标签:<a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a>
+										</div>
+									</div>
+								</div>
+								<div class="col soundReport_author">
+									<a href="#">海绵宝宝</a>
+								</div>
+								<div class="col soundReport_album">
+									<a href="#">《好好学习》</a>
+								</div>
+								<div class="col soundReport_playCount">
+									<span class="sound_playcount">28938次</span>
+								</div>
+								<div class="col soundReport_operate">
+									<a class="miniPlayBtn3"></a>
+								</div>
+							</div>
+						</div>
+						<div class="row soundReport">
+							<div class="row_wrapper">
+								<div class="col soundReport_title">
+									<div>
+										<a class="soundReport_soundname">好好学习</a>
+										<span class="originSound"></span>
+									</div>
+									<div class="soundReport_unexpand">
+										<p>爸爸说要好好学习天天向上习天天向上习天天...</p>
+										<div>
+											标签:<a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a><a class="soundReport_tag" href="#">笑话</a>
+										</div>
+									</div>
+								</div>
+								<div class="col soundReport_author">
+									<a href="#">海绵宝宝</a>
+								</div>
+								<div class="col soundReport_album">
+									<a href="#">《好好学习》</a>
+								</div>
+								<div class="col soundReport_playCount">
+									<span class="sound_playcount">28938次</span>
+								</div>
+								<div class="col soundReport_operate">
+									<a class="miniPlayBtn3"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="report_album mgT30">
+    <div class="report_head">
+      <a class="searchAllCount" href="/#/s?q=专辑&amp;qf=album">
+        共找到59个有关
+        <em>专辑</em>
+        的专辑
+      </a>
+      <span class="report_head_cate">专辑</span>
+    </div>
+    <ul class="body_list album_tile_list">
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/10660/album/73934">
+              <span>
+                <img width="100" height="100" alt="" src="http://fdfs.test.ximalaya.com/group1/M00/08/1A/wKgD3lHflWaAbZJbAAQtLAATr5k520_web_large.jpg">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/10660/album/73934">
+              《<em>专辑</em>》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="10660" href="/#/10660/">tiny60</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2047/album/358">
+              <span>
+                <img width="100" height="100" alt="" src="http://fdfs.test.ximalaya.com/group1/M00/04/4B/wKgDrlAZ8BaGqAsfAAGcRn5iM4I793_web_large.jpg">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2047/album/358">
+              《<em>专辑</em>1》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2047" href="/#/2047/">vvbbhb</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2047/album/359">
+              <span>
+                <img width="100" height="100" alt="" src="http://fdfs.test.ximalaya.com/group1/M01/07/89/wKgDrVBgG73g6Z5fAAAaHScwY7c119_web_large.gif">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2047/album/359">
+              《<em>专辑</em>1》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2047" href="/#/2047/">vvbbhb</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2061/album/380">
+              <span>
+                <img width="100" height="100" alt="" src="http://fdfs.test.ximalaya.com/group1/M00/04/50/wKgDrVAbbSCXxGH5AAHt4yqjbEE813_web_large.png">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2061/album/380">
+              《<em>专辑</em>1》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2061" href="/#/2061/">fred13</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2121/album/841">
+              <span>
+                <img width="100" height="100" alt="" src="http://static2.test.ximalaya.com/css/img/common/album_180.jpg?v=1374119390">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2121/album/841">
+              《第二个<em>专辑</em>》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2121" href="/#/2121/">fred73</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2121/album/842">
+              <span>
+                <img width="100" height="100" alt="" src="http://static2.test.ximalaya.com/css/img/common/album_180.jpg?v=1374119390">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2121/album/842">
+              《第二个<em>专辑</em>》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2121" href="/#/2121/">fred73</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2121/album/517">
+              <span>
+                <img width="100" height="100" alt="" src="http://fdfs.test.ximalaya.com/group1/M00/04/68/wKgDrVAiER6P4Ml7AAvqH_kipG8764_web_large.jpg">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2121/album/517">
+              《第一个<em>专辑</em>》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2121" href="/#/2121/">fred73</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2169/album/1407">
+              <span>
+                <img width="100" height="100" alt="" src="http://static2.test.ximalaya.com/css/img/common/album_180.jpg?v=1374119390">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2169/album/1407">
+              《<em>专辑</em>测试》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2169" href="/#/2169/">fewfaweva</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2221/album/74252">
+              <span>
+                <img width="100" height="100" alt="" src="http://static2.test.ximalaya.com/css/img/common/album_180.jpg?v=1374119390">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2221/album/74252">
+              《<em>专辑</em>1》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2221" href="/#/2221/">Tinyr</a>
+          </div>
+
+        </div>
+      </li>
+      <li class="item">
+        <div class="content_wrap2">
+          <div class="picture">
+            <a class="albumface100" href="/#/2868/album/72302">
+              <span>
+                <img width="100" height="100" alt="" src="http://static2.test.ximalaya.com/css/img/common/album_180.jpg?v=1374119390">
+              </span>
+            </a>
+          </div>
+          <div class="info title">
+            <a href="/#/2868/album/72302">
+              《test <em>专辑</em>》
+            </a>
+          </div>
+          <div class="info last">
+            <span class="user">发布者:</span>
+            <a class="user_name" card="2868" href="/#/2868/">honey</a>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+				<div class="report_user mgT30">
+					<div class="report_head">
+						<a class="searchAllCount">共找到2667个有关<em>好</em>的用户</a>
+						<span class="report_head_cate">用户</span>
+					</div>
+					<!-- 搜索用户列表，样式同search_user.html
+					<ul class="body_list follow_list">
+						<li class="item">
+							<div class="content_wrap">
+								<div class="picture">
+									<img src="/css/img/person_60.jpg">
+								</div>
+								<div class="detail">
+									<div class="detail_top">
+										<a class="username" href="javascript:;">马桶上的思考者<i class="VIcon"></i></a>
+									</div>
+									<div class="detail_content">
+										我是神仙小唐唐，学仙只为看看天。【技能】天然呆、诈尸《平凡的世界》是一部现实主义小说，也是小说......
+									</div>
+									<div class="detail_bottom">
+										<span class="left sound_counter">12</span>
+										<span class="left follower_counter">203</span>
+									</div>
+								</div>
+								<div class="operate_btns">
+									<a class="sendLetterBtn" href="javascript:;"><span class="icon">发私信</span></a>
+									<a class="addBtn2" href="javascript:;"><span>关注</span></a>
+								</div>
+							</div>
+						</li>
+						<li class="item on">
+							<div class="content_wrap">
+								<div class="picture">
+									<img src="/css/img/person_60.jpg">
+								</div>
+								<div class="detail">
+									<div class="detail_top">
+										<a class="username" href="javascript:;">马桶上的思考者</a>
+									</div>
+									<div class="detail_content">
+										我是神仙小唐唐，学仙只为看看天。【技能】天然呆、诈尸《平凡的世界》是一部现实主义小说，也是小说......
+									</div>
+									<div class="detail_bottom">
+										<span class="left sound_counter">12</span>
+										<span class="left follower_counter">203</span>
+									</div>
+								</div>
+								<div class="operate_btns">
+									<a class="sendLetterBtn" href="javascript:;"><span class="icon">发私信</span></a>
+									<a class="addBtn2" href="javascript:;"><span>关注</span></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="report_album mgT30">
+					<div class="report_head">
+						<a class="searchAllCount">共找到2667个专辑有关<em>好</em>的</a>
+						<span class="report_head_cate">专辑</span>
+					</div>
+					<ul class="body_list album_tile_list">
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《<em>专辑</em>名称专辑名称专辑名称专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑专辑名称专辑名称名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公的音乐的音乐</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="item">
+							<div class="content_wrap2">
+								<div class="picture">
+									<a class="albumface" href="#"><span><img alt="" src="/css/img/person_60.jpg"></span></a>
+								</div>
+								<div class="info title"><a href="#">《专辑名称》</a></div>
+								<div class="info last">
+									<span class="user">发布者:</span>
+									<a class="user_name" href="javascript:;">山公公</a>
+								</div>
+
+							</div>
+						</li>
+					</ul>
+					-->
+					<div class="radioUserlist ">
+							<div class="radioUserListItem">
+								<div class="radioUserPanel">
+									<div class="left ">
+										<a class="userface" href="#"> 
+											<img src="/css/img/person_60.jpg" alt="">
+										</a>
+									</div>
+									<div class="right radioUserInfo">
+										<a class="title">郭德纲相声<i class="VIcon">&nbsp;</i></a>
+										<div class="signature">我是郭德纲哦，快来嘲我把！</div>
+										<div class="info">
+											<span class="radioSoundIcon">22222</span>
+											<span class="radioFansIcon">222ee22</span>
+										</div>
+										<div class="opt mgT10">
+											<a class="addBtn2 small already" href="javascript:;"><span class="default">已关注</span><span class="hover">取消</span></a>
+											<a class="addBtn1 hidden1"><span class="radioLetterIcon">发私信</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="radioUserListItem">
+								<div class="radioUserPanel">
+									<div class="left ">
+										<a class="userface" href="#"> 
+											<img src="/css/img/person_60.jpg" alt="">
+										</a>
+									</div>
+									<div class="right radioUserInfo">
+										<a class="title">郭德纲相声</a>
+										<div class="signature">我是郭德纲哦，快来嘲我把！</div>
+										<div class="info">
+											<span class="radioSoundIcon">22222</span>
+											<span class="radioFansIcon">222ee22</span>
+										</div>
+										<div class="opt mgT10">
+											<a class="addBtn2 small already" href="javascript:;"><span class="default">已关注</span><span class="hover">取消</span></a>
+											<a class="addBtn1 hidden1"><span class="radioLetterIcon">发私信</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="cl"></p>
+
+							<div class="radioUserListItem">
+								<div class="radioUserPanel">
+									<div class="left ">
+										<a class="userface" href="#"> 
+											<img src="/css/img/person_60.jpg" alt="">
+										</a>
+									</div>
+									<div class="right radioUserInfo">
+										<a class="title">郭德纲相声</a>
+										<div class="signature">我是郭德纲哦，快来嘲我把！</div>
+										<div class="info">
+											<span class="radioSoundIcon">22222</span>
+											<span class="radioFansIcon">222ee22</span>
+										</div>
+										<div class="opt mgT10">
+											<a class="addBtn2 small" href="javascript:;"><span class="default">关注</span><span class="hover">取消</span></a>
+											<a class="addBtn1 hidden1"><span class="radioLetterIcon">发私信</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="radioUserListItem">
+								<div class="radioUserPanel">
+									<div class="left ">
+										<a class="userface" href="#"> 
+											<img src="/css/img/person_60.jpg" alt="">
+										</a>
+									</div>
+									<div class="right radioUserInfo">
+										<a class="title">郭德纲相声</a>
+										<div class="signature">我是郭德纲哦，快来嘲我把！</div>
+										<div class="info">
+											<span class="radioSoundIcon">22222</span>
+											<span class="radioFansIcon">222ee22</span>
+										</div>
+										<div class="opt mgT10">
+											<a class="addBtn2 small" href="javascript:;"><span class="default">关注</span><span class="hover">取消</span></a>
+											<a class="addBtn1 hidden1"><span class="radioLetterIcon">发私信</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="cl"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainbox_right">
+			<div class="ad1"></div>			
+			<!-- 你可能感兴趣的人 -->
+			<div class="recommendedBar">
+				<div class="titleBar">
+					<a href="#" class="more">更多</a>
+					<h2 class="title">你可能感兴趣的人</h2>
+				</div>
+				<ul class="personPanelBar3List">
+					<li class="listItem">
+						<div class="personPanelBar3">
+							<div class="cl">
+								<div class="left">
+									<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+								</div>
+								<div class="middle">
+									<div class="title">
+										<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+									</div>
+									<div class="info">
+										<a class="selectBtn on" href="#"><span>17个间接关注</span><em>◆</em></a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="operate">
+										<a href="javascript:;" class="closeBtn" title=""></a>
+									</div>
+									<a class="addBtn"><em>+</em><span>关注</span></a>
+								</div>
+							</div>
+							<div class="infoDetail">
+								<a href="#">用户名称A</a> 、<a href="#">用户名称B</a>也关注了他
+							</div>
+						</div>
+					</li>
+					<li class="listItem">
+						<div class="personPanelBar3">
+							<div class="cl">
+								<div class="left">
+									<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+								</div>
+								<div class="middle">
+									<div class="title">
+										<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+									</div>
+									<div class="info">
+										<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="operate">
+										<a href="javascript:;" class="closeBtn" title=""></a>
+									</div>
+									<a class="addBtn"><em>+</em><span>关注</span></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="listItem">
+						<div class="personPanelBar3">
+							<div class="cl">
+								<div class="left">
+									<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+								</div>
+								<div class="middle">
+									<div class="title">
+										<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+									</div>
+									<div class="info">
+										<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="operate">
+										<a href="javascript:;" class="closeBtn" title=""></a>
+									</div>
+									<a class="addBtn"><em>+</em><span>关注</span></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="listItem">
+						<div class="personPanelBar3">
+							<div class="cl">
+								<div class="left">
+									<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+								</div>
+								<div class="middle">
+									<div class="title">
+										<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+									</div>
+									<div class="info">
+										<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="operate">
+										<a href="javascript:;" class="closeBtn" title=""></a>
+									</div>
+									<a class="addBtn"><em>+</em><span>关注</span></a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 热搜榜 -->
+			<div class="rankTab mgT15">
+				<span class="tab_title">热搜榜</span>
+				<a href="#" class="tab_item"><span>总</span></a>
+				<a href="#" class="tab_item"><span>月</span></a>
+				<a href="#" class="tab_item"><span>周</span></a>
+				<a href="#" class="tab_item on"><span>日</span></a>
+			</div>
+			<div class="rankUserList">
+				<div class="listItem">
+					<span class="bud-text on">1</span>
+					<div class="rankUserPanel">
+						<div class="left">
+							<a class="userface" href="#"> 
+								<img src="/css/img/person_60.jpg" alt="">
+							</a>
+						</div>
+						<div class="right rankUserInfo">
+							<span class="title mgB5">荷兰乳牛</span>
+							<span class="radioSoundIcon">22222</span>
+							<span class="radioFansIcon">22222</span>
+						</div>
+					</div>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text">2</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text">3</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">4</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">5</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">6</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">7</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">8</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">9</span>
+				</div>
+				<div class="listItem">
+					<span>荷兰乳牛</span>
+					<span class="bud-text grew">10</span>
+				</div>
+			</div>
+			<div class="ad1 mgT15"></div>
+		</div>
+	</div> 
+</div>	
+</div>
+<!--页面内容 end-->
+<!--页面底部 start-->
+<div class="footer">
+	<div class="footer_wrap">
+		<div class="footer_nav">
+			<a href="#">关于我们</a>
+			<a href="#">联系我们</a>
+			<a href="#">公司新闻</a>
+			<a href="#">帮助中心</a>
+			<a href="#">官方博客</a>
+			<a href="#">个人电台</a>
+			<a href="#">推荐标签</a>
+			<a href="#" class="last">热门声音</a>
+		</div>
+		<div class="footer_contact">
+			客服电话:4008385616   周一至周五9:00-18:00
+			<a href="#">在线客服</a>
+		</div>
+		<div class="footer_app">
+				<a class="app_android" href="#"></a>
+				<a class="app_iphone" href="#"></a>
+		</div>
+		<div class="footer_copyright">
+			<p>网络文化经营许可证-文网文[2010]150号 北京那里汇聚网络科技有限公司 <a>京ICP备12017437号-1</a> 北京那里汇聚网络科技有限公司</p>
+			<p>Copyright © 2011-2012   <a>www.ximalaya.com</a>  lnc.ALL Rights Reserved 请使用者仔细阅读喜马拉雅网 <a>使用协议</a> 和 <a>版权声明</a></p>				
+		</div>
+		<div class="footer_attention">
+			关注我们：
+			<a href="javascript:;" class="sinaWeiboBtn"></a>
+			<a href="javascript:;" class="qqWeiboBtn"></a>
+		</div>
+	</div>	
+</div>
+<!--页面底部 end-->
+</body>
+</html>

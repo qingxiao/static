@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我关注的人</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalFollow" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/2286/">
+                        <img src="http://fdfs.test.ximalaya.com/group1/M00/02/E3/wKgDplGMjXSARDJMAAhbzsg_flE636_common_medium.JPG">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        遇见
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/2286/">主页</a></li>
+                        <li class="nav_item"><a href="/#/2286/sound/">声音</a></li>
+                        <li class="nav_item"><a href="/#/2286/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/2286/favorites/">喜欢</a></li>
+                        <li class="nav_item on"><a href="/#/2286/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/2286/fans/">粉丝</a></li>
+                        <li class="nav_item"><a href="/#/2286/listened/">听过</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title fl">我关注的人</span>
+                        <div class="selecter fl group-select selecter-s3" inited="true"><div class="selecter-selected" data-value="0"><span class="selecter-text">分组</span><em class="selecter-arrow">◆</em></div> <div class="selecter-options "><ul><li data-value="0" class="selecter-item  selected">分组</li><li data-value="-1" class="selecter-item ">必听组</li><li data-value="74371" class="selecter-item ">新闻资讯</li><li data-value="74372" class="selecter-item ">音乐</li><li data-value="74373" class="selecter-item ">综艺</li><li data-value="74374" class="selecter-item ">萨达</li><li data-value="74375" class="selecter-item ">瞧瞧</li><li data-value="74376" class="selecter-item ">sss</li><li data-value="74377" class="selecter-item ">dfdsf</li><li data-value="74378" class="selecter-item ">qqq</li><li data-value="74379" class="selecter-item ">eee</li><li data-value="74380" class="selecter-item ">yhaha</li><li data-value="74381" class="selecter-item ">da    da</li><li data-value="74809" class="selecter-item ">aa</li><li data-value="75916" class="selecter-item ">1111111</li><li><div class="groupmng"><a href="javascript:;">管理分组</a></div></li></ul></div></div>
+                    </div>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                            <li class="item first">
+                                <a href="/#/2286/follow/?">全部</a>
+                            </li>
+                            <li class="item">
+                                <a href="/#/2286/follow/?is_mutual=true&amp;">相互关注</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共关注了<span class="follows_count">75</span>个人</div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" data-options="" value="" name="" autocomplete="off" placeholder="搜索人">                       
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                <div class="body_list_wrap">
+                    <ul class="body_list follow_list">
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1381/">
+                                        <img card="1381" src="http://fdfs.test.ximalaya.com/group1/M01/07/E5/wKgDplHabC-AMs7KAAGe0raZ-xY898_common_medium.jpg"></a></div><a href="/#/1381/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1381" href="/#/1381/">
+                                            otto是
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂...</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1381/sound/">
+                                            <span class="left sound_counter">6</span>
+                                        </a>
+                                        <a href="/#/1381/fans/">
+                                            <span class="left follower_counter">7</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'otto是'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already both" data-options="uid:1381,is_follow:true,be_followed:true,remove:'li.item',remove_state:false,nickname:'otto是'" href="javascript:;">
+                                        <span class="default">相互关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:1381,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/12288/">
+                                        <img card="12288" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390"></a></div><a href="/#/12288/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="12288" href="/#/12288/">
+                                            tiny78
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/12288/sound/">
+                                            <span class="left sound_counter">2</span>
+                                        </a>
+                                        <a href="/#/12288/fans/">
+                                            <span class="left follower_counter">10</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'tiny78'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:12288,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'tiny78'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:12288,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/20/">
+                                        <img card="20" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390"></a></div><a href="/#/20/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="20" href="/#/20/">
+                                            四六级英语
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">大学英语四六级考试的重要复习资料，包括四级真题听力，四级作文，六级词汇，六级短文等。</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/20/sound/">
+                                            <span class="left sound_counter">0</span>
+                                        </a>
+                                        <a href="/#/20/fans/">
+                                            <span class="left follower_counter">25</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'四六级英语'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:20,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'四六级英语'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:20,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/3447/">
+                                        <img card="3447" src="http://fdfs.test.ximalaya.com/group1/M00/07/4D/wKgD3lHWegqAVNWtAAEkUuXvcNw703_common_medium.jpg"></a></div><a href="/#/3447/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="3447" href="/#/3447/">
+                                            tiny50
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/3447/sound/">
+                                            <span class="left sound_counter">164</span>
+                                        </a>
+                                        <a href="/#/3447/fans/">
+                                            <span class="left follower_counter">27</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'tiny50'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already both" data-options="uid:3447,is_follow:true,be_followed:true,remove:'li.item',remove_state:false,nickname:'tiny50'" href="javascript:;">
+                                        <span class="default">相互关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:3447,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/2306/">
+                                        <img card="2306" src="http://fdfs.test.ximalaya.com/group1/M00/04/97/wKgD3lGV1zyAPAf8AAELiQZZxVA072_common_medium.jpg"></a></div><a href="/#/2306/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="2306" href="/#/2306/">
+                                            传统评书
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">找你妹</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/2306/sound/">
+                                            <span class="left sound_counter">50</span>
+                                        </a>
+                                        <a href="/#/2306/fans/">
+                                            <span class="left follower_counter">34</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'传统评书'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:2306,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'传统评书'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:2306,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1393/">
+                                        <img card="1393" src="http://fdfs.test.ximalaya.com/group1/M01/00/25/wKgDplDpImug6_RkAAA3fDDc2HY448_common_medium.jpg"></a></div><a href="/#/1393/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1393" href="/#/1393/">
+                                            分组名字十_肯定拉风
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1393/sound/">
+                                            <span class="left sound_counter">0</span>
+                                        </a>
+                                        <a href="/#/1393/fans/">
+                                            <span class="left follower_counter">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'分组名字十_肯定拉风'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:1393,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'分组名字十_肯定拉风'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:1393,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/954/">
+                                        <img card="954" src="http://tp2.sinaimg.cn/1550606913/180/5627120678/1"></a></div><a href="/#/954/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="954" href="/#/954/">
+                                            有个地方没捏好_A4
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/954/sound/">
+                                            <span class="left sound_counter">0</span>
+                                        </a>
+                                        <a href="/#/954/fans/">
+                                            <span class="left follower_counter">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'有个地方没捏好_A4'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:954,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'有个地方没捏好_A4'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:954,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/1109/">
+                                        <img card="1109" src="http://qzapp.qlogo.cn/qzapp/100261563/F1D93C202C2755A33D7AFDD03762D606/100"></a></div><a href="/#/1109/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="1109" href="/#/1109/">
+                                            feifei
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="detail_content">帅哥啊帅哥</div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/1109/sound/">
+                                            <span class="left sound_counter">8</span>
+                                        </a>
+                                        <a href="/#/1109/fans/">
+                                            <span class="left follower_counter">16</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'feifei'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:1109,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'feifei'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:1109,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/2254/">
+                                        <img card="2254" src="http://fdfs.test.ximalaya.com/group1/M00/05/3F/wKgDplGxoQKAcUKtAAJ2047jaSc511_common_medium.jpg"></a></div><a href="/#/2254/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="2254" href="/#/2254/">
+                                            tinyr_my
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/2254/sound/">
+                                            <span class="left sound_counter">641</span>
+                                        </a>
+                                        <a href="/#/2254/fans/">
+                                            <span class="left follower_counter">4003</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'tinyr_my'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already both" data-options="uid:2254,is_follow:true,be_followed:true,remove:'li.item',remove_state:false,nickname:'tinyr_my'" href="javascript:;">
+                                        <span class="default">相互关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:2254,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="content_wrap">
+                                <div class="picture">
+                                    <a href="/#/799/">
+                                        <img card="799" src="http://fdfs.test.ximalaya.com/group1/M00/00/0A/wKgD3lDSqaGRWYiQAADx4JO2eNg548_common_medium.jpg"></a></div><a href="/#/799/">
+                                    </a>
+                                <div class="detail">
+                                    <div class="detail_top">
+                                        <a class="username" card="799" href="/#/799/">
+                                            音乐天王
+                                            <i class="VIcon">&nbsp;</i>
+                                        </a>
+                                    </div>
+                                    <div class="detail_content"></div>
+                                    <div class="detail_bottom">
+                                        <a href="/#/799/sound/">
+                                            <span class="left sound_counter">0</span>
+                                        </a>
+                                        <a href="/#/799/fans/">
+                                            <span class="left follower_counter">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="operate_btns">
+                                    <a class="sendLetterBtn" href="javascript:;" data-options="nickname:'音乐天王'">
+                                        <span class="icon">发私信</span>
+                                    </a>
+                                    <a class="addBtn2 already " data-options="uid:799,is_follow:true,be_followed:false,remove:'li.item',remove_state:false,nickname:'音乐天王'" href="javascript:;">
+                                        <span class="default">已关注</span>
+                                        <span class="hover">取消</span>
+                                    </a>
+                                </div>
+                                <div class="group_operate" title="" data-options="uid:799,sids:'',defaultText:'%E6%9C%AA%E5%88%86%E7%BB%84'"><div><a href="javascript:;" class="combobox_group group"><em>未分组</em><span class="arrow_btm"></span></a><p class="cl"></p></div><div class="dropdowngroup" style="display: none; right: 7px;"><ul></ul><div class="groupcreate"><a href="javascript:;" class="group_add">+创建新分组</a><div class="edit"><input type="text" class="text" maxlength="8"><div><a class="editConfirm">确认</a><a class="cancel">取消</a></div></div></div></div></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="pagingBar mgTB20">
+                          <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/2286/follow?page=2" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/2286/follow?page=3" rel="">3</a>
+
+
+          <a class="pagingBar_page" href="/#/2286/follow?page=4" rel="">4</a>
+
+
+          <a class="pagingBar_page" href="/#/2286/follow?page=5" rel="">5</a>
+
+
+          <span>......</span>
+
+          <a class="pagingBar_page" href="/#/2286/follow?page=8" rel="">8</a>
+
+
+    <a class="pagingBar_btn" href="/#/2286/follow?page=2" rel="next">下一页</a>
+
+  </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://static2.test.ximalaya.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--我关注的人-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/2286/follow/" class="more">更多</a>
+            <h2 class="title">我关注的人(75)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1381/" title="otto是">
+                <img card="1381" alt="otto是" src="http://fdfs.test.ximalaya.com/group1/M01/07/E5/wKgDplHabC-AMs7KAAGe0raZ-xY898_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12288/" title="tiny78">
+                <img card="12288" alt="tiny78" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/20/" title="四六级英语">
+                <img card="20" alt="四六级英语" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/3447/" title="tiny50">
+                <img card="3447" alt="tiny50" src="http://fdfs.test.ximalaya.com/group1/M00/07/4D/wKgD3lHWegqAVNWtAAEkUuXvcNw703_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2306/" title="传统评书">
+                <img card="2306" alt="传统评书" src="http://fdfs.test.ximalaya.com/group1/M00/04/97/wKgD3lGV1zyAPAf8AAELiQZZxVA072_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1393/" title="分组名字十_肯定拉风">
+                <img card="1393" alt="分组名字十_肯定拉风" src="http://fdfs.test.ximalaya.com/group1/M01/00/25/wKgDplDpImug6_RkAAA3fDDc2HY448_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/954/" title="有个地方没捏好_A4">
+                <img card="954" alt="有个地方没捏好_A4" src="http://tp2.sinaimg.cn/1550606913/180/5627120678/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1109/" title="feifei">
+                <img card="1109" alt="feifei" src="http://qzapp.qlogo.cn/qzapp/100261563/F1D93C202C2755A33D7AFDD03762D606/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2254/" title="tinyr_my">
+                <img card="2254" alt="tinyr_my" src="http://fdfs.test.ximalaya.com/group1/M00/05/3F/wKgDplGxoQKAcUKtAAJ2047jaSc511_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/799/" title="音乐天王">
+                <img card="799" alt="音乐天王" src="http://fdfs.test.ximalaya.com/group1/M00/00/0A/wKgD3lDSqaGRWYiQAADx4JO2eNg548_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--我的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/2286/fans/" class="more">更多</a>
+            <h2 class="title">我的粉丝(103)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/12387/" title="tiny119">
+                <img card="12387" alt="tiny119" src="http://fdfs.test.ximalaya.com/group1/M01/0A/19/wKgDplIAsBiAf_MWAAKRTMxbo3Q030_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12385/" title="sdsadSA">
+                <img card="12385" alt="sdsadSA" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12380/" title="tiny117">
+                <img card="12380" alt="tiny117" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12356/" title="xinfenlei3">
+                <img card="12356" alt="xinfenlei3" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12332/" title="tiny106">
+                <img card="12332" alt="tiny106" src="http://fdfs.test.ximalaya.com/group1/M00/09/FF/wKgDplH7hduAEEjLACJzoOP2Y0U616_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12323/" title="shiuji">
+                <img card="12323" alt="shiuji" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12320/" title="rickttt9">
+                <img card="12320" alt="rickttt9" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12307/" title="tiny98">
+                <img card="12307" alt="tiny98" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12306/" title="tiny97">
+                <img card="12306" alt="tiny97" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12264/" title="tiny74">
+                <img card="12264" alt="tiny74" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--我最新的声音-->
+
+
+
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/2286/sound/" class="more">更多</a>
+            <h2 class="title">我最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1381/sound/125280">何洁-201314</a>
+                    <span class="times">37次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/3447/sound/122038">周笔畅 - 密友</a>
+                    <span class="times">12次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/118990">听海</a>
+                    <span class="times">45次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/115496">听海</a>
+                    <span class="times">44次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/115422">听海</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96073">单田芳-薛丁山征西-042</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96071">单田芳-薛丁山征西-039</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96070">单田芳-薛丁山征西-041.com</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96069">单田芳-薛丁山征西-040</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96067">单田芳-薛丁山征西-038</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+
+</div>
+  </div>
+  </body>
+</html>

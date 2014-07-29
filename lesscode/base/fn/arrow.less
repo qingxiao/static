@@ -1,0 +1,101 @@
+//箭头的基本函数
+//@name {String} css名称
+//@color {Color} 箭头颜色
+//@size {Number} 箭头大小
+//@colorbg {Color} 背景颜色
+.arrowFn (@_, @name,@color,@size,@colorbg:#fff) {
+	.@{name},.@{name} i
+    {
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		padding:0;
+		font-size: 0;
+		z-index: 9999;
+		overflow:hidden;
+	}
+	.@{name} i
+    {
+		top: -@size/2 ;
+		left: 2px;
+		overflow:hidden;
+    }
+}
+//箭头朝上
+.arrowFn(top,@name,@color,@size,@colorbg:#fff)
+{
+	.@{name},.@{name} i
+    {
+		border-width: 0 @size/2 @size @size/2;
+		border-style: dashed  dashed solid dashed;
+		border-color: transparent  transparent @color transparent;
+    }
+	.@{name}
+    {
+		border-bottom:@size solid @color;
+    }
+	.@{name} i
+    {
+		border-bottom-color: @colorbg;
+		left: -@size/2 ;
+		top: 2px;
+    }
+}
+//箭头朝下
+.arrowFn(bottom,@name,@color,@size,@colorbg:#fff)
+{
+	.@{name},.@{name} i
+    {
+		border-width: @size @size/2 0 @size/2;
+		border-style: solid dashed  dashed  dashed;
+		border-color: @color transparent  transparent  transparent;
+    }
+	.@{name}
+    {
+		border-top:@size solid @color;
+    }
+	.@{name} i
+    {
+		border-top-color: @colorbg;
+		left: -@size/2 ;
+		top: -2-@size;
+    }
+}
+//箭头朝左
+.arrowFn(left,@name,@color,@size,@colorbg:#fff)
+{
+	.@{name},.@{name} i
+    {
+		border-width: @size/2 @size @size/2 0;
+		border-style: dashed solid dashed dashed;
+		border-color: transparent @color transparent transparent;
+    }
+	.@{name}
+    {
+    	border-right-color: @color;
+    }
+	.@{name} i
+    {
+		border-right-color:@colorbg;
+    }
+}
+//箭头朝右
+.arrowFn(right,@name,@color,@size,@colorbg:#fff)
+{
+	.@{name},.@{name} i
+    {
+		border-width: @size/2 0 @size/2 @size;
+		border-style: dashed  dashed dashed solid;
+		border-color: transparent  transparent transparent @color;
+    }
+	.@{name}
+    {
+		border-left-color: @color;
+    }
+	.@{name} i
+    {
+		border-left-color: @colorbg;
+		left:-2-@size;
+    }
+}

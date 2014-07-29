@@ -1,0 +1,282 @@
+.personal_container{
+    .personal_header{
+        .cl;
+        .picture{
+            .userface60;
+            .fl;
+        }
+        .nav_wrap{
+            .fl;
+            margin-left:30px;
+            .username{
+                font-size: 20px;
+				font-family: "microsoft yahei";
+                color:#000000;
+            }
+            .navFn(nav, 20px, "", 20px, 0);
+        }
+		.uploadBtn{.fr;margin-top:10px;}
+    }
+}
+
+.album_layout{
+    .fr;
+    margin-left: 15px;
+    .albumLayoutIcon{
+        margin-left:5px;
+        .fl;
+    }
+}
+
+.personal_shareto{
+	position:absolute;
+	right:0;
+	top:10px;
+	z-index:10!important;	
+	line-height:25px;
+	span:first-child{.fl;}
+}
+
+//没有专辑或没有声音
+.noItem{
+	color:#999999;
+	text-align:center;
+	line-height:21px;
+	padding:100px 0 130px;
+	.noItemTit{
+		font-size:22px;
+		color:#333;
+	}
+}
+
+.personal_body{
+    margin-top: 30px;
+    .body_top{
+        .subNavFn();
+        .sort_icon{
+            .point;
+            background-repeat: no-repeat;
+            padding-left: 10px;
+            &.up{
+                background-position: 0 -26px;
+            }
+            &.down{
+                background-position: 0 -41px;
+            }
+        }
+    }
+	.personal_list_head{
+		.cl;
+		background-color: #FAFAFA;
+		padding:10px;
+		padding-left: 15px;
+		border-bottom:1px solid #EAEAEA;
+		.left{
+			.fl;
+			height:26px;
+			line-height: 26px;
+		}
+		.right{
+			.fr;
+		}
+		& .personal_list_head_operate{
+			.fr;
+			margin-left:10px;
+		}
+	}
+	.personal_operate{
+		display:none;
+		& a{			
+			padding-right:8px;
+		}
+		& .personal_editBtn{
+			.bgImgExt("sprite/icon10px.png",0,-147px);
+			padding-left:15px;
+		}
+		& .personal_deleteBtn{
+			.bgImgExt("sprite/icon10px.png",0,-162px);
+			padding-left:15px;
+		}
+	}
+}
+#personalLike, #personalListened{
+  .middlePlayer{
+        width:600px;
+  }
+}
+
+#personalSound{
+	.middlePlayer{
+		width:690px;
+	}
+	.personal_operate{
+		.fr;
+		margin-right:8px;
+	}
+	.body_list{
+		& .item{
+			&:hover{
+				.personal_operate{
+					display:block;
+				}
+				a{
+					.link1;
+				}
+				/*
+				.downloadToMobile{
+					display:inline-block;
+				}
+				*/
+			}
+		}
+	}
+	.selecter-s3{
+		margin:-2px 0 0 5px;
+	}
+	.sound_title{max-width:398px;}
+}
+
+#personalAlbum{
+	.personal_operate{
+		position:absolute;
+		top:0;
+		right:50px;
+	}
+	.body_list{
+		& .item{
+			&:hover{
+				.personal_operate{
+					display:block;
+				}
+				.time{
+					//display:none;
+				}
+			}
+		}
+	}
+}
+#personalAlbum.mycenter_album{
+	.personal_operate{
+		position:absolute;
+		top:0;
+		right:-10px;
+	}
+	.body_list{
+		& .item{
+			&:hover{
+				.personal_operate{
+					display:block;
+				}
+				.time,.time2{
+					display:none;
+				}
+			}
+		}
+	}
+}
+#personalAlbumTile{
+	.personal_operate{
+		position:absolute;
+		top:8px;
+		right:16px;
+		& a{			
+			width:18px;
+			height:18px;			
+			background-color:#fff;
+			margin-left:-2px;
+			display:inline-block;
+			padding:0;
+		}
+		& .personal_editBtn2{
+			.bgImgExt("sprite/icon10px.png",4px,-146px);
+		}
+		& .personal_deleteBtn2{
+			.bgImgExt("sprite/icon10px.png",4px,-161px);
+		}
+	}
+	& .content_wrap{
+		position:relative;	
+	}
+	& .picture{		
+		&:hover{
+			.personal_operate{
+				display:block;
+			}
+		}		
+	}
+	& .creatAlbum{
+		& a{
+			text-align:center;
+			color:#999999;
+			padding-right:8px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		& em{
+			font: 62px Arial;
+			display:block;
+			height:62px;
+		}
+		& span{
+			border:1px solid #DDDDDD;
+			background-color:#fff;
+		}
+	}
+}
+#personalFollow{
+	.group_operate{
+		position:absolute;
+		bottom:20px;
+		right:1px;
+		display:block;
+	}
+	.personal_operate{
+		position:absolute;
+		bottom:20px;
+		right:1px;
+	}
+	.body_list{
+		& .item{
+			&:hover{
+				.group{
+					color:#3586bc;
+				.arrowFn(bottom,arrow_btm,#3586BC,8px);
+					& .arrow_btm{
+						margin:8px 8px 0 0 ;
+						top: 0;
+						right: 0;
+						border-top-width:5px;
+					}					
+				}
+				.personal_operate{
+					display:block;
+				}
+			}
+		}
+	}
+
+	.group{
+		margin-right:8px;
+		color:#bbb;
+		padding-right:10px;
+		.arrowFn(bottom,arrow_btm,#bbb,8px);
+		& .arrow_btm{
+			margin:8px 8px 0 0 ;
+			top: 0;
+			right: 0;
+			border-top-width:5px;
+			z-index:2;
+		}
+		.arrowFn(top,arrow_top,#bbb,8px);
+		& .arrow_top{
+			margin:8px 8px 0 0 ;
+			top: 0;
+			right: 0;
+			border-bottom-width:5px;
+		}
+	}
+	.selecter-s3{
+		margin:-2px 0 0 5px;
+	}
+}

@@ -1,0 +1,74 @@
+//布局
+@import "fn/layout.less";
+/*base/layout*/
+.mainbox{
+	width:@mainboxWidth;
+	.clearfix();
+	margin:0 auto;
+	min-height:740px;
+	& .mainbox_bg{		
+		background: url("@{urlStaticImg}/base/bg-line.png") repeat-y right 0px;
+	}
+	& .mainbox_wrapper{
+		margin:30px 0 50px;
+		.clearfix();
+	}
+}
+.mainbox_left{
+	width:@mainboxLeftWidth;
+	.fl;
+}
+.mainbox_right{
+	width:@mainboxRightWidth;
+	.fr;
+}
+.footer {
+  border-top: 1px solid #dddddd;
+  background-color: #F6F6F6;
+  min-height: 150px;
+}
+
+.mgFn(@num){
+    .mg@{num}{margin:@num*1px;}
+    .mgT@{num}{margin-top:@num*1px;}
+    .mgB@{num}{margin-bottom:@num*1px;}
+    .mgR@{num}{margin-right:@num*1px;}
+    .mgL@{num}{margin-left:@num*1px;}
+    .mgTB@{num}{margin-top:@num*1px;margin-bottom:@num*1px;}
+    .mgLR@{num}{margin-left:@num*1px;margin-right:@num*1px;}
+}
+.mgFn(10);
+.mgFn(20);
+.mgFn(30);
+.mgFn(15);
+.mgFn(5);
+.mgFn(-15);
+
+.unseeable
+{
+	position:absolute;
+	left:-10000px;
+}
+
+.backToTop {
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 120px;
+	right: 40px;
+	margin-left: 490px;
+	z-index: 999;
+	cursor: pointer;
+	& a
+    {
+    	display: block;
+		.bgImgExt("backtop.png",0,0);
+		width: 40px;
+		height: 40px;
+		&:hover
+        {
+			.bgImgExt("backtop.png",0,-40px);
+        }
+    }
+}

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ta的声音</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalSound" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/1000691/">
+                        <img src="http://fdfs.xmcdn.com/group1/M00/06/AC/wKgDrVDnzoCQuqnQAAQOeDpd5fc879_common_medium.jpg">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        老梁观世界
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/1000691/">主页</a></li>
+                        <li class="nav_item on"><a href="/#/1000691/sound/">声音</a></li>
+                        <li class="nav_item"><a href="/#/1000691/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/1000691/favorites/">喜欢</a></li>
+                        <li class="nav_item"><a href="/#/1000691/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/1000691/fans/">粉丝</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">老梁观世界的声音</span>
+                    </div>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                            <li class="item first">
+                                <a href="/#/1000691/sound/?order=created_at asc" class="sort_icon up">发布时间</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共有148个声音</div>
+                    <div class="searchPanel2 right">                        
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索声音">                      
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                    <div class="body_list_wrap">
+                        <ul class="body_list j-player-soundIdsWorking" sound_ids="867995,859483,822703,800943,732239,718871,713510,710440,704446,687915">
+                            <li class="item">
+                                <div class="content_wrap" sound_id="867995">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/867995" class="sound_title">无法忘却的辛德勒 130815</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="37次播放">37</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_571075" sound_wave="http://fdfs.xmcdn.com/group3/M02/15/3A/wKgDslINzzeQJHq1AAAKlbEYHWc7949.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">23:19</span>
+                                                <div class="pin" sound_popsrc="867995">
+                                                    <a href="/#/1000691/sound/867995" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/867995">无法忘却的辛德勒 130815</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">23:19</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M02/15/3A/wKgDslINzzeQJHq1AAAKlbEYHWc7949.js" sound_uploadid="c_571075"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="867995">
+                                                        <a href="/#/1000691/sound/867995" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">1小时前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 我觉得《无法忘却的辛德勒 130815》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;无法忘却的辛德勒 130815&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/867995&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="859483">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/859483" class="sound_title">航班为什么总晚点？130814</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="391次播放">391</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_569152" sound_wave="http://fdfs.xmcdn.com/group3/M03/13/E8/wKgDslIMfbihkTVtAAAKw_BkWmI0801.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">23:08</span>
+                                                <div class="pin" sound_popsrc="859483">
+                                                    <a href="/#/1000691/sound/859483" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/859483">航班为什么总晚点？130814</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">23:08</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/13/E8/wKgDslIMfbihkTVtAAAKw_BkWmI0801.js" sound_uploadid="c_569152"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="859483">
+                                                        <a href="/#/1000691/sound/859483" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">1天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">2</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">1</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 我觉得《航班为什么总晚点？130814》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;航班为什么总晚点？130814&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/859483&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="822703">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/822703" class="sound_title">有尊严的死亡 130813</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="444次播放">444</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_567444" sound_wave="http://fdfs.xmcdn.com/group3/M03/0F/33/wKgDslILLDiQgelMAAAKxAhgPM81728.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">21:42</span>
+                                                <div class="pin" sound_popsrc="822703">
+                                                    <a href="/#/1000691/sound/822703" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/822703">有尊严的死亡 130813</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">21:42</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/0F/33/wKgDslILLDiQgelMAAAKxAhgPM81728.js" sound_uploadid="c_567444"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="822703">
+                                                        <a href="/#/1000691/sound/822703" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              很多病人在生命的最后时刻，往往要经历这样的过程：心脏按压起搏、上呼吸机、24小时补液，靠医疗设备维持生命，这些做法的意义何在？七年前，做过二十多年医生的罗点点，联合一些医学专家，成立了国内首家倡导“尊严死”的公益网站。本期《老梁观世界》为您解读“尊严死”的意义。
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">1天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">3</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;很多病人在生命的最后时刻，往往要经历这样的过程：心脏按压起搏、上呼吸机、24小时补液，靠医疗设备维持生命，这些做法的意义何在？七年前，做过二十多年医生的罗... 我觉得《有尊严的死亡 130813》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;有尊严的死亡 130813&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/822703&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="800943">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/800943" class="sound_title">“垃圾围城” 130812</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="624次播放">624</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_565785" sound_wave="http://fdfs.xmcdn.com/group3/M03/0D/03/wKgDslIJ2rjQ_9wpAAAKxERPCOs3614.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">23:22</span>
+                                                <div class="pin" sound_popsrc="800943">
+                                                    <a href="/#/1000691/sound/800943" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/800943">“垃圾围城” 130812</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">23:22</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/0D/03/wKgDslIJ2rjQ_9wpAAAKxERPCOs3614.js" sound_uploadid="c_565785"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="800943">
+                                                        <a href="/#/1000691/sound/800943" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">3天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">5</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 我觉得《“垃圾围城” 130812》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;“垃圾围城” 130812&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/800943&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="732239">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/732239" class="sound_title">《我爱我家》回不去了 130809</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="752次播放">752</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_562928" sound_wave="http://fdfs.xmcdn.com/group3/M01/04/F8/wKgDslIH4HeT6zIjAAAKxUs4nsQ0889.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">22:18</span>
+                                                <div class="pin" sound_popsrc="732239">
+                                                    <a href="/#/1000691/sound/732239" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/732239">《我爱我家》回不去了 130809</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">22:18</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M01/04/F8/wKgDslIH4HeT6zIjAAAKxUs4nsQ0889.js" sound_uploadid="c_562928"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="732239">
+                                                        <a href="/#/1000691/sound/732239" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">4天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">2</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">1</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 我觉得《《我爱我家》回不去了 130809》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《我爱我家》回不去了 130809&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/732239&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="718871">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/718871" class="sound_title">何处是规程？130808</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="884次播放">884</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_560252" sound_wave="http://fdfs.xmcdn.com/group3/M00/02/C3/wKgDsVIElLjQWlGVAAAKrqIeth44350.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">24:14</span>
+                                                <div class="pin" sound_popsrc="718871">
+                                                    <a href="/#/1000691/sound/718871" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/718871">何处是规程？130808</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">24:14</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M00/02/C3/wKgDsVIElLjQWlGVAAAKrqIeth44350.js" sound_uploadid="c_560252"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="718871">
+                                                        <a href="/#/1000691/sound/718871" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              你身边有精神病患者吗？他们的生活是什么样的？你又是如何对待他们的呢？那么精神病患者的背后到底反映了哪些社会问题呢？本期《老梁观世界》为你深度讲解，敬请期待！
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">7天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">11</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;你身边有精神病患者吗？他们的生活是什么样的？你又是如何对待他们的呢？那么精神病患者的背后到底反映了哪些社会问题呢？本期《老梁观世界》为你深度讲解，敬请期待！ 我觉得《何处是规程？130808》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;何处是规程？130808&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/718871&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="713510">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/713510" class="sound_title">赏金猎人是干啥的 130807</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="1005次播放">1005</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_558572" sound_wave="http://fdfs.xmcdn.com/group3/M03/01/6B/wKgDslIDQzfwAMagAAAKyLgwltI3614.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">22:31</span>
+                                                <div class="pin" sound_popsrc="713510">
+                                                    <a href="/#/1000691/sound/713510" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/713510">赏金猎人是干啥的 130807</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">22:31</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M03/01/6B/wKgDslIDQzfwAMagAAAKyLgwltI3614.js" sound_uploadid="c_558572"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="713510">
+                                                        <a href="/#/1000691/sound/713510" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              7月23号，国际人权组织西蒙维森塔尔中心对外宣布消息，他们准备悬赏缉拿现在还在人世间的纳粹战犯。这些缉拿人员被笼统的称为赏金猎人。那么什么是赏金猎人呢？本期《老梁观世界》为你深度解析。
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">8天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">8</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;7月23号，国际人权组织西蒙维森塔尔中心对外宣布消息，他们准备悬赏缉拿现在还在人世间的纳粹战犯。这些缉拿人员被笼统的称为赏金猎人。那么什么是赏金猎人呢？本... 我觉得《赏金猎人是干啥的 130807》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;赏金猎人是干啥的 130807&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/713510&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="710440">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox" style="display: none;">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/710440" class="sound_title">谁为底特律破产买单？ 130806</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="933次播放">933</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_556671" sound_wave="http://fdfs.xmcdn.com/group3/M04/00/F8/wKgDsVIB8biSw8ugAAAKr9xOA1k6500.js">
+                                                <a href="javascript:;" class="playBtn" title="播放"></a>
+                                                <span class="duration">22:28</span>
+                                                <div class="pin" sound_popsrc="710440">
+                                                    <a href="/#/1000691/sound/710440" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox" style="display: block;">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/710440">谁为底特律破产买单？ 130806</a>
+                                                <div class="fr"><span class="sound_position">00:01</span>/<span class="sound_duration">22:28</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer" style="opacity: 1;">
+                                                    <div class="left">
+                                                        <a class="playBtn" title="播放"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar is-drawed" title="点击播放">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar" style="width: 6.961136234073992%;"></div>
+                                                            <div class="player_playbar" style="width: 0.09979832730292425%;"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group3/M04/00/F8/wKgDsVIB8biSw8ugAAAKr9xOA1k6500.js" sound_uploadid="c_556671" style=""><canvas width="641" height="28"></canvas></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar"><div class="chunk" chunkindex="0" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="1" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="2" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="3" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="4" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="5" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="6" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="7" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="8" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="9" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="10" hidefocus="true" style="width:22px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="11" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="12" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="13" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="14" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="15" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="16" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="17" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="18" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="19" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="20" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="21" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="22" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="23" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="24" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="25" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="26" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="27" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="28" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="29" hidefocus="true" style="width:21px;"><div class="chunkWrapper"></div></div></div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="710440">
+                                                        <a href="/#/1000691/sound/710440" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              从“汽车之都”到“悲惨之城”，底特律申请破产，楼房卖出皮鞋价，抄底底特律是否正当时？陕西神木与鄂尔多斯，因煤而兴，因煤而富，一个资源型城市能坚持多久？底特律破产又能够中国城之发展带来什么启示？本期《老梁观世界》为您解读底特律的破产之谜。
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">9天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">3</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;从“汽车之都”到“悲惨之城”，底特律申请破产，楼房卖出皮鞋价，抄底底特律是否正当时？陕西神木与鄂尔多斯，因煤而兴，因煤而富，一个资源型城市能坚持多久？底特... 我觉得《谁为底特律破产买单？ 130806》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;谁为底特律破产买单？ 130806&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/710440&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="704446">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/704446" class="sound_title">“微刺激”是个好兆头 130805</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="869次播放">869</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_555011" sound_wave="http://fdfs.xmcdn.com/group1/M00/28/46/wKgDrlIAoDiwSnkpAAAKxsusY9o9352.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">23:16</span>
+                                                <div class="pin" sound_popsrc="704446">
+                                                    <a href="/#/1000691/sound/704446" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/704446">“微刺激”是个好兆头 130805</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">23:16</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group1/M00/28/46/wKgDrlIAoDiwSnkpAAAKxsusY9o9352.js" sound_uploadid="c_555011"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="704446">
+                                                        <a href="/#/1000691/sound/704446" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              600万小微企业或免税，您是否在受益之列？解读政策信号、探究企业困境，小微企业是否迎来了春天？制约中小企业发展的根源究竟是什么？扶持政策组合出击，免税的步伐迈多大？怎么迈？才能让老百姓享受更多实惠。本期《老梁观世界》为您解读“微刺激”是个好兆头。
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">10天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">6</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">0</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;600万小微企业或免税，您是否在受益之列？解读政策信号、探究企业困境，小微企业是否迎来了春天？制约中小企业发展的根源究竟是什么？扶持政策组合出击，免税的步... 我觉得《“微刺激”是个好兆头 130805》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;“微刺激”是个好兆头 130805&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/704446&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content_wrap" sound_id="687915">
+                                    <div class="sound">
+
+                                        <div class="sound_unexpandBox">
+                                            <div class="sound_titlebar">
+                                                <a href="/#/1000691/sound/687915" class="sound_title">贵族 到底是什么？130802</a>
+                                                <span>&nbsp;&nbsp;来自<a href="/#/1000691/album/1843">《老梁观世界2013》</a></span>
+                                                
+                                                <span class="sound_playcount" title="1361次播放">1361</span>
+                                            </div>
+                                            <div class="smallPlayer" sound_uploadid="c_551040" sound_wave="http://fdfs.xmcdn.com/group1/M00/26/AF/wKgDrlH8q7iR3pMQAAAKvaIn7HY6090.js">
+                                                <a href="javascript:;" class="playBtn"></a>
+                                                <span class="duration">23:06</span>
+                                                <div class="pin" sound_popsrc="687915">
+                                                    <a href="/#/1000691/sound/687915" class="soundface">
+                                                        <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sound_expandBox">
+                                            <div class="sound_titlebar">
+                                                <a class="sound_title" href="/#/1000691/sound/687915">贵族 到底是什么？130802</a>
+                                                <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">23:06</span></div>
+                                            </div>
+                                            <div class="feed_middlePlayerBox">
+                                                <div class="middlePlayer">
+                                                    <div class="left">
+                                                        <a class="playBtn"></a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <!-- 进度条 -->
+                                                        <div class="player_progressbar">
+                                                            <div class="player_progressbarBg"></div>
+                                                            <div class="player_seekbar"></div>
+                                                            <div class="player_playbar"></div>
+                                                                <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group1/M00/26/AF/wKgDrlH8q7iR3pMQAAAKvaIn7HY6090.js" sound_uploadid="c_551040"></div>
+                                                             <div class="player_progressbarCoverBg"></div>
+                                                            <div class="player_nonius">
+                                                                <div class="player_nonius_cover"></div>
+                                                                <div class="player_nonius_time">00:00</div>
+                                                                <div class="player_nonius_line5"></div>
+                                                                <div class="player_nonius_line3"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 二维评论 -->
+                                                        <div class="player_commentbar">
+                                                        </div>
+                                                        <div class="player_operate">
+                                                            <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pin" sound_popsrc="687915">
+                                                        <a href="/#/1000691/sound/687915" class="soundface">
+                                                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_mobile_small.jpg" data-options="defaultImg:track_60">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="sound_content">
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sound_bottom">
+                                            <span class="createtime">13天前</span>
+                                            <div class="fr">
+                                                <a class="downloadToMobile link1">下载到手机</a>
+                                                <a href="javascript:;" class="likeBtn link1 ">喜欢(<span class="count">11</span>)</a>
+                                                <a href="javascript:;" class="commentBtn link1">评论(<span class="count">1</span>)</a>
+                                                <a href="javascript:;" class="forwardBtn link1">转采(<span class="count">1</span>)</a>
+                                                <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 我觉得《贵族 到底是什么？130802》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;贵族 到底是什么？130802&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvKCG5gyAAQOeDpd5fc174_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1000691/sound/687915&quot;}">分享</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="comment_box_entry"></div>
+                                            <div class="relay_box_entry"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagingBar mgTB20">
+                              <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/1000691/sound?page=2" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/1000691/sound?page=3" rel="">3</a>
+
+
+          <a class="pagingBar_page" href="/#/1000691/sound?page=4" rel="">4</a>
+
+
+          <a class="pagingBar_page" href="/#/1000691/sound?page=5" rel="">5</a>
+
+
+          <span>......</span>
+
+          <a class="pagingBar_page" href="/#/1000691/sound?page=15" rel="">15</a>
+
+
+    <a class="pagingBar_btn" href="/#/1000691/sound?page=2" rel="next">下一页</a>
+
+  </div>
+
+                        </div> 
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--他关注的人-->
+
+    <!--他的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000691/fans/" class="more">更多</a>
+            <h2 class="title">他的粉丝(11348)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1394871/" title="待顁搁浅">
+                <img card="1394871" alt="待顁搁浅" src="http://qzapp.qlogo.cn/qzapp/100261563/FEBEB5D563AF87E8FBDEB5708AFC9B21/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627783/" title="子禾先生">
+                <img card="2627783" alt="子禾先生" src="http://qzapp.qlogo.cn/qzapp/100261563/47920C8D1953D6B26E62179F829D480A/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627561/" title="止如墨凡">
+                <img card="2627561" alt="止如墨凡" src="http://fdfs.xmcdn.com/group3/M03/15/96/wKgDsVIN19Dj508SAACmq6hotJw391_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627465/" title="遥对一生">
+                <img card="2627465" alt="遥对一生" src="http://tp2.sinaimg.cn/1181862801/180/5654428520/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627292/" title="一方境地">
+                <img card="2627292" alt="一方境地" src="http://tp4.sinaimg.cn/2787835631/180/0/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627163/" title="孙奕映">
+                <img card="2627163" alt="孙奕映" src="http://qzapp.qlogo.cn/qzapp/100261563/EFC0580FA9D91F3594EBE3874C9C0FC7/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1724191/" title="雨中默存石">
+                <img card="1724191" alt="雨中默存石" src="http://tp2.sinaimg.cn/2158168577/180/22826007391/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627051/" title="徐杨1113">
+                <img card="2627051" alt="徐杨1113" src="http://tp1.sinaimg.cn/1847692372/180/5607991671/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2625120/" title="123_9a">
+                <img card="2625120" alt="123_9a" src="http://qzapp.qlogo.cn/qzapp/100261563/087BB4FA09D283C92E5C2B224AD5B9F5/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2621893/" title="遗失的美好_6c">
+                <img card="2621893" alt="遗失的美好_6c" src="http://qzapp.qlogo.cn/qzapp/100261563/2F16B8D9F4A9386FB716CA88F268690D/100" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他最新的专辑-->
+    <div class="albumBar mgT20">
+      <div class="titleBar">
+        <h2 class="title">他最新的专辑</h2>
+      </div>
+      <ul>
+        <li>
+          <div class="albumPanelBar2">
+            <div class="left">
+            <a class="albumface100" href="/#/1000691/album/1843">
+              <span>
+                <img alt="老梁观世界2013" src="http://fdfs.xmcdn.com/group1/M01/06/A5/wKgDrlDnzvSBmN-YAAQOeDpd5fc674_web_meduim.jpg" data-options="defaultImg:album_100">
+              </span>
+            </a>
+            </div>
+            <div class="right">
+              <a href="/#/1000691/album/1843" title="老梁观世界2013">《老梁观世界2013》</a>
+              <span>148个声音</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>
+    
+    <script type="text/template" id="tpl_comment_box">
+    <div class="commentBox mgT10 hidden">
+        <div class="commentBox_top">
+            <a href="javascript:;" class="closeBtn" title="关闭"></a>
+            <span><%= title %></span>
+        </div>
+        <div class="commentBox_middle">
+            <div class="left">
+                <a class="userface" href="javascript:;">
+                    <img src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="commentBox_inputBox">
+                    <div class="effect_borderHover"></div>
+                    <div class="effect_borderDefault"></div>
+                    <input value="" type="text" placeholder="写点什么吧...">
+                    <textarea rows="" cols=""></textarea>
+                </div>
+                <div class="cl">
+                    <div class="fr">
+                        <span class="charCount count-tip">
+                            还剩 <em>145</em>
+                            字
+                        </span>
+                        <a href="javascript:;" class="faceBtn"></a>
+                        <a href="javascript:;" class="submitBtn">
+                            <span><%= btnText %></span>
+                        </a>
+                    </div>
+                    <span>点亮分享</span>
+                    <a href="javascript:;" class="qqWeiboBtn" title="腾讯微博" data-type="<%= shareType %>" data-name="tQQ"></a>
+                    <a href="javascript:;" class="qZoneBtn" title="QQ空间" data-type="<%= shareType %>" data-name="qzone"></a>
+                    <a href="javascript:;" class="sinaWeiboBtn" title="新浪微博" data-type="<%= shareType %>" data-name="tSina" ></a>
+                    <a href="http://www.ximalaya.com/passport/profile">配置</a>
+                </div>
+            </div>
+        </div>
+        <ul class="commentBox_commentList">
+
+        </ul>
+    </div>
+</script>
+
+
+
+    
+</div></div>
+  </div>
+</body>
+</html>

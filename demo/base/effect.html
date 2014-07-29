@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<title>特效</title>
+<style>
+.demo_title {
+	text-align: center;
+	padding: 20px;
+}
+
+.demo {
+	width: 1200px;
+	margin: 0 auto 60px;
+}
+
+.demo td {
+	padding: 10px;
+	border: solid 1px whiteSmoke;
+	position: relative;
+}
+
+tr>td:first-child {
+	width: 800px;
+}
+
+tr>td:last-child {
+	width: 60px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="demo_title">base/effect.less</div>
+	<table class="demo">
+		<tr>
+			<td>
+				<div class="commentBox">
+					<div class="commentBox_inputBox">
+						<div class="effect_borderHover"></div>
+						<div class="effect_borderDefault"></div>
+						<input value="" type="text" placeholder="写点什么吧...">
+					</div>
+				</div>
+			</td>
+			<td>
+				边框动画效果<br/>
+				必须包含特定元素 effect_borderHover effect_borderDefault
+			</td>
+			<td>.borderHoverFn();</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="width:610px;height:200px;margin:0 auto;">
+					<!-- 模块开始 -->
+					<div class="loginPanelBox">
+						<div class="loginPanel_thirdLoginPop">
+						 	<p><a class="qqLoginBtn" href="#"></a></p>
+						 	<p><a class="weiboLoginBtn" href="#"></a></p>
+						 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+						 	<div class="bud"></div>
+						 </div>
+					</div>
+					<!-- 模块结束 -->
+				</div>
+			</td>
+			<td>
+				阴影
+			</td>
+			<td>.shadow();</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="pin">
+					<a class="soundface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+				</div>
+			</td>
+			<td>
+				旋转
+			</td>
+			<td>.rotate(@deg);</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+				透明度
+			</td>
+			<td>.opacity(@val);</td>
+			<td>peter</td>
+		</tr>
+	</table>
+</body>
+</html>

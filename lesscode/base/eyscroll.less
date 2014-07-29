@@ -1,0 +1,47 @@
+.eyscroll
+{
+    overflow:hidden;
+	& .barblock
+	{
+		display: inline-block;
+		.bgImg("webim_scroll_bg.png");
+		margin:0;
+		padding:0;
+		float:left;
+		font-size:0;
+		cursor: default;
+	}
+	& .barblock-top
+	{
+		background-position: 0 0;
+		width: 7px;
+		margin-left: 2px;
+		margin-bottom: -1px;
+		height: 4px;
+		border-radius: 4px 4px 0 0;
+		overflow: hidden;
+	}
+	& .barblock-center
+	{
+		background-position: -12px 0;
+		background-repeat: repeat-y;
+		width: 11px;
+	}
+	& .barblock-bottom
+	{
+		background-position: 0 -7px;
+		border-radius: 0 0 4px 4px;
+		width: 7px;
+		height: 4px;
+		margin-left: 2px;
+		overflow: hidden;
+	}
+	& .eyscroll-bar
+	{
+		/*margin:0;
+		background:#efefef;
+		border:1px solid #fafafa;*/
+		cursor: default;
+	}
+	cursor: default;
+}

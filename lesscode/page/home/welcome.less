@@ -1,0 +1,212 @@
+//welcome未登录首页
+/*page/home/welcome*/
+//ie6提示升级栏
+.upgradePrompt{
+	background-color:#FFF05F;
+	padding:5px;
+	color:#CC0000;
+	position:relative;
+	z-index:9;
+	div{
+		width:950px;
+		margin:0 auto;
+	}
+}
+
+.welcome{
+	overflow:hidden;
+	.header .menu,.header .uploadRecordBtn,.discoverMenu,.floatHeader{
+		display:none;
+	}
+	.discoverMenu{
+		background:none;
+	}
+}
+.welcomem 
+{
+	& .menu_index
+    {
+		.hidden;
+    }
+}
+.welcome_bg{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:46px;
+	left:0;
+	z-index:2;
+	overflow:hidden;
+	img{
+		width:100%;	
+		height:auto;
+		min-width:1209px;
+		min-height:1000px;
+	}
+}
+.welcome_bd{
+	position:absolute;
+	top:9%;
+	left:50%;
+	z-index:10;
+	width:950px;
+	margin:0 auto 0 -460px;
+	.welcome_hd{
+		.bgImg("welcome/slogen.png",no-repeat);
+		//_background:none;
+        //_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../../../css/img/welcome/slogen.png");
+		width:100%;
+		height:348px;		
+	}
+	.welcome_moblie{
+		.bgImg("welcome/phone.png");
+		//_background:none;
+        //_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../../../css/img/welcome/phone.png");
+		width:408px;
+		height:670px;
+		position:absolute;
+		top:0;
+		right:0;
+		.downloadMobile{
+			.bgImg("welcome/download.png",no-repeat);
+			.btnFn(168,110,0,21,-123);
+			position:absolute;
+			top:104px;
+			right:-5px;
+			&:hover{
+				background-position:-1px -123px;
+			}
+		}
+	}
+}
+.welcome_footer{
+	.clearfix;
+	position:fixed;
+	left:50%;
+	bottom:0;
+	width:950px;
+	margin:0 auto 0 -460px;
+	color:#999;
+	.welcome_footer_cr{
+		.clearfix;
+	}
+	.footer_nav a{color:#999;}
+}
+.welcome_footer_link{
+	position: relative;
+	left: -30%;
+	width: 1500px;
+	z-index: 20;
+    word-break: break-all;
+	a{
+		color:#999;
+		margin-right:10px;
+		//white-space:nowrap;
+	}
+}
+//未登录首页的几个按钮
+.discover{
+	.bgImg("welcome/homebtn.png");
+	.btnFn(189,78,0,0,-78,-156);
+}
+.sina,.qq{
+	.bgImg("welcome/register-btn.png");
+}
+.sina{.btnFn(178,54,0,0,-54);}
+.qq{.btnFn(178,54,0,108,-162);}
+
+//登录底部
+.register-tip{	
+	bottom:0;
+	left:0;
+	z-index:99;
+	width: 100%;
+	&.fixed_bottom{
+		position:fixed;
+	}
+	.register-tip-bg{
+		height: 100%;
+		width: 100%;
+		background-color: #000;
+		opacity: .6;
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);		
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	.register-tip-con {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		_background-color: #000;
+		.digit-container {
+			color: #00c5f2;
+			padding-right: 5px;
+		}
+		.content {
+			float: left;
+			position: relative;
+			height: 32px;
+			.digit-warp {
+				float: left;
+				position: relative;
+				height: 32px;
+				width: 10px;
+			}
+			.digit {
+				position: absolute;
+				bottom: 0;
+				height: 32px;
+				line-height: 32px;
+				font-size: 16px;
+				font-weight:bold;
+				margin-left: 0px;	
+				color:#00c5f2;
+				cursor:default;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+	}
+	.register-tip-wrap {
+		height: 80px;
+		width: 950px;
+		margin: 0 auto;
+		position: relative;		
+	}
+	.register-tip-video{
+		.bgImg("welcome/video.png",no-repeat);
+		.btnFn(84,55,0,0,-65);
+		.fl;
+		margin:10px 25px 0 0;
+	}
+	.register-tip-txt {
+		font: bold 16px/2 "微软雅黑";
+		padding-top: 5px;
+		color: #FFFFFF;
+		text-align: left;
+		float: left;
+	}
+	.register-tip-panel {
+		width: 410px;
+		height: 54px;
+		float: right;
+		margin-top: 11px;
+		a{
+			margin-left:10px;
+		}
+	}
+	.register-tip-btn2{
+		.bgImg("welcome/register-btn2.png",no-repeat);
+		.btnFn(20,49,0,-49,0);
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+}

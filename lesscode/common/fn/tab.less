@@ -1,0 +1,120 @@
+//单线条tab效果
+//name {String} 类名
+//height {Number} tab高度
+//borderColor {Number} 线条颜色
+.tabFn(@height:@lineHeightLarge,@paddingLeft:10,@paddingRight:10){
+	.clearfix;
+	height: @height;
+	line-height: @height;
+	border-bottom: 1px solid @colorLine1;
+	padding:0 @paddingRight*1px 0 @paddingLeft*1px;
+	& .tab_item{
+		width: 64px;
+		height:@height;
+		margin-top: -1px;
+		border-radius: 5px 5px 0 0;
+		.fl;
+		text-align: center;
+		.linkTextFn;
+		_position: relative;
+		_top:1px;
+		color:@colorText4;
+		border:1px solid #fff;
+		border-bottom-color: #ccc;
+		:hover{
+			color:@colorText2;
+		}
+	}
+	& .tab_item.on{
+		border: 1px solid @colorLine1;
+		border-bottom: 1px solid white;		
+		color:@colorText2;
+	}
+	& .tab_title{
+		.newThingIcon;
+		font-size:@fontSizeLarge;
+		margin-right: 5px;
+		margin-top:3px;
+	}
+}
+.tab_content{
+	.hidden;
+	&.on{
+		.show;
+	}
+}
+
+.multiTabFn(@height:28){
+	height: @height - 1px;
+	line-height: @height - 1px;
+	border-bottom: 1px solid @colorLine1;
+	padding-left:10px;
+	.clearfix;
+	& .tab_item{
+		display:block;
+		cursor: pointer;
+		border: 1px solid @colorLine1;
+		border-bottom:none;
+		margin-right:20px;
+		border-radius: 4px 4px 0 0;
+		margin-top: 0px;
+		height:26px;
+		.linkTextFn();
+		.fl;
+		.bgImgExt("sprite/auto.png",-5px,-186px);
+		padding-left:14px;
+		padding-right:14px;
+		display:block;
+		&:hover{
+			.bgImgExt("sprite/auto.png",-5px,-221px);
+		}
+		&.on{
+			border-bottom: 1px solid white;	
+			background-color:#fff;
+			background-image :none;
+		}
+	}
+
+
+}
+//单线条tab效果
+//name {String} 类名
+//height {Number} tab高度
+//borderColor {Number} 线条颜色
+.tabFn1(@name,@height:@lineHeightLarge,@width:20,@paddingLeft:10,@paddingRight:10){
+	.@{name}{
+		.clearfix;
+		height: @height;
+		line-height: @height;
+		border-bottom: 1px solid @colorLine1;
+		padding:0 @paddingRight*1px 0 @paddingLeft*1px;
+		& .tab_item{
+			width: @width*1px;
+			height:@height;
+			margin-top: -1px;
+			border-radius: 5px 5px 0 0;
+			.fr;
+			text-align: center;
+			.linkTextFn;
+			_position: relative;
+			_top:1px;
+			color:@colorText4;
+			border:1px solid #fff;
+			border-bottom-color:#eaeaea;
+			:hover{
+				color:@colorText2;
+			}
+		}
+		& .tab_item.on{
+			border: 1px solid @colorLine1;
+			border-bottom: 1px solid white;		
+			color:@colorText2;
+		}
+		& .tab_title{
+			display:bolck;
+			.fl;
+			font-weight:bold;
+		}
+	}
+
+}

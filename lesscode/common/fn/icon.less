@@ -1,0 +1,27 @@
+.iconFn(@left,@top,@width,@gapIcon:@gapIconText){
+	padding-left:@width*1px + @gapIcon;
+	background-position:@left*1px @top*1px;
+}
+.iconFn(@left,@top,@width,@height,@gapIcon:@gapIconText){
+	padding-left:@width*1px + @gapIcon;
+	background-position:@left*1px @top*1px;
+	line-height:@height*1px;
+	float:left;
+}
+.icon2Fn(@width,@height,@left,@top){
+	width:@width*1px;
+	height:@height*1px;
+	display:inline-block;
+	background-position:@left*1px @top*1px;
+}
+.icon2Fn(@width,@height, @top){
+	width:@width*1px;
+	height:@height*1px;
+	display:inline-block;
+	background-position:center @top*1px;
+}
+.icon3Fn(@left,@top,@width,@gapIcon:@gapIconText){
+	padding-right:@width*1px + @gapIcon;
+	display:inline-block;
+	background-position:@left @top;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的专辑</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalAlbumTile" class="mycenter_album mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/2286/">
+                        <img src="http://fdfs.test.ximalaya.com/group1/M00/02/E3/wKgDplGMjXSARDJMAAhbzsg_flE636_common_medium.JPG">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        遇见
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/2286/">主页</a></li>
+                        <li class="nav_item"><a href="/#/2286/sound/">声音</a></li>
+                        <li class="nav_item on"><a href="/#/2286/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/2286/favorites/">喜欢</a></li>
+                        <li class="nav_item"><a href="/#/2286/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/2286/fans/">粉丝</a></li>
+                        <li class="nav_item"><a href="/#/2286/listened/">听过</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">我的专辑</span>
+                    </div>
+                    <span class="album_layout">
+                        <a class="albumLayoutIcon list " href="/#/2286/album/"></a>
+                        <a class="albumLayoutIcon tile on" href="/#/2286/album/?style=tile"></a>
+                    </span>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共有3张专辑</div>
+                    <div class="personal_list_head_operate"><a class="creatalbumBtn" href="/new_album"><span>创建专辑</span></a></div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索专辑">                      
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                    <div class="body_list_wrap">
+                        <ul class="body_list album_tile_list">
+                            <li class="item" album_id="72773">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface" href="/#/2286/album/72773">
+                                            <span>
+                                                <img alt="" src="http://static2.test.ximalaya.com/css/img/common/album_100.jpg?v=1374119390" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                        <div class="personal_operate">
+                                            <a class="personal_editBtn2" href="/edit_album/72773"></a>
+                                            <a class="personal_deleteBtn2 destroyBtn" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <div class="info title"><a href="/#/2286/album/72773">评书</a></div>
+                                    <div class="info time">更新 2013-07-08</div>
+                                    <div class="info last miniPlayer3" sound_id="118990">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/2286/sound/118990">
+                                            听海
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="72762">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface" href="/#/2286/album/72762">
+                                            <span>
+                                                <img alt="" src="http://fdfs.test.ximalaya.com/group1/M01/03/A1/wKgDplGcaOiAYjtPAATZe9J-PsQ207_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                        <div class="personal_operate">
+                                            <a class="personal_editBtn2" href="/edit_album/72762"></a>
+                                            <a class="personal_deleteBtn2 destroyBtn" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <div class="info title"><a href="/#/2286/album/72762">致青春</a></div>
+                                    <div class="info time">更新 2013-05-22</div>
+                                    <div class="info last miniPlayer3" sound_id="96003">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/2286/sound/96003">
+                                            残缺的完整
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="72331">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface" href="/#/2286/album/72331">
+                                            <span>
+                                                <img alt="" src="http://fdfs.test.ximalaya.com/group1/M00/02/CD/wKgDplGDbPKAEer5AAMI071ykBA802_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                        <div class="personal_operate">
+                                            <a class="personal_editBtn2" href="/edit_album/72331"></a>
+                                            <a class="personal_deleteBtn2 destroyBtn" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <div class="info title"><a href="/#/2286/album/72331">test</a></div>
+                                    <div class="info time">更新 2013-05-03</div>
+                                    <div class="info last miniPlayer3" sound_id="87335">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/2286/sound/87335">
+                                            15
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item creatAlbum">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface" href="/new_album"><span><em>+</em>创建专辑</span></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="pagingBar mgTB20">
+                            
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://static2.test.ximalaya.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--我关注的人-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/2286/follow/" class="more">更多</a>
+            <h2 class="title">我关注的人(75)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1381/" title="otto是">
+                <img card="1381" alt="otto是" src="http://fdfs.test.ximalaya.com/group1/M01/07/E5/wKgDplHabC-AMs7KAAGe0raZ-xY898_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12288/" title="tiny78">
+                <img card="12288" alt="tiny78" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/20/" title="四六级英语">
+                <img card="20" alt="四六级英语" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/3447/" title="tiny50">
+                <img card="3447" alt="tiny50" src="http://fdfs.test.ximalaya.com/group1/M00/07/4D/wKgD3lHWegqAVNWtAAEkUuXvcNw703_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2306/" title="传统评书">
+                <img card="2306" alt="传统评书" src="http://fdfs.test.ximalaya.com/group1/M00/04/97/wKgD3lGV1zyAPAf8AAELiQZZxVA072_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1393/" title="分组名字十_肯定拉风">
+                <img card="1393" alt="分组名字十_肯定拉风" src="http://fdfs.test.ximalaya.com/group1/M01/00/25/wKgDplDpImug6_RkAAA3fDDc2HY448_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/954/" title="有个地方没捏好_A4">
+                <img card="954" alt="有个地方没捏好_A4" src="http://tp2.sinaimg.cn/1550606913/180/5627120678/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1109/" title="feifei">
+                <img card="1109" alt="feifei" src="http://qzapp.qlogo.cn/qzapp/100261563/F1D93C202C2755A33D7AFDD03762D606/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2254/" title="tinyr_my">
+                <img card="2254" alt="tinyr_my" src="http://fdfs.test.ximalaya.com/group1/M00/05/3F/wKgDplGxoQKAcUKtAAJ2047jaSc511_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/799/" title="音乐天王">
+                <img card="799" alt="音乐天王" src="http://fdfs.test.ximalaya.com/group1/M00/00/0A/wKgD3lDSqaGRWYiQAADx4JO2eNg548_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--我的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/2286/fans/" class="more">更多</a>
+            <h2 class="title">我的粉丝(103)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/12387/" title="tiny119">
+                <img card="12387" alt="tiny119" src="http://fdfs.test.ximalaya.com/group1/M01/0A/19/wKgDplIAsBiAf_MWAAKRTMxbo3Q030_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12385/" title="sdsadSA">
+                <img card="12385" alt="sdsadSA" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12380/" title="tiny117">
+                <img card="12380" alt="tiny117" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12356/" title="xinfenlei3">
+                <img card="12356" alt="xinfenlei3" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12332/" title="tiny106">
+                <img card="12332" alt="tiny106" src="http://fdfs.test.ximalaya.com/group1/M00/09/FF/wKgDplH7hduAEEjLACJzoOP2Y0U616_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12323/" title="shiuji">
+                <img card="12323" alt="shiuji" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12320/" title="rickttt9">
+                <img card="12320" alt="rickttt9" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12307/" title="tiny98">
+                <img card="12307" alt="tiny98" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12306/" title="tiny97">
+                <img card="12306" alt="tiny97" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/12264/" title="tiny74">
+                <img card="12264" alt="tiny74" src="http://static2.test.ximalaya.com/css/img/common/default/user60.jpg?v=1374119390" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--我最新的声音-->
+
+
+
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/2286/sound/" class="more">更多</a>
+            <h2 class="title">我最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1381/sound/125280">何洁-201314</a>
+                    <span class="times">37次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/3447/sound/122038">周笔畅 - 密友</a>
+                    <span class="times">12次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/118990">听海</a>
+                    <span class="times">45次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/115496">听海</a>
+                    <span class="times">44次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/115422">听海</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96073">单田芳-薛丁山征西-042</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96071">单田芳-薛丁山征西-039</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96070">单田芳-薛丁山征西-041.com</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96069">单田芳-薛丁山征西-040</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/2286/sound/96067">单田芳-薛丁山征西-038</a>
+                    <span class="times">0次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+</div></div>
+  </div>
+</body>
+</html>

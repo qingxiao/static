@@ -1,0 +1,131 @@
+.gapT {
+  margin-top: 10px;
+}
+.gapB {
+  margin-bottom: 10px;
+}
+.gapL {
+  margin-left: 10px;
+}
+.gapR {
+  margin-right: 10px;
+}
+.gapModuleT {
+  margin-top: 20px;
+}
+.gapModuleB {
+  margin-bottom: 20px;
+}
+.gapModuleL {
+  margin-left: 20px;
+}
+.gapModuleR {
+  margin-right: 20px;
+}
+/*reset*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-text-size-adjust: none;
+}
+body {
+  font-family: Tahoma, Verdana, sans-serif, STHeiTi;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  border: 0;
+  text-align: center;
+}
+em {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+}
+body {
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;
+}
+a {
+  text-decoration: none;
+  color: #3586bc;
+  font-weight: normal;
+}
+a:hover {
+  text-decoration: underline;
+  color: #3586bc;
+}
+.link2 {
+  color: #a5c3e2;
+}
+.link2:hover {
+  text-decoration: underline;
+  color: #3586bc;
+}
+.linkTextFn {
+  color: #333333;
+  cursor: pointer;
+}
+.linkTextFn:hover {
+  text-decoration: none;
+}
+a.linkText {
+  color: #333333;
+  cursor: pointer;
+}
+a.linkText:hover {
+  text-decoration: none;
+}
+/*base*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cl {
+  *zoom: 1;
+}
+.cl:before,
+.cl:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.cl:after {
+  clear: both;
+}

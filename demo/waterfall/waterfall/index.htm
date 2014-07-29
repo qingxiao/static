@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="img/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/touch-icon-iphone4.png" />
+		<title>“喜玛拉雅 听我想听”移动版</title>
+		<style>
+		html{ -webkit-text-size-adjust:none; }
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{ margin:0; padding:0; }
+body { font-size: 12px; color: #9A9A9A; font-family: Verdana, Geneva, sans-serif; text-transform:none; background-color:#EFF3F4; /*background: #EFF3F4 url(img/bg.jpg) repeat-x; */ position:relative; }
+img{ border:0; text-align: center; }
+em{ font-style:normal; }
+li{ list-style-image: none; list-style-type: none; }
+		
+		
+			.colorless, .colorless a {
+			    color: #8C7E7E;
+			}
+			p {
+			    line-height: 1.35em;
+			    margin: 0 0 0.8em;
+			}
+			.clearfix:after {
+			    clear: both;
+			    content: " ";
+			    display: block;
+			    height: 0;
+			    visibility: hidden;
+			}
+			.waterfall-wrapper{
+				min-width:933px;
+				margin: 0 auto;
+    			position: relative;
+    			background:#eee;
+			}
+			.waterfall-container{
+				min-height:500px;
+				position:relative;
+			}
+			.waterfall-pin {
+			    background-color: #fff;
+			    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+			    font-size: 11px;
+			    padding: 15px 15px 0;
+			    position: absolute;
+			    width: 192px;
+			}
+			.waterfall-pin .description{
+				margin: 10px 0 5px;
+    			overflow: hidden;
+    			word-wrap: break-word;
+			}
+			.waterfall-pin .stats{
+				overflow: hidden;
+			}
+			.waterfall-pin .attribution {
+			    color: #AD9C9C;
+			    margin-top: 10px;
+			}
+			.waterfall-pin .convo {
+			    background-color: #F2F0F0;
+			    margin: 0 -15px;
+			    padding: 10px 15px;
+			}
+			.waterfall-loading{
+				height:46px;
+				line-height:46px;
+				text-align: center;
+				display:none;
+			    background-color: #fff;
+			    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+			}
+			.PinHolder{
+				text-align: center;
+				overflow:hidden;
+				width:192px;
+			}
+			.convo img {
+			    float: left;
+			    margin-right: 6px;
+			    width: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div class="waterfall-wrapper">
+		<div class="waterfall-container">
+			<!-- 
+			<div class="waterfall-pin">
+				<div class="PinHolder">      
+					<img style="height: 251px;" class="PinImageImg" data-componenttype="MODAL_PIN" alt="chunky oversized sweater - fall outfit" src="http://media-cache-ec2.waterfall-pinterest.com/upload/252272016598092309_8pW8v4aJ_b.jpg">  
+				</div>
+				<p class="description">chunky oversized sweater - fall outfit</p>
+				<p class="stats colorless">
+					<span class="LikesCount">84 likes</span>
+					<span class="CommentsCount hidden"></span>
+        			<span class="Rewaterfall-pinsCount">254 pins</span>
+        		</p>
+				<div class="convo attribution clearfix">
+			         <img alt="Profile picture of Grace Reed" src="http://media-cache-ec5.pinterest.com/avatars/gracereed_1348458110.jpg">
+			        <p class="NoImage">
+			           <a data-elementtype="PIN_USER" href="/gracereed/">Grace Reed</a> via <a data-elementtype="PIN_REPIN_USER" href="/hannahlouisec/">Hannah Chiasson</a> onto <a data-elementtype="PIN_BOARD_PIN" href="/gracereed/things-that-give-me-a-reality-check-when-i-open-my/">things that give me a reality check when I open my real closet...</a>
+			        </p>
+			    </div>
+			</div>
+			 -->
+		</div>
+		<div class="waterfall-loading">加载中，请稍候...</div>
+	</div>
+		<script>
+		    var config = {
+		        WEB_STATIC_PATH: "http://www.ximalaya.com",
+		        STATIC_PATH: "http://192.168.3.107:8080/player",
+		        FDFS_PATH: "http://fdfs.xmcdn.com",
+		        TIME_GAP: 0
+		    };
+		</script>
+		<script src="js/plugin/waterfall/data.js"></script>
+		<script data-main="js/main" src="js/lib/require.js"></script>
+	</body>
+</html>

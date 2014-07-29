@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ta的专辑</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div id="personalAlbum" class="mgT30">
+    <div class="mainbox_left">
+        <div class="personal_container">
+            <div class="personal_header">
+                <div class="picture">
+                    <a href="/#/1000265/">
+                        <img src="http://fdfs.xmcdn.com/group1/M00/00/2E/wKgDrVCIoM3Sa9SCAAQJstX27gg351_common_medium.jpg">
+                    </a>
+                </div>
+                <div class="nav_wrap">
+                    <div class="username">
+                        单田芳评书
+                        <i class="VIcon">&nbsp;</i>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/#/1000265/">主页</a></li>
+                        <li class="nav_item"><a href="/#/1000265/sound/">声音</a></li>
+                        <li class="nav_item on"><a href="/#/1000265/album/">专辑</a></li>
+                        <li class="nav_item"><a href="/#/1000265/favorites/">喜欢</a></li>
+                        <li class="nav_item"><a href="/#/1000265/follow/">关注</a></li>
+                        <li class="nav_item"><a href="/#/1000265/fans/">粉丝</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="personal_body">
+                <div class="body_top">
+                    <div class="left">
+                        <span class="title">单田芳评书的专辑</span>
+                    </div>
+                    <span class="album_layout">
+                        <a class="albumLayoutIcon list " href="/#/1000265/album/"></a>
+                        <a class="albumLayoutIcon tile on" href="/#/1000265/album/?style=tile"></a>
+                    </span>
+                    <div class="right">
+                        <ul class="sub_nav_list">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="personal_list_head">
+                    <div class="left">共有20张专辑</div>
+                    <div class="searchPanel2 right">
+                        <input class="search_input" type="text" value="" name="" autocomplete="off" placeholder="搜索专辑">                      
+                        <span class="search_btn"></span>
+                    </div>
+                </div>
+
+                    <div class="body_list_wrap">
+                        <ul class="body_list album_tile_list">
+                            <li class="item" album_id="15760">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/15760">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group2/M00/19/C8/wKgDr1GyxIXQ-YK1AAA45y9FpRo071_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/15760">三侠剑第二辑（201-400集）</a>》</div>
+                                    <div class="info time">更新 2013-06-08</div>
+                                    <div class="info last miniPlayer3" sound_id="450401">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/450401">
+                                            三侠剑 第400集
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="15759">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/15759">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group2/M01/19/C6/wKgDsFGyxFOQFqiqAAA45y9FpRo193_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/15759">三侠剑第一辑（1-200集）</a>》</div>
+                                    <div class="info time">更新 2013-06-08</div>
+                                    <div class="info last miniPlayer3" sound_id="450117">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/450117">
+                                            三侠剑 第199集
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="15758">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/15758">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group2/M00/19/C5/wKgDsFGyw9axz6zWAAA609CAazk940_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/15758">水浒全传（下）</a>》</div>
+                                    <div class="info time">更新 2013-06-08</div>
+                                    <div class="info last miniPlayer3" sound_id="449841">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/449841">
+                                            水浒全传(下) 第180集
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="15757">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/15757">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group2/M00/19/C8/wKgDr1Gyw2jxo-qxAABTD0I9DFo140_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/15757">古今奇案</a>》</div>
+                                    <div class="info time">更新 2013-06-08</div>
+                                    <div class="info last miniPlayer3" sound_id="449552">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/449552">
+                                            古今奇案 第60集
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3823">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3823">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M00/12/C1/wKgDrlFSl1aDx6Y7AAFr4aUKmrg138_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3823">三侠五义</a>》</div>
+                                    <div class="info time">更新 2013-04-09</div>
+                                    <div class="info last miniPlayer3" sound_id="263572">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/263572">
+                                            单田芳_三侠五义_123
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3820">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3820">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M01/12/C1/wKgDrlFSlCWhDmiXAAGUc9DBrEo731_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3820">乱世枭雄</a>》</div>
+                                    <div class="info time">更新 2013-04-09</div>
+                                    <div class="info last miniPlayer3" sound_id="263606">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/263606">
+                                            乱世枭雄161
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3544">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3544">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M00/11/1A/wKgDrVFIDM7xkbcFAAKzQJQ8uQ0869_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3544">大明演义</a>》</div>
+                                    <div class="info time">更新 2013-04-09</div>
+                                    <div class="info last miniPlayer3" sound_id="263591">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/263591">
+                                            单田芳_大明演义_291
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3324">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3324">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M00/0F/CA/wKgDrlE--pHBaZGcAAIVFFbb4D8921_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3324">水浒全传(上)</a>》</div>
+                                    <div class="info time">更新 2013-03-18</div>
+                                    <div class="info last miniPlayer3" sound_id="221310">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/221310">
+                                            水浒全传(上)_148
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3283">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3283">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M00/0F/90/wKgDrlE9SBWjV8nIAAJ8B-mnQ-Q128_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3283">辛亥风云录</a>》</div>
+                                    <div class="info time">更新 2013-03-18</div>
+                                    <div class="info last miniPlayer3" sound_id="221296">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/221296">
+                                            辛亥风云录_150
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" album_id="3210">
+                                <div class="content_wrap">
+                                    <div class="picture">
+                                        <a class="albumface100" href="/#/1000265/album/3210">
+                                            <span>
+                                                <img alt="" src="http://fdfs.xmcdn.com/group1/M00/0E/EC/wKgDrlE4Bm2TxyDoAAIdiwN2Gk8985_web_meduim.jpg" data-options="defaultImg:album_100">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="info title">《<a href="/#/1000265/album/3210">童林传</a>》</div>
+                                    <div class="info time">更新 2013-03-07</div>
+                                    <div class="info last miniPlayer3" sound_id="207649">
+                                        <a href="javascript:;" class="playBtn"></a>
+                                        <a class="text" href="/#/1000265/sound/207649">
+                                            童林传_300
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="pagingBar mgTB20">
+                              <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/1000265/album?page=2&amp;style=tile" rel="next">2</a>
+
+
+    <a class="pagingBar_btn" href="/#/1000265/album?page=2&amp;style=tile" rel="next">下一页</a>
+
+  </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox_right">
+    <div class="ad1">
+        <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+    </div>
+    
+
+    <!--他关注的人-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000265/follow/" class="more">更多</a>
+            <h2 class="title">他关注的人(24)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/1000140/" title="中国好声音">
+                <img card="1000140" alt="中国好声音" src="http://fdfs.xmcdn.com/group2/M02/1E/58/wKgDr1HBJXqDk2wzAAR63mmNBSY331_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000242/" title="军情解码">
+                <img card="1000242" alt="军情解码" src="http://fdfs.xmcdn.com/group1/M00/00/88/wKgDrVCPZdfBPvxIAADhBFB7o4o091_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000583/" title="全球好声音精选集">
+                <img card="1000583" alt="全球好声音精选集" src="http://fdfs.xmcdn.com/group1/M01/00/27/wKgDrVCHUnLTZUTHAAEHD6ods-I941_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000248/" title="海峡新干线">
+                <img card="1000248" alt="海峡新干线" src="http://fdfs.xmcdn.com/group1/M01/00/12/wKgDrlCGUsqiUQvxAAG5ELOfXJA367_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000338/" title="凡人修仙传">
+                <img card="1000338" alt="凡人修仙传" src="http://fdfs.xmcdn.com/group1/M01/00/17/wKgDrlCGXVKSvujsAAESqq-bZkc361_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000251/" title="谁在说">
+                <img card="1000251" alt="谁在说" src="http://fdfs.xmcdn.com/group1/M00/00/13/wKgDrlCGU1zzbZx8AAGcQ223TLs309_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000484/" title="莫言小说">
+                <img card="1000484" alt="莫言小说" src="http://fdfs.xmcdn.com/group1/M00/00/CF/wKgDrlCSG3fAxQA5AAQSGfz70Cg086_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000483/" title="甄嬛传">
+                <img card="1000483" alt="甄嬛传" src="http://fdfs.xmcdn.com/group1/M00/00/CE/wKgDrlCSD6ixzkt_AAcHyfcBw5Y834_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000223/" title="说天下">
+                <img card="1000223" alt="说天下" src="http://fdfs.xmcdn.com/group1/M00/00/2D/wKgDrVCHr0iztkyBAALo53DUwR0118_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1000160/" title="全球流行音乐金榜">
+                <img card="1000160" alt="全球流行音乐金榜" src="http://fdfs.xmcdn.com/group1/M01/00/23/wKgDrVCGezbzRBU_AAGr-Wp9b-0665_common_medium.jpg" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他的粉丝-->
+    <div class="fansBar mgT20">
+        <div class="titleBar">
+            <a href="/#/1000265/fans/" class="more">更多</a>
+            <h2 class="title">他的粉丝(15008)</h2>
+        </div>
+        <div class="fans_content">
+            <a href="/#/2627864/" title="面包树gigi">
+                <img card="2627864" alt="面包树gigi" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627734/" title="无聊的小土豆">
+                <img card="2627734" alt="无聊的小土豆" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627708/" title="高高ylzs">
+                <img card="2627708" alt="高高ylzs" src="http://tp3.sinaimg.cn/1238130390/180/5630410797/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627674/" title="mkkp">
+                <img card="2627674" alt="mkkp" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627538/" title="beloved于妍">
+                <img card="2627538" alt="beloved于妍" src="http://tp4.sinaimg.cn/1788259191/180/5666683863/0" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627545/" title="anyna">
+                <img card="2627545" alt="anyna" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627477/" title="HnGxwFEn833fxXu4BBh3">
+                <img card="2627477" alt="HnGxwFEn833fxXu4BBh3" src="http://qzapp.qlogo.cn/qzapp/100261563/BDEDF3570ACC540C0780B355BE26EEE7/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/1316306/" title="以_为友">
+                <img card="1316306" alt="以_为友" src="http://tp1.sinaimg.cn/1781097160/180/22833488196/1" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627326/" title="qie_yT">
+                <img card="2627326" alt="qie_yT" src="http://qzapp.qlogo.cn/qzapp/100261563/145CA58E5B69A3A168EACB8201E7B215/100" data-options="defaultImg:person_60">
+            </a>
+            <a href="/#/2627235/" title="gaudi_yeque">
+                <img card="2627235" alt="gaudi_yeque" src="http://tp4.sinaimg.cn/1242635055/180/1293334356/0" data-options="defaultImg:person_60">
+            </a>
+        </div>
+    </div>
+
+    <!--他最新的声音-->
+    <div class="soundBar mgT30">
+        <div class="titleBar">
+            <a href="/#/1000265/sound/" class="more">更多</a>
+            <h2 class="title">他最新的声音</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450401">三侠剑 第400集</a>
+                    <span class="times">649次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450400">三侠剑 第399集</a>
+                    <span class="times">275次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450399">三侠剑 第398集</a>
+                    <span class="times">273次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450398">三侠剑 第397集</a>
+                    <span class="times">437次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450391">三侠剑 第390集</a>
+                    <span class="times">115次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450395">三侠剑 第394集</a>
+                    <span class="times">104次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450394">三侠剑 第393集</a>
+                    <span class="times">104次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450390">三侠剑 第389集</a>
+                    <span class="times">126次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450387">三侠剑 第386集</a>
+                    <span class="times">124次</span>
+                </div>
+            </li>
+            <li>
+                <div class="soundPanelBar3">
+                    <a class="title" href="/#/1000265/sound/450389">三侠剑 第388集</a>
+                    <span class="times">102次</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div></div>
+  </div>
+</body>
+</html>

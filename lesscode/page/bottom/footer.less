@@ -1,0 +1,58 @@
+/*底部*/
+.footer_wrap{
+	width:950px;
+	margin:15px auto 0 auto;
+	position: relative;
+	& .footer_nav{
+		& a{
+			border-right:1px solid @colorLine1;
+			padding-right:10px;
+			margin-right:10px;
+		}
+		& .last{
+			border-right:none;
+		}
+	}
+	& .footer_contact{
+		margin:15px 0 10px 0;
+		color:@colorText3;
+		& a{
+			.bgImgExt("sprite/icon_default.png",0,-140px);
+			padding-left: 30px;
+			height: 20px;
+			line-height:20px;
+			display: inline-block;
+		}
+	}
+	& .footer_app{
+		position: absolute;
+		top: 0;
+		right: 0;
+		& a{
+			display:inline-block;
+			width:125px;
+			height:36px;
+		}
+		& .app_android{
+			.bgImgExt("sprite/btn_linkdownload.png",0,0);
+		}
+		& .app_iphone{
+			.bgImgExt("sprite/btn_linkdownload.png",0,-37px);
+		}
+	}
+	& .footer_copyright{
+		color:@colorText4;
+		& a{
+			color:@colorText4;
+		}
+	}
+	& .footer_attention{
+		position:absolute;
+		bottom:0;
+		right:0;
+		color:@colorText4;
+		& a{
+			margin-right:5px;
+		}
+	}
+}

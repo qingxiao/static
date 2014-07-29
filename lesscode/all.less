@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "base/all.less";	//常数定义,样式重置,基本样式类,布局,特效
+@import "page/all.less";	//页面集合
+@import "content_big/all.less";	//能具体表达完整业务内容的模块集合
+@import "content/all.less";	//能具体表达完整业务内容的模块集合
+@import "common/all.less";	//不能具体表达完整业务内容的模块集合
+
+
+//模块间的关系要尽量弱:
+//1.模块的布局信息写着单独布局辅助模块中。如position,margin,z-index,opacity,top,left,bottom,right
+//2.模块的布局由父模块，或者page决定。如position,margin,z-index,opacity,top,left,bottom,right等不应该出现在模块定义中。
+//3.子容器应该尽量做到宽度自适应,高度自适应。
+
+
+//词汇
+//这些词汇已经被占用，不能用来自定义模块名
+//为了方面重用一些结构，这些词汇将和特定模块组合适应，不能单独使用
+//right		base/fn/layout.less
+//left		base/fn/layout.less
+//listItem	common/fn/list.less

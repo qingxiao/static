@@ -1,0 +1,17 @@
+<html>
+<body>
+	<script type="text/javascript">
+		document.write("Circular references between JavaScript and DOM!");
+		var obj;
+		window.onload = function() {
+			obj = document.getElementById("DivElement");
+			document.getElementById("DivElement").expandoProperty = obj;
+			obj.bigString1 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString2 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString3 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj = null;
+		};
+	</script>
+	<div id="DivElement">IE8, firefox</div>
+</body>
+</html>

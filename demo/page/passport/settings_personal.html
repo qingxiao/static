@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/web.css" media="all"/>
+</head>
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+	<div class="floatHeader_wrapper">
+		<!-- 浮动头部-->
+		<div class="grobalPlayer">
+			<div class="controlPanel">
+				<div class="progressBar">
+					<div class="playBar"></div>
+				</div>
+				<div class="cover"></div>
+				<div class="controls">
+					<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+					<a class="playBtn"><span class="disabled"></span></a>
+					<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+				</div>
+			</div>
+			<a class="forwordBtn" title="转采"></a>
+			<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+		</div>
+		<div class="searchPanel">
+			<!-- 搜索类型-->
+			<div class="type">
+				<a href="javascript:;" class="selected">声音</a>
+				<div class="options">
+					<a data-scope="voice" href="javascript:;" class="on">声音</a>
+					<a data-scope="user" href="javascript:;">人</a>
+					<a data-scope="album" href="javascript:;">专辑</a>
+					<!--<a data-scope="tag" href="javascript:;">标签</a>-->
+				</div>
+			</div>
+			<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+			<!-- focus状态 is-searchBtn-focus -->
+			<a class="searchBtn"></a>
+			<!-- 以下部分由js模块来生成 start -->
+			<!-- 搜索结果-->
+			<ul class="results hidden">
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>好声音</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title"><em>中国</em>达人秀</a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_sound">
+						<a href="#" class="title">法制<em>中国</em></a>
+						<a class="playBtn">play</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_user">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+								<a class="vBtn"></a> 
+							</p>
+							<p>
+								<span class="sign">中国好声音学员...</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="results is-results-needGap hidden">
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="searchPanel_album">
+						<div class="left">
+							<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+						</div>
+						<div class="right">
+							<p>
+								<a href="#" class="title"><em>中国</em>好声音</a>
+							</p>
+							<p>
+								<span class="soundCount">12个声音</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 以下部分由js模块来生成 end -->
+		  </div>
+		<div class="loginPanelBox">
+			<div class="bgVLineL"></div>
+			<div class="loginPanel">
+				<!-- 登陆状态下  -->
+				<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+				<a class="goHomeBtn" href="#"></a>
+				<!-- 当有消息时使用getNewMsgBtn -->
+				<a class="getNewMsgBtn" href="#"></a>
+				<!-- 登陆未状态下  -->
+				<!-- 
+				<a class="loginBtn" href="#"></a>
+				<a class="registerBtn" href="#">注册</a>
+				 -->
+				 <!-- 账号 -->
+				 <div class="loginPanel_accountPop hidden">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">个人设置</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <div class="loginPanel_MsgPop hidden">
+					<ul>
+						<li><a href="#">系统通知</a></li>
+						<li><a href="#">我的粉丝</a></li>
+						<li><a href="#">@我的</a></li>
+						<li><a href="#">评论</a></li>
+						<li><a href="#">通知</a></li>
+					</ul>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 第三方账号登录 -->
+				 <div class="loginPanel_thirdLoginPop hidden">
+					<p><a class="qqLoginBtn" href="#"></a></p>
+					<p><a class="weiboLoginBtn" href="#"></a></p>
+					<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					<div class="bud"></div>
+				 </div>
+				 <!-- 本地账号登录 -->
+				 <div class="loginPanel_loginPop hidden">
+					<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					<a class="submitBtn"></a>
+					<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					<div class="bud"></div>
+				 </div>
+			</div>
+		</div>
+		<div class="volumePanelBox">
+			<div class="bgVLineL"></div>
+			<div class="volumePanel">
+				<a class="volumePanel_muteBtn"></a>
+				<div class="volumePanel_volumebar">
+					<div class="volumePanel_cover"></div>
+					<a class="volumePanel_seekBtn"></a>
+				</div>
+				<div class="volumePanel_mark"></div>
+			</div>
+			<div class="bgVLineR"></div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<div class="bodyBgColor">
+<div class="mainbox">
+	<div class="mainbox_wrapper">
+		<div class="set_container">
+			<div class="set_header">账号设置</div>
+			<div class="set_left">
+				<div class="set_useravatar">
+					<a class="userface" href="#"><img alt="" src="/css/img/person_60.jpg"></a>
+				</div>
+				<ul class="set_nav">
+					<li class="on"><a href="javascript:;">个人设置</a></li>
+					<li><a href="javascript:;">消息设置</a></li>
+					<li>
+						<a href="javascript:;">隐私设置</a>
+						<ul class="set_nav sortlist-expand">
+							<li class="on"><a href="javascript:;">通用</a></li>
+							<li><a href="javascript:;">黑名单</a></li>
+						</ul>
+					</li>					
+					<li><a href="javascript:;">头像设置</a></li>
+					<li><a href="javascript:;">同步设置</a></li>
+				</ul>
+
+			</div>
+			<div class="set_right">
+                <form>
+				<div class="set_title">基本信息</div>
+				<div class="set_personal">
+					<div class="set_unverifymail">
+						<span  class="set_unverifymail_title">您的邮箱尚未通过验证</span>
+						<a id="email_activate" href="http://email.google.com" target="_blank">点此验证</a>
+						<a class="resendmailBtn" id="resendMail">重发验证邮件</a>
+						<a class="resendmailBtn already" id="resendMailAlready" style="display:none;">邮件已发送(60)</a>
+					</div>
+					<div class="set_Inner">
+						<div class="set_personal_title is-vip">认证头衔&nbsp;&nbsp;<a title="申请加V" class="applyVIcon">&nbsp;</a><span class="BVIcon">&nbsp;</span></div>
+						<dl class="set_dl">
+							<dt>您的账号</dt>
+							<dd>账号</dd>
+							<dd><a id="changePwd">修改密码</a></dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>常用邮箱</dt>
+							<dd id="email_show">邮箱地址</dd>
+                            <dd><a id="email_bind" title="绑定邮箱" href="javascript:;">绑定邮箱</a></dd>
+						</dl>
+						<dl class="set_dl set_align">
+							<dt>昵称</dt>
+							<dd>
+                                <span  id="nickname_show">用户昵称</span>
+                                <input class="hidden" type="text" id="nickname" name="nickname" value="用户昵称"/>
+								<div class="error">该昵称已有人使用</div>
+								<div class="correct"></div>
+                            </dd>
+							<dd><a id="changeNickname">修改</a></dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>所在地</dt>
+							<dd>
+                                <input id="province" type="hidden" value="" name="province">
+                                <input id="city" type="hidden" autocomplete="off" value="" name="city">
+                                <a id="changeCity">上海 • 浦东新区</a>
+                            </dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>关于自己</dt>
+							<dd>
+								<textarea name="personalSignature" placeholder="现在就介绍一下自己最明显的特点，让人们记住我。" id="personalSignature"></textarea>
+								<div class="error">不能超过70个字</div>
+								<div class="correct"></div>
+							</dd>
+						</dl>
+					</div>
+					<div class="set_Inner">
+						<div class="personal_verify unverify_mail">
+							<div class="personal_verify_title">邮箱验证</div>
+							<div class="personal_verify_status">未验证！</div>
+							<div><a id="email_activate2">验证</a><span class="bd">|</span><a id="resendMail2">重新发送</a></div>
+						</div>
+						<div class="personal_verify verify_mail">
+							<div class="personal_verify_title">邮箱验证</div>
+							<div class="personal_verify_status2">已验证</div>
+						</div>
+						<div class="personal_verify unverify_mobile">
+							<div class="personal_verify_title">绑定手机</div>
+							<div class="personal_verify_status">未绑定！</div>
+							<div><a id="phone_bind">绑定手机</a></div>
+						</div>
+						<div class="personal_verify verify_mobile">
+							<div class="personal_verify_title">绑定手机</div>
+							<div class="personal_verify_status2">已验证</div>
+						</div>
+						<div class="personal_verify unverify_vip hidden">
+							<div class="personal_verify_title">加V认证</div>
+							<div class="personal_verify_status">未认证！</div>
+							<div><a>认证</a></div>
+						</div>
+						<div class="personal_verify verify_vip">
+							<div class="personal_verify_title">加V认证</div>
+							<div class="personal_verify_status2">已认证</div>
+						</div>
+					</div>
+					<div class="set_Inner">
+						<dl class="set_dl">
+							<dt>真实姓名</dt>
+							<dd><input type="text" name="realName" id="realName"></input></dd>
+							<dd>
+								<span class="set_hint">您的真实姓名将会被保密</span>
+								<div class="error">请填写真实姓名</div>
+								<div class="correct"></div>
+							</dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>生日</dt>
+							<dd>
+								<select class="set_select"  name="birthYear" id="birth_year"><option value="-1" selected="selected">----</option></select><label>年</label>
+								<select class="set_select"  name="birthMonth" id="birth_month"><option value="-1" selected="selected">--</option></select><label>月</label>
+								<select class="set_select" name="birthDay" id="birth_day"><option value="-1" selected="selected">--</option></select><label>日</label>
+							</dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>星座</dt>
+							<dd><select class="set_select" id="constellation"></select></dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>性别</dt>
+							<dd>
+								<input type="radio" class="set_radio" value="男" name="gender" id="_1"></input>
+								<label for="_1">男</label>
+								<input type="radio" class="set_radio" value="女" name="gender" id="_2"></input>
+								<label for="_2">女</label>
+								<input type="radio" class="set_radio" value="保密" name="gender" id="_3"></input>
+								<label for="_3">保密</label>
+							</dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>新浪微博地址</dt>
+							<dd><input type="text"></input></dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>腾讯微博地址</dt>
+							<dd><input type="text"></input></dd>
+						</dl>
+						<dl class="set_dl">
+							<dt>微信号</dt>
+							<dd><input type="text"></input></dd>
+						</dl>
+					</div>
+					<div class="set_operate">
+						<a class="confirmBtn" id="confirmBtn">保存设置</a>
+					</div>
+				</div>
+                </form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    var current_user = {
+        'uid': 1381,
+        'nickname': 'JI1LHxMtIEsR9TIdV2Cq',
+        'logoPic': 'http://fdfs.test.ximalaya.com/group1/M00/00/31/wKgD3lDvpcWBU2mGAAAZ6ku-ua0754.jpg',
+        'isVerified': false,
+        'province': '',
+        'city': '',
+        'personalSignature': '',
+        'ptitle': '',
+        'guidePlayPanel': true,
+        'guideVoicePanel': false,
+        'guideSharePanel': true
+    };
+    var config = {
+        STATIC_ROOT:"http://static2.test.ximalaya.com",
+        STATIC_PATH:"http://192.168.3.43:9092",
+        FDFS_PATH:"http://fdfs.test.ximalaya.com",
+        LOGIN_PATH:"http://test.ximalaya.com/passport/login",
+        DIRECT_DTRES_ROOT: "http://upload.test.ximalaya.com/dtres",
+        TRANSCODING_ROOT: "http://test.ximalaya.com/dtres/transcoding/process",
+        UPLOAD_ROOT: "http://upload.test.ximalaya.com/dtres",
+        CURRENT_USER: current_user,
+        SUGGEST_URL:"http://test.ximalaya.com/s/search/suggest",
+        WARNING_SEQ: "10",
+        PLAYER_PATH: "http://static2.test.ximalaya.com/js/player_test.swf?v=1365657042",
+        SERVER_TIME: "1367117946372",
+        TOKEN_LABEL: "4&_token",
+        REMEMBERME_LABEL: "4&remember_me",
+        ASSETS_VERSION: "1365657042"
+    };
+    config.TIME_GAP = new Date().getTime() - config.SERVER_TIME;
+</script>
+<script src="http://static2.test.ximalaya.com/js/lib/require.js?v=1365657042"></script>
+<script src="http://static2.test.ximalaya.com/js/main.js?v=1365657042"></script>
+<script>
+     require(["page/setting/personal"], function(page){
+          page.init();
+     });
+
+</script>
+</html>

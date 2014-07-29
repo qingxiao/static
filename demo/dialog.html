@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset=utf-8 />
+<head>
+    <meta charset=utf-8/>
+
+    <title>dialog</title>
+    <link type="text/css" rel="stylesheet" href="http://static.test.ximalaya.com/1358997715/common_home_content.css"/>
+    <style type="text/css">
+            #bdshare_s{display:none;}
+    </style>
+</head>
+<body>
+<input type="button" value="创建新专辑" id="createAlbum"/>
+<input type="button" value="提示框" id="success"/>
+<input type="button" value="warn" id="warn"/>
+<input type="button" value="alert" id="alert"/>
+<input type="button" value="alert1" id="alert1"/>
+<input type="button" value="confirm" id="confirm"/>
+<input type="button" value="login" id="login"/>
+<input type="button" value="comment" id="comment"/>
+<input type="button" value="uploadImage" id="uploadImage"/>
+<input type="button" value="share" id="share"/>
+<input type="button" value="confirm_share" id="confirm_share"/>
+<input type="button" value="applyDeal" id="applyDeal"/>
+<input type="button" value="copyright" id="copyright"/>
+<input type="button" value="iframe" id="iframe"/>
+<input type="button" value="download" id="download"/>
+<input type="button" value="imageSlider" id="imageSlider"/>
+
+<div id="stopPropagation"><a href="http://baidu.com">阻止冒泡</a></div>
+<div id="main_box">main_box</div>
+
+
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" data="{
+		'bdDes':'您的自定义分享摘要',
+		'text':'您的自定义分享内容123',
+		'title':'您的自定义pop窗口标题',
+		'pic':'您的自定义分享出去的图片',
+		'bdComment':'您的自定义分享评论',
+		'url':'您的自定义分享url'
+		'wbuid':'您的自定义微博 ID'
+	}">
+    <a class="bds_qzone"></a>
+    <a class="bds_tsina"></a>
+    <a class="bds_tqq"></a>
+    <a class="bds_renren"></a>
+    <span class="bds_more">更多</span>
+</div>
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" data="{
+		'bdDes':'您的自定义分享摘要',
+		'text':'您的自定义分享内容123445',
+		'title':'您的自定义pop窗口标题',
+		'pic':'您的自定义分享出去的图片',
+		'bdComment':'您的自定义分享评论',
+		'url':'您的自定义分享url'
+		'wbuid':'您的自定义微博 ID'
+	}">
+    <a class="bds_qzone"></a>
+    <a class="bds_tsina"></a>
+    <a class="bds_tqq"></a>
+    <a class="bds_renren"></a>
+    <span class="bds_more">更多</span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&mini=1" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    /**
+     * 在这里定义bds_config
+     */
+    var bds_config = {};
+
+    document.getElementById('bdshell_js').src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+ <textarea action="">
+<div>asdfsdfsdfdsf```<div></did safsdfsdfsdfsdf</div>
+    <div>324234</div>
+ </textarea>
+</body>
+
+<script type="text/javascript">
+    var config = {
+        STATIC_PATH:"http://local.ximalaya.com:9090/static2"
+    };
+</script>
+<script src="http://static.test.ximalaya.com/js/require.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: config.STATIC_PATH+'/js/lib',
+        shim: {
+            'jquery_ujs':{
+                deps:['jquery']
+            },
+            'jrecorder':{
+                deps: ['jquery'],
+                exports: 'jQuery.jRecorder'
+            },
+            'belatedpng':{
+                exports:'DD_belatedPNG'
+            },
+            'plugin/mailautocomplete':{
+                deps:['jquery']
+            }
+        },
+        paths: {
+            model: '../model',
+            page: '../page',
+            module: '../module',
+            plugin:'../plugin'
+        },
+        urlArgs:""
+    });
+
+    var myDebug = function () {
+        if (window.console) console.info(arguments);
+    };
+    config = {CURRENT_USER:{uid:132}};
+    require(["jquery", 'plugin/dialog', "module/dialogs/imageslider"], function ($,  dialog,imageslider) {
+
+        setTimeout(function(){
+            $("body").append('<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" data="' +
+                    "{'text':'后来加的'} "+
+                    '"> ' +
+                    ' <span class="bds_more"></span>' +
+                    '</div>');
+            bdShare.fn.init();
+        }, 1000);
+
+        $("#createAlbum").click(function () {
+            dialog.createAlbum();
+        });
+        $("#success").click(function () {
+            dialog.success("asdfasdfasdfasf");
+        });
+        $("#warn").click(function () {
+            dialog.warn("asfas");
+        });
+        $("#alert").click(function () {
+            dialog.alert("这是alert");
+        });
+
+        $("#alert1").click(function () {
+            dialog.alert("这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert这是alert");
+        });
+
+        $("#confirm").click(function () {
+            dialog.confirm("你确定么");
+        });
+
+        $("#login").click(function () {
+            login_box.open(function (data) {
+                myDebug(data);
+                login_box.getEl().find("form").attr({action:window.location.href, method:"post"}).submit();
+
+                login_box.close();
+            });
+        });
+        $("#comment").click(function () {
+            dialog.comment();
+        });
+        $("#uploadImage").click(function () {
+            dialog.uploadImage();
+        });
+        $("#share").click(function () {
+            dialog.share("23877");
+        });
+        $("#stopPropagation").click(function () {
+            return false;
+        });
+        $("#applyDeal").click(function () {
+            dialog.applyDeal();
+        });
+
+        $("#copyright").click(function () {
+            dialog.copyright();
+        });
+        $("#confirm_share").click(function () {
+            dialog.confirm_share();
+        });
+
+        function openiframe() {
+            var body_str =
+                    "<iframe frameborder='0' src='http://baidu.com' marginheight='0' marginwidth='0' width='100%' scrolling='auto' style='background:#fff;border:none;'></iframe>";
+            var op = {
+                content:body_str,
+                iframe:true,
+                width:900,
+                height:800
+            };
+
+            var pop = new dialog.Dialog(op);
+            pop.open();
+            return pop;
+        }
+        $("#imageSlider").click(function(){
+            imageslider.open();
+        });
+
+
+    $("#iframe").click(function () {
+        openiframe();
+    });
+    });
+
+</script>
+
+</html>

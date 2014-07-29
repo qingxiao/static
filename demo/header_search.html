@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset=utf-8 />
+    <title>喜马拉雅-听我想听</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="http://static.test.ximalaya.com/1358997715/common_home_content.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        (function(){
+            var mobile_host = "http://m.test.ximalaya.com";
+            if(!mobile_host){
+                return;
+            }
+            var userAgent = navigator.userAgent,
+                    redirect = false;
+
+            //判断设备
+            if(/(mobile|wap|ipod|android)/i.test(userAgent)){
+
+            }else{
+                return;
+            }
+
+            if(/pad/i.test(userAgent) || /ting/i.test(userAgent)){
+
+                return;
+            }
+
+            //判断url
+            var host = "http://"+window.location.host;
+            var href = window.location.href;
+
+            redirect = false;
+
+            if(href.indexOf("#")<0){
+                redirect = false;
+            }else{
+                //发现页
+                if(/^\D+$/.test(href) && /(explore|u|sound|tag)\/?$/i.test(href)){
+                    href = host;
+                    redirect = true;
+                }
+                //以数字结尾的
+                if(/\d+\/?$/.test(href)){
+                    redirect = true;
+                }
+            }
+
+            //下载页
+            if(/download\/?$/.test(href)){
+                redirect = true;
+            }
+
+            //首页
+            if(host+"/" == href){
+                redirect = true;
+            }
+
+            if(redirect && host != mobile_host){
+                window.location.replace(href.replace(host, mobile_host));
+            }
+        })();
+
+
+    </script>
+</head>
+<body>
+<!-- 头部 start-->
+<div class="header">
+    <div class="warp">
+        <div class="fr  on " style="display:none;">
+            <div class="logged-on">
+                <ul>
+                    <li class="li_msg">
+                        <a class="a_link" href="javascript:;">消息</a>
+                        <!--弹出菜单 li_msg上添加 class:show 则显示-->
+                        <div class="pop-msg">
+                            <div class="pop-msg-outer">
+                                <a href="javascript:;" class="close">&times;</a>
+          <span>
+            <a href="#"></a>
+          </span>
+          <span>
+            <a href="#"></a>
+          </span>
+                            </div>
+                        </div>
+                        <!--弹出菜单 li_msg上添加 class:hover 则显示-->
+                        <div class="menu-msg">
+                            <div class="menu-msg-outer">
+          <span>
+            <a href="/#/my_notices/"> <em>系统通知</em>
+            </a>
+          </span>
+          <span class="select">
+            <a href="/#/refermes/"> <em>@我的</em>
+            </a>
+          </span>
+          <span>
+            <a href="/#/comments_inbox/">
+                <em>评论</em>
+            </a>
+          </span>
+          <span>
+            <a href="/#/messages/">
+                <em>私信</em>
+            </a>
+          </span>
+                            </div>
+                        </div>
+      <span class="arrow">
+        <i></i>
+      </span>
+                    </li>
+                    <li class="li_user">
+                        <a class="a_link" href="javascript:;">账号</a>
+                        <!--弹出菜单 li_user class:hover 则显示-->
+                        <div class="menu-user">
+                            <div class="menu-user-outer">
+          <span class="tit href_me">
+            <img src="http://static.test.ximalaya.com/css/img/common/person_60.jpg" alt="" />
+            <a href="/#/2190/">asdf2safsdf</a>
+          </span>
+          <span>
+            <a href="http://test.ximalaya.com/passport/profile" target="_blank">
+                <em>个人设置</em>
+            </a>
+          </span>
+                                <!--           <span class="select">
+                                            <a href="">
+                                              <em>消息设置</em>
+                                            </a>
+                                          </span>
+                                          <span>
+                                            <a href="">
+                                              <em>隐私设置</em>
+                                            </a>
+                                          </span>
+                                          <span>
+                                            <a href="">
+                                              <em>头像设置</em>
+                                            </a>
+                                          </span> -->
+          <span>
+            <a href="http://test.ximalaya.com/passport/logout">
+                <em>退出</em>
+            </a>
+          </span>
+                            </div>
+                        </div>
+      <span class="arrow">
+        <i></i>
+      </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl">
+
+            <div class="header-tip">
+                <div onclick="_hmt.push(['_trackEvent', 'home_app', 'click']);" id="trackEvent-home-app" class="header-phone fr"></div>
+                <div class="help-info rt">
+                    <div class="help-con">
+                        <p>喜马拉雅Android版终于发布啦！</p>
+                        <p class="p-1">
+                            <a target="_blank" href="/download/">立即抢先试用 &gt;</a>
+                        </p>
+                    </div>
+          <span class="arrow">
+            <i></i>
+          </span>
+                    <span class="close">×</span>
+                </div>
+            </div>
+
+
+            <a href="/#/2190/" title="喜马拉雅，听我想听"><div class="header-logo fl"></div></a>
+            <div class="header-nav">
+                <ul>
+                    <li class="li_home"><a class="header-item" href="/#/2190/">首页</a></li>
+                    <li class="li_find">
+                        <a class="header-item" href="/#/explore/">发现</a>
+                        <!--弹出消息 li_find上添加 class:hover 则显示-->
+                        <div class="menu-find">
+                            <div class="menu-find-outer">
+                                <span class="tit"><a href="/#/explore/">发现</a></span>
+                                <span><a href="/#/u/"><em>个人电台</em></a></span>
+                                <span><a href="/#/sound/"><em>热门声音</em></a></span>
+                                <span><a href="/#/tag/"><em>推荐标签</em></a></span>
+                            </div>
+                        </div>
+                        <span class="arrow"><i></i></span>
+                    </li>
+                    <li class="li_up"><a class="header-item" href="/upload/" target="_blank" rel="nofollow">上传/录制</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="g-player">
+    <div class="g-player-frame">
+        <div class="g-player-control mainfollower" style="display:none;">
+            <!-- 音量面板 关闭  off    -->
+      <span class="volume-panel">
+        <span class="volume-btn player-unmute" title="静音"></span>
+        <span class="volume-progress player-volumebar">
+          <span class="volume-bg player-volume-bg"></span>
+          <span class="volume-size player-volume"></span>
+          <a href="javascript:;" class="volume-bar"></a>
+        </span>
+      </span>
+
+            <div class="control-panel">
+                <a href="javascript:;" class="g-player-prev player-pre disabled"><u class="tag"></u></a>
+                <a href="javascript:;" class="g-player-playing player-play disabled"><u class="tag"></u></a>
+                <a href="javascript:;" class="g-player-next player-next disabled"><u class="tag"></u></a>
+                <div class="player-progressbar disabled">
+                    <div class="player-playbar"></div>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="g-player-like" title="转发"></a>
+      <span class="info-panel">
+        <span class="info-name"><a href="#"></a><u class="tag"></u></span>
+      </span>
+        </div>
+
+        <div class="g-player-search">
+            <div class="search-panel">
+                <!-- 搜索类型 显示 show-->
+                <div class="search-type">
+                    <span class="sp-name" data-scope="voice">声音</span>
+                    <div class="list-type">
+                        <a data-scope="voice" href="javascript:;" class="select">声音</a>
+                        <a data-scope="user" href="javascript:;">用户</a>
+                        <a data-scope="album" href="javascript:;">专辑</a>
+                        <a data-scope="tag" href="javascript:;">标签</a>
+                    </div>
+                </div>
+                <!-- 搜索结果 显示 show-->
+                <div class="search-entry">
+                    <!-- <input type="text" name="" id="" class="search-input" placeholder="中国">-->
+            <span class="ph_input">
+              <span class="ph_label" style="display: block;"><!-- 搜声音、专辑、用户或标签 --></span>
+                <input id="" class="search-input j-search-input" type="text" value="" name="textfield">
+            </span>
+                    <a href="javascript:;" class="search-btn"></a>
+                    <ul class="list-result">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-player-login on">
+            <!-- 已登录 -->
+            <div class="login-in">
+                <!-- 用户菜单 显示 hover-->
+                <div class="login-user">
+                    <a class="a-name" href="javascript:;"><em>账号</em><u class="arrow"></u></a>
+                    <div class="list-user">
+                        <div class="list-user-head">
+                            <img src="http://static.test.ximalaya.com/css/img/common/person_60.jpg" alt="" />
+                            <a href="/#/2190/">asdf2safsdf</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="http://test.ximalaya.com/passport/profile" target="_blank">
+                                    个人设置
+                                </a>
+                            </li>
+                            <!--  <li><a href="javascript:;">消息设置</a></li>
+                            <li><a href="javascript:;">隐私设置</a></li>
+                            <li><a href="javascript:;">头像设置</a></li> -->
+                            <li><a href="http://test.ximalaya.com/passport/logout">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 消息菜单 显示 hover-->
+                <div class="login-msg">
+                    <a class="a-name" href="javascript:;"><em>消息</em><u class="arrow"></u></a>
+                    <div class="list-msg">
+                        <ul>
+                            <li><a href="/#/my_notices/">系统通知</a></li>
+                            <li><a href="/#/refermes/">@我的</a></li>
+                            <li><a href="/#/comments_inbox/">评论</a></li>
+                            <li><a href="/#/messages/">私信</a></li>
+                            <li><a href="/#/likes/">喜欢</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-pop">
+                        <ul></ul>
+                        <span class="arrow"><i></i></span>
+                        <a href="javascript:;" class="close">×</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 未登录 -->
+            <div class="login-out">
+                <a id="trackEvent-header-login" onclick="_hmt.push(['_trackEvent', 'home_login', 'click']);" href="http://test.ximalaya.com/passport/login?fromUri=http://test.ximalaya.com" rel="nofollow">登录</a>
+                <a id="trackEvent-header-register" onclick="_hmt.push(['_trackEvent', 'home_register', 'click']);" href="http://test.ximalaya.com/passport/registerGuide" rel="nofollow">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部 end-->
+
+<div id="home_wrapper">
+    <div id="home_containter">
+        <div id="mainbox" class="mainbox clearfix_after">
+
+
+        </div>
+    </div>
+</div>
+<div class="footer ">
+    <div class="footer-wrap">
+
+        <div class="footer-contact">
+
+            <div class="fr">
+                <strong>
+                    400-838-5616
+                </strong>
+                <p>
+                    仅收市话费，周一至周五9:00-18:00
+                </p>
+            </div>
+
+            <a rel="nofollow" target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4008385616&f=1&ty=1&aty=0&a=&from=6" class="fl" style="margin-right:5px;">
+                <img src="http://static.test.ximalaya.com/css/img/common/zxkf.jpg" alt="">
+            </a>
+
+        </div>
+
+
+        <div class="fl relative">
+
+            <div class="footer-related">
+                <a target="_blank" rel="nofollow" href="/help/aboutus/">关于我们</a>
+                <a target="_blank" rel="nofollow" href="/help/contact_us/">联系我们</a>
+                <a target="_blank" rel="nofollow" href="http://help.ximalaya.com/" >帮助中心</a>
+                <a target="_blank" rel="nofollow" href="http://blog.ximalaya.com/" >官方博客</a>
+                <a target="_blank"  href="/u/">个人电台</a>
+                <a target="_blank" href="/tag/">推荐标签</a>
+                <a target="_blank" href="/sound/">热门声音</a>
+            </div>
+
+            <div class="footer-app">
+                <a class="a_1" target="_blank" href="/download/">iPhone APP</a>
+                <a class="a_2" target="_blank" href="/download/">Android APP</a>
+            </div>
+
+            <div class="hide">
+                <a target="_blank" href="/newmap/sound_new">最新声音列表</a>
+                <a target="_blank" href="/newmap/u_new">最新用户列表</a>
+                <a target="_blank" href="/newmap/album_new">最新专辑列表</a>
+                <a target="_blank" href="/map/soundlist_0.html">全部声音列表</a>
+                <a target="_blank" href="/map/albumlist_0.html">全部专辑列表</a>
+                <a target="_blank" href="/map/vlist_0.html">全部加V用户列表</a>
+                <a target="_blank" href="/map/ulist_0.html">全部普通用户列表</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright">
+            <p>
+                网络文化经营许可证-文网文[2010]150号&nbsp;&nbsp;&nbsp;&nbsp;
+                北京那里汇聚网络科技有限公司 <a href="javascript:;" onclick="window.open('http://www.miit.gov.cn');" target="_blank" title="京ICP备12017437号">京ICP备12017437号-1</a> 网络110报警服务
+            </p>
+            <p>
+                Copyright © 2011-2012 <a href="http://www.ximalaya.com/" target="_blank">www.ximalaya.com</a> lnc.ALL Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;
+                请使用者仔细阅读喜马拉雅网 <a id="apply_deal" href="javascript:;" title="使用协议">使用协议</a> 和 <a id="copy_right" href="javascript:;" title="版权声明">版权声明</a>
+            </p>
+      <span class="footer-attention">
+        <span>关注我们:</span>
+        <a class="a_1" href="javascript:;" onclick="window.open('http://weibo.com/ximala');">新浪微博</a>
+        <a class="a_2" href="javascript:;" onclick="window.open('http://t.qq.com/ximalayacom');">腾讯微博</a>
+      </span>
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+    var config = {
+        STATIC_PATH:"http://local.ximalaya.com:9090/static2",
+        FDFS_PATH:"http://fdfs.test.ximalaya.com",
+        LOGIN_PATH:"http://test.ximalaya.com/passport/login",
+        DIRECT_DTRES_ROOT: "http://upload.test.ximalaya.com/dtres",
+        TRANSCODING_ROOT: "http://test.ximalaya.com/dtres/transcoding/process",
+        UPLOAD_ROOT: "http://upload.test.ximalaya.com/dtres",
+        CURRENT_USER:{"uid":2190,"nickname":"asdf2safsdf","logoPic":null,"email":"asdfasdfas@asdf.sdafasa","account":null,"mobile":null,"isVerified":false,"isCompleted":true,"isVEmail":false,"isVMobile":false,"isRobot":false,"province":"\u4e0a\u6d77","city":null,"town":null,"country":null,"personalSignature":null,"ptitle":null,"isGuideCompleted":false,"taskCompleteProfile":false,"taskFollow":false,"taskDownloadApp":false,"taskEmail":true,"vCompany":null,"vTags":null,"vCategoryId":null,"deviceToken":null,"isLoginBan":false,"isDeleted":false,"registerCategory":"3,","personDescribe":null,"guidePlayPanel":false,"guideVoicePanel":false,"guideSharePanel":false,"thirdpartyName":null,"createdTime":"2013-02-19T11:29:11+08:00","loginBanStart":null,"loginBanEnd":null},
+        SUGGEST_URL:"http://test.ximalaya.com/s/search/suggest",
+        WARNING_SEQ: "10",
+        PLAYER_PATH: "http://static.test.ximalaya.com/js/player_test.swf",
+        SERVER_TIME: "1361262806009",
+        TOKEN_LABEL: "4&_token",
+        REMEMBERME_LABEL: "4&remember_me",
+        ASSETS_VERSION: ""
+    };
+    config.TIME_GAP = new Date().getTime() - config.SERVER_TIME;
+
+</script>
+<script src="http://static.test.ximalaya.com/js/require.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: config.STATIC_PATH+'/js/lib',
+        shim: {
+            'jquery_ujs':{
+                deps:['jquery']
+            },
+            'jrecorder':{
+                deps: ['jquery'],
+                exports: 'jQuery.jRecorder'
+            },
+            'belatedpng':{
+                exports:'DD_belatedPNG'
+            },
+            'plugin/mailautocomplete':{
+                deps:['jquery']
+            }
+        },
+        paths: {
+            model: '../model',
+            page: '../page',
+            module: '../module',
+            plugin:'../plugin'
+        },
+        urlArgs:config.ASSETS_VERSION
+    });
+</script>
+
+<script>
+    require(['page/page_base'], function(route) {
+    });
+</script>
+
+
+
+<!-- <script src="http://static.test.ximalaya.com/js/lib/letskillie6.zh_CN.pack.js"></script> -->
+<!--
+<script type="text/javascript">document.execCommand("BackgroundImageCache",false,true);</script>
+<script type="text/javascript">
+requirejs(["jquery","belatedpng"],function(e,t){
+setTimeout(function(){
+t.fix(".pop-under, div, a, span, li"),e("a").attr("hidefocus","true")
+},2000);
+
+});
+</script>
+-->
+</body>
+</html>

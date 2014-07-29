@@ -1,0 +1,22 @@
+@import "fn/nav.less";
+/*common/nav*/
+.navFn(nav);
+.verticalNavFn(homeNav);
+
+
+.homeNavMoreBar{
+	.clearfix;
+	padding: 2px 5px 1px 10px;
+	& span{
+		.fr;
+		.navNumIconFn();
+	}
+	& a{
+		cursor: pointer;
+		background: url("img/sprite/icon10px.png") no-repeat right -211px;
+		padding-right: 13px;
+		&.on{
+			background-position:right -236px;
+		}
+	}
+}

@@ -1,0 +1,136 @@
+@import "fn/face.less";
+/*common/face*/
+.normalUserface,.minUserface,.smallUserface,.pinUserface{
+	.bgImg("bgUser.png");
+}
+.normalSoundface,.minSoundface,.smallSoundface,.pinSoundface{
+	.bgImg("bgSound.png");
+}
+
+.userface15,.soundface15{.faceFn(15, 0, 0);}
+.userface16,.soundface16{.faceFn(16, 0, 0);}
+.userface30,.soundface30{.faceFn(30, 0, 0);}
+.userface40,.soundface40{.faceFn(40, 0, 0);}
+.userface501(@width){ 
+	position:relative; 
+	//.faceBaseFn(50, 0, 0);
+	& .text
+    {
+		background:#000;
+    	position:absolute;
+		bottom:0;
+		width:100%;
+		.hidden();
+		left:0;
+		text-align:center;
+		//.opacity(80);
+		& a
+        {
+        	color:#fff;
+        }
+    }
+	&:hover
+    {
+    	& .text
+        {
+        	.show();
+        }
+		& .light
+        {
+			/*-webkit-transform: scale(2, 1); 
+			-moz-transform: scale(2, 1);
+			-o-transform: scale(2, 1);*/
+        }
+    }
+	& .light
+    {
+    	position: absolute;
+		left:  (@width/2*3.2 + @width) * -1px;
+		top: 0;
+		width: @width * 1px;
+		height: @width * 1px;
+		background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+		/*transform: skewx(@width/2 * -1deg);
+		-o-transform: skewx(@width/2 * -1deg);
+		-moz-transform: skewx(@width/2 * -1deg);
+		-webkit-transform: skewx(@width/2 * -1deg);*/
+		-o-transform: skewx(45 * -1deg);
+		-moz-transform: skewx(45 * -1deg);
+		-webkit-transform: skewx(45 * -1deg);
+		-moz-transition: 0s;
+		-o-transition: 0s;
+		-webkit-transition: 0s;
+		transition: 0s;
+		background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+    }
+}
+.userbaseface60
+{
+	.faceBaseFn(60, 0, 0);
+}
+.userbaseface50
+{
+	.faceBaseFn(50, 0, 0);
+}
+.userface60,.soundface60{.faceFn(60, 0, 0);}
+.userface70,.soundface70{.faceFn(70, 0, 0);}	//在动态关注中,会用到。
+.soundface180{.faceFn(180,0,0)};
+.userface180{.faceBaseFn(180,0,0)};
+.userface110{.faceFn(110,0,0)};
+.albumface100{.faceFn(100,0,0,106,107)}	//
+.albumface140{
+	.faceFn(140,0,0,144,144);
+	background: url("img/base/bg-album-w140.jpg") no-repeat right top;
+}
+.albumface180{
+	.faceFn(180,0,0,191,191);
+	background: url("img/base/bg-album-w180.jpg") no-repeat right top;
+}	
+
+.faceWrapper{.faceWrapperFn(60);}
+
+.albumface{
+	.albumface100;
+}
+
+//userface头像的默认图片
+.userface16{
+	&.is-error{
+		.bgImg("common/default/user16.jpg");
+	}
+}
+.userface30{
+	&.is-error{
+		.bgImg("common/default/user30.jpg");
+	}
+}
+.userface40{
+	&.is-error{
+		.bgImg("common/default/user40.jpg");
+	}
+}
+.userface50{
+	&.is-error{
+		.bgImg("common/default/user50.jpg");
+	}
+}
+.userface60{
+	&.is-error{
+		.bgImg("common/default/user60.jpg");
+	}
+}
+.userface70{
+	&.is-error{
+		.bgImg("common/default/user70.jpg");
+	}
+}
+.userface110{
+	&.is-error{
+		.bgImg("common/default/user110.jpg");
+	}
+}
+.userface180{
+	&.is-error{
+		.bgImg("common/default/user180.jpg");
+	}
+}

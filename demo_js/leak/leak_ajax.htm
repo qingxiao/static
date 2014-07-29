@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    //在jquery1 1.4.1版本下会内存泄露。
+      var counter = 0;
+      leakTest();
+      function leakTest() {
+        $.ajax({ url: '/demo/feed.htm',
+                 type: 'GET',
+                 success: incrementCounter
+               });
+      }
+      function incrementCounter(data) {
+        if (counter<1000) {
+          counter++;
+          $('#counter').text(counter);
+          setTimeout(leakTest,100);
+        }
+        else $('#counter').text('finished.');
+      }
+    </script>
+  </head>
+  <body>
+    <div>Why is memory usage going up?</div>
+    <div id="counter"></div>
+  </body>
+</html>

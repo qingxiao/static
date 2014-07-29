@@ -1,0 +1,42 @@
+//tag标签详情页面
+/*page/home/tag_detail*/
+.tagPanel{
+	.clearfix();
+	padding:10px 10px 10px 55px;
+	position:relative;
+	height:60px;
+	background-color:@colorBG3;
+	& .tagWrapper{
+		position:absolute;
+		top:-10px;
+		left:10px;
+		.bgImgExt("sprite/icon_default.png",0,-71px);
+		width:26px;
+		height:52px;
+	}
+	& .tagHead{
+		color:#BABABA;
+		margin:5px 0 8px -5px;
+		& .tagName{
+			font-size:28px;
+			color:@colorText3;
+		}
+	}
+	& .count{
+		color:@colorText3;
+		line-height: @lineHeightBig;
+		& a{
+			font-weight:bold;
+			margin:0 4px;
+		}
+		& span{
+			margin:0 6px;
+			padding-left: 1px;
+			background: url("@{urlStaticImg}/base/dotted.png");
+		}
+	}
+	& .interestBtn{
+		margin:15px 20px 0 0;
+		.fr;
+	}
+}

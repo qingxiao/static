@@ -1,0 +1,1563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset=utf-8 />
+<link href="/css/web.css" rel="stylesheet" type="text/css">
+<title>标签详情页</title>
+</head>
+
+<body>
+<!--页面头部 start-->
+<div class="header">
+		<div class="header_wrapper">
+			<div class="logo"></div>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+</div>
+<!--页面头部 end-->
+<!--浮动头部 start-->
+<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+				<ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+				<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">系统通知</a></li>
+					 		<li><a href="#">我的粉丝</a></li>
+					 		<li><a href="#">@我的</a></li>
+					 		<li><a href="#">评论</a></li>
+					 		<li><a href="#">通知</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value=""></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value=""></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="">记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 浮动头部 end -->
+<!--页面内容 start-->
+<div class="bodyBgColor">
+    <div class="mainbox" id="mainbox"><div class="mainbox_wrapper">
+  <div class="mainbox_left">
+    <div class="tagPanel gapModuleB">
+      <div class="tagWrapper"></div>
+      <div class="fl">
+        <div class="tagHead">
+          <span class="tagName">广播剧</span>&nbsp;&nbsp;<span>已有<span class="tagCount">31</span>人感兴趣</span>
+        </div>
+        <div class="count">
+          声音<a href="/#/tag/广播剧">4390</a><span></span>
+          感兴趣<a class="tagCount" href="/#/tag/广播剧/follower">31</a>
+        </div>
+      </div>
+
+      <a class="interestBtn " data-tag="广播剧" href="javascript:;">
+        <span class="interest">
+          <em>+</em>
+          <span>感兴趣</span>
+        </span>
+        <span class="uninterest">不感兴趣</span>
+      </a>
+
+    </div>
+    <div class="soundTab">
+      <div class="fl">
+        <strong class="tab_title">声音(4390)</strong>
+
+        <div class="selecter fr group-select selecter-s3" inited="true">
+
+          <div class="selecter-selected" data-value="">
+            <span class="selecter-text">全部</span>
+            <em class="selecter-arrow">◆</em>
+          </div>
+          <div class="selecter-options ">
+            <ul>
+              <li data-value="" class="selecter-item selected">全部</li>
+              <li data-value="v_" class="selecter-item ">只看加V</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="fr">
+        <a href="javascript:;" data-scope="hot" data-selected="true"><span>热门</span></a>
+        <a href="javascript:;" class="tab_sort" data-scope="recent"><span>最新更新</span></a>
+      </div>
+    </div>
+    <ul class="feedList">
+      
+      <li class="listItem">
+        <div class="feed" sound_id="175318">
+          <div class="left">
+            <a class="userface" href="/#/1014267/" card="1014267">
+              <img alt="山新" src="http://fdfs.xmcdn.com/group1/M00/03/7A/wKgDrVC5dr2xzZCNAABuNGUbwuM055_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1014267/" card="1014267">
+                山新
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1014267/sound/175318">【十万个冷笑话】《大王的日常-大王醉酒》</a> <span class="sound_playcount">66966</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">01:56</span>
+                    <div class="pin" sound_popsrc="175318">
+                        <a href="/#/1014267/sound/175318" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/0A/C4/wKgDrlELUM3wQ5XoAACqDmsDJw8110_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1014267/sound/175318">【十万个冷笑话】《大王的日常-大王醉酒》</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">01:56</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group1/M01/16/F7/wKgDrlHnMrWzFldSAAAJawaa3kg4553.js" sound_uploadid="u_62936"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="175318">
+                                <a href="/#/1014267/sound/175318" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M01/0A/C4/wKgDrlELUM3wQ5XoAACqDmsDJw8110_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      【节操崩坏】《十万个冷笑话-福禄篇》完结纪念福利！！《大王的日常-大王醉酒》篇~氪金狗耳准备！！ 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">6月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">1062</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">654</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">264</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;【节操崩坏】《十万个冷笑话-福禄篇》完结纪念福利！！《大王的日常-大王醉酒》篇~氪金狗耳准备！！ 我觉得《【十万个冷笑话】《大王的日常-大王醉酒》》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;【十万个冷笑话】《大王的日常-大王醉酒》&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/0A/C4/wKgDrlELUM3wQ5XoAACqDmsDJw8110_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1014267/sound/175318&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="238770">
+          <div class="left">
+            <a class="userface" href="/#/1288290/" card="1288290">
+              <img alt="北斗企鹅工作室" src="http://tp4.sinaimg.cn/2964495347/180/5649070136/1">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1288290/" card="1288290">
+                北斗企鹅工作室
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1288290/sound/238770">【广播剧】《十万个冷笑话》世界末日番外篇</a> <span class="sound_playcount">39765</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">03:37</span>
+                    <div class="pin" sound_popsrc="238770">
+                        <a href="/#/1288290/sound/238770" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M00/13/06/wKgDrVFT9nCQ1C89AADCS9H0CXw373_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1288290/sound/238770">【广播剧】《十万个冷笑话》世界末日番外篇</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">03:37</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M00/33/FD/wKgDr1HlJxCD785kAAAKMNBfP8A0239.js" sound_uploadid="u_121531"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="238770">
+                                <a href="/#/1288290/sound/238770" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M00/13/06/wKgDrVFT9nCQ1C89AADCS9H0CXw373_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      《十万个冷笑话》世界末日番外篇 广播剧  配音：  主持人：宝木中阳  一代宗师：藤新  大娃：皇贞季  克里克洛大魔王：山新  巨齿龙兽：朱雀橙  蛤蟆精：小爱  
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">345</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">173</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">58</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;《十万个冷笑话》世界末日番外篇 广播剧  配音：  主持人：宝木中阳  一代宗师：藤新  大娃：皇贞季  克里克洛大魔王：山新  巨齿龙兽：朱雀橙  蛤蟆... 我觉得《【广播剧】《十万个冷笑话》世界末日番外篇》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;【广播剧】《十万个冷笑话》世界末日番外篇&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M00/13/06/wKgDrVFT9nCQ1C89AADCS9H0CXw373_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1288290/sound/238770&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="283970">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/283970">《小强来了》：你的口头禅</a> <span class="sound_playcount">15481</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">43:24</span>
+                    <div class="pin" sound_popsrc="283970">
+                        <a href="/#/1017918/sound/283970" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group2/M02/03/1A/wKgDsFFtICGSuaNQABFVY39EtH4411_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/283970">《小强来了》：你的口头禅</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">43:24</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M01/36/75/wKgDsFHlxlbQKq8bAAAKyLCbHu87895.js" sound_uploadid="u_159843"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="283970">
+                                <a href="/#/1017918/sound/283970" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group2/M02/03/1A/wKgDsFFtICGSuaNQABFVY39EtH4411_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">67</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">3</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">5</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：你的口头禅》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：你的口头禅&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group2/M02/03/1A/wKgDsFFtICGSuaNQABFVY39EtH4411_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/283970&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="269760">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/269760">《小强来了》：可劲得瑟！</a> <span class="sound_playcount">13168</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">43:22</span>
+                    <div class="pin" sound_popsrc="269760">
+                        <a href="/#/1017918/sound/269760" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group2/M02/01/8E/wKgDr1FmcrqwyPtUABFVY39EtH4629_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/269760">《小强来了》：可劲得瑟！</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">43:22</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M02/34/9E/wKgDsFHlS9jA31VQAAAKyRS_1Zw2828.js" sound_uploadid="u_149494"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="269760">
+                                <a href="/#/1017918/sound/269760" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group2/M02/01/8E/wKgDr1FmcrqwyPtUABFVY39EtH4629_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">38</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">4</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">3</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：可劲得瑟！》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：可劲得瑟！&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group2/M02/01/8E/wKgDr1FmcrqwyPtUABFVY39EtH4629_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/269760&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="228236">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/228236">《小强来了》：你起床后第一句。</a> <span class="sound_playcount">12642</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">47:12</span>
+                    <div class="pin" sound_popsrc="228236">
+                        <a href="/#/1017918/sound/228236" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/11/C6/wKgDrlFMFoKh12OqAAGAc5uLJek057_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/228236">《小强来了》：你起床后第一句。</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">47:12</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M01/36/71/wKgDr1HluyGh-cZ5AAAKyddYNxo4877.js" sound_uploadid="u_111597"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="228236">
+                                <a href="/#/1017918/sound/228236" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M01/11/C6/wKgDrlFMFoKh12OqAAGAc5uLJek057_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">27</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">6</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">3</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：你起床后第一句。》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：你起床后第一句。&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/11/C6/wKgDrlFMFoKh12OqAAGAc5uLJek057_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/228236&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="251124">
+          <div class="left">
+            <a class="userface" href="/#/1014267/" card="1014267">
+              <img alt="山新" src="http://fdfs.xmcdn.com/group1/M00/03/7A/wKgDrVC5dr2xzZCNAABuNGUbwuM055_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1014267/" card="1014267">
+                山新
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1014267/sound/251124">【搬运】【四五年前录的广播剧】《1945战争启示录—玩具》</a> <span class="sound_playcount">12231</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">30:52</span>
+                    <div class="pin" sound_popsrc="251124">
+                        <a href="/#/1014267/sound/251124" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M00/14/93/wKgDrVFdhE2ggYlWAAMZUBvTc6E319_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1014267/sound/251124">【搬运】【四五年前录的广播剧】《1945战争启示录—玩具》</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">30:52</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M01/3A/19/wKgDr1HmV_exWvERAAAJcSDtxnM0207.js" sound_uploadid="u_134029"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="251124">
+                                <a href="/#/1014267/sound/251124" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M00/14/93/wKgDrVFdhE2ggYlWAAMZUBvTc6E319_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                       差不多四五年前（？）录的广播剧…具体多久记不清楚了…反正那会儿还叫“山新德南”呢OTL…现在听感觉好青涩啊= =|||…正好喜马拉雅这边音质不错=W=慢慢搬运点旧作过来好了…  
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">78</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">79</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">13</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot; 差不多四五年前（？）录的广播剧…具体多久记不清楚了…反正那会儿还叫“山新德南”呢OTL…现在听感觉好青涩啊= =|||…正好喜马拉雅这边音质不错=W=慢... 我觉得《【搬运】【四五年前录的广播剧】《1945战争启示录—玩具》》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;【搬运】【四五年前录的广播剧】《1945战争启示录—玩具》&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M00/14/93/wKgDrVFdhE2ggYlWAAMZUBvTc6E319_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1014267/sound/251124&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="276251">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox" style="display: none;">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/276251">《小强来了》：突然家里多个人。</a> <span class="sound_playcount">12098</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn" title="播放"></a>
+                    <span class="duration">43:51</span>
+                    <div class="pin" sound_popsrc="276251">
+                        <a href="/#/1017918/sound/276251" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group2/M01/02/40/wKgDr1FpM6DzyRnMABFVY39EtH4903_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox" style="display: block;">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/276251">《小强来了》：突然家里多个人。</a>
+                        <div class="fr"><span class="sound_position">00:01</span>/<span class="sound_duration">43:51</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer" style="opacity: 1;">
+                            <div class="left">
+                                <a class="playBtn" title="播放"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar is-drawed" title="点击播放">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar" style="width: 3.213798914689861%;"></div>
+                                    <div class="player_playbar" style="width: 0.06882555704616367%;"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M02/35/C1/wKgDr1Hlh0fR-L0_AAAKyGcAhT49593.js" sound_uploadid="u_154194" style=""><canvas width="539" height="28"></canvas></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar"><div class="chunk" chunkindex="0" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="1" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="2" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="3" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="4" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="5" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="6" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="7" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="8" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="9" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="10" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="11" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="12" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="13" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="14" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="15" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="16" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="17" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="18" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="19" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="20" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="21" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="22" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="23" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="24" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="25" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="26" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="27" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="28" hidefocus="true" style="width:18px;"><div class="chunkWrapper"></div></div><div class="chunk" chunkindex="29" hidefocus="true" style="width:17px;"><div class="chunkWrapper"><div class="chunk_userface"><div class="userface"><img src="http://qzapp.qlogo.cn/qzapp/100261563/F2F1CE240846AFFEB735B2EBD0456CD0/100" alt=""></div></div></div></div></div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="276251">
+                                <a href="/#/1017918/sound/276251" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group2/M01/02/40/wKgDr1FpM6DzyRnMABFVY39EtH4903_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">26</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">1</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">3</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：突然家里多个人。》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：突然家里多个人。&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group2/M01/02/40/wKgDr1FpM6DzyRnMABFVY39EtH4903_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/276251&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="252478">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/252478">《小强来了》：什么事让你左右为难？</a> <span class="sound_playcount">10798</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">43:33</span>
+                    <div class="pin" sound_popsrc="252478">
+                        <a href="/#/1017918/sound/252478" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M00/14/C0/wKgDrVFelPyzESD_ABFVY39EtH4919_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/252478">《小强来了》：什么事让你左右为难？</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">43:33</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M00/38/0E/wKgDsFHmIGHxfuChAAAKyIbo7283885.js" sound_uploadid="u_135166"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="252478">
+                                <a href="/#/1017918/sound/252478" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M00/14/C0/wKgDrVFelPyzESD_ABFVY39EtH4919_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">17</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">0</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">3</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：什么事让你左右为难？》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：什么事让你左右为难？&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M00/14/C0/wKgDrVFelPyzESD_ABFVY39EtH4919_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/252478&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="239051">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/239051">《小强来了》：手机里至今还保存着的短信</a> <span class="sound_playcount">10781</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">46:22</span>
+                    <div class="pin" sound_popsrc="239051">
+                        <a href="/#/1017918/sound/239051" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M01/13/0E/wKgDrVFUFzqiE-iYAAZLhRSbXxU838_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/239051">《小强来了》：手机里至今还保存着的短信</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">46:22</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M00/34/15/wKgDr1HlKyqiSomIAAAKyaN-Css7804.js" sound_uploadid="u_121797"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="239051">
+                                <a href="/#/1017918/sound/239051" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M01/13/0E/wKgDrVFUFzqiE-iYAAZLhRSbXxU838_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">14</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">7</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">5</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：手机里至今还保存着的短信》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：手机里至今还保存着的短信&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M01/13/0E/wKgDrVFUFzqiE-iYAAZLhRSbXxU838_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/239051&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="listItem">
+        <div class="feed" sound_id="240674">
+          <div class="left">
+            <a class="userface" href="/#/1017918/" card="1017918">
+              <img alt="DJ小强" src="http://fdfs.xmcdn.com/group1/M01/0B/55/wKgDrlEThKeSDlV3AALFcth1atY924_common_medium.jpg">
+            </a>
+          </div>
+          <div class="right">
+            <div class="feed_operate">
+            </div>
+            <div class="feed_title">
+              <a href="/#/1017918/" card="1017918">
+                DJ小强
+                <i class="VIcon">&nbsp;</i>
+              </a>
+
+
+            </div>
+            <div class="feed_content">
+              <div class="sound">
+
+                <div class="sound_unexpandBox">
+                  <div class="sound_titlebar">
+                    <a class="sound_title" href="/#/1017918/sound/240674">《小强来了》：迟到？会死人的！</a> <span class="sound_playcount">10546</span>
+                  </div>
+
+                  <div class="smallPlayer">
+                    <a href="javascript:;" class="playBtn"></a>
+                    <span class="duration">44:38</span>
+                    <div class="pin" sound_popsrc="240674">
+                        <a href="/#/1017918/sound/240674" class="soundface">
+                            <img alt="" src="http://fdfs.xmcdn.com/group1/M00/13/41/wKgDrlFVQVOBjnjnAALG2WemvdU460_mobile_small.jpg" data-options="defaultImg:track_60">
+                            <span></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sound_expandBox">
+                    <div class="sound_titlebar">
+                        <a class="sound_title" href="/#/1017918/sound/240674">《小强来了》：迟到？会死人的！</a>
+                        <div class="fr"><span class="sound_position">00:00</span>/<span class="sound_duration">44:38</span></div>
+                    </div>
+                    <div class="feed_middlePlayerBox">
+                        <div class="middlePlayer">
+                            <div class="left">
+                                <a class="playBtn"></a>
+                            </div>
+                            <div class="right">
+                                <!-- 进度条 -->
+                                <div class="player_progressbar">
+                                    <div class="player_progressbarBg"></div>
+                                    <div class="player_seekbar"></div>
+                                    <div class="player_playbar"></div>
+                                        <div class="player_wavebox" sound_wave="http://fdfs.xmcdn.com/group2/M01/34/4E/wKgDr1HlNrOT35VJAAAKyQ4ce-00697.js" sound_uploadid="u_123186"></div>
+                                     <div class="player_progressbarCoverBg"></div>
+                                    <div class="player_nonius">
+                                        <div class="player_nonius_cover"></div>
+                                        <div class="player_nonius_time">00:00</div>
+                                        <div class="player_nonius_line5"></div>
+                                        <div class="player_nonius_line3"></div>
+                                    </div>
+                                </div>
+                                <!-- 二维评论 -->
+                                <div class="player_commentbar">
+                                </div>
+                                <div class="player_operate">
+                                    <a href="javascript:;" class="player_commentbarBtn" title="显示/隐藏评论"></a>
+                                </div>
+                            </div>
+                            <div class="pin" sound_popsrc="240674">
+                                <a href="/#/1017918/sound/240674" class="soundface">
+                                    <img alt="" src="http://fdfs.xmcdn.com/group1/M00/13/41/wKgDrlFVQVOBjnjnAALG2WemvdU460_mobile_small.jpg" data-options="defaultImg:track_60">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_content">
+                      节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要内容：以播讲笑话段子为基本内容，主持人对笑话风趣解读和机智 “现挂”，给听众带来快乐、共鸣和回味。  网罗天下笑话、发动快乐引擎 
+                    </div>
+                </div>
+
+                <div class="sound_bottom">
+                  <span class="createtime">4月前</span>
+
+                  <div class="fr">
+                    <a class="downloadToMobile link1">下载到手机</a>
+                    <a class="likeBtn link1 " href="javascript:;">喜欢(<span class="count">19</span>)</a>
+                    <a class="commentBtn link1" href="javascript:;">评论(<span class="count">2</span>)</a>
+                    <a class="forwardBtn link1" href="javascript:;">转采(<span class="count">2</span>)</a>
+                    <a href="javascript:;" class="bdShareBtn link1" data="{&quot;bdDes&quot;:&quot;喜马拉雅好声音&quot;,&quot;text&quot;:&quot;节目名称：《小强来了》   主持人：小强 月色   播出时间：河北交通广播 每晚19：00——20：00  河北电台交通广播打造的娱乐脱口秀节目。  主要... 我觉得《《小强来了》：迟到？会死人的！》听起来挺不错的，你觉得呢？（分享自 @喜马拉雅好声音 ）&quot;,&quot;title&quot;:&quot;《小强来了》：迟到？会死人的！&quot;,&quot;pic&quot;:&quot;http://fdfs.xmcdn.com/group1/M00/13/41/wKgDrlFVQVOBjnjnAALG2WemvdU460_web_large.jpg&quot;,&quot;url&quot;:&quot;http://www.ximalaya.com/1017918/sound/240674&quot;}">分享</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="comment_box_entry"></div>
+                    <div class="relay_box_entry"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="pagingBar mgT30">
+        <div class="pagingBar_wrapper">
+    
+          <a class="pagingBar_page on" href="javascript:return false;">1</a>
+
+
+          <a class="pagingBar_page" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=2" rel="next">2</a>
+
+
+          <a class="pagingBar_page" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=3" rel="">3</a>
+
+
+          <a class="pagingBar_page" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=4" rel="">4</a>
+
+
+          <a class="pagingBar_page" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=5" rel="">5</a>
+
+
+          <span>......</span>
+
+          <a class="pagingBar_page" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=439" rel="">439</a>
+
+
+    <a class="pagingBar_btn" href="/#/tag/%E5%B9%BF%E6%92%AD%E5%89%A7?page=2" rel="next">下一页</a>
+
+  </div>
+
+    </div>
+  </div>
+
+  <div class="mainbox_right">
+<div class="ad1">
+  <iframe src="http://s1.xmcdn.com/baidu_advertise.html?id=728786" width="200px" height="80px" scrolling="no" frameborder="0" style="display:block;margin:0"></iframe>
+
+</div>
+
+
+
+<div class="recommendedBar">
+  <div class="titleBar">
+    <a href="/#/tag/广播剧/follower" class="more">更多</a>
+    <h2 class="title">这些人添加了该标签</h2>
+  </div>
+  <ul class="personPanelBar3List">
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/2304361/" card="2304361">
+              <img alt="皇甫翎筠" src="http://fdfs.xmcdn.com/group1/M01/22/E9/wKgDrlHyormA6HkZAABC4UZs9lU337_common_medium.jpg" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/2304361/" title="皇甫翎筠">皇甫翎筠</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:2304361,is_follow:false,nickname:'皇甫翎筠'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/2058362/" card="2058362">
+              <img alt="玥M夜" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/2058362/" title="玥M夜">玥M夜</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:2058362,is_follow:false,nickname:'玥M夜'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/2008820/" card="2008820">
+              <img alt="咖椰Kaya" src="http://qzapp.qlogo.cn/qzapp/100261563/4D58E2BB762C7EDA4F98FA16BF4288AC/100" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/2008820/" title="咖椰Kaya">咖椰Kaya</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:2008820,is_follow:false,nickname:'咖椰Kaya'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/1703086/" card="1703086">
+              <img alt="菩提佛铃佛桑花" src="http://tp3.sinaimg.cn/2602296054/180/5662176289/0" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/1703086/" title="菩提佛铃佛桑花">菩提佛铃佛桑花</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:1703086,is_follow:false,nickname:'菩提佛铃佛桑花'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/1770212/" card="1770212">
+              <img alt="N扣扣有狂躁症" src="http://tp1.sinaimg.cn/1427165244/180/5664611538/0" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/1770212/" title="N扣扣有狂躁症">N扣扣有狂躁症</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:1770212,is_follow:false,nickname:'N扣扣有狂躁症'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="listItem">
+      <div class="personPanelBar3">
+        <div class="cl">
+          <div class="left">
+            <a class="userface" href="/#/1888228/" card="1888228">
+              <img alt="wsndd" src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" data-options="defaultImg:person_60"><span></span>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="title">
+              <a href="/#/1888228/" title="wsndd">wsndd</a>
+            </div>
+          </div>
+          <div class="right">
+              <a class="addBtn2 small  " data-options="uid:1888228,is_follow:false,nickname:'wsndd'" href="javascript:;">
+                  <span class="default">关注</span>
+                  <span class="hover">取消</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</div>
+  
+</div>
+
+<script type="text/template" id="tpl_comment_box">
+    <div class="commentBox mgT10 hidden">
+        <div class="commentBox_top">
+            <a href="javascript:;" class="closeBtn" title="关闭"></a>
+            <span><%= title %></span>
+        </div>
+        <div class="commentBox_middle">
+            <div class="left">
+                <a class="userface" href="javascript:;">
+                    <img src="http://s1.xmcdn.com/css/img/common/default/user60.jpg?v=1376561308" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="commentBox_inputBox">
+                    <div class="effect_borderHover"></div>
+                    <div class="effect_borderDefault"></div>
+                    <input value="" type="text" placeholder="写点什么吧...">
+                    <textarea rows="" cols=""></textarea>
+                </div>
+                <div class="cl">
+                    <div class="fr">
+                        <span class="charCount count-tip">
+                            还剩 <em>145</em>
+                            字
+                        </span>
+                        <a href="javascript:;" class="faceBtn"></a>
+                        <a href="javascript:;" class="submitBtn">
+                            <span><%= btnText %></span>
+                        </a>
+                    </div>
+                    <span>点亮分享</span>
+                    <a href="javascript:;" class="qqWeiboBtn" title="腾讯微博" data-type="<%= shareType %>" data-name="tQQ"></a>
+                    <a href="javascript:;" class="qZoneBtn" title="QQ空间" data-type="<%= shareType %>" data-name="qzone"></a>
+                    <a href="javascript:;" class="sinaWeiboBtn" title="新浪微博" data-type="<%= shareType %>" data-name="tSina" ></a>
+                    <a href="http://www.ximalaya.com/passport/profile">配置</a>
+                </div>
+            </div>
+        </div>
+        <ul class="commentBox_commentList">
+
+        </ul>
+    </div>
+</script>
+
+
+</div>
+  </div>
+<!--页面内容 end-->
+<!--页面底部 start-->
+<div class="footer"></div>
+<!--页面底部 end-->
+</body>
+</html>

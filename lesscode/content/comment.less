@@ -1,0 +1,45 @@
+@import "fn/comment.less";
+@import "fn/commentbox.less";
+
+/*content/comment*/
+//评论
+.comment{.commentFn();}
+
+//冒泡形式评论
+.commentBubble{.commentBubbleFn()};
+.commentBubbleList{
+	.listBottomFn(10,10);
+	& .listItem{
+		//border-bottom: 1px dashed @colorLine2;	
+		border-top: 1px dashed @colorLine2;
+		border-bottom:none;
+		&:hover{
+			& .replyBtn{
+				.show;
+			}	
+		}
+	}
+}
+
+.commentBox{.commentBoxFn();}
+
+.layout-commentBox-timelineFeed{
+	margin-top: 10px;
+	border-left:none;
+	border-right:none;
+}
+
+
+.comment2{
+	.bar2Fn(60);
+	.comment2Fn();	
+}
+.commentReply{
+	.bar2Fn(50);
+	.comment2Fn();
+	padding:10px;
+	background-color:#FAFAFA;
+	& .commentBox{
+		background-color: #fff;
+	}
+}

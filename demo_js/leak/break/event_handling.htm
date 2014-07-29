@@ -1,0 +1,43 @@
+<html>
+<body>
+	<script type="text/javascript">
+		document.write("Avoiding memory leak via closure by breaking the circular reference");
+		window.onload = function outerFunction() {
+			var obj = document.getElementById("element");
+			obj.onclick = function innerFunction() {
+				alert("Hi! I have avoided the leak");
+				// Some logic here
+			};
+			obj.bigString1 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString2 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			delete obj.bigString1;
+			delete obj.bigString2;
+			obj = null; //This breaks the circular reference
+		};
+/*
+		document.write("Avoiding a memory leak by adding another closure");
+		window.onload = function outerFunction() {
+			var anotherObj = function innerFunction() {
+				// Some logic here
+				alert("Hi! I have avoided the leak");
+			};
+			(function anotherInnerFunction() {
+				var obj = document.getElementById("element");
+				obj.onclick = anotherObj
+			})();
+		};
+
+		document.write("Avoid leaks by avoiding closures!");
+		window.onload = function() {
+			var obj = document.getElementById("element");
+			obj.onclick = doesNotLeak;
+		}
+		function doesNotLeak() {
+			//Your Logic here
+			alert("Hi! I have avoided the leak");
+		}
+	*/
+	</script>
+	<button id="element">"Click Here"</button>
+</body>
+</html>

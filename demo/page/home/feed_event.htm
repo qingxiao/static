@@ -1,0 +1,955 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../../../css/web.css" rel="stylesheet" type="text/css" />
+<title>“喜玛拉雅 听我想听”移动版</title>
+</head>
+<body>
+	<!--页面头部 start-->
+	<div class="header">
+		<div class="header_wrapper">
+			<a class="logo"></a>
+			<div class="menu">
+				<a href="#">首页</a>
+				<a class="menuItmeDiscover on" href="#">发现<span></span><i class="bud"></i></a>
+				<a class="wider" href="#">个人电台</a>
+				<a href="#">声音</a>
+				<a href="#">专辑</a>
+			</div>
+			<a class="uploadRecordBtn">上传录制</a>
+		</div>
+	</div>
+	<!--页面头部 end-->
+	<!-- 发现页菜单start -->
+	<div class="discoverMenu">
+		<div class="discoverMenu_wrapper">
+			<ul>
+				<li class="is-first">
+					<a class="discoverMenu1Btn" href="#"><i></i><span>最新资讯</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu2Btn" href="#"><i></i><span>音乐</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu3Btn" href="#"><i></i><span>有声小说</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu4Btn" href="#"><i></i><span>综艺娱乐</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu5Btn" href="#"><i></i><span>情感生活</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu6Btn" href="#"><i></i><span>社会人文</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu7Btn" href="#"><i></i><span>健康养生</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu8Btn" href="#"><i></i><span>外语/讲座</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu9Btn" href="#"><i></i><span>商业经济</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu10Btn" href="#"><i></i><span>儿童</span></a>
+				</li>
+				<li>
+					<a class="discoverMenu11Btn" href="#"><i></i><span>其它</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 发现页菜单end -->
+	<!--浮动头部 start-->
+	<div class="floatHeader">
+		<div class="floatHeader_wrapper">
+			<!-- 浮动头部-->
+			<div class="grobalPlayer">
+				<div class="controlPanel">
+					<div class="progressBar">
+						<div class="playBar"></div>
+					</div>
+					<div class="cover"></div>
+					<div class="controls">
+						<a class="prevBtn is-btn-disabled"><span class="disabled"></span></a>
+						<a class="playBtn"><span class="disabled"></span></a>
+						<a class="nextBtn is-btn-disabled"><span class="disabled"></span></a>
+					</div>
+				</div>
+				<a class="forwordBtn" title="转采"></a>
+				<a class="title" href="#" title="微闻联播130313：猪投上海  沙逼北京 ">微闻联播130313：猪投上海沙逼</a>
+			</div>
+			<div class="searchPanel">
+			    <!-- 搜索类型-->
+				<div class="type">
+					<a href="javascript:;" class="selected">声音</a>
+			        <div class="options">
+	                	<a data-scope="voice" href="javascript:;" class="on">声音</a>
+	                	<a data-scope="user" href="javascript:;">人</a>
+	                	<a data-scope="album" href="javascript:;">专辑</a>
+		                <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+			        </div>
+				</div>
+				<input type="text" value="" name="textfield" autocomplete="off" keyowrds="">
+				<!-- focus状态 is-searchBtn-focus -->
+				<a class="searchBtn"></a>
+				<!-- 以下部分由js模块来生成 start -->
+		        <!-- 搜索结果-->
+	            <ul class="results hidden">
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>好声音</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title"><em>中国</em>达人秀</a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_sound">
+	                		<a href="#" class="title">法制<em>中国</em></a>
+	                		<a class="playBtn">play</a>
+	                	</div>
+	                </li>
+	            </ul>
+				<ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_user">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                				<a class="vBtn"></a> 
+	                			</p>
+	                			<p>
+	                				<span class="sign">中国好声音学员...</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+	            <ul class="results is-results-needGap hidden">
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	                <li>
+	                	<div class="searchPanel_album">
+	                		<div class="left">
+		                		<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+	                		</div>
+	                		<div class="right">
+	                			<p>
+	                				<a href="#" class="title"><em>中国</em>好声音</a>
+	                			</p>
+	                			<p>
+	                				<span class="soundCount">12个声音</span>
+	                			</p>
+	                		</div>
+	                	</div>
+	                </li>
+	            </ul>
+		      	<!-- 以下部分由js模块来生成 end -->
+		      </div>
+			<div class="loginPanelBox">
+				<div class="bgVLineL"></div>
+				<div class="loginPanel">
+					<!-- 登陆状态下  -->
+					<a class="userfaceBtn" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+					<a class="goHomeBtn" href="#"></a>
+					<!-- 当有消息时使用getNewMsgBtn -->
+					<a class="getNewMsgBtn" href="#"></a>
+					<!-- 登陆未状态下  -->
+					<!-- 
+					<a class="loginBtn" href="#"></a>
+					<a class="registerBtn" href="#">注册</a>
+					 -->
+					 <!-- 账号 -->
+					 <div class="loginPanel_accountPop hidden">
+					 	<ul>
+					 		<li><a href="#">个人中心</a></li>
+					 		<li><a href="#">个人设置</a></li>
+					 		<li><a href="#">退出</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+					 </div>
+					 <div class="loginPanel_MsgPop hidden">
+					 	<ul>
+					 		<li><a href="#">3个新粉丝</a></li>
+					 		<li><a href="#">29个新评论</a></li>
+					 		<li><a href="#">您有3个新粉丝</a></li>
+					 	</ul>
+					 	<div class="bud"></div>
+						<div class="del"></div>
+					 </div>
+					 <!-- 第三方账号登录 -->
+					 <div class="loginPanel_thirdLoginPop hidden">
+					 	<p><a class="qqLoginBtn" href="#"></a></p>
+					 	<p><a class="weiboLoginBtn" href="#"></a></p>
+					 	<p><a href="javascript:;">用邮箱/手机登录</a></p>
+					 	<div class="bud"></div>
+					 </div>
+					 <!-- 本地账号登录 -->
+					 <div class="loginPanel_loginPop hidden">
+					 	<div class="inputLine gapB"><div class="left">账号</div><div class="right"><input class="username" type="text" value="" /></div></div>
+					 	<div class="inputLine"><div class="left">密码</div><div class="right"><input class="password" type="password" value="" /></div></div>
+					 	<div class="inputLine is-inputLine-last"><div class="left"></div><div class="right"><input class="rememberMe" type="checkbox" value="" />记住我</div></div>
+					 	<a class="submitBtn"></a>
+					 	<div><a class="qqSmallLoginBtn" href="#"></a><a class="weiboSmallLoginBtn" href="#"></a><a href="javascript:;">使用第三方登录</a></div>
+					 	<div class="bud"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="volumePanelBox">
+				<div class="bgVLineL"></div>
+				<div class="volumePanel">
+					<a class="volumePanel_muteBtn"></a>
+					<div class="volumePanel_volumebar">
+						<div class="volumePanel_cover"></div>
+						<a class="volumePanel_seekBtn"></a>
+					</div>
+					<div class="volumePanel_mark"></div>
+				</div>
+				<div class="bgVLineR"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 浮动头部 end -->
+	
+	<!--页面内容 start-->
+	<div class="bodyBgColor">
+		<div class="mainbox">
+		<!-- 容器背景 -->
+		<div class="mainbox_wrapper mainbox_bg" id="eventFeedPage">
+			<div class="mainbox_left">
+				<!-- 个人信息 -->
+				<!--
+				<div class="personPanel gapModuleB">
+					<div class="userfaceWrapper">
+						<a class="userface" href="#"><img src="/css/img/person_60.jpg"
+							alt=""></a>
+					</div>
+					<div class="fl">
+						<div>
+							<a class="nickName" href="#">用户名称最长10个汉字<i class="VIcon">&nbsp;</i></a>
+						</div>
+						<div class="count">
+							声音<a href="#">18200</a><span></span> 
+							专辑<a href="#">21000</a><span></span>
+							喜欢<a href="#">2200</a><span></span>
+							关注<a href="#">21000</a><span></span>
+							粉丝<a href="#">2200</a>
+						</div>
+						<ul class="nav_list" style="margin-left:-5px;">
+							<li class="nav_item"><a href="javascript:;">主页</a></li>
+							<li class="nav_item on"><a href="javascript:;">声音(128)</a></li>
+							<li class="nav_item"><a href="album.html">专辑(128)</a></li>
+							<li class="nav_item"><a href="like.html">喜欢(128)</a></li>
+							<li class="nav_item"><a href="like.html">关注(1280)</a></li>
+							<li class="nav_item"><a href="like.html">粉丝(128000)</a></li>
+						</ul>
+					</div>
+					<a class="uploadBtn" href="#"></a>
+				</div>
+				-->
+				<div class="personal_container mgB30">
+				<div class="personal_header">
+					<div class="picture">
+						<img src="/css/img/person_60.jpg">
+					</div>
+					<div class="nav_wrap">
+						<div class="username">测试用户名称</div>
+						<ul class="nav_list">
+							<li class="nav_item"><a href="javascript:;">主页</a></li>
+							<li class="nav_item on"><a href="javascript:;">声音(128)</a></li>
+							<li class="nav_item"><a href="album.html">专辑(128)</a></li>
+							<li class="nav_item"><a href="like.html">喜欢(128)</a></li>
+							<li class="nav_item"><a href="like.html">关注(1280)</a></li>
+							<li class="nav_item"><a href="like.html">粉丝(128000)</a></li>
+						</ul>
+					</div><a class="uploadBtn" href="#"></a>
+				</div>
+				</div>
+				<!-- feedTab -->
+				<div class="feedTab">
+					<div class="fl">
+						<strong class="tab_title">新鲜事</strong>
+						<a href="javascript:;" class="select">全部</a>
+					</div>
+					<div class="fr">
+						<a href="#" class="tab_item"><span>声音</span></a>
+						<a href="#" class="tab_item on"><span>新鲜事</span></a>
+					</div>
+				</div>
+				<!-- feed提示 -->
+				<div class="feedMoreMessageBox">
+					<a>您有<em>1</em>条新的声音</a>
+				</div>
+				<!-- feed列表 -->
+				<ul class="feedList">
+					<!-- 喜欢声音 -->
+					<li class="listItem">
+						<div class="feed">
+							<div class="left">
+								<a class="userface" href="#"> <img
+									src="/css/img/person_60.jpg" alt="">
+								</a>
+							</div>
+							<div class="right">
+								<div class="feed_operate">
+									<a href="javascript:;" class="closeBtn" title="删除"></a>
+									<a href="javascript:;" class="reportBtn" title="举报"></a>
+								</div>
+								<div class="feed_title">
+									<a href="#">CNN英语</a><i class="VIcon">&nbsp;</i>							
+									<a class="iphoneBtn"><span class="mobileFrom"><em>来自iPhone</em><i class="mobileFrom_arrow"></i></span></a>					
+									<span>喜欢了10个声音</span>
+								</div>
+								<div class="feed_content">
+									<ul>
+										<li class="gapB">
+											<div class="miniPlayer">
+												<a class="playBtn"></a>
+												<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												<span class="fr">
+													来自 <a class="author" href="#">鼠来宝</a>
+												</span>
+											</div>
+										</li>
+										<li class="gapB">
+											<div class="miniPlayer">
+												<a class="playBtn"></a>
+												<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												<span class="fr">
+													来自 <a class="author" href="#">鼠来宝</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<div class="miniPlayer">
+												<a class="playBtn"></a>
+												<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												<span class="fr">
+													来自 <a class="author" href="#">鼠来宝</a>
+												</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="feed_bottom">
+									<span class="feed_createtime">59秒前</span>
+								</div>
+							</div>
+						</div>
+						<div class="moreBtn unexpand">
+							<div class="bg"></div>
+							<a href="#">展开更多喜欢的声音&nbsp;&nbsp;&nbsp;</a>
+						</div>
+					</li>
+					<!-- 评论声音 -->
+					<li class="listItem">
+						<div class="feed">
+							<div class="left">
+								<a class="userface" href="#"> <img
+									src="/css/img/person_60.jpg" alt="">
+								</a>
+							</div>
+							<div class="right">
+								<div class="feed_operate">
+									<a href="javascript:;" class="closeBtn" title="删除"></a>
+									<a href="javascript:;" class="reportBtn" title="举报"></a>
+								</div>
+								<div class="feed_title">
+									<a href="#">CNN英语</a>
+									<a class="iphoneBtn"><span class="mobileFrom"><em>来自安卓</em><i class="mobileFrom_arrow"></i></span></a>
+									<span>留下了2个评论</span>
+								</div>
+								<div class="feed_content">
+									<ul class="commentBubbleList">
+										<li class="listItem is-first">
+											<div class="commentBubble is-comment-onReplay">
+												<div class="miniPlayer">
+													<a class="playBtn"></a>
+													<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												</div>
+												<div class="comment_content">
+													<span>评论文本测试15本测试评论文本测试评论文本测试评论文评论文本测试15本测试评论文本测试评论文本测试评论文评论文本测试15本测试评论文本测试评论文本测试评论文评论文本测试15本测试评论文本测试评论文本测试评论文评论文本测试15本测试评论文本测试评论文本测试评论文。</span>
+													<div class="bud"></div>
+												</div>
+												<div class="comment_bottom">
+													<span class="comment_createtime">59秒前</span><a href="javascript:;" class="replyBtn">回复</a>
+												</div>
+												<div class="commentBox mgT10">
+													<div class="commentBox_top cl">
+														<a href="javascript:;" class="closeBtn" title="关闭"></a>
+														<span>回复</span>
+													</div>
+													<div class="commentBox_middle">
+														<div class="left">
+															<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+														</div>
+														<div class="right">
+															<div class="commentBox_inputBox">
+																<div class="effect_borderHover"></div>
+																<div class="effect_borderDefault"></div>
+																<input value="" type="text" placeholder="写点什么吧..." />
+																<textarea rows="" cols=""></textarea>
+															</div>
+															<div class="cl">
+																<div class="fr">
+																	<span class="charCount">还剩<em>145</em>字</span>
+																	<a href="javascript:;" class="faceBtn"></a>
+																	<a href="javascript:;" class="submitBtn"><span>评论</span></a>
+																</div>
+																<span>点亮分享</span> 
+																	<a href="javascript:;" class="qqWeiboBtn"></a>
+																	<a href="javascript:;" class="sinaWeiboBtn on"></a> 
+																	<a href="javascript:;" class="qZoneBtn"></a><a href="#">配置</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="listItem">
+											<div class="commentBubble">
+												<div class="miniPlayer">
+													<a class="playBtn"></a>
+													<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												</div>
+												<div class="comment_content">
+													<span>评论文本测试15本测试评论文本测试评论文本测试评论文评论文本测试。</span>
+													<div class="bud"></div>
+												</div>
+												<div class="comment_bottom">
+													<span class="comment_createtime">59秒前</span><a href="javascript:;" class="replyBtn">回复</a>
+												</div>
+											</div>
+										</li>
+										<li class="listItem is-last">
+											<div class="commentBubble">
+												<div class="miniPlayer">
+													<a class="playBtn"></a>
+													<a class="title" href="#">标题测试文字标题测试文字标题测试文字标题(最大20字)</a>
+												</div>
+												<div class="comment_content">
+													<span>评论文本测试。</span>
+													<div class="bud"></div>
+												</div>
+												<div class="comment_bottom">
+													<span class="comment_createtime">59秒前</span><a href="javascript:;" class="replyBtn">回复</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- 关注用户 -->
+					<li class="listItem">
+						<div class="feed">
+							<div class="left">
+								<a class="userface" href="#"> <img
+									src="/css/img/person_60.jpg" alt="">
+								</a>
+							</div>
+							<div class="right">
+								<div class="feed_operate">
+									<a href="javascript:;" class="closeBtn" title="删除"></a>
+									<a href="javascript:;" class="reportBtn" title="举报"></a>
+								</div>
+								<div class="feed_title">
+									<a href="#">CNN英语</a><a class="iphoneBtn"><span class="mobileFrom"><em>来自安卓</em><i class="mobileFrom_arrow"></i></span></a><span>关注了8个人</span>
+								</div>
+								<div class="feed_content">
+									<div class="personPanelBar2List">
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="personPanelBar2">
+											<div class="left">
+												<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""></a>
+											</div>
+											<div class="right">
+												<div>
+													<a class="title" href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+												</div>
+												<div>
+													<a class="soundCount">99999</a>
+													<a class="followerCount">99999</a>
+												</div>
+												<div>
+													<a class="addBtn"><em>+</em><span>关注</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feed_bottom">
+									<span class="feed_createtime">1天前</span>
+								</div>
+							</div>
+						</div>
+						<div class="moreBtn expand">
+							<div class="bg"></div>
+							<a href="#">展开更多他关注的人&nbsp;&nbsp;&nbsp;</a>
+						</div>
+					</li>
+					<!-- 创建专辑 -->
+					<li class="listItem">
+						<div class="feed">
+							<div class="left">
+								<a class="userface" href="#"> <img
+									src="/css/img/person_60.jpg" alt="" />
+								</a>
+							</div>
+							<div class="right">
+								<div class="feed_operate">
+									<a href="javascript:;" class="closeBtn" title="删除"></a>
+									<a href="javascript:;" class="reportBtn" title="举报"></a>
+								</div>
+								<div class="feed_title">
+									<a href="#">CNN英语</a><a class="iphoneBtn"><span class="mobileFrom"><em>来自安卓</em><i class="mobileFrom_arrow"></i></span></a><span>创建了1个专辑</span>
+								</div>
+								<div class="feed_content">
+									<div class="album">
+										<div class="left">
+											<a href="#" class="albumface"><span><img src="/css/img/person_60.jpg" alt=""/></span></a>
+										</div>
+										<div class="right">
+											<div class="album_title"><a href="#">《专辑名称》</a></div>
+											<div class="album_content">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字...</div>
+											<div class="album_bottom">32个声音</div>
+										</div>
+									</div>
+								</div>
+								<div class="feed_bottom">
+									<span class="feed_createtime">59秒前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- 关注标签 -->
+					<li class="listItem">
+						<div class="feed">
+							<div class="left">
+								<a class="userface" href="#"> <img
+									src="/css/img/person_60.jpg" alt="" />
+								</a>
+							</div>
+							<div class="right">
+								<div class="feed_operate">
+									<a href="javascript:;" class="closeBtn" title="删除"></a>
+									<a href="javascript:;" class="reportBtn" title="举报"></a>
+								</div>
+								<div class="feed_title">
+									<a href="#">CNN英语</a><a class="iphoneBtn"><span class="mobileFrom"><em>来自安卓</em><i class="mobileFrom_arrow"></i></span></a><span>关注了30个标签</span>
+								</div>
+								<div class="feed_content">
+									<div class="tagBtnList">
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>刷</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>刷</span></a>
+										<a class="tagBtn" href="#"><span>小清新</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>标签</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>刷</span></a>
+										<a class="tagBtn" href="#"><span>小清新</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+										<a class="tagBtn" href="#"><span>标签</span></a>
+										<a class="tagBtn" href="#"><span>测试标签</span></a>
+									</div>
+								</div>
+								<div class="feed_bottom">
+									<span class="feed_createtime">59秒前</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="loadingMore"></div>
+				<div class="pagingBar">
+					<div class="pagingBar_wrapper">
+						<a class="pagingBar_btn">上一页</a>
+						<a class="pagingBar_page on">1</a>
+						<a class="pagingBar_page">2</a>
+						<a class="pagingBar_page">3</a>
+						<a class="pagingBar_page">4</a>
+						<a class="pagingBar_page">5</a>
+						<span>......</span>
+						<a class="pagingBar_btn">下一页</a>
+					</div>
+				</div>
+			</div>
+			<!-- 右侧栏 -->
+			<div class="mainbox_right">
+				<div class="ad1"></div>
+				<!-- 右侧导航 -->
+				<div class="homeNavBox">
+					<ul class="homeNav">
+						<li><a class="navItem on" href="#"><span class="myNewThingItem">我的动态</span></a></li>
+						<li><a class="navItem" href="#"><span class="homeNavItem">个人中心</span></a></li>
+						<li><a class="navItem" href="#"><span class="myLikedNavItem">我喜欢的</span></a></li>
+						<li><a class="navItem" href="#"><span class="myListenedNavItem">我听过的</span></a></li>
+						<li><div class="append"><a class="navLink" href="#">发布</a></div><a class="navItem" href="#"><span class="mySoundNavItem">我的声音</span></a></li>
+						<li><a class="navItem" href="#"><span class="myAlbumNavItem">我的专辑</span></a></li>
+						<li><a class="navItem" href="#"><span class="atMeNavItem">@我的</span></a></li>
+						<li><div class="append"><a href="#" class="navNumIcon"><em>8</em></a></div><a class="navItem" href="#"><span class="messageNavItem">我的私信</span></a></li>
+						<li><div class="append"><a href="#" class="navNumIcon"><em>99</em></a></div><a class="navItem" href="#"><span class="commentNavItem">评论</span></a></li>
+					</ul>
+					<div class="homeNavMoreBar">
+						<span class="navNumIcon hidden"><em>99</em></span>
+						<a class="on">收起</a>
+					</div>
+				</div>
+				<!-- 最热个人电台 -->
+				<div class="recommendedBar">
+					<div class="titleBar">
+						<a href="#" class="more">更多</a>
+						<h2 class="title">最热个人电台</h2>
+					</div>
+					<ul class="personPanelBar3List">
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试<i class="VIcon">&nbsp;</i></a>
+										</div>
+										<div class="info">
+											<a class="selectBtn on" href="#"><span>17个间接关注</span><em>◆</em></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+								<div class="infoDetail">
+									<a href="#">用户名称A</a> 、<a href="#">用户名称B</a>也关注了他
+								</div>
+							</div>
+						</li>
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+										</div>
+										<div class="info">
+											<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+										</div>
+										<div class="info">
+											<a class="selectBtn unclick" href="#"><span>新晋播主</span></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+										</div>
+										<div class="info">
+											<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+										</div>
+										<div class="info">
+											<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="listItem">
+							<div class="personPanelBar3">
+								<div class="cl">
+									<div class="left">
+										<a class="userface" href="#"><img src="/css/img/person_60.jpg" alt=""><span></span></a>
+									</div>
+									<div class="middle">
+										<div class="title">
+											<a href="#" title="测试用户名测试用户名">测试用户名测试用户名</a>
+										</div>
+										<div class="info">
+											<a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+										</div>
+									</div>
+									<div class="right">
+										<div class="operate">
+											<a href="javascript:;" class="closeBtn" title=""></a>
+										</div>
+										<a class="addBtn"><em>+</em><span>关注</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 热门话题 && 我的标签 -->
+				<div class="recommendTagsBar">
+					<div class="tagTab">
+						<a href="#" class="tab_item"><span>热门话题</span></a>
+						<a href="#" class="tab_item on"><span>我的标签</span></a>
+					</div>
+					<div class="myTags">
+						<div class="tagsBox">
+							<div class="addTagOperate on">								
+								<a class="addTagBtn" href="javascript:;">+添加标签</a>
+								<div><input type="text"></input><a class="editConfirm">确认</a></div>
+							</div>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>刷</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>刷</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>小清新</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<a class="tagBtn" href="#"><span>测试标签</span><div class="del"></div></a>
+							<!-- 更多标签
+							<div class="moreBtn"><span><a href="#">更多标签</a></span></div> 
+							-->
+						</div>	
+					</div>
+					<div class="more"><a class="on">收起</a></div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	</div>
+	<!--页面内容 end-->
+	<!--页面底部 start-->
+	<div class="footer"></div>
+	<!--页面底部 end-->
+	<!--[if IE 6]>
+	<script type="text/javascript">
+	    document.execCommand("BackgroundImageCache", false, true); 
+	</script>
+	<![endif]-->
+</body>
+</html>

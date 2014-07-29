@@ -1,0 +1,98 @@
+//样式重置
+/*base/reset*/
+@import "fn/reset.less";
+.reset();
+
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,i {margin: 0;padding: 0;}
+html{ -webkit-text-size-adjust:none; }
+body {font-family: Tahoma, Verdana, sans-serif, STHeiTi; }
+ol,ul {list-style: none;}
+img{ border:0; text-align: center; }
+em{ font-style:normal; }
+input, textarea, a {outline: none;}//ie8下，去掉虚线框
+canvas{user-select:none;-webkit-user-select:none;}
+h1,h2,h3,h4,h5,h6{
+	font-size: @fontSize * 1px;
+	line-height: @lineHeightOther;
+}
+
+input{
+	border:solid 1px @colorLine1;
+	&:hover{
+		border:solid 1px @colorLine3;
+	}
+	&:focus{
+		border:solid 1px @colorLine3;
+		background-color:#FAFAFC;
+	}
+}
+input[type="text"],input[type="password"]{
+	padding:0 5px;
+	line-height:18px;
+}
+textarea{
+	resize:none;//textarea框去掉右下角的拖动箭头
+	&:hover,&:focus{border: 1px solid #3586bc;}
+	padding:5px;
+}
+body{
+	font-size: @fontSize * 1px;
+	color: @colorText2;
+	line-height: @lineHeightOther;
+	background-color: #F6F6F6;
+	&.bg-fafafa
+    {
+    	background-color:#fafafa;
+    }
+	&.none-select
+    {
+    	-moz-user-select:none;
+		-webkit-user-select:none;
+		user-select:none;
+    }
+}
+
+.link1{
+	text-decoration:none;
+	color:@colorLink; 
+	font-weight: normal;
+	&:link{}
+	&:visited{}
+	&:hover{text-decoration:underline;color:@colorLinkHover;}
+	&:active{}
+}
+a{
+	.link1;
+}
+.link2{
+	color:@colorLinkLess; 
+	&:link{}
+	&:visited{}
+	&:hover{text-decoration:underline;color:@colorLinkLessHover;.textHoverFn(); }
+	&:active{}
+}
+.link22{
+	.link2;
+	&:hover{text-decoration:underline;color:@colorLinkLess; .textHoverFn();}
+}
+.linkTextFn(){
+	color:@colorLinkText;
+	cursor: pointer; 
+	&:link{}
+	&:visited{}
+	&:hover{text-decoration:none;color:@colorLinkTextHover;.textHoverFn();}
+	&:active{}
+}
+.linkText{
+	.linkTextFn();	
+}
+//必须设置否则显示不出来
+.vml {
+    behavior: url(#default#VML);
+    antialias: true;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:20px;
+}

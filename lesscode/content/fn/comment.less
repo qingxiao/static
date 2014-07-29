@@ -1,0 +1,112 @@
+.commentFn (){
+	.bar2Fn(50);
+	& .userface{
+		.userface40;
+	}
+	& .comment_titleBar{
+		line-height:@fontSize;
+	}
+	& .comment_content{
+		margin:8px 0 3px 0;
+		line-height:@lineHeight;
+		word-break:break-all;
+	}
+	& .comment_createtime{
+		color:@colorText5;
+		font-size:@fontSizeMin;
+	}
+	& .comment_operate{
+		.fr;
+		display:none;
+	}
+}
+.commentBubbleFn(){
+	& .comment_content{
+		line-height:@lineHeight;
+		border: 1px solid @colorLine1;
+		padding:10px;
+		display: inline-block;
+		.is-comment_content-hasBud;
+		margin:5px 0 0 20px;
+		color:@colorText2;
+		min-width:50px;
+		word-break:break-all;
+	}
+	& .commentBox{
+		border: 1px solid @colorLine2;
+		padding: 10px;
+		margin: 10px 0 0;
+	}
+	& .comment_bottom{
+		margin:10px 0 0 0;
+		.clearfix;
+		& .comment_createtime{
+			color:@colorText5;
+			font-size:@fontSizeMin;
+			.fl;
+		}
+		& .replyBtn,.commentBtn, .delBtn{
+			.fr;
+		}
+	}
+	& .replyBtn,.commentBtn,.delBtn{
+		.hidden;
+	}
+	&.is-comment-onReplay{
+		& .replyBtn,.commentBtn{
+			/*.show;*/
+            display: inline-block;
+		}	
+	}
+	&:hover{
+		& .replyBtn,.commentBtn,.delBtn{
+            /*.show;*/
+            display: inline-block;
+		}	
+	}
+}
+
+.comment2Fn(){
+	& .userface{
+		.userface40;
+	}
+	& .comment_titleBar{
+		line-height:@fontSize;
+		color: #999999;		
+	}
+	& .comment_content{
+		margin:8px 0 3px 0;
+		line-height:@lineHeight;
+		word-break:break-all;
+	}
+	& .comment_createtime{
+		color:@colorText5;
+		font-size:@fontSizeMin;
+	}
+	& .comment_bottom{
+		margin:10px 0 0 0;
+		.clearfix;
+		& .comment_createtime{
+			color:@colorText5;
+			font-size:@fontSizeMin;
+			.fl;
+		}
+		& .replyBtn,.delBtn{
+			.fr;
+			margin-left:10px;
+		}
+	}
+	& .replyBtn,.delBtn{
+		.hidden;
+	}
+	&.is-comment-onReplay{
+		& .replyBtn{
+			.show;
+		}	
+	}
+	&:hover{
+		& .replyBtn,.reportBtn,.delBtn{
+			.show;
+		}	
+	}
+}

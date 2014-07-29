@@ -1,0 +1,184 @@
+@import "fn/recommendedbar.less";
+@import "fn/tagsBox.less";
+
+//布局
+.mainbox_right{
+	& .homeNav{
+		margin-bottom:3px;
+	}
+	& .homeNavMoreBar{
+		margin-bottom:20px;
+	}
+	& .recommendedBar{
+		margin-bottom:20px;
+	}
+	& .ad1{
+		height:auto;
+		margin-bottom:20px;
+		background-color:#f5f5f5;
+		img{
+			width:200px;
+		}
+	}
+	&  .recommendTagsBar{
+		& .more{
+			margin-left:6px;
+			& a{
+				cursor: pointer;
+				background: url("img/sprite/icon10px.png") no-repeat right -211px;
+				padding-right: 13px;
+				&.on{
+					background-position:right -236px;
+				}
+			}
+		}
+		& .tagsBox{
+			border-bottom:none;	
+		}
+		& .myTags{
+			.tagBtn {
+				position:relative;
+			}
+			.addTagOperate{
+				margin:0 10px 8px 0;
+				height:30px;
+				.clearfix;
+				div{
+					.clearfix;
+					display:none;
+					border:2px solid #3586bc;
+					width:138px;
+					padding:2px 3px 2px 0;
+					input{
+						border:none;
+						.fl;
+						line-height:22px;
+						height:22px;
+						width:90px;
+					}
+					.editConfirm{
+						.fr;
+					}
+				}
+				&.on{
+					.addTagBtn{
+						display:none;
+					}
+					div{
+						display:block;;
+					}
+				}
+			}
+		}
+	}
+}
+//推荐栏
+.recommendedBar{.recommendBarFn();}
+//我的标签
+.tagsBox{.tagsBoxFn();}
+
+//专辑栏
+.albumBar{
+	.recommendBarFn();
+	& ul{
+		margin-top:20px;
+		& li{margin-top:10px;}
+	}
+	& .albumPanelBar2{
+		.clearfix();
+		.col2Fn(right,84px,16px);
+		word-wrap: break-word;
+		& a{
+			font-weight:bold;
+			display:block;
+			margin-bottom:10px;
+			//text-indent:-2px;
+			padding:7px 6px 0 0;
+		}
+		& span{
+			color:@colorText4;
+		}
+		.right a{
+			max-height:72px;
+			overflow:hidden;
+		}
+	}
+}
+//粉丝栏
+.fansBar{
+	.recommendBarFn();
+	& .fans_content{
+		margin-top:10px;
+		.clearfix();
+		& a{
+			.fl;
+			padding:1px 0 0 1px;
+			& img{
+				width:39px;
+				height:39px;
+				&:hover{
+					opacity:0.8;
+				}
+			}
+		}
+	}
+}
+//他最受欢迎的声音
+.soundBar{
+	.recommendBarFn();
+	& li{
+		.bgImgExt("dotter_CCC_2.png",0,bottom,repeat-x);
+		padding:5px 0;
+	}
+	& .soundPanelBar3{
+		.clearfix;
+		& .title{
+			width:130px;
+			.fl;
+			word-wrap:break-word;
+		}
+		& .times{
+			.playCountIcon;
+			.fr;
+			color:@colorText4;
+			
+		}
+	}
+}
+
+//歌词
+.lyricBar{
+	& .lyricTitleBar{
+		font-weight:bold;
+		padding-bottom:10px;
+	}
+	& .lyricPanelBar{
+		border:1px solid @colorLine1;
+		background-color:#FAFAFA;
+		width:180px;
+		height:210px;		
+		overflow:auto;
+		padding:10px;
+		word-wrap:break-word;
+	}
+}
+
+//右侧推荐位
+.mainbox_right{
+	.fixedBox{
+		width:200px;
+		& .recommendedBar{
+			margin-top:10px;
+		}
+		& .recommendTagsBar{
+			margin-bottom:50px;
+		}
+	}
+}
+.fixedBox{
+	&.is-fixed{
+		position:fixed;
+	}
+}
+
+

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<title>下拉框</title>
+<style>
+.demo_title {
+	text-align: center;
+	padding: 20px;
+}
+
+.demo {
+	width: 1200px;
+	margin: 0 auto 60px;
+}
+
+.demo td {
+	padding: 10px;
+	border: solid 1px whiteSmoke;
+}
+
+tr>td:first-child {
+	width: 800px;
+}
+
+tr>td:last-child {
+	width: 60px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="demo_title">content/soundwall.less</div>
+	<table class="demo">
+		<tr>
+			<td>
+                <div class="selecter selecter-scope">
+                    <input type="hidden" name="" value=""/>
+                    <div data-value="voice" class="selecter-selected">
+                        <span class="selecter-text">声音</span>
+                        <em class="selecter-arrow">asdf</em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li data-value="voice" class="selecter-item">声音</li>
+                            <li data-value="user" class="selecter-item">人</li>
+                            <li data-value="album" class="selecter-item">专辑</li>
+                        </ul>
+                        <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+                    </div>
+                </div>
+			</td>
+			<td>下拉框</td>
+			<td>.selecter-scope</td>
+			<td>xiaoqing</td>
+		</tr>
+        <tr>
+            <td>
+                <div class="selecter selecter-s1">
+                    <div data-value="voice" class="selecter-selected">
+                        <span class="selecter-text">来源</span>
+                        <em class="selecter-arrow">◆</em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li data-value="voice" class="selecter-item">全部</li>
+                            <li data-value="user" class="selecter-item">原创</li>
+                            <li data-value="album" class="selecter-item">采集</li>
+                        </ul>
+                        <!--<a data-scope="tag" href="javascript:;">标签</a>-->
+                    </div>
+                </div>
+            </td>
+            <td>下拉框</td>
+            <td>.selecter-s1</td>
+            <td>xiaoqing</td>
+        </tr>
+        <tr>
+        <td>
+            <div class="selecter selecter-s2">
+                <div data-value="voice" class="selecter-selected">
+                    <div class="selecter-text">不限性别</div>
+                    <em class="selecter-arrow">◆</em>
+                </div>
+                <div class="selecter-options">
+                    <ul>
+                        <li data-value="0" class="selecter-item">不限性别</li>
+                        <li data-value="voice" class="selecter-item">男</li>
+                        <li data-value="user" class="selecter-item">女</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selecter selecter-s2">
+                <div data-value="voice" class="selecter-selected">
+                    <div class="selecter-text">不限性别</div>
+                    <em class="selecter-arrow">◆</em>
+                </div>
+                <div class="selecter-options">
+                    <ul>
+                        <li data-value="0" class="selecter-item">不限性别</li>
+                        <li data-value="voice" class="selecter-item">男</li>
+                        <li data-value="user" class="selecter-item">女</li>
+                    </ul>
+                </div>
+            </div>
+
+        </td>
+        <td>下拉框</td>
+        <td>.selecter-s2</td>
+        <td>xiaoqing</td>
+    </tr>
+        <tr>
+            <td>
+
+                <div class="selecter selecter-s2">
+                    <div data-value="voice" class="selecter-selected">
+                        <span class="selecter-text">是否加V</span>
+                        <em class="selecter-arrow">◆</em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li data-value="voice" class="selecter-item">所有用户</li>
+                            <li data-value="user" class="selecter-item">只看加V</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td>下拉框</td>
+            <td>.selecter-s2</td>
+            <td>xiaoqing</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="selecter selecter-s3" style="display: inline-block;">
+                    <div data-value="1" class="selecter-selected">
+                        <span class="selecter-text">全部</span>
+                        <em class="selecter-arrow"></em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li data-value="2" class="selecter-item">全部</li>
+                            <li data-value="voice" class="selecter-item">所有用户所有用户</li>
+                            <li data-value="user" class="selecter-item">只看加V</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td>下拉框</td>
+            <td>.selecter-s3</td>
+            <td>xiaoqing</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="selecter selecter-s4" style="display: inline-block;">
+                    <div data-value="1" class="selecter-selected">
+                        <span class="selecter-text">更多</span>
+                        <em class="selecter-arrow">◆</em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li data-value="voice" class="selecter-item">举报该用户</li>
+                            <li data-value="user" class="selecter-item">加入黑名单</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td>下拉框</td>
+            <td>.selecter-s4</td>
+            <td>xiaoqing</td>
+        </tr>
+		
+		<tr>
+            <td>
+                <div class="selecter selecter-s5" style="display: inline-block;">
+                    <div class="selecter-selected">
+                        <span class="selecter-text">请选择</span>
+                        <em class="selecter-arrow">◆</em>
+                    </div>
+                    <div class="selecter-options">
+                        <ul>
+                            <li class="selecter-item">原创</li>
+                            <li class="selecter-item">采集</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td>下拉框</td>
+            <td>.selecter-s5</td>
+            <td>ayumi</td>
+        </tr>
+    </table>
+<script type="text/javascript">
+  var config = {
+    STATIC_ROOT:"http://static.test.ximalaya.com",
+    STATIC_PATH:"http://static.test.ximalaya.com",
+    FDFS_PATH:"http://fdfs.test.ximalaya.com",
+    LOGIN_PATH:"http://test.ximalaya.com/passport/login",
+    DIRECT_DTRES_ROOT: "http://upload.test.ximalaya.com/dtres",
+    TRANSCODING_ROOT: "http://test.ximalaya.com/dtres/transcoding/process",
+    UPLOAD_ROOT: "http://upload.test.ximalaya.com/dtres",
+    CURRENT_USER:{"uid":917,"nickname":"这样莞美","logoPic":"http://qzapp.qlogo.cn/qzapp/100261563/D9559CD3EC4936508BB7013B43331855/100","email":null,"account":null,"mobile":null,"isVerified":true,"isCompleted":true,"isVEmail":false,"isVMobile":false,"isRobot":false,"province":null,"city":null,"town":null,"country":null,"personalSignature":null,"ptitle":"称    这样莞美 ","isGuideCompleted":true,"taskCompleteProfile":true,"taskFollow":true,"taskDownloadApp":true,"taskEmail":false,"vCompany":null,"vTags":null,"vCategoryId":1,"deviceToken":null,"isLoginBan":false,"isDeleted":false,"registerCategory":"8,9,10,5","personDescribe":null,"guidePlayPanel":true,"guideVoicePanel":true,"guideSharePanel":true,"thirdpartyName":{"name":"QZONE"},"createdTime":"2012-12-20T15:25:40+08:00","loginBanStart":null,"loginBanEnd":null},
+    SUGGEST_URL:"http://test.ximalaya.com/s/search/suggest",
+    WARNING_SEQ: "10",
+    PLAYER_PATH: "http://static.test.ximalaya.com/js/player_test.swf",
+    SERVER_TIME: "1364548403189",
+    TOKEN_LABEL: "4&_token",
+    REMEMBERME_LABEL: "4&remember_me",
+    ASSETS_VERSION: ""
+  };
+  config.TIME_GAP = new Date().getTime() - config.SERVER_TIME;
+
+</script>
+<script src="/js/lib/require.js"></script>
+<script>
+requirejs.config({
+	baseUrl: '/js/lib',
+    shim: {
+        'json2': {
+            exports: 'JSON'
+        },
+        'underscore': {
+            exports: '_'
+        },
+        'jquery': {
+            exports: 'jQuery'
+        },
+        'backbone': {
+            deps: ['json2','underscore', 'jquery'],
+            exports: 'Backbone'
+        }
+    },
+    paths: {
+        model: '../model',
+        module: '../module',
+        template: '../template',
+        collection: '../collection',
+        page: '../page',
+        plugin: '../plugin'
+    }
+});
+require(['jquery', 'plugin/jquery.selecter'],function($){
+    $(".selecter-s4").selecter({
+        onChange:function(){
+            return false;
+        }
+    });
+    $(".selecter-s3").selecter({
+       delay:1000
+    });
+    $(".selecter").selecter();
+
+});
+</script>
+</body>
+</html>

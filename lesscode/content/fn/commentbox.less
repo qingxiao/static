@@ -1,0 +1,88 @@
+.commentBoxFn (){
+	position:relative;
+	border: 1px solid #eaeaea;
+	padding: 10px;
+	& .commentBox_top{
+		margin-bottom:10px;
+		.clearfix;
+		& .closeBtn{
+			margin: 5px 0 0 5px;
+			.fr;
+		}
+	}
+	& .commentBox_middle{
+		.bar2Fn(50);
+		& .fr{
+			margin-left:8px;
+		}
+		& .userface{
+			.userface40;
+		}
+		& span{
+			color:@colorText4;
+		}
+		& .cl{
+			line-height:30px;
+			height:28px;
+			.btnAlignBrother;
+			& a{
+				margin:0 0 0 5px;
+			}
+		}
+	}
+	& .commentBox_inputBox{
+		padding: 0px 4px 0 6px;
+		margin: 0 0 5px;
+		.borderHoverFn();
+		& input{
+			width: 100%;
+			padding: 7px 0 5px;
+			height:16px;
+			border: none;
+			&:focus{
+				background-color:#fff;
+			}
+		}
+		& textarea{
+			width: 100%;
+			padding: 7px 0 5px;
+			border: none;
+			resize: none;
+			height: 72px;
+			line-height: 18px;
+			.hidden;
+		}
+		&.is-onEdit{
+			& textarea{
+				.show;
+			}
+			& input{
+				.hidden;
+			}
+		}
+	}
+	& .charCount{
+		font-size:16px;
+		color:@colorText4;
+		& em{
+			font-size:18px;
+		}
+	}
+	& .commentBox_commentList{
+		padding-top: 10px;
+        position: relative;
+		.listTopFn(10,10);
+        .fr{
+            position: absolute;
+            right:0;
+            bottom:-5px;
+        }
+		& li{
+			&:hover{
+				& .comment_operate{
+					display:inline-block;
+				}
+			}
+		}
+	}
+}

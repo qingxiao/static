@@ -1,0 +1,568 @@
+/*浮动头*/
+.searchPanel{
+	.clearfix;
+	& .type{
+		width:52px;
+		height:20px;
+		padding-top:2px;
+		.fl;
+		& .selected{
+			.linkTextFn();	
+			padding-right:18px;
+			margin-left: 10px;
+			background: url("@{urlStaticImg}/sprite/btn15px.png") no-repeat right -475px;
+            display:inline-block;
+            height:15px;
+            line-height: 15px;
+            width:24px;
+		}
+		&.is-type-hover{
+			& .selected{
+				background: url("@{urlStaticImg}/sprite/btn15px.png") no-repeat right -496px;			
+			}
+			& .options{
+				display:block;
+			}
+		}
+		& .options{
+			display:none;
+			width: 50px;
+			position: absolute;
+			top: 25px;
+			border: solid 1px #3586bc;
+			border-top: none;
+			background-color: white;
+			left: 0px;
+			text-indent: 7px;
+			& a{
+				.linkTextFn();
+				display: block;
+				height:25px;
+				line-height:25px;
+				&:hover{
+					background:#DEF7FC;
+				}
+				&.on{
+					background:#DEF7FC;
+				}
+			}
+		}
+	}
+	input{
+		width:152px;
+		height:14px;
+		line-height:15px;
+		margin:5px 0;
+		border:none;
+		.fl;
+		&:focus{
+			background-color:#fff;
+		}
+	}
+
+	& .searchBtn{
+		.bgImg("sprite/icon20px.png",no-repeat);
+		width:20px;
+		height:20px;
+		.fl;
+		background-position:0 -180px;
+		margin-left: 4px;
+		margin-top: 3px;
+
+	}
+    &.is-searchPanel-focus .searchBtn{
+        background-position:0 -205px;
+        margin-left: 6px;
+        margin-top: 5px;
+    }
+    &.is-searchPanel-search .searchBtn{
+        /*background-position:0 -205px;*/
+        .bgImg("head/search_loading.gif");
+        background-repeat: no-repeat;
+    }
+	& .results{
+		width: 189px;
+		position: absolute;
+		top: 25px;
+		border: solid 1px #DDD;
+		background-color: white;
+		left: 49px;
+		&.is-results-needGap{
+			padding:5px 0;
+		}
+		& li{
+			margin:0;
+			overflow:hidden;
+			&:hover, &.on{
+				background:#DEF7FC;
+                .operateBtn{
+					display:block;
+				}
+				.transitionFn(background-color, 0.2);
+				
+			}		
+		}
+		& .title{
+			.linkTextFn();
+		}
+		& .searchPanel_sound{
+			line-height:14px;
+			position: relative;
+			height:30px;
+			& .title{
+				
+				cursor: pointer;
+				position: absolute;
+				display:block;
+				height:30px;
+				line-height:30px;
+				text-indent: 10px;
+				width:90%;
+			}
+            .operateBtn{
+                display:none;
+                margin-top:8px;
+                position: absolute;
+                right:10px;
+                .linkTextFn();
+                a{
+                    .linkTextFn();
+                    color:#fff;
+                }
+                font-size: 11px;
+                line-height: 12px;
+                color:#fff;
+                float: right;
+                background: #AAA;
+                padding: 0 1px 0 2px;
+                &:hover{
+                    background:#666;
+                    color:#fff;
+                    a{
+                        color:#fff;
+                    }
+                }
+            }
+
+            .playBtn{
+                .sub-play{
+                    display: inline;
+                }
+                .sub-pause{
+                    display: none;
+                }
+            }
+            .pauseBtn, .player-loading{
+                .sub-play{
+                    display: none;
+                }
+                .sub-pause{
+                    display: inline;
+                }
+            }
+		}
+		& em{
+			color:#f00;
+		}
+		& .searchPanel_user{
+			.bar2Fn(40, 120);
+			padding:5px 10px;
+			& .userface{
+				.userface40;
+			}
+			& .sign{
+				font-size: 12px;
+				color: #999;
+			}
+			& .VIcon{
+				padding-left:2px;
+			}
+		}
+		& .searchPanel_album{
+			.bar2Fn(40, 120);
+			padding:5px 10px;
+			& .userface{
+				.userface40;
+			}
+			& .soundCount{
+				font-size:12px;
+				color:#999;
+				padding-left:15px;
+				.bgImgExt("sprite/icon15px.png",0,-200px);
+			}
+			& .left{
+				border:1px solid #ccc;
+				width:39px;
+				height:39px;
+				img{
+					margin-top:1px;
+					margin-left:-2px;
+				}
+			}
+		}
+	}
+	& .resultsAll{
+		position:absolute;
+		top:25px;
+		left:0;
+		border:1px solid #DDDDDD;
+		&>li{
+			.clearfix;
+			width:238px;
+			background-color:#FAFAFA;
+			border-top:1px solid #EEE;
+			.fl;
+			& .resultsAll_tit{
+				.fl;
+				width:38px;	
+				margin:6px 0 0 10px;
+			}
+			& .results{
+				position:static;
+				.fl;
+				border-right:none;
+				border-top:none;
+				border-bottom:none;
+				border-left:1px solid #EEE;
+			}
+			&:first-child{
+				border-top:none;
+			}
+		}
+	}
+}
+.volumePanelBox {
+	width:82px;
+	position: absolute;
+	right:0;
+	top:0;
+	height:100%;
+	.hidden;
+	.clearfix;
+	& .volumePanelWrapper{
+		width:60px;
+		height:19px;
+		position: absolute;
+		left:11px;
+		top:9px;
+	}
+}
+.volumePanel{
+	position:relative;
+	width:60px;
+	height:19px;
+	.bgImg("head/voice_bg.png");
+	& .volumePanel_mark{
+		top: 5px;
+		right: 5px;
+		width: 4px;
+		height: 8px;
+		display: block;
+		.bgImg("head/voice_icon_2.png",no-repeat);
+		position: absolute;
+	}
+	& .volumePanel_muteBtn,& .volumePanel_unmuteBtn{
+		position: absolute;
+		top:4px;
+		left:6px;
+		.bgImg("head/voice_icon_1.png",no-repeat);
+		.btnFn(7,10,0,0);
+	}
+	& .volumePanel_volumebar_wrapper{
+		left:32px;
+		top:9px;
+		position: absolute;
+	}
+	& .volumePanel_volumebar{
+		width:32px;
+		height:2px;
+		top:-1px;
+		left:-16px;
+		position: absolute;
+		background:#333;
+		cursor: pointer;
+	}
+	& .volumePanel_volume{
+		.hidden;
+		height:2px;
+		width:16px;
+		top:0;
+		left:0;
+		position: absolute;
+		background:#3586bc;
+	}
+	& .volumePanel_seekBtn{
+		.hidden;
+		position: absolute;
+		left:50%;
+		top:50%;
+		& div{
+			position: absolute;
+			width:6px;
+			height:6px;
+			top:-3px;
+			left:-3px;
+			display: block;
+			cursor: pointer;
+			.bgImg("head/touch_point.png",no-repeat);
+			&:hover{
+				width:12px;
+				height:12px;
+				top:-6px;
+				left:-6px;
+				display: block;
+				.bgImg("head/touch_point_hover.png",no-repeat);
+			}
+		}
+	}
+	&.off{
+		& .volumePanel_seekBtn{
+			left:50%;
+			& div{
+				width: 8px;
+				height: 9px;
+				top: -4px;
+				left: -4px;
+				.bgImg("head/fobbiden_icon.png",no-repeat);
+			}
+		}
+	}
+}
+.userfaceBtn,.loginBtn{
+	.bgImg("head/user_btr.png");
+}
+
+.goHomeBtn,.getMsgBtn,.getNewMsgBtn{
+	.bgImg("sprite/btn20px.png");
+}
+
+.loginPanelBox{
+	width:138px;
+	height:100%;
+	position: absolute;
+	top: 0;
+	right: 84px;
+	.loginPanel{
+		.clearfix;
+		height:100%;
+	}
+	& .goHomeBtn{
+		.fl;
+		margin-left:20px;
+		margin-top:9px;
+		.btnFn(20,20,0,0,-25);
+		display:inline;
+	}
+	& .getMsgBtn{
+		.fl;
+		margin-left:20px;
+		margin-top:12px;
+		.btnFn(20,20,0,-54,-79);
+		display:inline;
+	}
+	& .getNewMsgBtn{
+		.fl;
+		margin-left:20px;
+		margin-top:9px;
+		.btnFn(20,20,0,-100,-300);
+		display:inline;
+	}
+	& .userfaceBtn{
+		margin-left:20px;
+		margin-top:8px;
+		padding:3px;
+		.fl;
+		.btnFn(20,20,0,-30,-60);//头像按钮
+		.userface15;
+        height:18px;
+		display:inline;
+		& img{
+			vertical-align: top;
+		}
+	}
+	& .loginBtn{
+		.fl;
+		margin-left:20px;
+		margin-top:8px;
+		.btnFn(57,22,0,-90,-120,-150);
+	}
+	& .registerBtn{
+		.fl;
+		margin-left:20px;
+		.linkTextFn();
+		margin-top:9px;
+		margin-top:11px\9;
+		_margin-top:9px;
+		color:@colorText3;
+	}
+}
+.loginPanelWelBox
+{
+	top: 5px;
+	display:none;
+	.registerBtn
+	{
+		color:#fff;
+		margin-top:0;
+		line-height:48px;
+	}
+}
+.welcome .loginPanelWelBox
+{
+	display:block;
+	position:relative;
+	right:0;
+	top:0;
+	float:right;
+}
+.loginPanelBox{
+	z-index: 20;
+	& .loginPanel_MsgPop,.loginPanel_accountPop,.loginPanel_MenuPop{
+		.budFn(bud,10,5,70,-5,0,-20);
+		position: absolute;
+		padding:1px;
+		width:105px;
+		top: 36px;
+		border: solid 1px #DDD;
+		background:#fff;
+		.shadow;		
+	}	
+	& .loginPanel_accountPop,.loginPanel_MenuPop{
+		& a{
+			line-height:25px;
+			height:25px;
+			padding:0 9px;
+			display:block;
+			.linkTextFn();
+			&:hover{
+				background:#f5f5f5;
+				.transitionFn(background-color, 0.2);
+			}
+		}
+	}
+	& .loginPanel_accountPop{
+		left:-45px;
+	}
+	& .loginPanel_MenuPop{
+		left:32px;
+		.delFn();
+	}
+	.loginPanel_MsgPop{
+		left:32px;
+		.delFn();
+		.linkTextFn();
+		padding:5px 0;
+		li{
+			padding:0 10px;
+			a{
+				height:25px;
+				line-height:25px;
+			}
+		}
+	}
+	& .loginPanel_loginPop,.loginPanel_thirdLoginPop{
+		.budFn(bud,10,5,50,-5,0,-20);
+		position: absolute;
+		padding:15px 10px;
+		top: 36px;
+		left:0px;
+		border: solid 1px #DDD;
+		background:#fff;
+		.shadow;
+	}
+	& .loginPanel_loginPop{
+		width:200px;
+		& .inputLine{
+			height:26px;
+			line-height:26px;
+			.bar2Fn(35,165);
+			& .username,& .password{
+				.fl;
+				padding:6px 8px;
+				height:14px;
+				line-height:14px;
+				width:147px;
+			}
+			& .rememberMe{
+				margin-right:5px;
+				border:none;
+			}
+			&.is-inputLine-last{
+				margin:5px 0;
+			}
+		}
+		& .submitBtn{
+			.submitBigBtn;
+			margin-bottom:10px;
+		}
+		& .qqSmallLoginBtn{
+			.fl;
+			margin-right:2px;
+		}
+		& .weiboSmallLoginBtn{
+			.fl;
+			margin-right:5px;
+		}
+	}
+	& .loginPanel_thirdLoginPop{
+		width:170px;
+		& .weiboLoginBtn{
+			margin:10px 0;
+		}
+	}
+}
+.floatHeader {
+	position: relative;
+	z-index: 30;
+	height: 36px;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	.bgImg("base/bg_float_header.png");
+	&.is-fixed{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		margin-top: 0;
+		z-index: 9998;
+	}
+	& .floatHeader_wrapper{
+		width:@mainboxWidth;
+		height:100%;
+		margin:0 auto;
+		position: relative;
+		& .grobalPlayer{
+			position: absolute;
+		}
+	}
+	& .searchPanel{
+		width:240px;
+		height:24px;
+		padding-top:1px;
+		padding-bottom:2px;
+		margin: 0 auto;
+		.bgImg("head/search_bg.png", no-repeat);
+		position: absolute;
+		left:360px;
+		top:4px;
+		&:hover{
+			background-position:0 -36px;
+		}
+		&.focus{
+			background-position:0 -36px;
+		}
+	}
+	& .bgVLineR,& .bgVLineL{
+		width:3px;
+		height:100%;
+		position: absolute;
+		.bgImg("head/line.png");
+	}
+	& .bgVLineR{
+		right:-1px;
+	}
+	& .bgVLineL{
+		//left:-1px;
+	}
+}

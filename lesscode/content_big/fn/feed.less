@@ -1,0 +1,53 @@
+.feedFn (@contentPaddingLeft:0){
+ 	position: relative; //ie6下middlePlayer奇怪的缩进问题
+	& .feed_content{
+		padding-left:@contentPaddingLeft*1px;
+	}
+	& .feed_title{
+		margin-bottom:10px;
+		color:@colorText4;
+		.clearfix;
+		& .iphoneBtn{
+			margin:0px 5px 0;
+		}
+		-moz-transition: background 0.5s ease-in,color 0.3s ease-out;
+	    -webkit-transition: background 0.5s ease-in,color 0.3s ease-out;
+	    -o-transition: background 0.5s ease-in,color 0.3s ease-out;
+	    transition: background 0.5s ease-in,color 0.3s ease-out;
+	}
+	& .feed_createtime{
+		color:@colorText5;
+		font-size:@fontSizeMin;
+	}
+	& .feed_bottom{
+		margin:10px 0 0;
+		padding:0 0 0 10px;
+	}
+	& .pesonPanelBar2{
+		width:190px;
+		height:70px;
+	}
+	& .right{
+		.budFn(feed_operate,40,9);
+		& .feed_operate{
+			top:-9px;
+			right: 0;
+		}
+	}
+	& .feed_operate{
+		.clearfix;
+		.hidden;
+		& .reportBtn{
+			.fr;
+			margin-right:8px;
+		}
+		& .closeBtn{
+			.fr;
+		}
+	}
+	&:hover{
+		& .feed_operate{
+			//.show;
+		}
+	}
+}

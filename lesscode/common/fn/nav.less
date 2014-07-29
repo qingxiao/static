@@ -1,0 +1,142 @@
+.navFn(@name,@listHeight:20px,@float:"",  @marginTop:0, @marginLeft:12px){
+    .onFn(){
+        border-radius: 2px;
+        background-color: @colorLink;
+        color:#FFFFFF;
+    }
+    .@{name}_list{
+        .clearfix();
+        float: @float;
+        height: @listHeight;
+        line-height: @listHeight;
+        margin-top:@marginTop;
+        margin-left:@marginLeft;
+        font-size:@fontSize;
+            .@{name}_item{
+                float: left;
+                text-align: center;
+                margin-right: 12px;
+                border-top: solid 1px transparent;
+                *border-color:#fff;
+                a{
+                    color:@colorLink;
+                    display: inline-block;
+                    padding:0  5px;
+                    &:hover{
+                        .onFn();
+                        text-decoration:none;
+						.transitionFn(background-color,0.2);
+                    }
+                }
+                &.on{
+                    a{
+                        .onFn();
+                    }
+                }
+            }
+
+    }
+}
+//竖向菜单
+.verticalNavFn(@name){
+	.@{name}{
+		& li{
+			position: relative;
+			&:hover{
+				background-color: @colorBG2;
+				.transitionFn(background-color, 0.2);	
+			}
+		}
+		& li .navItem{
+			height:22px;
+			display: block;
+			padding: 2px 0 1px 10px;
+			.linkTextFn;
+			//.transitionFn(background-color, 0.1);
+			&.on{
+				background-color: #f6f6f6;
+				color:@colorText2;
+			}
+			&:hover{
+				background-color: @colorBG2;
+				.transitionFn(background-color, 0.2);
+			}
+			& span{
+				height:22px;
+				line-height:22px;
+				line-height:25px\9;
+				display:block;
+			}
+		}
+
+		& li .append{
+			position:absolute;
+			right:5px;
+			top:4px;
+			display:inline;
+			padding:0;
+			& .navLink{
+				color:@colorLink;
+				font-weight: normal;
+				&:link{}
+				&:visited{}
+				&:hover{text-decoration:underline;color:@colorLinkHover;background:none;}
+			}
+			& .navNumIcon{
+				.navNumIconFn();
+				&:hover{text-decoration:none;}
+			}
+		}
+	}
+}
+
+.navNumIconFn(){
+	background: url("img/sprite/icon20px.png") no-repeat center -268px;	
+	width:24px;
+	line-height:18px;
+	display:block;
+	font-size:11px;
+	color:#fff;
+	& em{
+		width:20px;
+		text-align: center;
+		margin-left:4px;
+		display:block;
+	}
+}
+
+
+/* 个人中心  消息中心 二级导航*/
+.subNavFn(){
+     height:18px;
+    .cl;
+    padding-bottom:10px;
+    padding-left:2px;
+    border-bottom:1px solid @colorLine2;
+    .left{
+        .fl;
+        .title{
+            font-size: @fontSizeBig;
+            font-weight: bold;
+            height:20px;
+            line-height: 20px;
+            .fl;
+        }
+          .count{
+             font-size: @fontSize;
+          }
+        }
+        .right{
+            .fr;
+            .sub_nav_list{
+                .item{
+                    .fl;
+                    border-left: 1px solid @colorLine2;
+                    padding:0   @gapModule/2;
+                    &.first{
+                      border-left:none;
+                    }
+                }
+            }
+    }
+}

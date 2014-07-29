@@ -1,0 +1,19 @@
+<html>
+<body>
+	<script type="text/javascript">
+		document.write("Program to illustrate memory leak via closure");
+		window.onload = function outerFunction() {
+			var obj = document.getElementById("element");
+			obj.onclick = function innerFunction() {
+				alert("Hi! I will leak");
+			};
+			obj.bigString1 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString2 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString3 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			obj.bigString4 = new Array(1000).join(new Array(2000).join("XXXXX"));
+			// This is used to make the leak significant
+		};
+	</script>
+	<button id="element">Click Me</button>
+</body>
+</html>

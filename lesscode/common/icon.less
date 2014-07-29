@@ -1,0 +1,163 @@
+@import "fn/icon.less";
+/*common/icon*/
+.myNewThingItem,.homeNavItem,.radioLetterIcon1,.newThingIcon,.myLikedNavItem,
+.myListenedNavItem,.mySoundNavItem,.myAlbumNavItem,.atMeNavItem,.messageNavItem,
+.commentNavItem,.radioLetterIcon,.radioSoundIcon,.radioFansIcon,.VIcon,.iconUpload,.privacyIcon{
+	.bgImg("sprite/icon15px.png", no-repeat);
+}
+.BVIcon
+{
+	.bgImg("sprite/icon30px.png", no-repeat);
+}
+.newThingIcon{.iconFn(0,2,15,20,7);}//新鲜事标题
+
+.myNewThingItem{
+	.iconFn(0,-16,18,22,7);
+	//&:hover{
+	//	.bgImg("icon_animation/newthing.gif", no-repeat center left);
+	//}
+}//我的新鲜事
+.homeNavItem{.iconFn(0,-455,15,22,10);}//个人中心
+.myLikedNavItem{.iconFn(0,-36,15,22,10);}//我喜欢的
+.myListenedNavItem{.iconFn(0,-56,15,22,10);}//我听过的
+.mySoundNavItem{.iconFn(0,-75,15,22,10);}//我的声音
+.myAlbumNavItem{.iconFn(0,-95,15,22,10);}//我的专辑
+.atMeNavItem{.iconFn(0,-115,15,22,10);}//@我的
+.messageNavItem{.iconFn(0,-135,15,22,10);}//我的私信
+.commentNavItem{.iconFn(0,-155,15,22,10);}//评论
+
+.privacyIcon{.icon2Fn(15,19,0,-585);}//私密声音的锁
+
+.mySoundIcon,.myAlbumIcon,.myLikeIcon,.originSound
+{
+	.bgImg("sprite/icon20px.png", no-repeat);
+}
+.mySoundIcon
+{
+	.iconFn(0,0,10,22,15);
+	//padding-left: 25px;
+}
+.myAlbumIcon
+{
+	.iconFn(0,-24,10,22,15);
+    padding-top: 2px;
+	padding-bottom: 3px;
+}
+.myLikeIcon
+{
+	.iconFn(0,-49,10,22,15);
+    padding-top: 2px;
+	padding-bottom: 3px;
+}
+.mySoundIcon,.myAlbumIcon,.myLikeIcon,.originSound
+{
+	float:none;
+}
+.originSound{
+	.icon2Fn(25,11,0,-373);
+}
+
+.playCountIcon,.playCountIcon2,.uploadIcon,.areUploading,.waitUpload,.successIcon,.failIcon,.reupload,.dragIcon{
+	.bgImg("sprite/icon10px.png", no-repeat);
+}
+.playCountIcon{.iconFn(0,-10,10,18,0);}//播放数
+.playCountIcon2{.iconFn(0,-522,10,18,2);}//播放数(用在发现专辑)
+.soundCountIcon{.iconFn(0,-10,10);}//声音数
+.followerCountIcon{.iconFn(0,-10,10);}//粉丝数
+
+.areUploading{.iconFn(0,-455,10,16,2);}//正在上传
+.waitUpload{.iconFn(0,-437,10,15,5);}//等待上传
+.successIcon{.iconFn(0,-70,10,15,4);}//上传成功
+.failIcon{.iconFn(0,-476,10,15,5);}//转码失败
+.reupload{.iconFn(0,-455,10,16,2);}//重新上传
+
+.dragIcon{.iconFn(0,-497,12,21,0);position:absolute;z-index: 20;left:-200px;}//拖动改变顺序
+
+.radioSoundIcon
+{
+	.iconFn(0,-200,13);
+	float:none;
+}
+.radioFansIcon
+{
+	.iconFn(0,-179,13);
+	float:none;
+}
+.radioLetterIcon
+{
+	.iconFn(0,-314,10,22);
+}
+.radioLetterIcon1
+{
+	.iconFn(0,-135,10,23);
+}
+.VIcon
+{
+	.icon3Fn(right,-351px,12,0);
+}
+.BVIcon
+{
+	.icon3Fn(0,0,30,0);
+	line-height:30px;
+}
+.albumLayoutIcon{
+    .bgImg("sprite/btn15px.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    width:15px;
+    height:18px;
+    &.list{
+        background-position: 0 -298px;
+        &.on{
+            background-position: 0 -318px;
+        }
+        &:hover{
+            background-position: 0 -318px;
+        }
+    }
+    &.tile{
+        background-position: 0 -338px;
+        &.on{
+            background-position: 0 -358px;
+        }
+        &:hover{
+            background-position: 0 -358px;
+        }
+    }
+}
+.uploadIcon
+{
+	.iconFn(0,-261,20,22);
+}
+
+//发现声音页的喜欢、评论、分享icon
+.likeIcon,.commentIcon,.forwardIcon{
+	.bgImg("sprite/btn10px.png", no-repeat);
+}
+.likeIcon{.iconFn(0,-26,10,15,1);}
+.commentIcon{.iconFn(0,-197,10,15,1);}
+.forwardIcon{.iconFn(0,-213,10,15,1);}
+
+//发现页各个分类的icon
+.cateBtn_news,.cateBtn_music,.cateBtn_book,.cateBtn_comic,.cateBtn_entertainment,.cateBtn_emotion,.cateBtn_culture,.cateBtn_train,.cateBtn_chair,.cateBtn_baijia,.cateBtn_radioplay,.cateBtn_opera,.cateBtn_kid,.cateBtn_radio,.cateBtn_finance,.cateBtn_it,.cateBtn_health,.cateBtn_other{
+	.bgImg("sprite/discover_icon.png", no-repeat);
+}
+
+.cateBtn_news{.iconFn(0,13,15,50,15);}
+.cateBtn_music{.iconFn(0,-52,15,50,15);}
+.cateBtn_book{.iconFn(0,-110,15,50,15);}
+.cateBtn_comic{.iconFn(0,-177,15,50,15);}
+.cateBtn_entertainment{.iconFn(0,-241,15,50,15);}
+.cateBtn_emotion{.iconFn(0,-322,15,50,15);}
+.cateBtn_culture{.iconFn(0,-408,15,50,15);}
+.cateBtn_train{.iconFn(0,-499,15,50,15);}
+.cateBtn_chair{.iconFn(0,-589,15,50,15);}
+.cateBtn_baijia{.iconFn(0,-746,15,50,15);}
+.cateBtn_radioplay{.iconFn(0,-823,15,50,15);}
+.cateBtn_opera{.iconFn(0,-666,15,50,15);}
+.cateBtn_kid{.iconFn(0,-906,15,50,15);}
+.cateBtn_radio{.iconFn(0,-996,15,50,15);}
+.cateBtn_finance{.iconFn(0,-1068,15,50,15);}
+.cateBtn_it{.iconFn(0,-1151,15,50,15);}
+.cateBtn_health{.iconFn(0,-1226,15,50,15);}
+.cateBtn_other{.iconFn(0,-1298,15,50,15);}

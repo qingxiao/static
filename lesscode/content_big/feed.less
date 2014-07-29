@@ -1,0 +1,82 @@
+@import "fn/feed.less";
+/*content_big/feed*/
+.subFeedWrapper{
+	padding:9px 0;
+	.borderAndBackground(#FAFAFA,#EAEAEA);
+	.subfeedwrapperBud;
+	margin-top:15px;
+	padding-right:9px;
+	padding-left:9px;
+	border-radius:4px;
+}
+.feedMoreMessageBox{
+	height:@lineHeightLarge;
+	line-height:@lineHeightLarge;
+	text-align: center;
+	background:@colorBG1;
+	& a{
+		color:@colorText1;
+		cursor: pointer;
+		background: url("@{urlStaticImg}/sprite/btn10px.png") no-repeat right -116px;
+		padding-right: 15px;
+	}
+}
+
+.feed{.feedFn(10);}
+.subFeed{.feedFn()};
+.feed{.bar2Fn(80);}
+.subFeed{.bar2Fn(50);}
+.timelineFeed{.feedFn();}
+.feed{
+	& .userface{
+		.userface60;
+	}
+	& .feed_middlePlayerBox{
+		width:590px;
+	}
+}
+.subFeed{
+	& .userface{
+		.userface40;
+	}
+	& .feed_middlePlayerBox{
+		width:530px;
+	}
+}
+
+.is-feedMoreMessageBox-show{
+	padding-top:0!important;
+}
+.feedList{
+	.listBottomFn(20,20,10);
+	& .listItem{
+		.setLivelyMoreBtnFn(moreBtn, 20, 10, 0);
+		& .feed_operate{
+			.show;
+			opacity:0;
+			height: 0;
+    		overflow: hidden;
+			-webkit-transition: opacity 0.2s ease-out;
+		}
+		&:hover{
+			& .feed_operate{
+				.show;
+				opacity:1;
+				height: 9px;
+			}
+			.sound_content{
+				color:@colorText2;
+				.textHoverFn();
+			}
+			.link2,.sound_bottom a{
+				.link1;
+				.textHoverFn();
+			}
+			/*
+			.downloadToMobile{
+				display:inline-block;
+			}
+			*/
+		}
+	}
+}

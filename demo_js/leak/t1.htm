@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+    function LeakMemory(){
+        var parentDiv = 
+             document.createElement("<div onclick='foo()'>");
+
+        parentDiv.bigString = new Array(1000).join(
+                              new Array(2000).join("XXXXX"));
+    }
+</script>
+</head>
+<body>
+ie8
+<input type="button" 
+       value="Memory Leaking Insert" onclick="LeakMemory()" />
+</body>
+</html>

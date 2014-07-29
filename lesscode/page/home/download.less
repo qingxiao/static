@@ -1,0 +1,363 @@
+//download下载到手机页
+/*page/home/download*/
+.download_hd{
+	.bgImg("appshome/download_headbg.png");		
+	.download_logo{
+		display:inline-block;
+		.bgImg("appshome/download_logo.png");
+		width:250px;
+		height:60px;
+		.fl;
+		cursor:pointer;
+		&:hover{
+			background-position:0 -70px;
+		}
+	}
+	.vehicleMounted{
+		font-size:14px;
+		color:#fff;
+		.fr;
+		margin-top:20px;
+		.bgImg("appshome/download_car.png",no-repeat);
+		.btnFn(120,20,95,0,-24);
+		&:hover{
+			color:#00d2ff;
+		}
+	}
+}
+.download_innershadow{.bgImg("appshome/download_innershadow.png");position:relative;height:480px;}
+.download_wrap{
+	width:950px;
+	margin:0 auto;
+	.clearfix;
+	position:relative;	
+}
+//iphone版下载，安卓版下载，二维码按钮
+.download_iphoneBtn,.download_androidBtn,.download_code,.download_wpBtn{.bgImg("appshome/download_btn.png",no-repeat);}
+.download_iphoneBtn{.btnFn(180,68,0,0,-90);}
+.download_androidBtn{.btnFn(180,68,0,-180,-270);}
+.download_wpBtn{.btnFn(180,68,0,-579,-665);position:absolute;top:-76px;left:0;}
+.download_360Btn{position:absolute;top:-64px;left:189px;}
+.download_code{
+	.btnFn(70,65,0,-360,-430,-500);
+	margin-top:-2px;
+	img{
+		width:55px;
+		height:55px;
+		margin:2px 0 0 12px;
+	}
+	&:hover{
+		opacity:0.8;
+		filter:alpha(opacity=80);
+	}
+}
+
+.download_panel{
+	height:550px;
+	position:relative;
+	background: url("img/appshome/download_bg.png") repeat;
+	.download_panelBg{
+		position:absolute;
+		width:100%;
+		height:490px;
+		overflow:hidden;
+	}
+	.download_slogan{
+		.bgImg("appshome/download_slogan.png",no-repeat);
+		width:415px;
+		height:209px;
+		position:absolute;
+		top:55px;
+		left:0;
+	}
+	.download_lionkingW{
+		.bgImg("appshome/download_lionkingW.png",no-repeat);
+		width:371px;
+		height:80px;
+		position:absolute;
+		top:15px;
+		right:0;
+	}
+	.download_phonea{
+		.bgImg("appshome/download_phonea.png",no-repeat);
+		width:274px;
+		height:410px;
+		position:absolute;
+		top:100px;
+		right:0;
+		z-index:2;
+	}
+	.download_phoneb{
+		.bgImg("appshome/download_phoneb.png",no-repeat);
+		width:285px;
+		height:325px;
+		position:absolute;
+		top:170px;
+		right:155px;
+		z-index:1;
+	}
+	.download_img_rolling{
+		width: 210px;
+		height: 300px;		
+		position: absolute;
+		top: 188px;	
+		right: 30px;
+		z-index:10;
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+	}
+	.download_operate{
+		position:absolute;
+		top:370px;
+		left:0;
+		z-index:10;
+	}
+	.download_line{
+		.bgImgExt("appshome/download_line.png",center,center,repeat-x);
+		width:100%;
+		height:74px;
+		position:absolute;
+		top:465px;
+		z-index:10;
+		.fr{
+			position:absolute;
+			top:27px;
+			right:120px;
+		}
+	}
+	.download_selectBtn{
+		
+		.btnFn(13,13,0,0,0);
+		margin-left:3px;
+		&.on{
+			.bgImg("appshome/download_select.png",no-repeat);
+		}
+	}
+}
+
+.download_pop{
+	display:none;
+	width:300px;
+	//padding:20px;
+	//border:1px solid #DDDDDD;
+	//border-radius:5px;
+	//background-color:#f6f6f6;
+	//.shadow(0,0,10,3,#666);
+	.bgImg("appshome/download_codebg.png",no-repeat);
+	padding:30px 25px 0 30px;
+	height:180px;
+	position:absolute;
+	top:-205px;
+	right:-280px;	
+	z-index:99;	
+	.bar2Fn(150,140);
+	strong{font-size:20px;}
+	p{font-size:14px;margin-top:10px;line-height:1.5;}
+	.download_codetop{		
+		width:140px;
+		height:140px;
+		margin-left:5px;
+		border:1px solid #fff;
+		.fr;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	//.arrowFn(bottom2,arrow_pop,#ddd,10px,#f6f6f6);
+	//.arrow_pop{	bottom:-10px;left:20px;}
+}
+.download_bd{
+	position:relative;
+	z-index:15;
+	.bgImg("appshome/download_bg.png");
+	margin-top:-20px;
+	padding-top:20px;
+	.download_con{
+		border:1px solid #ebebeb;
+		border-radius:15px;
+		background-color:#f6f6f6;
+	}
+	.download_line{
+		position:relative;
+		height:320px;
+		border-bottom:2px solid #e8e8e8;
+		overflow:hidden;
+		&:last-child{
+			border-bottom:none;
+			border-radius:0 0 15px 15px;
+		}
+		&:first-child{
+			border-radius:15px 15px 0 0;
+		}
+		&:hover{
+			background-color:#fafafa;
+			.transitionFn(background-color,0.1);	
+		}
+	}
+	.download_wordA{
+		.bgImg("appshome/download_wordA.png",no-repeat);
+		width:408px;
+		height:98px;
+		position:absolute;
+		top:100px;
+		right:80px;
+	}
+	.download_infoA{
+		.bgImg("appshome/download_infoA.png",no-repeat);
+		width:360px;
+		height:300px;
+		position:absolute;
+		top:320px;
+		left:30px;
+	}
+	.tra {
+		.download_infoA{
+			top:20px;
+			.transitionFn(all,2s);	
+		}
+		.download_infoB_love{
+			//top:30px;
+			//.transitionFn(all,2s);
+			-webkit-animation: dInfoBLove 1.1s .4s ease-in-out 1 forwards;
+			-moz-animation: dInfoBLove 1.1s .4s ease-in-out 1 forwards;			
+		}
+		.download_infoC{
+			left:76px;
+			.transitionFn(all,2s,ease-in-out);	
+		}
+		.download_infoE_wave{
+			opacity:1;
+			top:70px;
+			.transitionFn(all,1.5s,ease-in-out);	
+		}
+	}
+	.tra_ie{
+		.download_infoA{
+			top:20px;
+		}
+		.download_infoB_love{
+			top:30px;	
+		}
+		.download_infoC{
+			left:76px;	
+		}
+		.download_infoE_wave{
+			opacity:1;
+			top:70px;	
+		}
+	}
+	.download_wordB{
+		.bgImg("appshome/download_wordB.png",no-repeat);
+		width:391px;
+		height:101px;
+		position:absolute;
+		top:95px;
+		left:70px;
+	}
+	.download_infoB{
+		.bgImgExt("appshome/download_infoB.png",0,-65px,no-repeat);
+		width:306px;
+		height:319px;
+		position:absolute;
+		top:0;
+		right:50px;		
+	}
+	.download_infoB_love{
+		.bgImg("appshome/download_infoB_love.png",no-repeat);
+		width:99px;
+		height:90px;
+		position:absolute;
+		//top:320px;
+		bottom:-80px;
+		right:295px;
+	}
+	.download_wordC{
+		.bgImg("appshome/download_wordC.png",no-repeat);
+		width:314px;
+		height:101px;
+		position:absolute;
+		top:115px;
+		right:70px;
+	}
+	.download_infoC{
+		.bgImg("appshome/download_infoC.png",no-repeat);
+		width:346px;
+		height:195px;
+		position:absolute;
+		top:70px;
+		left:-290px;
+	}
+	.download_wordD{
+		.bgImg("appshome/download_wordD.png",no-repeat);
+		width:314px;
+		height:101px;
+		position:absolute;
+		top:105px;
+		left:70px;
+	}
+	.download_infoD{
+		.bgImg("appshome/download_infoD.png",no-repeat);
+		width:282px;
+		height:244px;
+		position:absolute;
+		top:20px;
+		right:105px;
+	}
+	.download_wordE{
+		.bgImg("appshome/download_wordE.png",no-repeat);
+		width:225px;
+		height:100px;
+		position:absolute;
+		top:105px;
+		right:160px;
+	}
+	.download_infoE{
+		.bgImgExt("appshome/download_infoE.png",0,-35px,no-repeat);
+		width:440px;
+		height:320px;
+		position:absolute;
+		top:0;
+		left:60px;
+	}
+	.download_infoE_wave{
+		.bgImg("appshome/download_infoE_wave.png",no-repeat);
+		width:69px;
+		height:42px;
+		position:absolute;
+		top:105px;
+		left:155px;
+		opacity:0;
+	}
+	.download_btm{
+		font-size:16px;
+		color:#666;
+		text-align:center;
+		line-height:2;
+		margin:100px 0 115px 0;
+	}
+	.download_lionkingB{
+		.bgImg("appshome/download_lionkingB.png",no-repeat);
+		width:474px;
+		height:104px;
+		margin:0 auto;
+	}
+	.download_codebtm{
+		.bgImg("appshome/download_codebottom.png",no-repeat);
+		width:148px;
+		height:150px;
+		margin:35px auto 0 auto;
+		padding-top:10px;
+		img{
+			width:130px;
+			height:130px;
+			border:1px solid #fff;
+		}
+	}
+}

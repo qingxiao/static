@@ -1,0 +1,315 @@
+.discoverySound{
+    background-color: #f6f6f6;
+    overflow-y: scroll;
+}
+.dis_nav{
+	color:#999999;
+	font-size:14px;
+	margin:0 0 10px 130px;
+}
+.layout_top{
+    height:55px;
+    position: relative;
+}
+.layout_left{
+    .fl;
+    width:120px;
+	margin-bottom:30px;
+}
+.layout_right{
+    .fl;
+    width:830px;
+    position: relative;
+}
+
+.dis_sound_top{
+    .cl;
+    padding-top:22px;
+    .left{
+        .fl;
+        .hallo{
+            .bgImg("hallo.png");
+            width:225px;
+            height:24px;
+        }
+    }
+    .right{
+        .fr;
+        .navFn(nav);
+    }
+}
+
+.dis_sound_sort{
+
+    .tags_panel{
+        z-index:2;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        position: absolute;
+        width: 200px;
+        top:0;
+        right:-200px;
+        display:none;
+		-moz-box-shadow: 5px 5px 5px #ccc,3px -3px 5px #ccc;
+		-webkit-box-shadow: 5px 5px 5px #ccc,3px -3px 5px #ccc;
+		box-shadow: 5px 5px 5px #ccc,3px -3px 5px #ccc;
+    }   
+    .tag_wrap{
+        padding:15px 8px 8px 15px;
+        border: 1px solid #EEEEEE;
+        .tagBtn{
+            margin: 0 7px 7px 0;
+        }
+        margin:0;
+    }
+    .pinFn{
+        .bgImgExt("sprite/btn25px.png",0, 0);
+        position: absolute;
+        top:0;
+        right:0;
+        width:25px;
+        height:25px;
+    }
+    .pin_btn{
+        display: none;
+        .pinFn();
+        background-position: 0 0;
+        &:hover{
+            background-position: 0 -25px;
+        }
+        &.pin_fixed{
+            background-position: 0 -50px;
+            &:hover{
+                background-position: 0 -75px;
+            }
+        }
+    }
+}
+.sort_list{
+	border:1px solid #eee;
+	background:#fff;
+    position: relative;
+    width:118px;
+    z-index: 2;
+	.shadow(4,2,5,0,#ddd);
+    .onFn{
+        text-decoration: none;
+        color:#fff;
+		background-color:#3586BC;
+        font-weight:bold;
+		.bgImgExt("sprite/icon15px.png",98px,-607px);
+    }
+    li{
+       height:40px;
+	   border-bottom: 1px solid #eee;
+        a{
+            height:40px;
+            line-height: 40px;
+            //padding-right:50px;
+            font-size: 14px;
+            text-align: center;
+            color: #999999;
+            display: block;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        &.on a{
+            .onFn();
+        }
+		&:nth-child(odd){
+			background-color:#f7f7f7;
+		}
+    }
+    &.is-show-tags{
+        .tags_panel{
+            display: block
+        }
+        .hover a{
+           // .bgImgExt("sprite/tip_more.png",95px, 11px);
+            .onFn();
+        }
+    }
+}
+
+.waterfall_container{
+    width:840px;
+
+}
+
+
+.waterfall_item{
+    .fl;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+ /*   margin-right: 10px;
+    margin-bottom: 10px;*/
+    width:200px;
+
+
+    .float_info{
+        position:absolute;
+        display: none;
+        top:5px;
+        left:5px;
+        .cl;
+
+    }
+    .imgForwardBtn{
+        .fl;
+    }
+    .imgLikeBtn{
+        .fl;
+        margin-left:6px;
+    }
+    .replace_img{
+        display: none;
+        height:40px;
+        border:1px solid #F6F6F6;
+        background: url("img/base/playerprograssbar_bg.png") repeat scroll 0 0 transparent;
+    }
+    .item_wrap{
+        border: 1px solid #EEEEEE;
+        padding:9px;
+        .title{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color:#333333;
+            font-weight: bold;
+			font-family: "microsoft yahei";
+            display:block;
+			word-wrap:break-word;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .intro{
+            margin-bottom: 10px;
+            color: #666666;
+            word-wrap: break-word;
+        }
+
+        .bottom{
+            padding-bottom: 10px;
+            .cl;
+            color:#999999;
+            .right{
+                .fl;
+                margin-left:10px;
+				.playCountIcon{
+                    .fr;
+                    padding-right: 3px;
+					color:#999;
+					&:hover{
+						text-decoration:none;
+					}
+                }
+            }
+        }
+        .username{
+            .fl;
+           color: #bbbbbb;
+        }
+		.sound_info{
+			.clearfix;
+			a{
+				color:#999;
+				margin-right:8px;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+    }
+
+    .img_wrap{
+        position: relative;
+        width:180px;
+        /*height:180px;*/
+        img{
+            width: 180px;
+            height:180px;
+            display: block;
+        }
+
+
+    }
+
+    @playBtnWidth:40px;
+    .playBtn{
+        .bgImgExt("sprite/btn25px.png",  0px, -270px);
+        position: absolute;
+        width:@playBtnWidth;
+        height:@playBtnWidth;
+        left:50%;
+        top:50%;
+        display:block;
+        margin-left: -@playBtnWidth/2;
+        margin-top: -@playBtnWidth/2;
+        &.on, &:hover{
+            background-position: 0px -315px;
+        }
+    }
+    .pauseBtn,.player-loading{
+        .playBtn;
+        background-position: 0 -610px;
+        &.on, &:hover{
+            background-position: 0px -655px;
+        }
+    }
+    .wave{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height:20px;
+        width:100%;
+        background: none;
+    }
+
+
+/*没有图片情况*/
+    &.lack_img{
+        .float_info .info{
+            display: none;
+        }
+        .replace_img{
+            display: block;
+        }
+        .img_wrap{
+            height:40px;
+            img{
+                display: none;
+            }
+
+        }
+    }
+    &.hover, &:hover{
+        .intro{
+            color: #333333;
+        }
+        .img_wrap img{
+            opacity: 0.8;
+            filter: Alpha(opacity=80);
+        }
+        .float_info{
+            display: block;
+        }
+        .username{
+            color: #999999;
+        }
+    }
+
+}
+
+
+
+#discoverSound{
+    .cl;
+    .fixed{
+        top:60px;
+        position: fixed;
+    }
+}

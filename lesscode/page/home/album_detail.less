@@ -1,0 +1,307 @@
+//album专辑详情页面
+/*page/home/album_detail*/
+a{
+	cursor:pointer;
+}
+#bdshare {
+    float: left;
+    font-size: 12px;
+    padding-bottom: 2px;
+    text-align: left !important;
+    z-index: 999999;
+}
+.shareto{
+	height:27px;
+	line-height:16px;
+	& span{
+		.fl;
+		padding-right:5px;
+	}
+	& a{
+		.fl;
+		width:16px;
+		height:16px;
+		display:inline-block;
+		padding-right:5px;
+	}
+	& .shareto_qzone{
+		.bgImgExt("sprite/sync-ico_v15.gif",0,-256px);
+		&:hover{
+			opacity:0.8
+		}
+	}
+	& .shareto_tsina{
+		.bgImgExt("sprite/sync-ico_v15.gif",0,0);
+		&:hover{
+			opacity:0.8
+		}
+	}
+	& .shareto_tqq{
+		.bgImgExt("sprite/sync-ico_v15.gif",0,-128px);
+		&:hover{
+			opacity:0.8
+		}
+	}
+	& .shareto_renren{
+		.bgImgExt("sprite/sync-ico_v15.gif",0,-64px);
+		&:hover{
+			opacity:0.8
+		}
+	}
+}
+.shareLink{
+	display:inline-block;
+	margin:25px 0 0 10px;
+}
+.albumSoundcount{
+	font-weight:normal;
+}
+.detailContent{
+	.editBtn2{
+		position: absolute;
+		right: 30px;
+		top: 6px;
+	}
+	& .soundface{
+		.soundface180;
+	}
+	& .albumface{
+		.albumface180;
+	}
+	.bar2Fn(200,470);
+	position:relative;
+	.clearfix();
+	background-color:#FAFAFA;
+	padding:30px 20px 10px 10px;
+	& .reportBtn2{
+		position:absolute;
+		right:10px;
+		top:10px;
+	}
+	& .left{
+		left:10px;
+		top:30px;
+	}
+	
+	& .detailContent_title{
+		font-size:24px;
+		font-weight:200;
+		font-family: "microsoft yahei";
+		line-height:26px;
+		text-indent:-3px;
+		word-break: break-all;
+		h1{
+			display:inline-block;
+			font-size:24px;
+			font-weight:200;
+			line-height:26px;
+		}
+	}
+	& .detailContent_category{
+		padding:15px 0;
+		& span{
+			color:@colorText4;
+		}
+	}
+
+	& .detailContent_playcount{
+		.clearfix();
+		font-size:18px;
+		font-color:@colorText3;
+		margin:10px 0 15px 0;
+		& .playBtn{
+			.fl;
+			.bgImgExt("sprite/btn25px.png",0,-370px);
+			display:inline-block;
+			width:50px;
+			height:50px;
+			cursor:pointer;
+			&:hover{
+				.bgImgExt("sprite/btn25px.png",0,-430px);
+			}
+			&.disabled{
+				.bgImgExt("sprite/feedbtn_default.png",0,-40px);
+			}
+		}
+		.pauseBtn,.player-loading{
+			.fl;
+			.bgImgExt("sprite/btn25px.png",0,-490px);
+			display:inline-block;
+			width:50px;
+			height:50px;
+			cursor:pointer;
+			&:hover{
+				.bgImgExt("sprite/btn25px.png",0,-550px);
+			}
+		}
+		& .detailContent_playcountDetail{
+			line-height:40px;
+			height:40px;
+			font-weight:600;
+			font-family:microsoft yahei;
+			.fl;
+			border-left:1px solid @colorLine1;
+			padding-left:20px;
+			margin:5px 0 0 20px;
+			display:inline-block;
+			color:@colorText3;
+			& span{
+				color:#FF3300;
+				font-size:24px;
+			}
+		}
+	}
+	& .detailContent_intro{
+		padding-top:20px;
+		clear:both;
+		word-wrap:break-word;
+		& a.arrow{
+			.fr;
+			margin-top:5px;
+			.bgImgExt("sprite/icon10px.png",right,-209px);
+			padding-right: 13px;
+			&.on{
+				background-position:right -234px;
+			}
+		}
+        .mid_intro{
+           img{
+               max-width:100px;
+           }
+        }
+        .rich_intro{
+            display: none;
+            img{
+                max-width:500px;
+            }
+
+        }
+		& p{
+			line-height:21px;
+		}
+	}
+	& .soundContent_playcount{
+		color:@colorText3;
+		.bgImgExt("sprite/icon10px.png",0,-10px);
+		padding-left: 13px;
+	}
+	.tagBtnList{
+		margin:0 0 0 -2px;
+	}
+}
+
+.detail_soundBox{
+	width:680px;
+	padding:20px 10px;
+	.bgImgExt("dotter_CCC_2.png",0,bottom,repeat-x);
+}
+.detail_soundBox2{
+	width:680px;
+	padding:20px 10px 0 10px;
+}
+/*
+.detail_soundBox:hover,.detail_soundBox2:hover, #timelinePage .timeline_content:hover, .report{
+	& .sound .sound_bottom .downloadToMobile{
+		display:inline-block;
+	}
+}
+*/
+.album_soundlist{
+
+	 & li{
+		padding:10px;
+		border-bottom:1px solid @colorBG2;
+		&:hover{
+			background-color:#FAFAFA;
+			& .operate{
+				& a{
+					display:inline-block;
+				}
+			}
+			& .album_soundlist_operate{
+				display:inline-block;
+			}
+		}
+		& .album_soundlist_operate{
+			display:none;
+			.fl;
+			height:18px;
+			line-height:18px;
+			border-left:1px solid #666;
+			margin-left:10px;
+			& a{
+				padding-left:5px;
+			}
+		}
+		& .operate{
+			.fr;
+			& a{
+				display:none;
+				width:13px;
+				height:12px;
+				padding-right:5px;
+			}
+			& .likeBtn{
+				.bgImgExt("sprite/btn15px8bit.png",0,0);
+				&:hover{
+					.bgImgExt("sprite/btn15px8bit.png",0,-20px);
+				}
+			}
+			& .shareBtn{
+				.bgImgExt("sprite/btn15px8bit.png",0,-40px);
+				&:hover{
+					.bgImgExt("sprite/btn15px8bit.png",0,-60px);
+				}
+			}
+			& .commentBtn{
+				.bgImgExt("sprite/btn15px8bit.png",0,-80px);
+				&:hover{
+					.bgImgExt("sprite/btn15px8bit.png",0,-100px);
+				}
+			}
+			& .forwardBtn{
+				.bgImgExt("sprite/btn15px8bit.png",0,-120px);
+				&:hover{
+					.bgImgExt("sprite/btn15px8bit.png",0,-140px);
+				}
+			}
+			& .downloadBtn{
+				.bgImgExt("sprite/btn15px8bit.png",0,-160px);
+				&:hover{
+					.bgImgExt("sprite/btn15px8bit.png",0,-180px);
+				}
+			}
+			& span{
+				color:@colorText4;
+				padding-left:10px;
+			}
+		}
+	 }
+	 & .focus{		
+		.bgImg("playing_1.gif");
+		background:#EBFBFE\9;		
+	 }
+	 & .more{
+	 	text-align:center;
+		margin-top:15px;
+		& a{
+			.bgImgExt("sprite/icon10px.png",55px,-210px);
+			padding-right:20px;
+		}
+	 }
+    ul{
+        //height:390px;
+        overflow: hidden;
+		margin-bottom:20px;
+    }
+    &.is-more{
+        ul{
+            height: auto;
+        }
+        .more{
+            display: none;
+        }
+    }
+
+
+}

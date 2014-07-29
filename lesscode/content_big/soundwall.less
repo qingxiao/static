@@ -1,0 +1,52 @@
+.sound-wall{
+    padding:60px;
+    overflow: hidden;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+
+    .wall-item{
+        display: inline-block;
+        margin-right: 40px;
+        position: relative;
+        /* IE7 inline-block fix */
+        zoom: 1;
+        *display: inline;
+        &.hover{
+            .wall-btn-play{
+                display: block;
+            }
+            .sound-title{
+                visibility: visible;
+            }
+        }
+    }
+    .img-wrap{
+        position: relative;
+    }
+    .wall-btn-play {
+        .bgImgExt("sprite/btn25px.png", 0, -270px);
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -20px;
+        margin-left: -20px;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+        &:hover{
+            background-position: 0 -315px;
+        }
+    }
+    .sound-title {
+        position: absolute;
+        left: 0;
+        top: -20px;
+        visibility: hidden;
+        background-color: red;
+        overflow: hidden;
+    }
+
+
+}

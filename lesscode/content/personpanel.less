@@ -1,0 +1,41 @@
+@import "fn/personpanel.less";
+/*content/personPanel*/
+.personPanel{.personPanelFn()};
+.personPanelBar2{.personPanelBar2Fn()};
+.timelinepersonPanelFn(timelinepersonPanel);
+
+.personPanelBar3{
+	.personPanelBar3Fn();
+}
+.personPanelBar3List{
+	.listBottomFn(14,14);
+	& .listItem{
+		&:hover{
+			& .selectBtn{
+				color:@colorLink;
+				&.unclick{
+					color:#666;
+					&:hover{
+						text-decoration:none;						
+						cursor:default;
+					}
+				}
+			}
+			& .operate{
+				.show;
+			}
+		}
+	}
+}
+.radioUserPanel
+{
+	.radioUserPanelFn();
+}
+.rankUserPanel
+{
+	.rankUserPanelFn();
+}
+.userPanel1
+{
+	.userPanel1Fn();
+}

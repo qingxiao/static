@@ -1,0 +1,554 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<title>按钮</title>
+<style>
+.demo_title {
+	text-align: center;
+	padding: 20px;
+}
+
+.demo {
+	width: 1200px;
+	margin: 0 auto 60px;
+	background-color:#fff;
+}
+
+.demo td {
+	padding: 10px;
+	border: solid 1px whiteSmoke;
+}
+
+tr>td:first-child {
+	width: 800px;
+}
+
+tr>td:last-child {
+	width: 60px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="demo_title">common/btn.less</div>
+	<table class="demo">
+		<tr>
+			<td><a class="addBtn"><em>+</em><span>关注</span></a></td>
+			<td>关注按钮</td>
+			<td>addBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn1"><em>+</em><span>关注</span></a></td>
+			<td>关注按钮</td>
+			<td>addBtn1</td>
+			<td>nick</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 small" href="javascript:;"><span class="default">关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮三级</td>
+			<td>addBtn2 small</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 small loading" href="javascript:;"><span class="default">加关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮三级-加关注中</td>
+			<td>addBtn2 small loading</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 small already" href="javascript:;"><span class="default">已关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮三级-已关注</td>
+			<td>addBtn2 small already</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 small already both" href="javascript:;"><span class="default">相互关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮三级-相互关注</td>
+			<td>addBtn2 small already both</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 small canceling" href="javascript:;"><span class="default">取消中...</span><span class="hover">取消</span></a></td>
+			<td>关注按钮三级-取消中</td>
+			<td>addBtn2 small canceling</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2" href="javascript:;"><span class="default">关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮二级</td>
+			<td>addBtn2</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 loading" href="javascript:;"><span class="default">加关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮二级-加关注中</td>
+			<td>addBtn2 loading</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 already" href="javascript:;"><span class="default">已关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮二级-已关注</td>
+			<td>addBtn2 already</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 already both" href="javascript:;"><span class="default">相互关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮二级-相互关注</td>
+			<td>addBtn2 already both</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn2 canceling" href="javascript:;"><span class="default">取消中...</span><span class="hover">取消</span></a></td>
+			<td>关注按钮二级-取消中</td>
+			<td>addBtn2 canceling</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="followBtn"><span class="default twoWord">关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮一级</td>
+			<td>followBtn</td>
+			<td>nick</td>
+		</tr>
+		<tr>
+			<td><a class="followBtn loading"><span class="default">加关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮一级-加关注中</td>
+			<td>followBtn loading</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="followBtn already"><span class="default">已关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮一级-已关注</td>
+			<td>followBtn already</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="followBtn already both"><span class="default">相互关注</span><span class="hover">取消</span></a></td>
+			<td>关注按钮一级-相互关注</td>
+			<td>followBtn already both</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="followBtn canceling"><span class="default">取消中...</span><span class="hover">取消</span></a></td>
+			<td>关注按钮一级-取消中</td>
+			<td>followBtn canceling</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="interestBtn already" href="#"><span class="interest"><em>+</em><span>感兴趣</span></span><span class="uninterest">不感兴趣</span></a></td>
+			<td>感兴趣按钮</td>
+			<td>interestBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="letterBtn"><span>发私信</span></a></td>
+			<td>发私信</td>
+			<td>letterBtn</td>
+			<td>nick</td>
+		</tr>
+		<tr>
+			<td><a class="addBtn1"><span class="radioLetterIcon">发私信</span></a>
+			</td>
+			<td>发私信</td>
+			<td>addBtn1</td>
+			<td>nick</td>
+		</tr>
+		<tr>
+			<td><a class="selectBtn" href="#"><span>17个间接关注</span><em>◆</em></a>
+			</td>
+			<td>展开收起</td>
+			<td>selectBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="submitBigBtn"></a></td>
+			<td>登陆按钮</td>
+			<td>submitBigBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="submitBtn"><span>评论</span></a>
+			</td>
+			<td>提交按钮</td>
+			<td>submitBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="tagBtn" href="#"><span>测试标签</span></a></td>
+			<td>标签按钮</td>
+			<td>tagBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="tagBtn2" href="#"><span>测试标签</span></a></td>
+			<td>标签按钮:灰色背景</td>
+			<td>tagBtn2</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="sinaWeiboBtn" title="分享到新浪微博"></a>
+			</td>
+			<td>分享到新浪微博(失效)</td>
+			<td>sinaWeiboBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="sinaWeiboBtn on"
+				title="分享到新浪微博"></a></td>
+			<td>分享到新浪微博</td>
+			<td>sinaWeiboBtn on</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="qqWeiboBtn" title="分享到腾讯微博"></a>
+			</td>
+			<td>分享到腾讯微博(失效)</td>
+			<td>qqWeiboBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="qqWeiboBtn on" title="分享到腾讯微博"></a>
+			</td>
+			<td>分享到腾讯微博</td>
+			<td>qqWeiboBtn on</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="javascript:;" class="qZoneBtn"></a>
+			</td>
+			<td>分享到qq空间(失效)</td>
+			<td>qZoneBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="javascript:;" class="qZoneBtn on"></a>
+			</td>
+			<td>分享到qq空间</td>
+			<td>qZoneBtn on</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="reportBtn" title="举报"></a></td>
+			<td>举报按钮</td>
+			<td>reportBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="reportBtn2" title="举报"></a></td>
+			<td>举报按钮(大)</td>
+			<td>reportBtn2</td>
+			<td>Ayumi</td>
+		</tr>
+		<tr>
+			<td><a href="javascript:;" class="closeBtn" title="删除"></a></td>
+			<td>删除按钮</td>
+			<td>closeBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalPlayBtn"><span class="disabled"></span></a>
+			</td>
+			<td>播放</td>
+			<td>grobalPlayBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalPlayBtn is-btn-disabled"><span
+					class="disabled"></span></a></td>
+			<td>播放(失效)</td>
+			<td>grobalPlayBtn is-btn-disabled</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalPrevBtn"><span class="disabled"></span></a>
+			</td>
+			<td>上一首</td>
+			<td>grobalPrevBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalPrevBtn is-btn-disabled"><span
+					class="disabled"></span></a></td>
+			<td>上一首(失效)</td>
+			<td>grobalPrevBtn is-btn-disabled</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalNextBtn"><span class="disabled"></span></a>
+			</td>
+			<td>下一首</td>
+			<td>grobalNextBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalNextBtn is-btn-disabled"><span
+					class="disabled"></span></a></td>
+			<td>下一首(失效)</td>
+			<td>grobalNextBtn is-btn-disabled</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="grobalPauseBtn"><span class="disabled"></span></a>
+			</td>
+			<td>暂停</td>
+			<td>grobalPauseBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><div class="miniPlayer3"><a class="playBtn"></a></div></td>
+			<td>播放</td>
+			<td>playBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><div class="miniPlayer3"><a class="pauseBtn"></a></div></td>
+			<td>暂停</td>
+			<td>pauseBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="miniPlayBtn"></a></td>
+			<td>播放</td>
+			<td>miniPlayBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="miniPauseBtn"></a></td>
+			<td>暂停</td>
+			<td>miniPauseBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="miniPlayBtn3"></a></td>
+			<td>播放(灰底)</td>
+			<td>miniPlayBtn3</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="miniPauseBtn3"></a></td>
+			<td>暂停</td>
+			<td>miniPauseBtn3</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="middlePlayBtn"></a></td>
+			<td>播放</td>
+			<td>middlePlayBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="middlePauseBtn"></a></td>
+			<td>暂停</td>
+			<td>middlePauseBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="iphoneBtn" title="通过iphone"></a></td>
+			<td>通过iphone</td>
+			<td>iphoneBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="qqLoginBtn" href="#"></a></td>
+			<td>通过qq登陆</td>
+			<td>qqLoginBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="weiboLoginBtn" href="#"></a></td>
+			<td>通过微博登陆</td>
+			<td>weiboLoginBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="uploadBtn" href="#"></a></td>
+			<td>上传</td>
+			<td>uploadBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="recordBtn" href="#"></a></td>
+			<td>录制</td>
+			<td>recordBtn</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="creatalbumBtn"><span>创建专辑</span></a></td>
+			<td>创建专辑</td>
+			<td>creatalbumBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="uploadBtn2"><span>上传录制</span></a></td>
+			<td>上传录制</td>
+			<td>uploadBtn2</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="imgForwardBtn forwarded" href="javascript:;">
+					<span class="content"> <span class="icon"></span> <span
+						class="info">1</span>
+				</span> <span class="border_right"></span>
+			</a> <a class="imgForwardBtn" href="javascript:;"> <span
+					class="content"> <span class="icon"></span> <span
+						class="info">231231</span>
+				</span> <span class="border_right"></span>
+			</a> <a class="imgLikeBtn liked" href="javascript:;"> <span
+					class="content"> <span class="icon"></span>
+				</span> <span class="border_right"></span>
+			</a> <a class="imgLikeBtn" href="javascript:;"> <span class="content">
+						<span class="icon"></span>
+				</span> <span class="border_right"></span>
+			</a></td>
+			<td>转发 喜欢</td>
+			<td>imgForwardBtn forwarded imgLikeBtn liked</td>
+			<td>xiaoqing</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="searchField" style="width:710px;">
+					<div class="searchBar">
+						<input class="searchBar_input" type="text" value="" name="" autocomplete="off" placeholder="搜索">
+						<div class="searchBar_submit"><span class="searchBar_searchingBox">搜索中...</span></div>
+					</div>
+					<button type="submit"></button>
+				</div>
+
+			</td>
+			<td>搜索框</td>
+			<td>searchBar</td>
+			<td>Ayumi</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="searchField" style="width:710px;">
+					<div class="searchBar focus">
+						<input class="searchBar_input" type="text" value="" name="" autocomplete="off" placeholder="搜索">
+						<div class="searchBar_submit"><span class="searchBar_searchingBox">搜索中...</span></div>
+					</div>
+					<button type="submit"></button>
+				</div>
+
+			</td>
+			<td>搜索框</td>
+			<td>searchBar focus</td>
+			<td>Ayumi</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="searchField" style="width:710px;">
+					<div class="searchBar is-searchBar-searching">
+						<input class="searchBar_input" type="text" value="" name="" autocomplete="off" placeholder="搜索">
+						<div class="searchBar_submit"><span class="searchBar_searchingBox">搜索中...</span></div>
+					</div>
+					<button type="submit"></button>
+				</div>
+
+			</td>
+			<td>搜索框</td>
+			<td>searchBar searching</td>
+			<td>Ayumi</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="myTags">
+					<div class="moreBtn"><span><a href="#">更多标签</a></span></div>
+				</div>
+			</td>
+			<td>更多</td>
+			<td>setMoreBtnFn (.myTags .moreBtn)</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="feedList">
+					<div class="listItem">
+						<div class="moreBtn">
+							<div class="bg"></div>
+							<a href="#">展开更多喜欢的声音&nbsp;&nbsp;&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</td>
+			<td>更多(带特效)</td>
+			<td>livelyMoreBtnFn (.feedList .listItem .moreBtn)</td>
+			<td>peter</td>
+		</tr>
+		<tr>
+			<td><a class="confirmBtn">保存设置</a></td>
+			<td>保存设置按钮</td>
+			<td>confirmBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="cancelBtn">取消</a></td>
+			<td>取消按钮</td>
+			<td>cancelBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="confirmBtn2">确认</a></td>
+			<td>确认按钮</td>
+			<td>confirmBtn2</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="cancelBtn2">取消</a></td>
+			<td>取消按钮</td>
+			<td>cancelBtn2</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="localphotoBtn"></a></td>
+			<td>本地照片按钮</td>
+			<td>localphotoBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="uploadphotoBtn"></a></td>
+			<td>拍照上传按钮</td>
+			<td>uploadphotoBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="resendmailBtn">重发验证邮件</a></td>
+			<td>重发验证邮件按钮</td>
+			<td>resendmailBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="resendmailBtn already">邮件已发送(60)</a></td>
+			<td>重发验证邮件按钮-邮件已发送</td>
+			<td>resendmailBtn already</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="verifycodeBtn">发送验证码</a></td>
+			<td>发送验证码按钮</td>
+			<td>verifycodeBtn</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="verifycodeBtn already">已发送(180)</a></td>
+			<td>发送验证码按钮-已发送</td>
+			<td>verifycodeBtn already</td>
+			<td>ayumi</td>
+		</tr>
+		<tr>
+			<td><a class="editBtn"></a></td>
+			<td>编辑按钮</td>
+			<td>editBtn</td>
+			<td>ayumi</td>
+		</tr>
+	</table>
+
+</body>
+</html>

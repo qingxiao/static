@@ -1,0 +1,114 @@
+@import "fn/list.less";
+/*common/list*/
+.personPanelBar2List{
+	.flowListFn(personPanelBar2);
+	& .personPanelBar2{
+		margin-bottom:20px;
+		height:70px;
+	}
+}	//feed事件流 关注用户 的名片列表
+.tagBtnList{.flowListFn(tagBtn, 7);}	//标签列表
+.tagBtnList{.flowListFn(tagBtn2, 7);}	//标签列表,灰色背景
+.radioUserlist
+{
+	.radioUserlistFn(listItem,0,0);
+	& .listItem
+    {
+		&.none-border
+        {
+			border-bottom:none;
+        }
+    }
+}
+.disUserlist
+{
+	.radioUserlistFn(listItem,0,0);
+	& .listItem
+    {
+		border-bottom:1px solid #eaeaea;
+		&.none-border
+        {
+			border-bottom:none;
+        }
+    }
+}
+.disSoundlist
+{
+	.radioUserlistFn(listItem,0,0);
+	& .listItem
+    {
+		border:none;
+		&:hover
+		{
+    		& .shareCon
+			{
+				.show;        
+			}
+		}
+    }
+}
+.rankUserList
+{
+	.radioUserlistFn(listItem,0,0);
+	width:auto;
+	& .listItem
+    {
+    	border-bottom-style: dotted;
+		padding:6px 0 5px 30px;
+		position:relative;
+		& .right{
+			margin-bottom:10px;
+			margin-top:10px;
+			& span{
+				display:block;
+			}
+		}
+    }
+	& .bud-text{
+		top:6px;
+		font-size:16px;
+		color:#3586BC;
+		//font-weight:bold;
+		&.grew
+        {
+			color:#ccc;
+        }
+		&.on
+        {
+        	font-size:22px;
+			top:12px;
+        }
+    }
+}
+.rankSoundList
+{
+	.radioUserlistFn(listItem,0,0);
+	width:auto;
+	& .listItem
+    {
+    	.bgImgExt("dotter_CCC_2.png",0,bottom,repeat-x);
+		border-bottom:none;
+		position:relative;
+		padding: 11px 4px;
+		&.none-border
+        {
+			background-image:none;
+        }
+    }
+}
+.userFaceList
+{
+	.radioUserlistFn(listItem,0,0);
+	overflow: visible;
+	height:auto;
+	& .listItem
+    {
+		position:relative;
+		border:none;
+		float:left;
+		margin-right:1px;
+    }
+	& .userface{
+		.userface60;
+	}
+}

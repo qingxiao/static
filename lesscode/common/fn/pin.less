@@ -1,0 +1,19 @@
+.pinFn(@width:30,@height:30,@deg:10deg){
+	width: @width*1px;
+	height: @height*1px;
+	position:relative;
+	.rotate(@deg);
+	& span{
+		position: absolute;
+		top: 0;
+		left: -8px;
+		text-indent: 0;
+		width: 18px;
+		height: 18px;
+		.bgImg("icon.png");
+		background-position: 0 -101px;
+	}
+	& .soundface{
+		.soundface30;
+	}
+}
